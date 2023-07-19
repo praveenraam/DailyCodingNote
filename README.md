@@ -1,3 +1,3 @@
-# ObsidianNotes
+# Obsidian Notes
 
-## Contains my notes and dailywork i did on it
+## Contains my notes and daily work I did on it
