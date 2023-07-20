@@ -1,4 +1,4 @@
-x`# Main Keys :  #obsidian 
+# Main Keys :  #obsidian 
 
 Documentation on Basic : [LINK!](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax)
 
