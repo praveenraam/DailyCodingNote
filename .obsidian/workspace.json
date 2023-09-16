@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a322715bdd8226ac",
+        "id": "53b0fa16b2f9b6fd",
         "type": "tabs",
         "children": [
           {
-            "id": "58ba8d0770ef13cd",
+            "id": "2e999b10643826eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studies/ObsidianTutorial/Basic.md",
+                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "85f10cfd4637319a",
@@ -85,14 +86,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Studies/ObsidianTutorial/Basic.md",
+                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Studies/ObsidianTutorial/Basic.md",
+                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Studies/ObsidianTutorial/Basic.md"
+                "file": "Studies/Prompt/Prompting Engineering from FFC.md"
               }
             }
           }
@@ -133,7 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -146,8 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58ba8d0770ef13cd",
+  "active": "2e999b10643826eb",
   "lastOpenFiles": [
-    "README.md"
+    "Studies/ObsidianTutorial/Basic.md",
+    "Studies/Prompt/Prompting Engineering from FFC.md",
+    "Studies/ObsidianTutorial/Link vs Hashtags.md",
+    "Studies/Prompt",
+    "Untitled.md",
+    "Studies/DailyNotes/Jul 2 2023.md",
+    "README.md",
+    "www.google.com.md"
   ]
 }
