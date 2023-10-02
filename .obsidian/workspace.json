@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "53b0fa16b2f9b6fd",
+        "id": "5d8dbae138291e1e",
         "type": "tabs",
         "children": [
           {
-            "id": "2e999b10643826eb",
+            "id": "ce631a8804d379ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
+                "file": "DSA/Search Algorithms.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "85f10cfd4637319a",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
+                "file": "DSA/Search Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Studies/Prompt/Prompting Engineering from FFC.md",
+                "file": "DSA/Search Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Studies/Prompt/Prompting Engineering from FFC.md"
+                "file": "DSA/Search Algorithms.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,14 +146,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e999b10643826eb",
+  "active": "ce631a8804d379ac",
   "lastOpenFiles": [
+    "DSA/Math algorithms.md",
+    "DSA/Recursion and problem.md",
+    "DSA/Search Algorithms.md",
     "Studies/ObsidianTutorial/Basic.md",
-    "Studies/Prompt/Prompting Engineering from FFC.md",
-    "Studies/ObsidianTutorial/Link vs Hashtags.md",
-    "Studies/Prompt",
-    "Untitled.md",
+    "okie.md",
+    "DSA/Algorithm Analysis.md",
+    "DSA/Arrays and Objects.md",
+    "DSA/IMGS/Pasted image 20231002120746.png",
     "Studies/DailyNotes/Jul 2 2023.md",
+    "Studies/ObsidianTutorial/Link vs Hashtags.md",
+    "DSA/IMGS",
+    "Pasted image 20231002120746 1.png",
+    "Studies/Untitled.md",
+    "DSA",
+    "Chess/Tutorial/EP1.md",
+    "Studies/Prompt/Prompting Engineering from FFC.md",
+    "Studies/Prompt",
+    "Studies/ObsidianTutorial",
+    "Studies/DailyNotes",
+    "Studies",
+    "Chess/Studies/ObsidianTutorial/Link vs Hashtags.md",
+    "Chess/Studies/Prompt/Prompting Engineering from FFC.md",
+    "Chess/Tutorial",
+    "Chess",
+    "Chess/Studies/ObsidianTutorial/Basic.md",
+    "Chess/Studies/Prompt",
+    "Chess/Studies/DailyNotes/Jul 2 2023.md",
     "README.md",
     "www.google.com.md"
   ]
