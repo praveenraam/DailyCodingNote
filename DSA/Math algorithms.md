@@ -1,4 +1,4 @@
-know this before [[Arrays and Objects]]   #algorithm 
+know this before [[Arrays and Objects]]   #algorithm/math 
 Next Topic [[Recursion and problem]]
 ## Fibonacci sequence 
 

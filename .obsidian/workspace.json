@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d8dbae138291e1e",
+        "id": "f93c4135b4aa86fc",
         "type": "tabs",
         "children": [
           {
-            "id": "ce631a8804d379ac",
+            "id": "2845918a5f4f4d39",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#obsidian",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,18 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce631a8804d379ac",
+  "active": "2845918a5f4f4d39",
   "lastOpenFiles": [
-    "DSA/Math algorithms.md",
-    "DSA/Recursion and problem.md",
-    "DSA/Search Algorithms.md",
-    "Studies/ObsidianTutorial/Basic.md",
-    "okie.md",
     "DSA/Algorithm Analysis.md",
-    "DSA/Arrays and Objects.md",
-    "DSA/IMGS/Pasted image 20231002120746.png",
     "Studies/DailyNotes/Jul 2 2023.md",
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
+    "Studies/ObsidianTutorial/Basic.md",
+    "DSA/Search Algorithms.md",
+    "DSA/Arrays and Objects.md",
+    "DSA/Math algorithms.md",
+    "DSA/Recursion and problem.md",
+    "DSA/Sorting Algorithms.md",
+    "okie.md",
+    "DSA/IMGS/Pasted image 20231002120746.png",
     "DSA/IMGS",
     "Pasted image 20231002120746 1.png",
     "Studies/Untitled.md",

@@ -91,13 +91,13 @@ use > to Quote a text
 
 \-Praveen
 
+
 --- ---
 
 ## For Coding
 
 ### Inline Code 
 use ` `` `(backtip '` `` `') to inline code 
-
 ### Code Block
 use three backtip for codeblock
 ```HTML
@@ -138,7 +138,6 @@ use tab for indentation and add nested lists
 ## Task List
 
 use - and a space followed by [ ] as not finished Task and [x] to finished task
-
 - [x] hello
 - [ ] hello
 
@@ -172,6 +171,3 @@ use `>[!Content]` to make Callouts
 
 <iframe src="www.google.com"></iframe>
 --- ----
-
-
-
