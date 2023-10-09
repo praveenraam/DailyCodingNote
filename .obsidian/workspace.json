@@ -8,18 +8,39 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2845918a5f4f4d39",
+            "id": "64bf249cf7c479ce",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "be2f7360aa9693bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Search Algorithms.md",
+                "file": "DSA/Sorting Algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "980f57460c52c2dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/ProblemSeries1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#obsidian",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Search Algorithms.md",
+                "file": "DSA/ProblemSeries1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Search Algorithms.md",
+                "file": "DSA/ProblemSeries1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Search Algorithms.md"
+                "file": "DSA/ProblemSeries1.md"
               }
             }
           }
@@ -146,19 +167,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2845918a5f4f4d39",
+  "active": "980f57460c52c2dd",
   "lastOpenFiles": [
+    "DSA/ProblemSeries1.md",
+    "DSA/Sorting Algorithms.md",
+    "DSA/Search Algorithms.md",
+    "DSA/IMGS/Pasted image 20231002120746.png",
     "DSA/Algorithm Analysis.md",
     "Studies/DailyNotes/Jul 2 2023.md",
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
     "Studies/ObsidianTutorial/Basic.md",
-    "DSA/Search Algorithms.md",
     "DSA/Arrays and Objects.md",
     "DSA/Math algorithms.md",
     "DSA/Recursion and problem.md",
-    "DSA/Sorting Algorithms.md",
     "okie.md",
-    "DSA/IMGS/Pasted image 20231002120746.png",
     "DSA/IMGS",
     "Pasted image 20231002120746 1.png",
     "Studies/Untitled.md",
