@@ -1,7 +1,7 @@
 #Problems 
 
 Know this before : [[Sorting Algorithms]]
-Next Topic :
+Next Topic : [[Array Introduction]]
 
 ## Cartesian Product 
 
@@ -85,3 +85,7 @@ console.log(ClimbingStairCase(5)) //8
 ## Tower of Henoi
 
 #####  Problem 
+
+
+
+Algorithm topics are cover and Data Structures topic are covered in the further notes
