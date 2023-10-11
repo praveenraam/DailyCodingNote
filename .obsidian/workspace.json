@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Sorting Algorithms.md",
+                "file": "DSA/Stack.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/ProblemSeries1.md",
+                "file": "DSA/Circular Queue.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "85f10cfd4637319a",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/ProblemSeries1.md",
+                "file": "DSA/Circular Queue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/ProblemSeries1.md",
+                "file": "DSA/Circular Queue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/ProblemSeries1.md"
+                "file": "DSA/Circular Queue.md"
               }
             }
           }
@@ -155,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,15 +171,21 @@
   },
   "active": "980f57460c52c2dd",
   "lastOpenFiles": [
+    "DSA/Stack.md",
+    "DSA/Circular Queue.md",
+    "DSA/Queue.md",
+    "Studies/ObsidianTutorial/Basic.md",
+    "DSA/Map.md",
+    "DSA/Set.md",
+    "DSA/Object.md",
+    "DSA/Sorting Algorithms.md",
     "DSA/Array Introduction.md",
     "DSA/ProblemSeries1.md",
-    "DSA/Sorting Algorithms.md",
     "DSA/Search Algorithms.md",
     "DSA/IMGS/Pasted image 20231002120746.png",
     "DSA/Algorithm Analysis.md",
     "Studies/DailyNotes/Jul 2 2023.md",
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
-    "Studies/ObsidianTutorial/Basic.md",
     "DSA/Arrays and Objects.md",
     "DSA/Math algorithms.md",
     "DSA/Recursion and problem.md",
@@ -199,7 +207,6 @@
     "Chess/Studies/ObsidianTutorial/Basic.md",
     "Chess/Studies/Prompt",
     "Chess/Studies/DailyNotes/Jul 2 2023.md",
-    "README.md",
-    "www.google.com.md"
+    "README.md"
   ]
 }
