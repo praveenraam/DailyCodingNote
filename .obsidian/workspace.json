@@ -4,43 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "f93c4135b4aa86fc",
+        "id": "c77aa7f4ac2358a1",
         "type": "tabs",
         "children": [
           {
-            "id": "64bf249cf7c479ce",
+            "id": "126c18f118bca434",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "be2f7360aa9693bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Stack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "980f57460c52c2dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Circular Queue.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "85f10cfd4637319a",
@@ -107,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Circular Queue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Circular Queue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA/Circular Queue.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -169,10 +139,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "980f57460c52c2dd",
+  "active": "71b30a88c170084e",
   "lastOpenFiles": [
-    "DSA/Stack.md",
     "DSA/Circular Queue.md",
+    "DSA/Stack.md",
+    "Php/OOPS.md",
+    "Php/Introduction.md",
+    "Php",
     "DSA/Queue.md",
     "Studies/ObsidianTutorial/Basic.md",
     "DSA/Map.md",
@@ -205,8 +178,6 @@
     "Chess/Tutorial",
     "Chess",
     "Chess/Studies/ObsidianTutorial/Basic.md",
-    "Chess/Studies/Prompt",
-    "Chess/Studies/DailyNotes/Jul 2 2023.md",
-    "README.md"
+    "Chess/Studies/Prompt"
   ]
 }
