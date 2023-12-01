@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c77aa7f4ac2358a1",
+        "id": "6ace26a44cbf71c6",
         "type": "tabs",
         "children": [
           {
-            "id": "126c18f118bca434",
+            "id": "fce2200fd4f4de3f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/Git/Squashing.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DSA - Java/Git/Squashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DSA - Java/Git/Squashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DSA - Java/Git/Squashing.md"
+              }
             }
           }
         ],
@@ -141,6 +149,26 @@
   },
   "active": "71b30a88c170084e",
   "lastOpenFiles": [
+    "DSA - Java/Git/Branches.md",
+    "DSA - Java/Git/IMGS/Pasted image 20231201142848.png",
+    "DSA - Java/Git/Squashing.md",
+    "DSA - Java/Git/Forking and pull request.md",
+    "DSA - Java/Git/IMGS/Pasted image 20231201142147.png",
+    "DSA - Java/Git/Git - Git Hub.md",
+    "DSA - Java/Git/Basic commands.md",
+    "DSA - Java/Git/IMGS/Pasted image 20231201142055.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134512.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134438.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134351.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134313.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134202.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201134042.png",
+    "Studies/ObsidianTutorial/Basic.md",
+    "DSA - Java/Git/Untitled",
+    "DSA - Java/Git/IMGS/Pasted image 20231201120431.png",
+    "DSA - Java/Git/IMGS",
+    "DSA - Java/Git",
+    "DSA - Java/Untitled 1.md",
     "DSA - Java",
     "DSA - JS/Circular Queue.md",
     "DSA - JS/Stack.md",
@@ -148,7 +176,6 @@
     "Php/Introduction.md",
     "Php",
     "DSA - JS/Queue.md",
-    "Studies/ObsidianTutorial/Basic.md",
     "DSA - JS/Map.md",
     "DSA - JS/Set.md",
     "DSA - JS/Object.md",
@@ -156,28 +183,16 @@
     "DSA - JS/Array Introduction.md",
     "DSA - JS/ProblemSeries1.md",
     "DSA - JS/Search Algorithms.md",
-    "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "DSA - JS/Algorithm Analysis.md",
     "Studies/DailyNotes/Jul 2 2023.md",
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
     "DSA - JS/Arrays and Objects.md",
     "DSA - JS/Math algorithms.md",
     "DSA - JS/Recursion and problem.md",
-    "okie.md",
     "DSA - JS/IMGS",
-    "Pasted image 20231002120746 1.png",
-    "Studies/Untitled.md",
     "DSA - JS",
-    "Chess/Tutorial/EP1.md",
-    "Studies/Prompt/Prompting Engineering from FFC.md",
     "Studies/Prompt",
     "Studies/ObsidianTutorial",
-    "Studies/DailyNotes",
-    "Studies",
-    "Chess/Studies/ObsidianTutorial/Link vs Hashtags.md",
-    "Chess/Studies/Prompt/Prompting Engineering from FFC.md",
-    "Chess/Tutorial",
-    "Chess",
-    "Chess/Studies/Prompt"
+    "Studies/DailyNotes"
   ]
 }
