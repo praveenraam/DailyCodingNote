@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6ace26a44cbf71c6",
+        "id": "acdcd8124ae64ced",
         "type": "tabs",
         "children": [
           {
-            "id": "fce2200fd4f4de3f",
+            "id": "f1cc0604a4772e99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Git/Squashing.md",
+                "file": "DSA - Java/Programming/Introduction to programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Git/Squashing.md",
+                "file": "DSA - Java/Programming/Introduction to programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Git/Squashing.md",
+                "file": "DSA - Java/Programming/Introduction to programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Git/Squashing.md"
+                "file": "DSA - Java/Programming/Introduction to programming.md"
               }
             }
           }
@@ -147,25 +147,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71b30a88c170084e",
+  "active": "f1cc0604a4772e99",
   "lastOpenFiles": [
-    "DSA - Java/Git/Branches.md",
-    "DSA - Java/Git/IMGS/Pasted image 20231201142848.png",
+    "Studies/ObsidianTutorial/Basic.md",
+    "DSA - JS/IMGS/Pasted image 20231002120746.png",
+    "DSA - Java/Programming/Introduction to programming.md",
+    "DSA - Java/Programming/IMGS/Pasted image 20231201181223.png",
+    "DSA - Java/Programming/IMGS",
+    "DSA - Java/Programming/IMGS/Pasted image 20231201180502.png",
     "DSA - Java/Git/Squashing.md",
+    "DSA - Java/Programming",
+    "DSA - Java/Git/Branches.md",
     "DSA - Java/Git/Forking and pull request.md",
-    "DSA - Java/Git/IMGS/Pasted image 20231201142147.png",
-    "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Git/Basic commands.md",
+    "DSA - Java/Git/Git - Git Hub.md",
+    "DSA - Java/Git/IMGS/Pasted image 20231201142848.png",
+    "DSA - Java/Git/IMGS/Pasted image 20231201142147.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201142055.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201134512.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201134438.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201134351.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201134313.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134202.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134042.png",
-    "Studies/ObsidianTutorial/Basic.md",
     "DSA - Java/Git/Untitled",
-    "DSA - Java/Git/IMGS/Pasted image 20231201120431.png",
     "DSA - Java/Git/IMGS",
     "DSA - Java/Git",
     "DSA - Java/Untitled 1.md",
@@ -188,11 +191,8 @@
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
     "DSA - JS/Arrays and Objects.md",
     "DSA - JS/Math algorithms.md",
-    "DSA - JS/Recursion and problem.md",
     "DSA - JS/IMGS",
     "DSA - JS",
-    "Studies/Prompt",
-    "Studies/ObsidianTutorial",
-    "Studies/DailyNotes"
+    "Studies/Prompt"
   ]
 }

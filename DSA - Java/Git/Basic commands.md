@@ -97,7 +97,7 @@ when you no need the stashed code back you can remove those stash
 ### Starting a repo
 
 - After creating a repo , copy the link and execute 
-	 ``git remote add origin link``
+	 ``git remote add origin repo_link``
 
 - This will make the folder as it's repo files 
 	 ``git push origin master
