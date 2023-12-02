@@ -2,6 +2,7 @@ Download JDK Oracle [Link](https://www.oracle.com/java/technologies/downloads/)
 Download IntelliJ IDEA Community Edition [Link](https://www.jetbrains.com/idea/download/?section=windows)
 
 Video [Link](https://youtu.be/TAtrPoaJ7gc?si=oqv-OgcwKSocjO3U)
+Next Topic [[Data Types]]
 ## Creating Main function
 
 ```Java
@@ -56,4 +57,64 @@ It means that the class can be accessed from anywhere
 
 In terminal ``javac -d location_you_need_to_keep_file(../../ or . or ../) filename``
 
+
+
+
+
+
+## Output in java
+
+```Java
+public class Main {  
+    public static void main(String[] args) {  
+        System.out.println("Hello world!");  
+    }  
+}
+```
+
+The output is ``Hello World!``
+
+## Input in Java
+
+```Java
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        Scanner input = new Scanner(System.in); // creating a new object named input 
+    }  
+}
+```
+
+``Scanner input = new Scanner(System.in); `` This create a new object using constructor
+
+``system.in`` inside the brackets mention to get input from the user keyboard , it changes as per how and what will the input will be .
+
+```Java
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        Scanner input = new Scanner(System.in);
+        System.out.print(input.next());  
+    }  
+}
+```
+
+``input.next()`` As the input is a object of the scanner class , it contains all the property of scanner 
+The next keyword get the word that you type in the terminal after the execution instance
+
+``System.out.print(input.next());`` This line first get a input from the keyboard and print the same input in the terminal
+
+```
+Input : "Heyy How are you?"
+Output : "Heyy"
+```
+
+Incase we used ``system.nextLine()``
+
+```
+Input : "Heyy How are you?"
+Output : "Heyy How are you?"
+```
 
