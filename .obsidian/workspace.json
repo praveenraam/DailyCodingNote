@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "acdcd8124ae64ced",
+        "id": "5d98457037caaedd",
         "type": "tabs",
         "children": [
           {
-            "id": "f1cc0604a4772e99",
+            "id": "843e8e4c16c4b2fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Programming/Introduction to programming.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Programming/Introduction to programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Programming/Introduction to programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Programming/Introduction to programming.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,11 +139,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1cc0604a4772e99",
+  "active": "843e8e4c16c4b2fa",
   "lastOpenFiles": [
+    "DSA - Java/Java/IMGs/Pasted image 20231202132213.png",
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/Architecture.md",
+    "DSA - Java/Java/IMGs/Pasted image 20231202095830.png",
+    "DSA - Java/Java/IMGs/Pasted image 20231202111617.png",
+    "DSA - Java/Programming/Introduction to programming.md",
+    "DSA - JS/Arrays and Objects.md",
+    "test.java",
+    "DSA - Java/test.java",
+    "DSA - Java/Java/IMGs",
+    "DSA - Java/Java/IMGs/Pasted image 20231202093202.png",
+    "DSA - Java/Java",
+    "DSA - Java/Ar/Untitled",
+    "DSA - Java/Ar",
+    "README.md",
     "Studies/ObsidianTutorial/Basic.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
-    "DSA - Java/Programming/Introduction to programming.md",
     "DSA - Java/Programming/IMGS/Pasted image 20231201181223.png",
     "DSA - Java/Programming/IMGS",
     "DSA - Java/Programming/IMGS/Pasted image 20231201180502.png",
@@ -164,20 +170,13 @@
     "DSA - Java/Git/IMGS/Pasted image 20231201142848.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201142147.png",
     "DSA - Java/Git/IMGS/Pasted image 20231201142055.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134512.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134438.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134351.png",
-    "DSA - Java/Git/IMGS/Pasted image 20231201134313.png",
     "DSA - Java/Git/Untitled",
     "DSA - Java/Git/IMGS",
-    "DSA - Java/Git",
     "DSA - Java/Untitled 1.md",
-    "DSA - Java",
     "DSA - JS/Circular Queue.md",
     "DSA - JS/Stack.md",
     "Php/OOPS.md",
     "Php/Introduction.md",
-    "Php",
     "DSA - JS/Queue.md",
     "DSA - JS/Map.md",
     "DSA - JS/Set.md",
@@ -186,13 +185,6 @@
     "DSA - JS/Array Introduction.md",
     "DSA - JS/ProblemSeries1.md",
     "DSA - JS/Search Algorithms.md",
-    "DSA - JS/Algorithm Analysis.md",
-    "Studies/DailyNotes/Jul 2 2023.md",
-    "Studies/ObsidianTutorial/Link vs Hashtags.md",
-    "DSA - JS/Arrays and Objects.md",
-    "DSA - JS/Math algorithms.md",
-    "DSA - JS/IMGS",
-    "DSA - JS",
-    "Studies/Prompt"
+    "DSA - JS/Algorithm Analysis.md"
   ]
 }

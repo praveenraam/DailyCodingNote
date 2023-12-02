@@ -1,6 +1,6 @@
 
 Video [link](https://youtu.be/wn49bJOYAZM?si=OoP7RfIiUczRxABB)
-
+Next Topic [[Architecture]]
 ### Type of Programming languages
 
 ![[Pasted image 20231201180502.png]]
