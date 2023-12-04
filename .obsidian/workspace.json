@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Function (Methods).md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Function (Methods).md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Function (Methods).md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Function (Methods).md"
+                "file": "README.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "843e8e4c16c4b2fa",
   "lastOpenFiles": [
-    "DSA - Java/Java/Switch concepts.md",
     "DSA - Java/Java/Function (Methods).md",
+    "DSA - Java/Java/Switch concepts.md",
     "DSA - Java/Java/IMGs/Pasted image 20231204204525.png",
     "DSA - Java/Java/IMGs/Pasted image 20231204200705.png",
     "DSA - Java/Java/IMGs/Pasted image 20231204193955.png",
