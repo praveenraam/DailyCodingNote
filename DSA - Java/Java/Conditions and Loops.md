@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/ldYLYRNaucM?si=axqBnojALyZDQvn5)
 Topic No : 6
-Next Topic : [[Switch and Nested Conc]]
+Next Topic : [[Switch concepts]]
 
 ## Conditions
 
