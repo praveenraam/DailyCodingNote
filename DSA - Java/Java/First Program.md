@@ -1,8 +1,10 @@
+Video [Link](https://youtu.be/TAtrPoaJ7gc?si=oqv-OgcwKSocjO3U)
+Topic No : 2
+Next Topic [[Data Types]]
+
 Download JDK Oracle [Link](https://www.oracle.com/java/technologies/downloads/)
 Download IntelliJ IDEA Community Edition [Link](https://www.jetbrains.com/idea/download/?section=windows)
 
-Video [Link](https://youtu.be/TAtrPoaJ7gc?si=oqv-OgcwKSocjO3U)
-Next Topic [[Data Types]]
 ## Creating Main function
 
 ```Java
