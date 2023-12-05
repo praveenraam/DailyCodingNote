@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5d98457037caaedd",
+        "id": "e45b7189f21ebb54",
         "type": "tabs",
         "children": [
           {
-            "id": "843e8e4c16c4b2fa",
+            "id": "bf65f118e5317fe8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "DSA - Java/Java/Function (Methods).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "DSA - Java/Java/Function (Methods).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "DSA - Java/Java/Function (Methods).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "DSA - Java/Java/Function (Methods).md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -147,10 +147,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "843e8e4c16c4b2fa",
+  "active": "bf65f118e5317fe8",
   "lastOpenFiles": [
+    "DSA - Java/Java/Scoping.md",
     "DSA - Java/Java/Function (Methods).md",
+    "README.md",
+    "Studies/ObsidianTutorial/Basic.md",
+    "www.google.com.md",
+    "DSA - Java/Java/First Program.md",
+    "Studies/DailyNotes/Jul 2 2023.md",
+    "Studies/ObsidianTutorial/Link vs Hashtags.md",
     "DSA - Java/Java/Switch concepts.md",
+    "DSA - Java/Java/Conditions and Loops.md",
+    "DSA - Java/Java/IMGs/Pasted image 20231205112408.png",
+    "DSA - Java/Java/IMGs/Pasted image 20231205110658.png",
+    "DSA - Java/Programming/Introduction to programming.md",
     "DSA - Java/Java/IMGs/Pasted image 20231204204525.png",
     "DSA - Java/Java/IMGs/Pasted image 20231204200705.png",
     "DSA - Java/Java/IMGs/Pasted image 20231204193955.png",
@@ -158,8 +169,6 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/First Program.md",
-    "DSA - Java/Java/Conditions and Loops.md",
     "DSA - Java/Java/Arrays.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Git/Squashing.md",
@@ -170,7 +179,6 @@
     "DSA - Java/Java/IMGs/Pasted image 20231202132213.png",
     "DSA - Java/Java/IMGs/Pasted image 20231202095830.png",
     "DSA - Java/Java/IMGs/Pasted image 20231202111617.png",
-    "DSA - Java/Programming/Introduction to programming.md",
     "DSA - JS/Arrays and Objects.md",
     "test.java",
     "DSA - Java/test.java",
@@ -179,10 +187,6 @@
     "DSA - Java/Java",
     "DSA - Java/Ar/Untitled",
     "DSA - Java/Ar",
-    "README.md",
-    "Studies/ObsidianTutorial/Basic.md",
-    "DSA - JS/IMGS/Pasted image 20231002120746.png",
-    "DSA - Java/Programming/IMGS/Pasted image 20231201181223.png",
     "DSA - Java/Programming/IMGS",
     "DSA - Java/Programming",
     "DSA - Java/Git/Untitled",
@@ -190,10 +194,6 @@
     "DSA - Java/Untitled 1.md",
     "DSA - JS/Circular Queue.md",
     "DSA - JS/Stack.md",
-    "Php/OOPS.md",
-    "Php/Introduction.md",
-    "DSA - JS/Queue.md",
-    "DSA - JS/Map.md",
-    "DSA - JS/Set.md"
+    "Php/OOPS.md"
   ]
 }

@@ -24,6 +24,8 @@ public class Main {
 
 ## Explaining of program
 
+^ff725e
+
 ### 1st Line
 ##### 'public' word
 It means that the class can be accessed from anywhere 
