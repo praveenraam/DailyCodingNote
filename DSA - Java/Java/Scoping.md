@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/vvanI8NRlSI?si=dA0uq1TeTuABykAu&t=2801)
 Topic No : 9
-Next Topic [[]]
+Next Topic [[Arrays]]
 
 
 ## Method/Function scoping
@@ -80,3 +80,5 @@ public class Scopings {
 }
 ```
 
+
+After Shadowing concepts , all other topics are taken notes in the Function method

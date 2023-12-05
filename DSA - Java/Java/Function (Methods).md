@@ -180,7 +180,7 @@ If you make a change to the object via this ref variable , same object will be c
 
 ![[Pasted image 20231205112408.png]]
 
-
+After this topic , Scoping are covered in Next FIle
 ## Variable Arguments (Var Args)
 
 This is used to pass n number of parameter to the function
@@ -274,3 +274,61 @@ public class Scopings {
     }  
 }
 ```
+
+## Problems
+
+### Prime number 
+
+```Java
+import java.util.Scanner;  
+  
+public class PrimeNumber {  
+    public static void main(String[] args) {  
+        Scanner InpGet = new Scanner(System.in);  
+        int Number = InpGet.nextInt();  
+        
+        System.out.println(isPrime(Number));  
+    }  
+    static boolean isPrime(int n){  
+        if(n <= 1){  
+            return false;  
+        }  
+        int divider = 2;  
+        while(divider*divider <= n){  
+            if(n%divider == 0){  
+                return false;  
+            }  
+            divider++;  
+        }  
+        return true;  
+    }  
+}
+```
+
+### Armstrong number
+
+##### Cube of numbers separate and adding them to get the same number 
+
+```Java
+import java.util.Scanner;  
+  
+public class Armstrong {  
+    public static void main(String[] args){  
+        Scanner InpGet = new Scanner(System.in);  
+        int InpNumber = InpGet.nextInt();  
+        System.out.println(isArmstrong(InpNumber));  
+    }   
+    
+    static boolean isArmstrong(int Number){  
+        int Value=0;  
+        int InpValue = Number;  
+        while(Number > 0){  
+            int remainder = Number%10;  
+            Value= (remainder*remainder*remainder)+Value;  
+            Number = Number/10;  
+        }  
+        return Value == InpValue;  
+    }  
+}
+```
+
