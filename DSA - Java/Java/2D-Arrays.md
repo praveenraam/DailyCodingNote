@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/n60Dn0UsbEk?si=pHObnTqNPKbPtJzR&t=2559)
 Topic No 11
-Next Topic [[ArrayList]]
+Next Topic [[Linear Search]]
 
 2D arrays are the start of the multi dimensional array
 
@@ -95,7 +95,7 @@ public class Arr {
 ```
 
 
-## ArrayList
+## Array List
 
 They are dynamic form of array , they can handle any number of array without specifying the input size of the Array
 
@@ -175,6 +175,154 @@ public class Arr {
             count++;  
         }  
         System.out.println(ListValue);  
+    }  
+}
+```
+
+## Internal working of Array List
+
+
+All the workings are similar to the Array but the question is that how it is varying it's size
+
+- The size is fixed internally 
+- Let's say it is filled by half amount , if you add more 
+- It will create a new Array List of the same or double the size
+- And the old one will be deleted
+
+![[Pasted image 20231207084521.png]]
+
+## Multi dimensional Array List
+
+### Syntax 
+
+```Java
+ArrayList<ArrayList<Integer>> Array_name = new ArrayList<>();
+```
+
+### Example
+
+``` Java
+import java.util.ArrayList;  
+import java.util.Scanner;  
+import java.util.Arrays;  
+  
+public class Arr {  
+    public static void main(String[] args) {  
+        Scanner Inp = new Scanner(System.in);  
+        ArrayList<ArrayList<Integer>> List = new ArrayList<>();
+        
+        for(int i=0;i<3;i++){  
+            List.add(new ArrayList<>());  // without this , the Array List would be empty So we are initializing 
+        }  
+        for(int i=0;i<3;i++){  
+            for(int j=0;j<3;j++){  
+                List.get(i).add(Inp.nextInt());  
+            }  
+        }  
+        System.out.println(List);  // Multi-D Array also can be print
+    }  
+}
+```
+
+![[Pasted image 20231207090004.png]]
+Without that first for Loop the Array List would be empty
+
+
+## Problems
+
+#### Problem 1 : Swap Values in Array
+
+```Java
+import java.sql.Array;  
+import java.util.ArrayList;  
+import java.util.Scanner;  
+import java.util.Arrays;  
+  
+public class Arr {  
+    public static void main(String[] args) {  
+        int[] Arr = {2, 3, 4, 6, 7};  
+        swap(Arr,1,4);  
+        System.out.println(Arrays.toString(Arr));  
+    }   
+    static void swap(int[] SwapArr , int index1 , int index2){  
+        int temp = SwapArr[index1];  
+        SwapArr[index1] = SwapArr[index2];  
+        SwapArr[index2] = temp;  
+    }  
+}
+```
+Output : [2, 7, 4, 6, 3]
+
+#### Problem 2 : Max Item in the Array 
+```Java
+public class Arr {  
+    public static void main(String[] args) {  
+        int[] Arr = {2, 3, 4, 654, 77};  
+        System.out.println(MaxFind(Arr));  
+    }  
+    static int MaxFind(int[] MaxArr){  
+        int max=0;  
+        for(int i=0;i<MaxArr.length;i++){  
+            max = max < MaxArr[i] ? MaxArr[i] : max;  
+        } return max;  
+    }  
+}
+```
+Output : 654
+
+#### Problem 3 : Reverse the Array
+
+```Java
+import java.util.Arrays;  
+  
+public class Arr {  
+    public static void main(String[] args) {  
+        int[] Arr = {2,3,4,5,6,7,8,9};  
+        ReverseArray(Arr);  
+        System.out.println(Arrays.toString(Arr));  
+    }  
+    static void ReverseArray(int[] RevArr){  
+        int startV = 0;  
+        int EndV = RevArr.length-1;  
+        for(int i=0;i<RevArr.length/2;i++){  
+            if(startV >= EndV){  // This is not mandatory if 'i<RevArr.length/2'
+                break;  
+            }  
+            int temp = RevArr[startV];  
+            RevArr[startV] = RevArr[EndV];  
+            RevArr[EndV] = temp;  
+            startV++; EndV --;  
+        }  
+    }  
+}
+```
+
+Using the Swap Func created already
+```Java
+import java.sql.Array;  
+import java.util.ArrayList;  
+import java.util.Scanner;  
+import java.util.Arrays;  
+  
+public class Arr {  
+    public static void main(String[] args) {  
+        int[] Arr = {2, 3, 4, 6, 7,4};  
+        ReverseArray(Arr);  
+        System.out.println(Arrays.toString(Arr));  
+    }  
+    static void swap(int[] SwapArr , int index1 , int index2){  
+        int temp = SwapArr[index1];  
+        SwapArr[index1] = SwapArr[index2];  
+        SwapArr[index2] = temp;  
+    }  
+    static void ReverseArray(int[] RevArr){  
+        int startV = 0;  
+        int EndV = RevArr.length-1;  
+        for(int i=0;i<RevArr.length/2;i++){  
+            swap(RevArr,startV,EndV);  
+            startV++;  
+            EndV--;  
+        }  
     }  
 }
 ```
