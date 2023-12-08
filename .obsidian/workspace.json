@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b4d294cacd397f2c",
+        "id": "7e8c984d82d4f24f",
         "type": "tabs",
         "children": [
           {
-            "id": "461a506857b4c724",
+            "id": "793e215a4470fcee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,13 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "461a506857b4c724",
+  "active": "793e215a4470fcee",
   "lastOpenFiles": [
-    "DSA - JS/Search Algorithms.md",
+    "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Linear Search.md",
+    "DSA - JS/Search Algorithms.md",
     "DSA - JS/Algorithm Analysis.md",
     "DSA - Java/Java/IMGs/Pasted image 20231207090004.png",
-    "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Arrays.md",
     "DSA - Java/Programming/Introduction to programming.md",
     "README.md",
