@@ -159,7 +159,7 @@ public class Search2D {
         System.out.println(MaxFunc(ArrInp));  
     }  
     static int MaxFunc(int[][] Array){  
-        int max = 0;  
+        int max = Integer.MIN_VALUE;  // Min value of the int (-2147483647) 
         for(int[] ArrInsider : Array){  
             for(int InInsider : ArrInsider){  
                 if(InInsider > max){  
@@ -167,6 +167,78 @@ public class Search2D {
                 }  
             }  
         } return max;  
+    }  
+}
+```
+
+#### Finding the Even Number of Element in the Arraty
+
+This question is to find the number of element that are even in count 
+Ex: 2020 : 4 numbers so even , 567 : 3 number so odd
+
+```Java
+public class EvenNumber {  
+    public static void main(String[] args) {  
+        int[] Array = {200,2000,23,2345,22222,22};  
+        System.out.println(FindNumber(Array));  
+    }  
+    static int FindNumber(int[] Array){  
+        int count = 0;  
+        for(int i=0;i<Array.length;i++){  
+            if(evenFind(Array[i])){  
+                count++;  
+            }  
+        } return count;  
+    }  
+    static boolean evenFind(int number){  
+        int Count = 0;  
+        while(number > 0){  
+            number/=10;  
+            Count++;  
+        }  
+        return Count%2==0; // returns True or False
+    }  
+} // Out = 4 
+```
+
+#### ==Trick to find the Number of digits in a number==
+
+```Java
+public class EvenNumber {  
+    public static void main(String[] args) {   
+        System.out.println(digitCount(323));  
+    }
+static int digitCount(int Number){  
+    if(Number < 0){  
+        Number*=-1;  // Converting to positive number
+    }  
+    return (int)(Math.log10(Number)+1);  
+} // Out = 3
+```
+
+#### Wealth Checker
+
+[Link Of Leet code](https://leetcode.com/problems/richest-customer-wealth)
+
+```Java
+public class WealthFind {  
+    public static void main(String[] args) {  
+        int [][] Array = {  
+                {3,4},{3,7},{8,6}  
+        };  
+        System.out.println(Finder(Array));  
+    }  
+    static int Finder(int[][] Account){  
+        int WealthAmount = 0;  
+        for(int[] Person : Account){  
+            int AmountOfPerson = 0;  
+            for(int WealthOfPerson : Person){  
+                AmountOfPerson += WealthOfPerson;  
+            }  
+            if(WealthAmount < AmountOfPerson ){  
+                WealthAmount = AmountOfPerson;  
+            }  
+        } return WealthAmount;  
     }  
 }
 ```
