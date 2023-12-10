@@ -6,7 +6,6 @@ Next Topic : [[Branches]]
 - "cd" for changing the directory 
 - "touch filename" for creating the file or folder
 
-
 # Git commands
 
 #### Git init
@@ -100,6 +99,7 @@ when you no need the stashed code back you can remove those stash
 	 ``git remote add origin repo_link``
 
 - This will make the folder as it's repo files 
+	 ``git init``
 	 ``git push origin master
 	 Here , 
 	 -  push is command keyword to push into repo
