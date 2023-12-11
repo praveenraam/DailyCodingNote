@@ -8,6 +8,7 @@ Ex :
 ``int[] ArrAscending = {2,3,4,5,6,8}
 ``int[] ArrDescending = {9,8,7,6,5,4}``
 
+### ==Sorted Array , then only Binary Search==
 ## Algorithm 
 
 For a binary search to work, it is mandatory for the target array to be sorted. We shall learn the process of binary search with a pictorial example. The following is our sorted array and let us assume that we need to search the location of value 31 using binary search.
