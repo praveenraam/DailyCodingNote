@@ -67,3 +67,21 @@ class Solution {
 }
 ```
 
+#### [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)
+
+```Java
+class Solution {
+    public int[] shuffle(int[] nums, int n) {
+        int[] Answer = new int[n*2];
+        int count=0;
+        for(int i=0;i<nums.length;i++){
+            Answer[i] = nums[i-count];
+            Answer[i+1] = nums[n];
+            n++;
+            i++;
+            count++;
+        }
+        return Answer;
+    }
+}
+```
