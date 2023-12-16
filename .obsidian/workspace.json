@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Java/Binary Search.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7642e48938e06bd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/Git/Basic commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "DSA - Java/Git/Basic commands.md"
               }
             }
           }
@@ -146,11 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35d91f8c4b46fc42",
+  "active": "7642e48938e06bd3",
   "lastOpenFiles": [
-    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Git/Branches.md",
+    "DSA - Java/Git/Forking and pull request.md",
+    "DSA - Java/Git/Squashing.md",
+    "DSA - Java/Git/Basic commands.md",
+    "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/Binary Search.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Java/Function (Methods).md",
     "DSA - Java/Java/Switch concepts.md",
@@ -161,15 +179,11 @@
     "DSA - Java/Java/Arrays.md",
     "DSA - Java/Java/Scoping.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/First Program.md",
     "DSA - Java/Problems",
     "DSA - Java/Git/Untitled.md",
-    "DSA - Java/Git/Basic commands.md",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
     "DSA - Java/Java/Linear Search.md",
     "DSA - JS/Search Algorithms.md",
-    "DSA - Java/Git/Branches.md",
-    "DSA - Java/Git/Git - Git Hub.md",
     "Studies/ObsidianTutorial/Basic.md",
     "leetcode.com/problems/richest-customer-wealth.md",
     "leetcode.com/problems",
@@ -177,16 +191,10 @@
     "DSA - JS/Algorithm Analysis.md",
     "DSA - Java/Java/IMGs/Pasted image 20231207090004.png",
     "DSA - Java/Programming/Introduction to programming.md",
-    "README.md",
     "DSA - Java/Java/IMGs/Pasted image 20231207084521.png",
     "DSA - Java/Java/IMGs/Pasted image 20231206092731.png",
-    "DSA - Java/Java/ArrayList.md",
     "DSA - Java/Java/IMGs/Pasted image 20231206113220.png",
     "DSA - Java/Java/IMGs/Pasted image 20231206104109.png",
-    "DSA - Java/Java/IMGs/Pasted image 20231206102540.png",
-    "Pasted image 20231206113122.png",
-    "DSA - Java/Java/IMGs/Pasted image 20231206090032.png",
-    "DSA - Java/Java/IMGs/Pasted image 20231205204424.png",
     "test.java",
     "DSA - Java/test.java",
     "DSA - Java/Java/IMGs",

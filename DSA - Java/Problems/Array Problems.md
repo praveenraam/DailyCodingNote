@@ -17,7 +17,6 @@ class Solution {
 }
 ```
 
-
 #### [1920. Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/)
 
 ```Java
@@ -85,3 +84,57 @@ class Solution {
     }
 }
 ```
+
+#### [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
+
+```Java
+class Solution {
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> li=new ArrayList<>();
+        int total;
+        int Largest = LargestNum(candies);
+        for(int i=0;i<candies.length;i++){
+            total = candies[i] + extraCandies;
+            if(Largest <= total){
+                li.add(true);
+            }else{
+                li.add(false);
+            }
+        }
+        return li;
+    }
+    public int LargestNum(int[] ArrayInp){
+        int max = ArrayInp[0];
+        for(int i=1;i<ArrayInp.length;i++){
+            if(max < ArrayInp[i]){
+                max = ArrayInp[i];
+            }
+        }
+        return max;
+    }
+}
+```
+##### Coded without reading algorithm
+```Java
+class Solution {
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> li=new ArrayList<>();
+        int total;
+        for(int i=0;i<candies.length;i++){
+            total = candies[i]+extraCandies;
+            for(int j=0;j<candies.length;j++){
+                if(total < candies[j]){
+                    li.add(false);
+                    break;
+                }else{
+                    if(j==candies.length -1 ){
+                        li.add(true);
+                    }
+                }
+            }
+        }
+        return li;
+    }
+}
+```
+

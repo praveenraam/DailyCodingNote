@@ -62,10 +62,6 @@ It means that the class can be accessed from anywhere
 In terminal ``javac -d location_you_need_to_keep_file(../../ or . or ../) filename``
 
 
-
-
-
-
 ## Output in java
 
 ```Java
