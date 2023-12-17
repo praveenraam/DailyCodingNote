@@ -70,8 +70,10 @@ Don't worry about the other stuffs
 Once you need to restore or cancel the commit you made in the past you need to execute the command ``git log``
 
 Copy the commit code of the stage you need to go back , and execute the 
-
 ``git reset commit_code``
+
+Incase if you need to modify or reset the commit you pushed to the Git hub
+You need to execute the ``git push origin -f``  
 
 ![[Pasted image 20231201115330.png]]
 
