@@ -1,3 +1,9 @@
+## Day 16 :
+#### Date : 19.12.2023 (Tuesday)
+
+- Solved a problem in Leetcode in Arrays Topic
+- Prepared for the PT (Internal) Exam
+
 ## Day 15 :
 #### Date : 18.12.2023 (Monday)
 
