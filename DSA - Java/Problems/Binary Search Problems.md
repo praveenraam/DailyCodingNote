@@ -102,3 +102,44 @@ public class SmallLetter {
 ### Problem 4 : 
 ##### Find :
 You need to the return the start and end index of the target value in the given sorted array
+
+
+### Problem 5 :
+
+##### Find :
+Find the index of the target element in a infinity sorted Array
+
+```Java
+import java.util.Arrays;  
+  
+public class InfiniteArray {  
+    public static void main(String[] args){  
+        int[] InpArray = {9,12,14,16,18,19,23,26,28,31,35,38,39,40,45,48,50,67,69,78};  
+        System.out.println(Solution(InpArray,45));  
+    }  
+    static int Solution(int[] Array,int target){  
+        int Start = 0;  
+        int End = 1;  
+        while(target > Array[End]){  
+            int temp = End + 1;  
+            End = End + (End - Start + 1)*2;  
+            Start = temp;  
+        }  
+        return Searcher(Start, End ,Array, target);  
+    }  
+    static int Searcher(int start,int end , int[] array, int target){  
+        while(start <= end){  
+            int MiddleElement = (start +end)/2;  
+            if(array[MiddleElement] == target){  
+                return MiddleElement;  
+            }else if(target < array[MiddleElement]){  
+                end = MiddleElement-1;  
+            }else if(array[MiddleElement] < target){  
+                start = MiddleElement+1;  
+            }  
+        }  
+        return -1;  
+    }  
+}
+```
+

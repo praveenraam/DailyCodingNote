@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a5baff8a60c6710a",
+        "id": "092318c2ee20f5fa",
         "type": "tabs",
         "children": [
           {
-            "id": "c3a7241bf6678ef7",
+            "id": "6f2ffb93754f7186",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Daily Work Log.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Daily Work Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Daily Work Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Daily Work Log.md"
+              }
             }
           }
         ],
@@ -138,19 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3a7241bf6678ef7",
+  "active": "6f2ffb93754f7186",
   "lastOpenFiles": [
-    "Daily Work Log.md",
-    "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Programming/Introduction to programming.md",
     "DSA - Java/Git/Basic commands.md",
-    "Studies/DailyWorkLog.md",
-    "DSA - Java/Java/Binary Search.md",
-    "DSA - Java/Git/Branches.md",
-    "DSA - Java/Git/Forking and pull request.md",
     "DSA - Java/Git/Squashing.md",
-    "DSA - Java/Git/Git - Git Hub.md",
+    "DSA - Java/Git/Forking and pull request.md",
+    "DSA - Java/Git/Branches.md",
+    "DSA - Java/Java/Linear Search.md",
+    "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "Daily Work Log.md",
+    "DSA - Java/Programming/Introduction to programming.md",
+    "Studies/DailyWorkLog.md",
+    "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Java/Function (Methods).md",
     "DSA - Java/Java/Switch concepts.md",
@@ -164,7 +173,6 @@
     "DSA - Java/Problems",
     "DSA - Java/Git/Untitled.md",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
-    "DSA - Java/Java/Linear Search.md",
     "DSA - JS/Search Algorithms.md",
     "Studies/ObsidianTutorial/Basic.md",
     "leetcode.com/problems/richest-customer-wealth.md",

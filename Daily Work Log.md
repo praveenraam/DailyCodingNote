@@ -1,3 +1,14 @@
+## Day  :
+#### Date : 
+
+- Sample
+
+
+## Day 17 :
+#### Date : 20.12.2023 (Wednesday)
+
+- Written PT Exam 
+- Tried to solve a Sum but failed
 ## Day 16 :
 #### Date : 19.12.2023 (Tuesday)
 
