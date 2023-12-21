@@ -1,9 +1,8 @@
-## Day  :
-#### Date : 
+## Day  : Day 18
+#### Date : 21.12.2023
 
-- Sample
-
-
+- Got a New Sheet that helps and guide to DSA ( [Link](https://docs.google.com/spreadsheets/d/187vzpXl0DEBfuBxgIjl95dIc4dE8ExuHkJ7p9giyptM/edit?usp=sharing) )from Curious Freaks YT
+- Worked on the problems in the Sheet
 ## Day 17 :
 #### Date : 20.12.2023 (Wednesday)
 
