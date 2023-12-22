@@ -42,3 +42,47 @@ class Solution {
 	}
 }
 ```
+
+#### [Reverse Number](https://www.geeksforgeeks.org/problems/reverse-digit0316/1)
+
+##### Find :
+Reverse the given number
+```Java
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long result = 0;
+        while(n>0){
+            long remainder = n%10;
+            result*=10;
+            result+=remainder;
+            n/=10;
+        }
+        return result;
+    }
+}
+```
+
+#### [GCD](https://practice.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1)
+
+##### Find:
+GCD of given two numbers
+```Java
+class Solution
+{
+    public int gcd(int A , int B) 
+    { 
+        int min = Math.min(A,B);
+        int result = 0;
+        int index=1;
+        while(index <= min){
+            if(A%index == 0 && B%index == 0){
+                result = index;
+            }
+            index++;
+        }
+        return result;
+    }
+}
+```

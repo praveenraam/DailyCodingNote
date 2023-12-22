@@ -1,4 +1,9 @@
-## Day  : Day 18
+## Day 19 :
+#### Date : 22.12.2023
+
+- Worked on two Problems in the Sheets
+- Prepared for the Semester
+## Day 18 :
 #### Date : 21.12.2023
 
 - Got a New Sheet that helps and guide to DSA ( [Link](https://docs.google.com/spreadsheets/d/187vzpXl0DEBfuBxgIjl95dIc4dE8ExuHkJ7p9giyptM/edit?usp=sharing) )from Curious Freaks YT
@@ -13,7 +18,6 @@
 
 - Solved a problem in Leetcode in Arrays Topic
 - Prepared for the PT (Internal) Exam
-
 ## Day 15 :
 #### Date : 18.12.2023 (Monday)
 
