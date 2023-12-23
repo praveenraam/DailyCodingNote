@@ -1,3 +1,9 @@
+## Day 20 :
+#### Date : 23.12.2023
+
+- Worked on few Problems in the Sheets
+- Prepared for the Semester
+
 ## Day 19 :
 #### Date : 22.12.2023
 
