@@ -228,3 +228,26 @@ static int isPerfectNumber(long N) {
         return 0;
     }
 ```
+
+#### [Square Root of a number](https://www.geeksforgeeks.org/problems/square-root/1)
+
+#### Find :
+return the nearly square root value of the given value
+```Java 
+long floorSqrt(long x)
+	{
+	    long ans = 1;
+	    for(long i=1;i<x;i++){
+	        
+	        if(i*i <= x){ /* Here we use the i*i because we can reduce the time                                 complexity */
+	            ans = i;
+	        }
+	        else{
+	            break;
+	        }
+	    }
+	    return ans;
+	}
+```
+We use the i* i to get the nearby perfect square number to get the square root of the nearly number
+

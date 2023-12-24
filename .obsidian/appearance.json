@@ -1,4 +1,5 @@
 {
   "accentColor": "#824dff",
-  "theme": "system"
+  "theme": "system",
+  "baseFontSize": 16
 }
