@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "092318c2ee20f5fa",
+        "id": "76c7492ba3b77a90",
         "type": "tabs",
         "children": [
           {
-            "id": "6f2ffb93754f7186",
+            "id": "fc382b5ff5a2c7fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,15 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f2ffb93754f7186",
+  "active": "fc382b5ff5a2c7fc",
   "lastOpenFiles": [
+    "().md",
+    "DSA - Java/Problems/Array Problem.md",
     "DSA - JS/Algorithm Analysis.md",
+    "Daily Work Log.md",
     "DSA - Java/Java/Conditions and Loops.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Switch concepts.md",
-    "Daily Work Log.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Java/First Program.md",
     "DSA - Java/Java/Data Types.md",
@@ -172,9 +174,7 @@
     "Studies/DailyWorkLog.md",
     "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Java/Arrays.md",
     "DSA - Java/Problems",
-    "DSA - Java/Git/Untitled.md",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
     "leetcode.com/problems",
     "leetcode.com",

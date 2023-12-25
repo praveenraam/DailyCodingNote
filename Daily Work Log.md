@@ -1,3 +1,8 @@
+## Day 22 : 
+#### Date : 25.12.2023 ( Merry Christmas!! )
+
+- Solved a Array Problem
+- Prepared for the Semester
 ## Day 21 :
 #### Date : 24.12.2023
 
