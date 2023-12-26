@@ -1,3 +1,8 @@
+## Day 23: 
+#### Date : 26.12.2023 ( Merry Christmas!! )
+
+- Learnt about Binary Search usage 
+- Prepared for the Semester
 ## Day 22 : 
 #### Date : 25.12.2023 ( Merry Christmas!! )
 
