@@ -1,3 +1,9 @@
+## Day 24: (Failed to commit on 27.12.23)
+#### Date : 27.12.2023
+
+- Solved an array problem
+- Prepared for the Semester
+
 ## Day 23: 
 #### Date : 26.12.2023 ( Merry Christmas!! )
 

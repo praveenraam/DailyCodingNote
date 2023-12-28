@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Work Log.md"
+                "file": "DSA - Java/Git/Basic commands.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "fc382b5ff5a2c7fc",
   "lastOpenFiles": [
-    "().md",
+    "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Problems/Array Problem.md",
-    "DSA - JS/Algorithm Analysis.md",
     "Daily Work Log.md",
+    "().md",
+    "DSA - JS/Algorithm Analysis.md",
     "DSA - Java/Java/Conditions and Loops.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Type conversion and casting.md",
@@ -172,7 +173,6 @@
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Programming/Introduction to programming.md",
     "Studies/DailyWorkLog.md",
-    "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
