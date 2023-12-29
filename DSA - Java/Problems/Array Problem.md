@@ -88,3 +88,33 @@ int thirdLargest(int a[], int n)
 - The First loop find the Largest Element in the Array
 - The Second loop find the 2nd Largest Element in the Array
 - The Third loop find the 3rd Largest Element of the Array , which is the Answer
+
+#### [Missing Number in the Array](https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1)
+
+##### Find :
+Find the missing Element in the given array
+
+```Java
+int missingNumber(int array[], int n) {
+    
+  int[] Hash = new int[n+1];
+        
+      for(int i=0;i<n-1;i++){
+	    Hash[array[i]] = Hash[array[i]]+1;
+	  }
+        
+      for(int i=1;i<=n;i++){
+		if(Hash[i] == 0){
+			return i;
+		}
+	  }
+        
+	  return -1;
+}
+```
+
+##### Algorithm : 
+- We create an Array named 'Hash' in size of N+1 and init every number with zero
+- The size is n+1 because we are ignoring the index 0 
+- On the first loop , we get the element of Input Array , and make the HashArray's element position increment by 1
+- On the Second Loop , we check the Elements of Hash array , incase if the element is 0 that would be the Missing element

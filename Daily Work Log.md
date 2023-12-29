@@ -1,3 +1,9 @@
+## Day 25: ( Didn't worked on 28.12.23 )
+#### Date : 29.12.2023
+
+- Solved an array problem
+- Learnt about counting using the Hash 
+
 ## Day 24: (Failed to commit on 27.12.23)
 #### Date : 27.12.2023
 
@@ -5,7 +11,7 @@
 - Prepared for the Semester
 
 ## Day 23: 
-#### Date : 26.12.2023 ( Merry Christmas!! )
+#### Date : 26.12.2023
 
 - Learnt about Binary Search usage 
 - Prepared for the Semester
