@@ -69,6 +69,9 @@ public class BinarySearch {
             return DecSearcher(Array,Target);  
         }  
     }  
+```
+
+``` Java
     static int IncSearcher(int[] Array,int target){  
         int Start = 0;  
         int End = Array.length-1;  
@@ -87,6 +90,9 @@ public class BinarySearch {
         }  
         return -1;  
     }  
+```
+
+``` Java
     static int DecSearcher(int[] Array,int target){  
         int start = 0;  
         int end = Array.length;  
@@ -108,3 +114,34 @@ public class BinarySearch {
 }
 ```
 
+
+## 2D Arrays (Matrix)
+
+### Video [Link](https://youtu.be/enI_KyGLYPo?si=RSLGaFpdOrtq8nR8)
+
+### Algorithm 
+- First we check the last element of the first row , So we declare the row as 0 and column as Length -1 
+- If the target is equal to the current element we return it
+- Else we check it is greater or lesser then the target element
+- Incase current element is greater , we decrease the column by 1
+- Incase current element is lesser , we increase the row by 1
+- We do this in a loop until we find the target element 
+- The condition for the loop is once the row is greater than the Matrix length or Column is less than 1 , it exits
+### Code
+```Java
+static int[] SearchRowCol(int[][] Matrix,int target){  
+    int row = 0;  
+    int column = Matrix.length-1;  
+  
+    while(row < Matrix.length && column >=0){  
+        if(Matrix[row][column] == target){  
+            return new int[]{row,column};  
+        }else if(target > Matrix[row][column] ){  
+            row++;  
+        }else {  
+            column--;  
+        }  
+    }  
+    return new int[] {-1,-1};  
+}
+```
