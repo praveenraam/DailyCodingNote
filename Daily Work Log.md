@@ -1,3 +1,8 @@
+## Day 28:
+#### Date : 31.12.2023
+
+- Solved a problem in 2D Array
+- Prepared for Semester Exams
 ## Day 27:
 #### Date : 30.12.2023
 
@@ -12,8 +17,8 @@
 #### Date : 28.12.2023
 
 - Didn't worked due to travel 
-## Day 24: (Failed to commit on 27.12.23)
-#### Date : 27.12.2023
+## Day 24: 
+#### Date : 27.12.2023 (Failed to commit)
 
 - Solved an array problem
 - Prepared for the Semester

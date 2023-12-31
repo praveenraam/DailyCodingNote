@@ -33,8 +33,15 @@ static Pair getMinMax(long a[], long n)
 
 #### [Third Largest Number in Array](https://practice.geeksforgeeks.org/problems/third-largest-element/1)
 
-##### Find:
+##### Find :
 Return the third largest number in the given array
+##### Algorithm :
+- On the first if statement , we check whether the given array size is 3 , if not return -1 as we can't find the third largest number
+- if the size is 3 , the minimum number of the given array must be the 3rd largest number of array
+- The First loop find the Largest Element in the Array
+- The Second loop find the 2nd Largest Element in the Array
+- The Third loop find the 3rd Largest Element of the Array , which is the Answer
+##### Code :
 ```Java
 int thirdLargest(int a[], int n)
     {
@@ -83,17 +90,16 @@ int thirdLargest(int a[], int n)
     }
 ```
 
-- On the first if statement , we check whether the given array size is 3 , if not return -1 as we can't find the third largest number
-- if the size is 3 , the minimum number of the given array must be the 3rd largest number of array
-- The First loop find the Largest Element in the Array
-- The Second loop find the 2nd Largest Element in the Array
-- The Third loop find the 3rd Largest Element of the Array , which is the Answer
-
 #### [Missing Number in the Array](https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1)
 
 ##### Find :
 Find the missing Element in the given array
-
+##### Algorithm : 
+- We create an Array named 'Hash' in size of N+1 and init every number with zero
+- The size is n+1 because we are ignoring the index 0 
+- On the first loop , we get the element of Input Array , and make the Hash Array's element position increment by 1
+- On the Second Loop , we check the Elements of Hash array , incase if the element is 0 that would be the Missing element
+##### Code :
 ```Java
 int missingNumber(int array[], int n) {
     
@@ -113,8 +119,27 @@ int missingNumber(int array[], int n) {
 }
 ```
 
-##### Algorithm : 
-- We create an Array named 'Hash' in size of N+1 and init every number with zero
-- The size is n+1 because we are ignoring the index 0 
-- On the first loop , we get the element of Input Array , and make the HashArray's element position increment by 1
-- On the Second Loop , we check the Elements of Hash array , incase if the element is 0 that would be the Missing element
+#### [Search Element in 2D Array( M x N)](https://leetcode.com/problems/search-a-2d-matrix/submissions/)
+##### Find :
+Return True if target element is found otherwise false
+##### Algorithm :
+We used a Binary Search to find the element [[Binary Search#2D Arrays (Matrix)]]
+##### Code :
+```Java
+public boolean searchMatrix(int[][] matrix, int target) {
+        int row = 0;
+        int column = matrix[0].length-1;
+        
+        while(row < matrix.length && column >= 0)
+            if(matrix[row][column] == target){
+                return true;
+            }else if(matrix[row][column] > target){
+                column--;
+            }else{
+                row++;
+            }
+        }
+        return false;
+    }
+```
+

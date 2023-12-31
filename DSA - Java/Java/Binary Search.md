@@ -131,8 +131,8 @@ public class BinarySearch {
 ```Java
 static int[] SearchRowCol(int[][] Matrix,int target){  
     int row = 0;  
-    int column = Matrix.length-1;  
-  
+    int column = Matrix.length-1; /*Can use Matrix[0].length-1 to get the Column size*/
+    
     while(row < Matrix.length && column >=0){  
         if(Matrix[row][column] == target){  
             return new int[]{row,column};  
