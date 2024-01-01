@@ -1,3 +1,7 @@
+## Day 29:
+#### Date : 01.01.2024 (Happy New Year!!)
+
+- Learnt about Binary Searcher in 2D array
 ## Day 28:
 #### Date : 31.12.2023
 

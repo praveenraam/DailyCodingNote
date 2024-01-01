@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "DSA - Java/Java/Binary Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "DSA - Java/Java/Binary Search.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "DSA - Java/Java/Binary Search.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md"
+                "file": "DSA - Java/Java/Binary Search.md"
               }
             }
           }
@@ -148,12 +148,13 @@
   },
   "active": "fc382b5ff5a2c7fc",
   "lastOpenFiles": [
-    "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Problems/Array Problem.md",
+    "Daily Work Log.md",
+    "DSA - Java/Git/Squashing.md",
+    "DSA - Java/Java/Binary Search.md",
     "Studies/ObsidianTutorial/Basic.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Git/Basic commands.md",
-    "Daily Work Log.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Linear Search.md",
     "DSA - Java/Git/Git - Git Hub.md",
@@ -170,7 +171,6 @@
     "DSA - Java/Java/Function (Methods).md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/Binary Search Problems.md",
-    "DSA - Java/Git/Squashing.md",
     "DSA - Java/Git/Forking and pull request.md",
     "DSA - Java/Git/Branches.md",
     "DSA - Java/Programming/Introduction to programming.md",

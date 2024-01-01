@@ -119,7 +119,7 @@ public class BinarySearch {
 
 ### Video [Link](https://youtu.be/enI_KyGLYPo?si=RSLGaFpdOrtq8nR8)
 
-### Algorithm 
+### Algorithm (1st Method)
 - First we check the last element of the first row , So we declare the row as 0 and column as Length -1 
 - If the target is equal to the current element we return it
 - Else we check it is greater or lesser then the target element
@@ -127,7 +127,7 @@ public class BinarySearch {
 - Incase current element is lesser , we increase the row by 1
 - We do this in a loop until we find the target element 
 - The condition for the loop is once the row is greater than the Matrix length or Column is less than 1 , it exits
-### Code
+### Code (1st Method)
 ```Java
 static int[] SearchRowCol(int[][] Matrix,int target){  
     int row = 0;  
@@ -145,3 +145,58 @@ static int[] SearchRowCol(int[][] Matrix,int target){
     return new int[] {-1,-1};  
 }
 ```
+
+###  Code (2nd Method)
+```Java
+static int[] BinarySearch(int[][] matrix,int row,int cStart,int cEnd,int target){  
+    while(cEnd>=cStart){  
+        int mid = cStart+ (cEnd - cStart)/2;  
+        if(matrix[row][mid] == target){  
+            return new int[]{row,mid};  
+        }else if(matrix[row][mid] > target){  
+            cEnd--;  
+        }else{  
+            cStart++;  
+        }  
+    }  
+    return new int[]{-1,-1};  
+}  
+static int[] Searcher(int[][] Matrix, int target){  
+    int rows = Matrix.length;  
+    int cols = Matrix[0].length-1;  
+  
+    if(rows == 1){  
+        return BinarySearch(Matrix,0,0,cols-1,target);  
+    }  
+  
+    int rStart = 0;  
+    int rEnd = Matrix.length-1;  
+    int cMid = cols /2;  
+  
+    while(rStart < (rEnd -1 ) ){  
+        int mid = rStart+(rEnd-rStart)/2;  
+        if(Matrix[mid][cMid] == target){  
+            return new int[]{mid,cMid};  
+        }else if(Matrix[mid][cMid] < target){  
+            rStart = mid;  
+        }else{  
+            rEnd = mid;  
+        }  
+    }  
+  
+    if(Matrix[rStart][cMid] == target){  
+  
+    }if(Matrix[rStart+1][cMid] == target){  
+  
+    }  
+  
+    if(target <= Matrix[rStart][cMid-1]){  
+        return BinarySearch(Matrix,rStart,0,cMid-1,target);  
+    }if(target >= Matrix[rStart][cMid-1]){  
+        return BinarySearch(Matrix,rStart,cMid+1,cols-1,target);  
+    }if(target <= Matrix[rStart+1][cMid-1] && target <= Matrix[rStart+1][cols-1]){  
+        return BinarySearch(Matrix,rStart+1,0,cMid-1,target);  
+    }else return BinarySearch(Matrix,rStart+1,cMid+1,cols-1,target);  
+}
+```
+
