@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "76c7492ba3b77a90",
+        "id": "5603ca2937572ee1",
         "type": "tabs",
         "children": [
           {
-            "id": "fc382b5ff5a2c7fc",
+            "id": "9e36fca14e0885e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Binary Search.md",
+                "file": "DSA - Java/Java/AVL Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Binary Search.md",
+                "file": "DSA - Java/Java/AVL Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Binary Search.md",
+                "file": "DSA - Java/Java/AVL Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Binary Search.md"
+                "file": "DSA - Java/Java/AVL Tree.md"
               }
             }
           }
@@ -146,12 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc382b5ff5a2c7fc",
+  "active": "9e36fca14e0885e3",
   "lastOpenFiles": [
     "DSA - Java/Problems/Array Problem.md",
+    "README.md",
+    "DSA - Java/Java/AVL Tree.md",
+    "DSA - Java/Java/IMGs/Pasted image 20240102230324.png",
     "Daily Work Log.md",
-    "DSA - Java/Git/Squashing.md",
     "DSA - Java/Java/Binary Search.md",
+    "DSA - Java/Java/IMGs/Pasted image 20240102230040.png",
+    "DSA - Java/Git/Squashing.md",
     "Studies/ObsidianTutorial/Basic.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Git/Basic commands.md",
@@ -172,8 +176,6 @@
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Git/Forking and pull request.md",
-    "DSA - Java/Git/Branches.md",
-    "DSA - Java/Programming/Introduction to programming.md",
     "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
     "leetcode.com/problems",

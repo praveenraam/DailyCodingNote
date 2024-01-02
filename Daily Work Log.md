@@ -1,3 +1,8 @@
+## Day 30:
+#### Date : 02.01.2024 
+
+- Prepared for Semester
+- Learnt about AVL Tree
 ## Day 29:
 #### Date : 01.01.2024 (Happy New Year!!)
 
