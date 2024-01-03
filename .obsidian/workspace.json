@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/AVL Tree.md",
+                "file": "DSA - Java/Java/Sorting Techniques.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/AVL Tree.md",
+                "file": "DSA - Java/Java/Sorting Techniques.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/AVL Tree.md",
+                "file": "DSA - Java/Java/Sorting Techniques.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/AVL Tree.md"
+                "file": "DSA - Java/Java/Sorting Techniques.md"
               }
             }
           }
@@ -146,14 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e36fca14e0885e3",
+  "active": "71b30a88c170084e",
   "lastOpenFiles": [
+    "DSA - Java/Java/IMGs/Pasted image 20240103114620.png",
+    "DSA - Java/Java/IMGs/Pasted image 20240103114441.png",
+    "DSA - Java/Java/IMGs/Pasted image 20240103114302.png",
+    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/Binary Search.md",
+    "DSA - Java/Java/AVL Tree.md",
     "DSA - Java/Problems/Array Problem.md",
     "README.md",
-    "DSA - Java/Java/AVL Tree.md",
     "DSA - Java/Java/IMGs/Pasted image 20240102230324.png",
     "Daily Work Log.md",
-    "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/IMGs/Pasted image 20240102230040.png",
     "DSA - Java/Git/Squashing.md",
     "Studies/ObsidianTutorial/Basic.md",
@@ -174,8 +178,6 @@
     "DSA - Java/Java/Scoping.md",
     "DSA - Java/Java/Function (Methods).md",
     "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
-    "DSA - Java/Git/Forking and pull request.md",
     "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20231211101618.png",
     "leetcode.com/problems",

@@ -1,3 +1,7 @@
+## Day 31:
+#### Date : 03.01.2024 
+- Learnt Bubble Sorting
+- Prepared for Semester
 ## Day 30:
 #### Date : 02.01.2024 
 

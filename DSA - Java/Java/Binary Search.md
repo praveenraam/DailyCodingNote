@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/f6UU7V3szVw?si=PSFFgjbJ5F3FDt8N)
 Topic No 13
-Next Topic [[]]
+Next Topic [[Sorting Techniques]]]
 
 
 The binary search can be implemented only in the sorted array(Ascending or Descending)
