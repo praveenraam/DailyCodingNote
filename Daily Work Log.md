@@ -1,5 +1,11 @@
+## Day 32:
+#### Date : 04.01.2024 
+
+- Learnt Selection Sort
+- Prepared for Semester
 ## Day 31:
 #### Date : 03.01.2024 
+
 - Learnt Bubble Sorting
 - Prepared for Semester
 ## Day 30:
