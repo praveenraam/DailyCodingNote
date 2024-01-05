@@ -33,7 +33,7 @@ public static int[] BubbleSort(int[] Array){
     /* Here I is used as counter of Loop*/  
     for(int i=0;i<Array.length;i++){  
         boolean isSwapped = false;  
-        /* J is to iterate the Value and comapre both */  
+        /* J is to iterate the Value and compare both */  
         for(int j=1;j<Array.length-i;j++){  
             /* The condition is length -i because at end of each iteration of i , last 
             I th element are sorted */  
@@ -121,3 +121,37 @@ static int[] Searcher(int[] arr){
 **Time Complexity  :** O(n2)
 **Space Complexity :** O(1)
 **Stable Algorithm  :** No
+
+## Insertion Sort
+##### Video [Link](https://youtu.be/By_5-RRqVeE?si=PTWgbwANfsAp6PAq)
+- Takes part in the Hybrid sorting Algorithms
+- Used for smaller value of N => work
+##### Algorithm
+- Take an element , compare with elements in the left side 
+- If the element is smaller swap both the element and continue comparing to the next element in the left side 
+- else break the loop and pick the next element and repeat the procedure
+##### Code 
+```Java
+static int[] InsertionSort(int[] Array){  
+    for(int i=0;i<Array.length-1;i++){  
+        for(int j=i+1;j>0;j--){  
+            if(Array[j-1] > Array[j]){  
+                Swap(Array,j-1,j);  
+            }else{  
+                break;  
+            }  
+        }  
+    }  
+    return Array;  
+}
+static void Swap(int[] Array, int From , int To){  
+    int temp = Array[From];  
+    Array[From] = Array[To];  
+    Array[To] = temp;  
+}
+```
+##### Complexity 
+
+**Time Complexity**  : O(n2) --> Worst Case , O(n-1) --> Best Case
+**Space Complexity** : O(n)
+**Stable Algorithm**  : Yes

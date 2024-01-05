@@ -1,3 +1,7 @@
+## Day 33:
+#### Date : 05.01.2024 
+
+- Learnt Insertion Sort
 ## Day 32:
 #### Date : 04.01.2024 
 

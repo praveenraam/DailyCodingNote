@@ -19,9 +19,8 @@ By keeping these updated notes on GitHub, I can access them from anywhere and le
 
 The notes are organized by topics like:
 
-- Programming languages (Python, JavaScript)
+- Programming languages (Java, JavaScript)
 - Data structures and algorithms
-- Database concepts
 
 I try to include code snippets directly in the notes when relevant.
 
