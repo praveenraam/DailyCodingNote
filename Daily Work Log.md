@@ -1,3 +1,8 @@
+## Day 34:
+#### Date : 06.01.2024 
+
+- Learnt about cyclic sort 
+- Solved two problems using cyclic sort
 ## Day 33:
 #### Date : 05.01.2024 
 

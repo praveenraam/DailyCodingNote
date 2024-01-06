@@ -155,3 +155,34 @@ static void Swap(int[] Array, int From , int To){
 **Time Complexity**  : O(n2) --> Worst Case , O(n-1) --> Best Case
 **Space Complexity** : O(n)
 **Stable Algorithm**  : Yes
+
+## Cyclic Sort
+##### Video [Link](https://youtu.be/JfinxytTYFQ?si=BFyzULTsQA9XcEhZ)
+##### When the given problem is ==1 to N== => We use Cyclic sort
+
+##### Algorithm 
+- The numbers are always 1 to N only
+- In this case , taking any number between 1 to N , the element M should be placed in the position M-1 , 
+- For example , taking 10 that should be placed in the 9th index
+##### Code 
+```Java
+static int[] CyclicSort(int[] Array){  
+    int i=0;  
+    while (i < Array.length){  
+        int correct = Array[i]-1;  
+        if(Array[i] != Array[correct]) Swap(Array,i,correct);  
+        else i++;  
+    }  
+    return Array;  
+}  
+static void Swap(int[] Array, int from , int to){  
+    int temp = Array[from];  
+    Array[from] = Array[to];  
+    Array[to] = temp;  
+}
+```
+
+##### Complexity
+
+**Time Complexity**  : O(n)
+**Space Complexity** : O(1)

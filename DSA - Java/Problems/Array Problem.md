@@ -143,3 +143,27 @@ public boolean searchMatrix(int[][] matrix, int target) {
     }
 ```
 
+#### [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+
+```Java
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) 
+        ArrayList<Integer> Result = new ArrayList<>();
+        int i=0;
+        while(i<nums.length){
+            int correct = nums[i]-1;
+            if( i < nums.length && nums[i] != nums[correct]){
+                int temp = nums[i];
+                nums[i] = nums[correct]
+                nums[correct] = temp;
+            } else i++;
+        }
+        for(i=0;i<nums.length;i++){
+            if(nums[i] != i+1){
+                Result.add(i+1);
+            }
+        }
+        return Result;
+    }
+}
+```
