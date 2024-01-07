@@ -144,6 +144,7 @@ public boolean searchMatrix(int[][] matrix, int target) {
 ```
 
 #### [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+##### Used Cyclic sort method to solve the problem [[Sorting Techniques#Cyclic Sort]]
 
 ```Java
 class Solution {
@@ -167,3 +168,147 @@ class Solution {
     }
 }
 ```
+
+#### [Missing number in array](https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1)
+
+##### Used Cyclic sort method to solve the problem [[Sorting Techniques#Cyclic Sort]]
+
+```Java
+class Solution {
+    int missingNumber(int array[], int n) {
+        int i=0; int size=(n-1);
+        while(i<size){
+            int correct = array[i] - 1;
+            if( array[i] < size-1 &&  array[i] != array[correct]){
+                int temp = array[i];
+                array[i] = array[correct];
+                array[correct] = temp;
+            }else i++;
+        } 
+        for(i=0;i<size;i++){
+            if(array[i] != (i+1)){
+                return (i+1);
+            }
+        }
+        return n;
+    }
+}
+```
+
+#### [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+
+##### Used Cyclic sort method to solve the problem [[Sorting Techniques#Cyclic Sort]]
+
+```Java
+public static int findDuplicate(int[] nums) {  
+    int i=0;  
+    while(i<nums.length){  
+        int correct = nums[i] -1;  
+        if(nums[i] != nums[correct]) swap(nums,i,correct);  
+        else i++;  
+    }  
+    for(i=0;i<nums.length;i++){  // Check for the element that is not equal to index after sorting of array
+        if(nums[i] != (i+1)){  
+            return nums[i];  
+        }  
+    }  
+    return nums.length;  
+}  
+public static void swap(int[] array , int from, int to){  
+    int temp = array[from];  
+    array[from] = array[to];  
+    array[to] = temp;  
+}
+```
+
+Rewrote the condition 
+```Java
+public int findDuplicate(int[] nums) {
+        int i=0;
+        while(i<nums.length){
+            int correct = nums[i] -1;
+            if(nums[i] != (i+1)){
+                if(nums[i] != nums[correct]) swap(nums,i,correct); // If the checking element is already present in the correct position , then the element is repeated
+                else return nums[i];
+            }else i++;
+        }
+        return nums.length;
+    }
+    public static void swap(int[] array , int from, int to){
+        int temp = array[from];
+        array[from] = array[to];
+        array[to] = temp;
+    }
+```
+
+#### [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+
+##### Used Cyclic sort method to solve the problem [[Sorting Techniques#Cyclic Sort]]
+
+```Java
+public List<Integer> findDuplicates(int[] nums) {
+        ArrayList<Integer> Result = new ArrayList<>();
+        int i=0;
+        while(i<nums.length){
+            int correct = nums[i]-1;
+            if(nums[i] != nums[correct]) swap(nums,i,correct);
+            else i++;
+        }
+        for(i=0;i<nums.length;i++){
+            if(nums[i] != i+1){
+                Result.add(nums[i]);
+            }
+        }
+        return Result;
+    }
+     public static void swap(int[] array , int from, int to){
+            int temp = array[from];
+            array[from] = array[to];
+            array[to] = temp;
+    }
+```
+
+
+#### [645. Set Mismatch](https://leetcode.com/problems/set-mismatch/)
+
+```Java
+    public int[] findErrorNums(int[] nums) {
+        int i=0;
+        while(i<nums.length){
+            int correct = nums[i]-1;
+            if(nums[i] != nums[correct]) swap(nums,correct,i);
+            else i++;
+        }
+        for(i=0;i<nums.length;i++)
+            if(nums[i] != i+1){
+                return new int[] {nums[i],(i+1)};
+            }
+        }
+        return new int[]{-1,-1};
+    }
+    public static void swap(int[] array , int from, int to){
+        int temp = array[from];
+        array[from] = array[to];
+        array[to] = temp;
+    }
+```
+
+#### [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+
+```Java
+    public int firstMissingPositive(int[] nums) {
+        int i=0;
+        while(i < nums.length){
+            int correct = nums[i]-1;
+            if(nums[] > 0 && nums[i] < nums.length && nums[i] != nums[correct] ) swap(nums,i,correct);
+            else i++;
+        }
+        for(i=0;i<nums.length;i++){
+            if(nums[i] != (i+1)){
+                return i+1;
+            }
+        }
+        return nums.length+1;
+    }
+```
+
