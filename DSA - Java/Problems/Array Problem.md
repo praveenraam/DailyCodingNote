@@ -296,7 +296,7 @@ public List<Integer> findDuplicates(int[] nums) {
 #### [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 
 ```Java
-    public int firstMissingPositive(int[] nums) {
+public int firstMissingPositive(int[] nums) {
         int i=0;
         while(i < nums.length){
             int correct = nums[i]-1;
@@ -312,3 +312,26 @@ public List<Integer> findDuplicates(int[] nums) {
     }
 ```
 
+#### [Segregation of 0's and 1's](https://www.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article)
+
+```Java
+void segregate0and1(int[] arr, int n) {
+        int i=0,low = 0;
+        while(i<n){
+            if(arr[i]==0){
+                if(arr[i] == arr[low]) {
+                    low++;
+                    i++;
+                }
+                else {
+                    swap(arr,i,low); low++;
+                }
+            }else i++;
+        }
+    }
+    public static void swap(int[] a,int fr,int to){
+        int temp = a[fr];
+        a[fr] = a[to];
+        a[to] = temp;
+    }
+```

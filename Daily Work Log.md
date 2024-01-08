@@ -1,3 +1,8 @@
+## Day 36:
+#### Date : 08.01.2024 
+
+- Solved problems on gfg
+- Prepared for Semester
 ## Day 35:
 #### Date : 07.01.2024 
 

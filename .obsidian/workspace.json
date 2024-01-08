@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "Daily Work Log.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "Daily Work Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md",
+                "file": "Daily Work Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problem.md"
+                "file": "Daily Work Log.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "9e36fca14e0885e3",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Array Problem.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Arrays.md",
     "DSA - Java/Problems/Array Problems.md",
@@ -161,7 +162,6 @@
     "DSA - Java/Java/IMGs/Pasted image 20240103114441.png",
     "DSA - Java/Java/IMGs/Pasted image 20240103114302.png",
     "DSA - Java/Java/AVL Tree.md",
-    "DSA - Java/Problems/Array Problem.md",
     "DSA - Java/Java/IMGs/Pasted image 20240102230324.png",
     "DSA - Java/Java/IMGs/Pasted image 20240102230040.png",
     "DSA - Java/Git/Squashing.md",
