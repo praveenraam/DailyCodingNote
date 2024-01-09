@@ -1,3 +1,7 @@
+## Day 37:
+#### Date : 09.01.2024 
+
+- Solved problems on gfg , leetcode
 ## Day 36:
 #### Date : 08.01.2024 
 

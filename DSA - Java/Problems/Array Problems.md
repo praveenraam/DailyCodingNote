@@ -199,3 +199,53 @@ class Solution {
     }  
 }
 ```
+
+#### [Check if two arrays are equal or not](https://www.geeksforgeeks.org/problems/check-if-two-arrays-are-equal-or-not3847/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article)
+
+```Java
+public static boolean check(long A[],long B[],int N)
+    {
+	    Arrays.sort(A);
+        Arrays.sort(B);
+        for(int i=0;i<N;i++){
+            if(A[i] != B[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+```
+
+#### [Rotate the array by 1](https://www.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article)
+
+```Java
+public void rotate(int arr[], int n){   
+	for(int i=0;i<n-1;i++){
+		int temp = arr[0];
+		arr[0] = arr[i+1];
+		arr[i+1] = temp;
+	}
+}
+```
+
+#### [Array Subset of another array](https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1)
+
+```Java
+public String isSubset( long a1[], long a2[], long n, long m) {
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+        for(int i=0;i<m;i++){
+            boolean exist = false;
+            for(int j=0;j<n;j++){
+                if(a2[i] == a1[j]){
+                    a1[j] = 0;
+                    exist = true;
+                    break;
+                }
+            }
+            if(!exist) return "No";
+        }
+        return "Yes";
+    }
+```
+
