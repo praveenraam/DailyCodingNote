@@ -249,3 +249,19 @@ public String isSubset( long a1[], long a2[], long n, long m) {
     }
 ```
 
+#### [Frequencies of Limited Range Array Elements](https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1)
+
+```Java
+public static void frequencyCount(int arr[], int N, int P)
+    {
+        int[] Hashed = new int[N];
+        
+        for(int i=0;i<N;i++){
+            if(N>=arr[i]) Hashed[arr[i]-1] = Hashed[arr[i]-1] + 1;
+        }
+        
+        for(int i=0;i<N;i++){
+            arr[i] = Hashed[i];
+        }
+    }
+```

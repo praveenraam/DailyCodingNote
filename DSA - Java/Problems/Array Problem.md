@@ -335,3 +335,20 @@ void segregate0and1(int[] arr, int n) {
         a[to] = temp;
     }
 ```
+
+#### [Find pair with given sum](https://www.geeksforgeeks.org/problems/key-pair5616/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article)
+
+```Java
+boolean hasArrayTwoCandidates(int arr[], int n, int x) {
+        
+        Arrays.sort(arr);
+        int F=0 , L = n-1;
+        
+        while(L>F){
+            if(arr[F]+arr[L] == x) return true;
+            else if(arr[F]+arr[L] > x ) L--;
+            else F++;
+        }
+        return false;
+    }
+```
