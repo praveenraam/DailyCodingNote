@@ -1,3 +1,12 @@
+## Day 39:
+#### Date : 11.01.2024 
+
+- Learnt Syntax and Hierarchy of Hash Map
+## Day 38:
+#### Date : 10.01.2024 
+
+- Solved peoblems 
+- started to learn Mapping
 ## Day 37:
 #### Date : 09.01.2024 
 
