@@ -54,4 +54,13 @@ public class TwoSum{
 
 As the input is given in the Integer Format , but the output came is float. This is because of type casting inside the JVM
 
-
+#### Comparisons
+- There are two ways to compare
+###### Double Equals to ' == '
+- Incase we use double equals to method , It checks whether both the variables points to the same Value or Object 
+- Incase no , it return false 
+- Example ![[Pasted image 20240112194729.png]]
+###### Dot Equals to Method
+`` variable1.eqauls(variable2) ``
+- This is the syntax to compare both the Variables by the Value
+- Now both the cases will be true from the last topic![[Pasted image 20240112194729.png]]

@@ -1,5 +1,5 @@
 Topic No : 15
-Next Topic : [[]]
+Next Topic : [[Strings]]
 Article [Link](https://www.geeksforgeeks.org/introduction-to-map-data-structure-and-algorithm-tutorials/)
 
 #### Map is a collection of key value pairs

@@ -1,3 +1,7 @@
+## Day 40:
+#### Date : 12.01.2024 
+
+- Starting out String Datatype
 ## Day 39:
 #### Date : 11.01.2024 
 
