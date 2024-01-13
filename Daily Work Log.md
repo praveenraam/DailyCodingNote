@@ -1,6 +1,10 @@
 ## Day 40:
 #### Date : 12.01.2024 
 
+- Learnt about Methods and internal working of String
+## Day 40:
+#### Date : 12.01.2024 
+
 - Starting out String Datatype
 ## Day 39:
 #### Date : 11.01.2024 

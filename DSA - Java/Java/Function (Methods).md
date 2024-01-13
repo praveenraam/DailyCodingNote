@@ -159,7 +159,34 @@ You cannot the print the 'naam' parameter variable outside of the function insid
 
 ![[Pasted image 20231205110658.png]]
 
-
+## Print Stream Class
+- Anything you try to print using the println method in java , it is going to convert it tostring internally not considering the datatype
+## Pretty Printer
+- Incase if you need to print till a specific value , use this
+```Java
+class Solution{
+   public static void main(String[] args){
+	   float a = 12.12834;
+	   System.out.printf("The value is %.2f",a); // 12.13
+	   System.out.printf("Pie : %.3f",Math.Pi); // 3.142
+   }
+}
+```
+- This is nothing but the print function used in C programming 
+- you can use any data type you wish but you need to use the correct place holder for each datatype.
+```Text
+%c - Character
+%d - Decimal number (base 10)
+%e - Exponential floating-point number
+%f - Floating-point number
+%i - Integer (base 10)
+%o - Octal number (base 8)
+%s - String
+%u - Unsigned decimal (integer) number
+%x - Hexadecimal number (base 16)
+%t - Date/time
+%n - Newline
+```
 ### Modifying the object
 
 ```Java
