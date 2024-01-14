@@ -1,3 +1,7 @@
+## Day 41:
+#### Date : 13.01.2024 
+
+- Solved a problem
 ## Day 40:
 #### Date : 12.01.2024 
 

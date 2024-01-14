@@ -5,9 +5,10 @@ Branches are a separate copy of the code , that separate code are used by the ot
 
 
 #### Create a branch
+- ``git branch branch_name`` - to create a branch
 
-- ``git branch branch_name`` - to create a brach
-
+#### Listing branches
+- ``git branch -r`` 
 #### Into the branch 
 - ``git chechout branch_name`` - to enter the branch , So that your next push command is into that branch
 

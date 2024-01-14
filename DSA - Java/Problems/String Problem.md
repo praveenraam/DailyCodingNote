@@ -33,3 +33,16 @@ class Solutions{
 }
 ```
 
+### String Palindrome 
+- Create two variable From Start and From End variable and check whether they are equal , if not return false 
+```Java
+public static boolean isStringPalindrome(String Input){  
+    String DupInput = Input;  
+    int FromLast = Input.length() - 1;  
+    for(int i=0;i<Input.length()/2;i++){  // Only need to check half the string
+        if(DupInput.charAt(i) != Input.charAt(FromLast)) return false;  
+        FromLast--;  
+    }  
+    return true;  
+}
+```
