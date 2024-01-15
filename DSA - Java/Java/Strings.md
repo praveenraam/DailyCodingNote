@@ -1,6 +1,6 @@
 Topic No : 16
 Video [Link](https://youtu.be/zL1DPZ0Ovlo?si=sOwEVPVMmb5nbPET)
-Next Topic :[[]]
+Next Topic :[[Pattern Printing and problems]]
 
 - It is a collection of characters (Char)
 	 Ex : Your name is a string (A collection of character)

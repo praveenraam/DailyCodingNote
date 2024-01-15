@@ -1,9 +1,13 @@
+## Day 42: (Happy Pongal!!)
+#### Date : 15.01.2024 
+
+- Learnt about Pattern Printing
 ## Day 41:
-#### Date : 13.01.2024 
+#### Date : 14.01.2024 
 
 - Solved a problem
 ## Day 40:
-#### Date : 12.01.2024 
+#### Date : 13.01.2024 
 
 - Learnt about Methods and internal working of String
 ## Day 40:
