@@ -1,3 +1,7 @@
+## Day 43: (Happy Pongal!!)
+#### Date : 16.01.2024 
+
+- Solved problem in String concept
 ## Day 42: (Happy Pongal!!)
 #### Date : 15.01.2024 
 

@@ -46,3 +46,24 @@ public static boolean isStringPalindrome(String Input){
     return true;  
 }
 ```
+
+
+### [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)
+
+```Java
+class Solution {
+    public String defangIPaddr(String address) {
+        StringBuilder Ans = new StringBuilder();
+        for(int i=0;i<address.length();i++){
+            if(address.charAt(i) =='.' ){
+                Ans.append("[.]");
+            }else {
+                Ans.append(address.charAt(i));
+            }
+        }
+        return Ans.toString();
+    }
+}
+```
+
+
