@@ -67,3 +67,43 @@ class Solution {
 ```
 
 
+
+
+###  [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/)
+
+```Java
+class Solution {
+    public String restoreString(String s, int[] indices) {
+        char[] Result = new char[indices.length];
+        for(int i=0;i<indices.length;i++){
+            Result[indices[i]] = s.charAt(i);
+        }
+        return new String(Result);
+    }
+}
+```
+
+
+### [1678. Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)
+
+```Java
+class Solution {
+    public String interpret(String command) {
+        StringBuilder Result = new StringBuilder();
+        for(int i=0;i<command.length();i++){
+            if(command.charAt(i) == '('){
+                if(command.charAt(i+1) == 'a'){
+                    Result.append('a');
+                    Result.append('l');
+                    i+=3;
+                }else{
+                    Result.append('o');
+                    i++;
+                }
+            }
+            else Result.append(command.charAt(i));
+        }
+        return Result.toString();
+    }
+}
+```

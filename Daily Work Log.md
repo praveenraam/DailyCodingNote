@@ -1,3 +1,8 @@
+## Day 44: 
+#### Date : 18.01.2024 
+
+- Skipped yesterday of health problems
+- Solved problem in String concept
 ## Day 43: (Happy Pongal!!)
 #### Date : 16.01.2024 
 

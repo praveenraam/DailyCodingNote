@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Work Log.md"
+                "file": "DSA - Java/Problems/String Problem.md"
               }
             }
           }
@@ -149,11 +149,14 @@
   },
   "active": "c33a918a62c4e8d9",
   "lastOpenFiles": [
+    "DSA - Java/Java/Arrays.md",
+    "DSA - Java/Java/Strings.md",
+    "DSA - Java/Java/Linear Search.md",
     "DSA - Java/Problems/String Problem.md",
+    "Daily Work Log.md",
     "DSA - Java/Git/Basic commands.md",
     "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
-    "DSA - Java/Java/Strings.md",
     "2024-01-14.md",
     "Untitled.canvas",
     "DSA - Java/Java/Data Types.md",
@@ -173,12 +176,9 @@
     "DSA - Java/Java/Sorting Techniques.md",
     "DSA - Java/Problems/Array Problems.md",
     "().md",
-    "Daily Work Log.md",
     "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Java/Arrays.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Java/Binary Search.md",
-    "DSA - Java/Java/Linear Search.md",
     "README.md",
     "DSA - Java/Java/IMGs/Pasted image 20240103114620.png",
     "DSA - Java/Java/IMGs/Pasted image 20240103114441.png",
