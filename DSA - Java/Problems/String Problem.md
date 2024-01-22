@@ -149,3 +149,22 @@ class Solution {
     }
 }
 ```
+
+### [2942. Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/)
+```Java
+class Solution {
+    public List<Integer> findWordsContaining(String[] words, char x) {
+       ArrayList<Integer> Result = new ArrayList<>();
+       for(int i=0;i<words.length;i++){
+           for(int j=0;j<words[i].length();j++){
+               if(words[i].charAt(j) == x){
+                   Result.add(i);
+                   break;
+               }
+           }
+       }
+       return Result;
+    }
+}
+```
+
