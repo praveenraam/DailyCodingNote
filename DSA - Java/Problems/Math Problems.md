@@ -251,3 +251,22 @@ long floorSqrt(long x)
 ```
 We use the i* i to get the nearby perfect square number to get the square root of the nearly number
 
+#### [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+
+```Java
+class Solution {
+    public int reverse(int x) {
+        long result = 0;
+        while(x!=0){
+            int remainder = x%10;
+            result= (result*10)+remainder;
+            if(result > Integer.MAX_VALUE) return 0;
+            if(result < Integer.MIN_VALUE) return 0;
+            x/=10;
+        }
+        if(result >= Integer.MIN_VALUE && result <= Integer.MAX_VALUE) return (int)result;
+        else return 0;
+    }
+}
+```
+

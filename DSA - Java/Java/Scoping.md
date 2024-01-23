@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/vvanI8NRlSI?si=dA0uq1TeTuABykAu&t=2801)
 Topic No : 9
-Next Topic [[Arrays]]
+Next Topic [[Time and Space Complexity]]
 
 
 ## Method/Function scoping

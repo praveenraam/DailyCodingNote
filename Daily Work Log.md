@@ -1,3 +1,8 @@
+## Day 49: 
+#### Date : 23.01.2024 
+
+- Learnt about time and space complexities
+- Solved few Math problems
 ## Day 48: 
 #### Date : 22.01.2024 
 

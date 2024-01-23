@@ -1,6 +1,6 @@
 Topic No : 17
 Video [Link](https://youtu.be/lsOOs5J8ycw?si=T7cVO8OCj2ABBsc2)
-Next Topic : [[]]
+Next Topic : [[Time and Space Complexity]]
 
 ## How to approach a problem 
 #### Step 1
