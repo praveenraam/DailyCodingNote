@@ -1,6 +1,6 @@
 Video [Link](https://youtu.be/vvanI8NRlSI?si=dA0uq1TeTuABykAu&t=2801)
 Topic No : 9
-Next Topic [[Time and Space Complexity]]
+Next Topic [[Pattern Printing and problems]]
 
 
 ## Method/Function scoping

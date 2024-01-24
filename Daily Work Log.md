@@ -1,3 +1,7 @@
+## Day 50: 
+#### Date : 24.01.2024 
+
+- Learnt about recursion and math basics
 ## Day 49: 
 #### Date : 23.01.2024 
 
