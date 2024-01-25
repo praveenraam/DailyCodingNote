@@ -89,3 +89,84 @@ class myClass{
 	}
 }
 ```
+
+### Problem
+#### Summation
+##### Parameterised way
+```Java
+static int paraSummation(int n,int sum){  
+    if(n<1) return sum;  
+    return Summation1(n-1,sum+n);  
+}
+```
+##### Functional way
+```Java
+static int recursiveSummation(int n){  
+    if(n==1 || n==0) return 1;  
+    return n+(Summation(n-1));  
+}
+```
+
+#### Factorial
+```Java
+static int ParaFactorial(int n,int total){  
+    if(n==1 || n==0) return total;  
+    return ParaFactorial(n-1,total*n);  
+}  
+static int RecursiveFactorial(int n){  
+    if(n==1 || n==0) return n;  
+    return n*RecursiveFactorial(n-1);  
+}
+```
+
+#### Reverse an array
+```Java
+public class Solution {  
+    public static void main(String[] args) {  
+        int[] gnArray1 = {12,145,153,156,677};  
+        int[] gnArray2 = {12,145,153,156,677};  
+        int[] resArray = new int[gnArray1.length];  
+        ReverseArray(gnArray1,resArray,0,gnArray1.length-1);  
+        RevArray(gnArray1,0,gnArray1.length-1);  
+        SinglePointer(gnArray2,0);  
+        System.out.println("Reverse Array Output : "  + Arrays.toString(resArray) +  "\nRev Array Output : " + Arrays.toString(gnArray1) + "\nSingle Pointer Output : " + Arrays.toString(gnArray2));  
+  
+    }  
+    static void ReverseArray(int[] gnArray,int[] resArray,int counter,int place){  
+        if(place < 0) return;  
+        resArray[counter] = gnArray[place];  
+        ReverseArray(gnArray,resArray,counter+1,place-1);  
+    }  
+    static void RevArray(int[] gnArray,int P1,int P2){  
+        if(P1>=P2) return;  
+        int temp = gnArray[P1];  
+        gnArray[P1] = gnArray[P2];  
+        gnArray[P2] = temp;  
+        RevArray(gnArray,P1+1,P2-1);  
+    }  
+    static void SinglePointer(int[] gnArray,int counter){  
+        if(gnArray.length/2 <= counter) return;  
+        int temp = gnArray[counter];  
+        gnArray[counter] = gnArray[gnArray.length-counter-1];  
+        gnArray[gnArray.length-counter-1] = temp;  
+        SinglePointer(gnArray,counter+1);  
+    }  
+}
+```
+**Output** :
+Reverse Array Output : [677, 156, 153, 145, 12]
+Rev Array Output : [677, 156, 153, 145, 12]
+Single Pointer Output : [677, 156, 153, 145, 12]
+
+
+
+#### Palindrome
+```Java
+static boolean isPalindrome(String Inp,int counter){  
+     int length = Inp.length();  // Not necessary
+     if(counter >= length/2) return true;  
+     if(Inp.charAt(counter) != Inp.charAt(length-counter-1)) return false;  
+     else return isPalindrome(Inp, counter + 1);  
+ }
+```
+#### 
