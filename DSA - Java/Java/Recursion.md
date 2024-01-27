@@ -1,7 +1,8 @@
-
 [Video Link](https://youtu.be/yVdKa8dnKiE?si=D-C0hvUrrg7YCRHk)
+Next Topic [[Hashing&Maps]]
 
-When the Function call itself , it is called Recursion 
+
+### When the Function call itself , it is called Recursion 
 ### Infinite Recursion 
 
 ```Java
@@ -169,4 +170,19 @@ static boolean isPalindrome(String Inp,int counter){
      else return isPalindrome(Inp, counter + 1);  
  }
 ```
-#### 
+### Multiple recursion calls [Link](https://youtu.be/kvRjNm4rVBE?si=yGMS5I_gmY7xfz7C)
+- While making the multiple recursion calls , the first call is executed 
+- once it return the value the next call is executed
+
+To understand this Fibonacci series is best example
+```Java
+static int fibanocci(int n){  
+     if(n<=1) return n;  
+     return fibanocci(n-1)+fibanocci(n-2);  
+} // Time complexity is nearby O(2^n)
+```
+- First the n-2 is executed and once the value is 1 or 0 that value is returned or else that first one is executed again 
+- once it got the return value , the next is executed 
+- They are not executed parallel
+![[Pasted image 20240127135404.png]]
+This is executed from left to right f(4)->f(3)->f(2)->f(1)->f(0)->f(1)->f(2)->f(1)->f(0) : 3 
