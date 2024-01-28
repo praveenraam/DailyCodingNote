@@ -1,7 +1,7 @@
 Topic No : 15
 Next Topic : [[Strings]]
 Article [Link](https://www.geeksforgeeks.org/introduction-to-map-data-structure-and-algorithm-tutorials/)
-
+Similar Note : [[Hashing&Maps]] 
 #### Map is a collection of key value pairs
 
 #### There are several type of mapping 
@@ -23,7 +23,7 @@ Article [Link](https://www.geeksforgeeks.org/introduction-to-map-data-structure-
 	``import java.util.HashMap;``
 
 - Declaring the HashMap 
-	``HashMap<String(YourDataType), Integer(YourDataType)> Vname = HashMap<>();`` 
+	``HashMap<(YourDataType),(YourDataType)> Vname = HashMap<>();`` 
 
 - Adding Values 
 	``Vname.put(Value,key)``

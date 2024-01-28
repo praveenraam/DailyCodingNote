@@ -14,10 +14,6 @@ int remainder = GnInp % 10 ;
 int ConvertedValue = Integer.parseInt(StringValue);
 ```
 
-##### 
-
-
-
 #### [Last Digit of the Powered Number](https://www.geeksforgeeks.org/problems/find-last-digit-of-ab-for-large-numbers1936/1)
 
 ##### Find : 
