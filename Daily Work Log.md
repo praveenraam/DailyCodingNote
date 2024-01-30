@@ -1,3 +1,7 @@
+## Day 54: 
+#### Date : 29.01.2024 
+
+- Solved problems in HashMaps
 ## Day 53: 
 #### Date : 28.01.2024 
 

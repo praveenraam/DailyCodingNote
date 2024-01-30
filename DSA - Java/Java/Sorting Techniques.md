@@ -1,5 +1,6 @@
 Topic No : 14
 Next Topic : [[Mapping - 1]]
+Continue topic  [[Sorting Techniques 2]]
 
 Here we cover the Sorting algorithm that doesn't follows the Recursive algorithm 
 ## Bubble Sort 
