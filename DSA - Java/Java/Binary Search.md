@@ -83,7 +83,7 @@ public class BinarySearch {
             if(Array[MiddleElement] == target ){  
                 return MiddleElement; // Answer Found  
             }else if(Array[MiddleElement] > target){  
-                End = MiddleElement-1;  
+                End = MiddleElement-1;  x`
             }else if(Array[MiddleElement] < target){  
                 Start = MiddleElement+1;  
             }  
