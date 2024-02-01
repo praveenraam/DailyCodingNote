@@ -638,3 +638,40 @@ public class Solution {
     }
 }
 ```
+
+#### [Remove Duplicates from Sorted Array](https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
+
+```Java
+public class Solution {
+    public static int removeDuplicates(int[] arr,int n) {
+        int counter = 1;
+        for(int i=1;i<arr.length;i++){
+            if(arr[i-1] < arr[i] ) counter++;
+        }
+        return counter;
+    }
+}
+```
+
+#### [ Move Zero's to End](https://www.codingninjas.com/studio/problems/ninja-and-the-zero-s_6581958?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=SUBMISSION)
+
+```Java
+public class Solution {
+    public static int[] moveZeros(int n, int[] a) {
+        int zCounter = 0;
+        int nCounter = 0;
+        int[] result = new int[a.length];
+        for(int i=0;i<a.length;i++){
+            if(a[i] == 0) {
+                result[a.length - 1 - zCounter] = a[i];
+                zCounter++;
+            }
+            else {
+                result[nCounter] = a[i];
+                nCounter++;
+            }
+        }
+        return result;
+    }
+}
+```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Scoping.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Scoping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Scoping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md"
+                "file": "DSA - Java/Java/Scoping.md"
               }
             }
           }
@@ -149,9 +149,10 @@
   },
   "active": "6f7131f19fc6ac37",
   "lastOpenFiles": [
-    "DSA - Java/Java/Sorting Techniques 2.md",
-    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/Architecture.md",
     "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
@@ -176,7 +177,6 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/First Program.md",
     "Pasted image 20240127142622.png",
     "Hashing",
     "DSA - Java/Java/IMGs/Pasted image 20240127135404.png",

@@ -1,3 +1,7 @@
+## Day 56: 
+#### Date : 01.01.2024 
+
+- Solved problem in arraY
 ## Day 55: 
 #### Date : 31.01.2024 
 
