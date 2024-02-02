@@ -675,3 +675,27 @@ public class Solution {
     }
 }
 ```
+
+#### [Rotate Array by K](https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=DISCUSS)
+
+```Java
+import java.util.ArrayList;
+public class Solution {
+    public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
+        ArrayList<Integer> Result = new ArrayList<>();
+        int[] temp = new int[k];
+        int index = 0;
+        for(Integer i : arr){
+            if(index == k) break;
+            temp[index] = i; index++;
+        }
+        for(index = index;index<arr.size();index++){
+            Result.add(arr.get(index));
+        }
+        for(index=0;index<temp.length;index++){
+            Result.add(temp[index]);
+        }
+        return Result;
+    }
+}
+```

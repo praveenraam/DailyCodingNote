@@ -1,7 +1,13 @@
+## Day 57: 
+#### Date : 02.01.2024 
+
+- Solved problem in array
+- Learnt about the importance of Brute , better and Optimal approaches
+- Prepared self intro
 ## Day 56: 
 #### Date : 01.01.2024 
 
-- Solved problem in arraY
+- Solved problem in array
 ## Day 55: 
 #### Date : 31.01.2024 
 
