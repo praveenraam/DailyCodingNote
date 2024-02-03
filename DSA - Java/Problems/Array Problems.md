@@ -699,3 +699,89 @@ public class Solution {
     }
 }
 ```
+
+#### [ Missing Number from 1-N](https://www.codingninjas.com/studio/problems/missing-number_6680467?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
+
+```Java
+public class Solution {
+    public static int missingNumber(int[] a, int N) {
+        int Sum = Summation(a.length);
+        int total = 0;
+        for(int i=0;i<a.length;i++){
+            total += a[i];
+        }
+        return (Sum-total);
+    }
+    public static int Summation(int n){
+        if(n==0) return 0;
+        return n+Summation(n-1);
+    }
+}
+```
+
+#### [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
+
+```Java
+class Solution {
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int max = 0;
+        int counter = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != 1) counter = 0;
+            else {
+                counter++;
+                if(max < counter) max = counter;
+            }
+        }
+        return max;
+    }
+}
+```
+
+#### [136. Single Number](https://leetcode.com/problems/single-number/)
+```Java
+class Solution {
+    public int singleNumber(int[] nums) {
+        HashMap <Integer,Integer> temp = new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            if(temp.get(nums[i]) != null) temp.put(nums[i],temp.get(nums[i])+1);
+            else temp.put(nums[i],1);
+        }
+        for(int i=0;i<nums.length;i++){
+            int value = temp.get(nums[i]);
+            if(value == 1) return nums[i];
+        }
+        return -1;
+    }
+}
+```
+#### [Two Sum](https://www.codingninjas.com/studio/problems/reading_6845742?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+import java.util.*;
+public class Solution {
+    public static String read(int n, int[] book, int target){
+        HashMap<Integer,Integer> temp = new HashMap<>();
+        for(int i=0;i<book.length;i++){
+            if(temp.get(book[i]) != null) temp.put(book[i],temp.get(book[i])+1);
+            else temp.put(book[i],1);
+        }
+        for(int i=0;i<book.length;i++){
+            int rValue = target - book[i];
+            if(temp.get(rValue) != null) return "YES";
+        }
+        return "NO";
+    } 
+     public static String read(int n, int[] book, int target){
+         int P1 = 0;
+         int P2 = book.length-1;
+         Arrays.sort(book);
+         while(P1<P2){
+            int sum = book[P1]+book[P2];
+            if(sum == target) return "YES";
+            else if(sum > target) P2--;
+            else P1++;
+         }
+         return "NO";
+     }
+}
+```
