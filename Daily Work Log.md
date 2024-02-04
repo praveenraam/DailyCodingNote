@@ -2,6 +2,10 @@
 #### Date : 03.01.2024 
 
 - Solved problem in array
+## Day 58: 
+#### Date : 03.01.2024 
+
+- Solved problem in array
 ## Day 57: 
 #### Date : 02.01.2024 
 

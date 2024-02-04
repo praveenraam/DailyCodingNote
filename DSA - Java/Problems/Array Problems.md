@@ -785,3 +785,58 @@ public class Solution {
      }
 }
 ```
+#### [Alternate Numbers](https://www.codingninjas.com/studio/problems/alternate-numbers_6783445?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+public class Solution {
+    public static int[] alternateNumbers(int []a) {
+        int[] arr = new int[a.length];
+        int p1 = 0;
+        int p2 = 1;
+        for(int i=0;i<a.length;i++){
+            if(a[i]<0) {
+                arr[p2] = a[i];
+                p2+=2;
+            }else {
+                arr[p1] = a[i];
+                p1+=2;
+            }
+        }
+        return arr;
+    }
+}
+```
+
+#### [Best time to buy and sell stock](https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_6194560?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+public class Solution {
+    public static int bestTimeToBuyAndSellStock(int []prices) {
+        int min = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for(int i=0;i<prices.length;i++){
+            if(min > prices[i]) min = prices[i];
+            int profit = prices[i] - min;
+            if(maxProfit < profit) maxProfit = profit;
+        }
+        return maxProfit;
+    }
+}
+```
+
+#### [Majority Element](https://www.codingninjas.com/studio/problems/majority-element_6783241?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+import java.util.*;
+public class Solution {
+    public static int majorityElement(int []v) {
+        HashMap<Integer,Integer> temp = new HashMap<>();
+        for(int i=0;i<v.length;i++){
+            if(temp.get(v[i]) == null) temp.put(v[i],1);
+            else temp.put(v[i],temp.get(v[i])+1);            
+        }
+        for(int i=0;i<v.length;i++){
+            int value = temp.get(v[i]);
+            if(value >= v.length/2) return v[i];
+        }
+        return -1;
+    }
+}
+```
