@@ -1,5 +1,9 @@
-## Day 58: 
-#### Date : 03.01.2024 
+## Day 60: 
+#### Date : 05.01.2024 
+
+- Solved problem in array
+## Day 59: 
+#### Date : 04.01.2024 
 
 - Solved problem in array
 ## Day 58: 

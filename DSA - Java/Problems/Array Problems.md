@@ -840,3 +840,75 @@ public class Solution {
     }
 }
 ```
+
+#### [Sort Colors](https://leetcode.com/problems/sort-colors/)
+```Java
+public static void sort012(int[] nums){  
+    int[] temp = new int[nums.length];  
+    int midCounter = 0;  
+    for(int i=0;i<nums.length;i++) if(nums[i] == 0) midCounter++;  
+    int low = 0,high = nums.length-1;  
+    for(int i=0;i<nums.length;i++){  
+        if(nums[i] == 0) {  
+            temp[low] = nums[i];  
+            low++;  
+        }else if(nums[i] == 1) {  
+            temp[midCounter] = nums[i];  
+            midCounter++;  
+        }else{  
+            temp[high] = nums[i];  
+            high--;  
+        }  
+    }  
+    for(int i=0;i<nums.length;i++) nums[i] = temp[i];  
+}   
+  
+public static void sort012(int[] nums){  
+    int low=0,mid = 0,high=nums.length-1;  
+    while(mid<=high){  
+        if(nums[mid] == 0) {  
+            swap(nums,mid,low);  
+            low++; mid++;  
+        }else if(nums[mid] == 1){  
+            mid++;  
+        }else if(nums[mid] == 2){  
+            swap(nums,mid,high);  
+            high--;  
+        }  
+    }  
+}
+```
+
+#### [Longest Successive Elements](https://www.codingninjas.com/studio/problems/longest-successive-elements_6811740?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+public static int longestSuccessiveElements(int []a) {  
+    int maxCount = 0;  
+    Arrays.sort(a);  
+    int counter = 1;  
+  
+    for(int i =0;i<a.length-1;i++){  
+        if(a[i] != a[i+1]-1 && a[i] != a[i+1]) counter = 1;  
+        else if (a[i] == a[i+1]-1) counter++;  
+        if(maxCount<counter) maxCount = counter;  
+    }  
+    return maxCount;  
+}
+```
+
+#### [Superior Elements](https://www.codingninjas.com/studio/problems/superior-elements_6783446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+public static List< Integer > superiorElements(int []a) {
+        List<Integer> result = new ArrayList<Integer>();
+        int max = a[a.length-1];
+        result.add(a[a.length-1]);
+        for(int i=a.length-1;i>=0;i--){
+            if(a[i] > max){
+                result.add(a[i]);
+                max = a[i];
+            }
+        }
+        Collections.sort(result);
+        return result;
+    }
+```
+
