@@ -2,7 +2,11 @@
 #### Date : 06.01.2024 
 
 - Day skill
-- 
+## Day 61: 
+#### Date : 06.01.2024 
+
+- Day skill
+- Solved an array problem
 ## Day 60: 
 #### Date : 05.01.2024 
 
