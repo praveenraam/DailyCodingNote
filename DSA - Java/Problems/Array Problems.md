@@ -912,3 +912,21 @@ public static List< Integer > superiorElements(int []a) {
     }
 ```
 
+#### [Maximum Subarray Sum](https://www.codingninjas.com/studio/problems/630526?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website&leftPanelTabValue=SUBMISSION)
+```Java
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+    public static long maxSubarraySum(int[] arr, int n) {
+        long max = 0L;
+        int sum = 0;
+        for(int i=0;i<arr.length;i++){
+            if(sum<0) sum = arr[i];
+            else sum+=arr[i];
+            if(max < sum) max =sum;
+        }
+        return max;
+    }
+}
+```
+

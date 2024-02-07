@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/College Skills/Java Framework S4/Day 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/College Skills/Java Framework S4/Day 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/College Skills/Java Framework S4/Day 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "DSA - Java/College Skills/Java Framework S4/Day 2.md"
               }
             }
           }
@@ -149,18 +149,27 @@
   },
   "active": "6f7131f19fc6ac37",
   "lastOpenFiles": [
+    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 2.md",
+    "DSA - Java/College Skills/Day 1.md",
+    "DSA - Java/College Skills/Untitled.md",
+    "DSA - Java/College Skills/Java Framework S4",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/HashMap Problems.md",
+    "Daily Work Log.md",
+    "Day 1.md",
+    "DSA - Java/College Skills",
+    "DSA - Java/Java/2D-Arrays.md",
+    "DSA - Java/Java/Arrays.md",
     "DSA - Java/Java/Switch concepts.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Type conversion and casting.md",
-    "Daily Work Log.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
     "DSA - Java/Java/Strings.md",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Problems/Recursion Problems.md",
     "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Problems/HashMap Problems.md",
     "DSA - Java/Java/Data Types.md",
     "DSA - Java/Java/First Program.md",
     "DSA - Java/Java/Architecture.md",
@@ -170,13 +179,6 @@
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
-    "DSA - Java/Mapping - 1.md",
-    "DSA - JS/Sorting Algorithms.md",
-    "().md",
-    "DSA - Java/Java/Linear Search.md",
-    "DSA - Java/Java/Conditions and Loops.md",
-    "DSA - Java/Java/Function (Methods).md",
-    "DSA - Java/Java/2D-Arrays.md",
     "Pasted image 20240127142622.png",
     "Hashing",
     "DSA - Java/Java/IMGs/Pasted image 20240127135404.png",
@@ -193,8 +195,6 @@
     "test.java",
     "DSA - Java/test.java",
     "DSA - Java/Java/IMGs",
-    "DSA - Java/Java",
-    "DSA - Java/Ar/Untitled",
-    "DSA - Java/Ar"
+    "DSA - Java/Java"
   ]
 }
