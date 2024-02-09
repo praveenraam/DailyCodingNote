@@ -1,9 +1,14 @@
-## Day 61: 
-#### Date : 06.01.2024 
+## Day 63: 
+#### Date : 09.01.2024 
+
+- Day skill
+- Solved array problems
+## Day 62: 
+#### Date : 08.01.2024 
 
 - Day skill
 ## Day 61: 
-#### Date : 06.01.2024 
+#### Date : 06701.2024 
 
 - Day skill
 - Solved an array problem

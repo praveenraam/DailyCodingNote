@@ -930,3 +930,57 @@ public class Solution {
 }
 ```
 
+### [Zero Matrix]()
+
+```Java
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+public static ArrayList<ArrayList<Integer>> zeroMatrix (ArrayList<ArrayList<Integer>> matrix, Integer n, Integer m) {
+        int[] arrN = new int[n];
+        int[] arrM = new int[m];
+
+        for(int i=0;i<matrix.size();i++){
+            for(int j=0;j<m;j++){
+                if(matrix.get(i).get(j) == 0) {
+                    arrN[i] = 1;
+                    arrM[j] = 1;
+                }
+            }
+        }
+  
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(arrN[i] == 1 || arrM[j] == 1){
+                    matrix.get(i).set(j,0);
+                }
+            }
+        }
+        return matrix;
+    }
+}
+```
+
+### [Rotate the matrix](https://www.codingninjas.com/studio/problems/rotate-the-matrix_6825090?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+import java.util.*;
+public class Solution {
+    public static void rotateMatrix(int[][] mat){
+        int[][] arr = new int[mat.length][mat[0].length];
+        int counter = mat.length-1;
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[0].length;j++){
+                arr[j][counter]= mat[i][j]  ;
+            }
+            counter--;
+        }
+        for(int i=0;i<arr.length;i++){
+            for (int j = 0; j < arr[i].length; j++) {
+                mat[i][j] = arr[i][j];
+            }
+        }
+    }
+}
+```
+
+### 
