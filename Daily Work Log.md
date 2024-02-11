@@ -1,3 +1,7 @@
+## Day 64: (Failed to Push that day)
+#### Date : 10.01.2024 
+
+- Solved array problems
 ## Day 63: 
 #### Date : 09.01.2024 
 

@@ -983,4 +983,88 @@ public class Solution {
 }
 ```
 
-### 
+### [Missing and repeating numbers](https://www.codingninjas.com/studio/problems/missing-and-repeating-numbers_873366?leftPanelTabValue=PROBLEM)
+```Java
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+import java.util.*;
+  
+public class Solution {
+    public static int[] missingAndRepeating(ArrayList<Integer> arr, int n) {
+        int[] Hash = new int[n+1];
+        for(int i=0;i<arr.size();i++){
+            Hash[arr.get(i)]+=1;
+        }
+        int repeating = -1,missing = -1;
+        for(int i=1;i<Hash.length;i++){
+            if(Hash[i] == 0) missing = i;
+            if(Hash[i] == 2) repeating = i;
+        }
+        return new int[] {missing,repeating};
+    }
+}
+```
+
+### [Spiral of Array](https://www.codingninjas.com/studio/problems/spiral-matrix_6922069?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION)
+```Java
+import java.util.*;
+public class Solution {
+    public static int[] spiralMatrix(int [][]MATRIX) {
+        int n = MATRIX.length;
+        int m = MATRIX[0].length;
+        int[] arr = new int[n*m];
+        int top = 0,buttom = n-1,left = 0,right = m-1;
+        int i=0;
+        while(top <= buttom && left<=right ){
+            for(int j=left;j<=right;j++){
+                arr[i] = MATRIX[top][j];
+                i++;
+            }
+            top++;
+            if(i>=(n*m)) break;
+            for(int j=top;j<=buttom;j++){
+                arr[i] = MATRIX[j][right];
+                i++;
+            }
+            right--;
+            if(i>=(n*m)) break;
+            for(int j=right;j>=left;j--){
+                arr[i] = MATRIX[buttom][j];
+                i++;
+            }
+            buttom--;
+            if(i>=(n*m)) break;
+            for(int j=buttom;j>=top;j--){
+                arr[i] = MATRIX[j][left];
+                i++;
+            }
+            left++;
+        }
+        return arr;
+    }
+}
+```
+
+### [Non Repeating element](https://www.geeksforgeeks.org/problems/non-repeating-element3958/1)
+```Java
+class Check{
+    
+    public int firstNonRepeating(int arr[], int n) 
+    { 
+        HashMap<Integer,Integer> Hash = new HashMap();
+        
+        for(int i=0;i<n;i++){
+            if(Hash.get(arr[i]) == null) Hash.put(arr[i],1);
+            else Hash.put(arr[i] , Hash.get(arr[i])+1);
+        }
+        
+        for(int i=0;i<n;i++){
+            if(Hash.get(arr[i]) == 1) return arr[i];
+        }
+        return 0;
+    }  
+    
+}
+```
+
