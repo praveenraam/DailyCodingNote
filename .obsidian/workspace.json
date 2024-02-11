@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "83e2525d6ec8d597",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/OOPS/Advance concepts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/OOPS/Advance concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/OOPS/Advance concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Work Log.md"
+                "file": "DSA - Java/OOPS/Advance concepts.md"
               }
             }
           }
@@ -147,8 +160,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f7131f19fc6ac37",
+  "active": "83e2525d6ec8d597",
   "lastOpenFiles": [
+    "DSA - Java/OOPS/Basics.md",
+    "DSA - Java/OOPS/InheritanceTypes.md",
+    "DSA - Java/OOPS/Advance concepts.md",
+    "DSA - Java/Java/IMGs/Pasted image 20240211152011.png",
+    "Daily Work Log.md",
+    "DSA - Java/OOPS",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Problems/HashMap Problems.md",
@@ -163,7 +182,6 @@
     "DSA - Java/College Skills/Day 1.md",
     "DSA - Java/College Skills/Untitled.md",
     "DSA - Java/College Skills/Java Framework S4",
-    "Daily Work Log.md",
     "Day 1.md",
     "DSA - Java/College Skills",
     "DSA - Java/Java/Arrays.md",
@@ -174,9 +192,6 @@
     "DSA - Java/Java/Strings.md",
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Problems/Recursion Problems.md",
-    "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Java/Data Types.md",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
     "Pasted image 20240127142622.png",
@@ -188,13 +203,11 @@
     "DSA - Java/Java/IMGs/Pasted image 20240112194729.png",
     "DSA - Java/Java/IMGs/Pasted image 20240112194050.png",
     "DSA - Java/Java/IMGs/Pasted image 20240112194041.png",
-    "DSA - Java/Java/IMGs/Pasted image 20240112193204.png",
     "DSA - Java/Problems",
     "leetcode.com/problems",
     "leetcode.com",
     "test.java",
     "DSA - Java/test.java",
-    "DSA - Java/Java/IMGs",
-    "DSA - Java/Java"
+    "DSA - Java/Java/IMGs"
   ]
 }
