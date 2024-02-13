@@ -1,5 +1,5 @@
 [Video Link](https://youtu.be/nqB3qAtDLKU?si=8pv6ItayjOumeaJU&t=3947)
-
+Next Topic [[Exception handling]]
 ### Encapsulation
 - _Binding (or wrapping) code and data together into a single unit are known as encapsulation_. 
 - For example, a capsule, it is wrapped with different medicines.
@@ -166,5 +166,47 @@ Daughter gender : F
 Daughter age : 24
 Father gender after: F
 Father Age after: 24
+```
+
+### Final keyword
+- ``final variable = value;`` this is the syntax for the final keyword
+- While you use this keyword , we can't modify the variable anywhere of the program
+- This can be also used while declaring a method
+```Java
+class Sample{
+	final void display(){
+		System.out.println("This is Parent Class || Note");
+	} // This function can't be modified , even in the child class
+}
+```
+
+### Super keyword
+- Super keyword is used to get the specific property of the parent class
+```Java
+class Parent{
+	char gender = 'M';
+}
+class Daughter extends Parent {
+	char gender = 'F';
+}
+class Main {
+	public static void main(String[] args){
+		Daughter daughter = new Daughter();
+		System.out.println(daughter.super.gender); // M will be printed
+	}
+}
+```
+
+### This keyword
+- This keyword refers to the current object
+```Java
+class Parent{
+	char gender;
+	int age;
+	void Setter(char gender,int age){
+		this.gender = gender; // this.gender refer to object , gender refer to parameter
+		this.age = age; // this.age refer to object , age refer to parameter
+	}
+}
 ```
 
