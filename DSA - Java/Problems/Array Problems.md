@@ -1068,3 +1068,40 @@ class Check{
 }
 ```
 
+### [Pascal's Triangle](https://www.codingninjas.com/studio/problems/print-pascal-s-triangle_6917910?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION)
+```Java
+import java.util.*;
+public class Solution {
+    public static int[][] pascalTriangle(int N) {
+        int[][] arr = new int[N][];
+        for(int i=0;i<N;i++){
+            arr[i] = new int[i+1];
+            arr[i][0] = 1;
+            if(i==0) continue;
+            arr[i][i] = 1;
+            for(int j=1;j<=i-1;j++){
+                arr[i][j] = arr[i-1][j-1]+arr[i-1][j];
+            }
+        }
+        return arr;
+    }
+}
+```
+### [Majority Element](https://www.codingninjas.com/studio/problems/majority-element_6915220?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
+```Java
+import java.util.*;
+public class Solution {
+    public static List< Integer > majorityElement(int []v) {
+        List<Integer> arr = new ArrayList<>();
+        HashMap<Integer,Integer> Hash = new HashMap<>();
+        for(int i=0;i<v.length;i++){
+            if(Hash.get(v[i]) == null) Hash.put(v[i],1);
+            else Hash.put(v[i],Hash.get(v[i])+1);
+        }
+        for(Map.Entry<Integer,Integer> entry : Hash.entrySet()){
+            if(entry.getValue() > (v.length/3)) arr.add(entry.getKey());
+        }
+        return arr;
+    }
+}
+```
