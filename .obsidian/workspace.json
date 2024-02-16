@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
+                "file": "Daily Work Log.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
+                "file": "Daily Work Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
+                "file": "Daily Work Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/College Skills/SpringBoot/SB Initializr.md"
+                "file": "Daily Work Log.md"
               }
             }
           }
@@ -149,11 +149,13 @@
   },
   "active": "6f7131f19fc6ac37",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
+    "DSA - Java/College Skills/SpringBoot/Application Properties.md",
+    "DSA - Java/College Skills/SpringBoot/SB Annotations.md",
     "Pasted image 20240214141122.png",
     "DSA - Java/College Skills/SpringBoot/Spring Boot Architecture.md",
-    "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
     "DSA - Java/Java/IMGs/Pasted image 20240214140450.png",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/College Skills/SpringBoot",
     "README.md",
     "Daily Work Log.md",
@@ -183,7 +185,6 @@
     "DSA - JS/Circular Queue.md",
     "DSA - JS/Arrays and Objects.md",
     "DSA - JS/Array Introduction.md",
-    "DSA - JS/Algorithm Analysis.md",
     "DSA - JS",
     "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20240211152011.png",
@@ -192,7 +193,6 @@
     "DSA - Java/College Skills",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
-    "Pasted image 20240127142622.png",
     "Hashing",
     "Untitled.canvas",
     "Problems"

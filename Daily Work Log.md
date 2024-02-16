@@ -1,3 +1,13 @@
+## Day 68:
+#### Date : 16.01.2024 
+
+- Solved array problem
+- BYTS Class
+## Day 67:
+#### Date : 14.01.2024 
+
+- Solved array problem
+- Spring Boot Started
 ## Day 66:
 #### Date : 13.01.2024 
 
