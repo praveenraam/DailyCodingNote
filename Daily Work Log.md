@@ -1,3 +1,8 @@
+## Day 69:
+#### Date : 19.01.2024 
+
+- Solved array problem
+- BYTS Class
 ## Day 68:
 #### Date : 16.01.2024 
 

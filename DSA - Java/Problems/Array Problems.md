@@ -1104,3 +1104,40 @@ public class Solution {
     }
 }
 ```
+
+### 
+Write a program to accept the element into an array and replace every element in the array with the sum of its every other element
+
+**Input format :**
+Number of elements followed by array as input elements
+
+**Output format :**
+Array elements after modification
+
+**Sample test cases:**
+Input 1:
+7
+1 2 3 4 5 6 7
+Output 1:
+27 25 22 18 13 7 0
+
+```Java
+#include <stdio.h>
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+    }
+    int sum=0;
+    for(int i=0;i<size;i++){
+        sum+=arr[i];
+    }
+    int counter=0;
+    for(int i=0;i<size;i++){
+        printf("%d ",sum-arr[i]-counter);
+        counter+=arr[i];
+    }
+}
+```
