@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "Daily Work Log.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "Daily Work Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "Daily Work Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "Daily Work Log.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "172eabb324119bf6",
   "lastOpenFiles": [
-    "Daily Work Log.md",
     "DSA - Java/Problems/Array Problems.md",
+    "Daily Work Log.md",
     "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
     "DSA - Java/College Skills/SpringBoot/Application Properties.md",
     "DSA - Java/College Skills/SpringBoot/SB Annotations.md",

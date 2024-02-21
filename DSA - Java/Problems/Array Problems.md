@@ -1105,7 +1105,7 @@ public class Solution {
 }
 ```
 
-### 
+### Sum of others in Array
 Write a program to accept the element into an array and replace every element in the array with the sum of its every other element
 
 **Input format :**
@@ -1141,3 +1141,48 @@ int main(){
     }
 }
 ```
+
+#### Write a program to count the frequency of element in the array
+**Input format:**
+
+The first line contains the number of elements.
+Second line has the array elements.
+
+**Output format:**
+Print the number and Frequency of that number separate them by COLON
+
+**Code constraints:**
+1 <= n <= 100
+0 <= arr[i] <= 10^18
+
+```Java
+import java.util.*
+
+class Solution{
+	public static void main(String[] args){
+		Scanner reader = new reader(System.in);
+
+		int size = reader.nextInt();
+		int[] input = new int[size];
+
+		for(int i=0;i<size;i++){
+			input[i] = reader.nextInt();
+		}
+		HashMap<Integer,Integer> temp = new HashMap<>();
+		
+		for(int i=0;i<size;i++){
+			if(temp.get(nums[i]) != null) temp.put(nums[i],temp.get(nums[i])+1);
+            else temp.put(nums[i],1);
+		}
+
+		for(int i=0;i<size;i++){
+			if(Hash.get(input[i]) != -1){
+				System.out.println(input[i]+":"+Hash.get(input[i]));
+				Hash.put(input[i],-1);
+			}
+		}
+	
+	}
+}
+```
+

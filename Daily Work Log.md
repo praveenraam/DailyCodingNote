@@ -1,64 +1,69 @@
+## Day 70:
+#### Date : 21.02.2024 
+
+- Solved array problem
+- BYTS Class
 ## Day 69:
-#### Date : 19.01.2024 
+#### Date : 19.02.2024 
 
 - Solved array problem
 - BYTS Class
 ## Day 68:
-#### Date : 16.01.2024 
+#### Date : 16.02.2024 
 
 - Solved array problem
 - BYTS Class
 ## Day 67:
-#### Date : 14.01.2024 
+#### Date : 14.02.2024 
 
 - Solved array problem
 - Spring Boot Started
 ## Day 66:
-#### Date : 13.01.2024 
+#### Date : 13.02.2024 
 
 - Java OOPS concepts
 ## Day 65:
-#### Date : 11.01.2024 
+#### Date : 11.02.2024 
 
 - Java OOPS concepts
 ## Day 64: (Failed to Push that day)
-#### Date : 10.01.2024 
+#### Date : 10.02.2024 
 
 - Solved array problems
 ## Day 63: 
-#### Date : 09.01.2024 
+#### Date : 09.02.2024 
 
 - Day skill
 - Solved array problems
 ## Day 62: 
-#### Date : 08.01.2024 
+#### Date : 08.02.2024 
 
 - Day skill
 ## Day 61: 
-#### Date : 06701.2024 
+#### Date : 06.02.2024 
 
 - Day skill
 - Solved an array problem
 ## Day 60: 
-#### Date : 05.01.2024 
+#### Date : 05.02.2024 
 
 - Solved problem in array
 ## Day 59: 
-#### Date : 04.01.2024 
+#### Date : 04.02.2024 
 
 - Solved problem in array
 ## Day 58: 
-#### Date : 03.01.2024 
+#### Date : 03.02.2024 
 
 - Solved problem in array
 ## Day 57: 
-#### Date : 02.01.2024 
+#### Date : 02.02.2024 
 
 - Solved problem in array
 - Learnt about the importance of Brute , better and Optimal approaches
 - Prepared self intro
 ## Day 56: 
-#### Date : 01.01.2024 
+#### Date : 01.02.2024 
 
 - Solved problem in array
 ## Day 55: 
