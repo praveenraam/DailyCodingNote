@@ -1,3 +1,4 @@
+
 #### [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/)
 
 ```Java
@@ -1183,6 +1184,107 @@ class Solution{
 		}
 	
 	}
+}
+```
+
+### Print the Pattern
+
+Ninja is given a pattern. Now he is asked to print the same pattern for any given ‘N’ number of rows.
+
+`There is only one space between the values of each column in a row.  For example, Pattern for ‘N’ = 5 will be. 1 2 3 4 5  11 12 13 14 15  21 22 23 24 25  16 17 18 19 20  6 7 8 9 10`
+
+Detailed explanation ( Input/output format, Notes, Images )
+#### Sample Input1 :
+`` 5 ``
+#### Sample Output2 :
+Explain
+`1 2 3 4 5  11 12 13 14 15  21 22 23 24 25  16 17 18 19 20  6 7 8 9 10` 
+#### Explanation of Sample Input 1
+
+```
+For test case 1:
+We print the given pattern for the given 5 rows where each row has different values in increasing order with a difference in the value of 1 between each element and 1 space between each column in a row.
+```
+##### Code 
+```Java
+public static String[] NumberPattern(int n) {  
+  
+    int[][] i = new int[n][n];  
+    int counter = 1;  
+    for (int j = 0; j < i.length; j++) {  
+        for (int k = 0; k < i[j].length; k++) {  
+            i[j][k] = counter;  
+            counter++;  
+        }  
+    }  
+  
+    String[] result = new String[n];  
+  
+    int m=-2; int index=0;  
+    int difference = 2;  
+    counter=0;  
+    while(counter<n){  
+        m+=difference;  
+        if(m>=i.length){  
+            int hello = 2;  
+            if(n%2 == 0) {  
+                hello=1;  
+            }  
+            m=i.length -hello;  
+            difference=-2;  
+        }  
+        result[index]="";  
+        for (int j = 0; j < i[index].length; j++) {  
+            if(j==0) result[index] += i[m][j];  
+            else result[index] += " "+i[m][j];  
+        }  
+        index++;  
+        counter++;  
+    }  
+  
+    System.out.println(Arrays.toString(result));  
+    return result;  
+}
+```
+
+### [Merge All Overlapping Intervals](https://www.codingninjas.com/studio/problems/merge-all-overlapping-intervals_6783452?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+
+```Java
+import java.util.*;
+public class Solution {
+    public static List< List< Integer > > mergeOverlappingIntervals(int [][]arr){
+        int start = arr[0][0]; int end = arr[0][1];
+        List<List<Integer>> result = new ArrayList<>();
+  
+        for(int i=0;i<arr.length;i++){
+            if(arr[i][0] > end){
+                result.add(Arrays.asList(start,end));
+                end = arr[i][0];
+                start = arr[i][0];
+            }
+            if(arr[i][1] > end){
+                end = arr[i][1];
+            }
+        }
+        result.add(Arrays.asList(start,end));
+        return result;
+    }
+}
+```
+
+### [Team Contest](https://www.codingninjas.com/studio/problems/team-contest_6840309?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=PROBLEM)
+```Java
+public class Solution {
+    public static int team(int []skill, int n){
+        int counter= 0;
+        int i=0,j=n-1;
+        for(i=0;i<n;i++){
+            for(j=i+1;j<n;j++){
+                if(skill[i]>(2*skill[j])) counter++;
+            }
+        }        
+        return counter;
+    }
 }
 ```
 

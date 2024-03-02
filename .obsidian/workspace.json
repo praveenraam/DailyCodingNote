@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Work Log.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Work Log.md"
+                "file": "DSA - Java/Problems/Array Problems.md"
               }
             }
           }
@@ -162,7 +162,13 @@
   },
   "active": "172eabb324119bf6",
   "lastOpenFiles": [
+    "Studies/Freelancing Webinar.md",
+    "Shopify/Liquid Introduction.md",
+    "Shopify/Start Note.md",
     "DSA - Java/Problems/Array Problems.md",
+    "Untitled 1",
+    "Shopify",
+    "DSA - Java/College Skills/Untitled.md",
     "Daily Work Log.md",
     "DSA - Java/College Skills/SpringBoot/SB Initializr.md",
     "DSA - Java/College Skills/SpringBoot/Application Properties.md",
@@ -193,11 +199,7 @@
     "DSA - JS/ProblemSeries1.md",
     "DSA - JS/Object.md",
     "DSA - JS/Math algorithms.md",
-    "DSA - JS/Map.md",
     "DSA - JS/IMGS",
-    "DSA - JS/Circular Queue.md",
-    "DSA - JS/Arrays and Objects.md",
-    "DSA - JS/Array Introduction.md",
     "DSA - JS",
     "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20240211152011.png",
@@ -206,8 +208,6 @@
     "DSA - Java/College Skills",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
-    "Hashing",
-    "Untitled.canvas",
-    "Problems"
+    "Untitled.canvas"
   ]
 }
