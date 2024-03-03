@@ -143,3 +143,48 @@ public class InfiniteArray {
 }
 ```
 
+### [Implement Lower Bound](https://takeuforward.org/arrays/implement-lower-bound-bs-2/)
+
+```Java
+public class Solution {
+    public static int lowerBound(int []arr, int n, int x) {
+        int start = 0;
+        int end = n-1;
+        int ans=0;
+        while(start <= end){
+            int mid = (start+end)/2;
+            if(arr[mid] >= x ) {
+                ans = mid;
+                end=mid-1;
+            }else start = mid+1;
+        }
+        if(x>=n && ans==0) ans=x;
+        return ans;
+    }
+}
+```
+
+### [Implement Upper Bound](https://takeuforward.org/arrays/implement-upper-bound/)
+
+```Java
+public class Solution {
+    public static int upperBound(int []arr, int x, int n){
+        int start =0;
+        int end = n-1;
+        int ans =0;
+        while(start<=end){
+            int mid = (start+end)/2;
+            if(arr[mid] == x) {
+                ans= mid+1;
+                start = mid+1; 
+            }
+            else if(arr[mid] < x) start=mid+1;
+            else{
+                ans = mid;
+                end = mid-1;
+            }
+        }
+        return ans;
+    }
+}
+```
