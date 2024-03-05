@@ -188,3 +188,28 @@ public class Solution {
     }
 }
 ```
+
+### [Search Insert Position](https://www.codingninjas.com/studio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+
+```Java
+public class Solution {
+    public static int searchInsert(int [] arr, int m){
+        if(arr.length == 0) return 0;
+        if (m>arr[arr.length-1]) return arr.length;
+        else if(m<arr[0]) return 0;
+        int start = 0,end=arr.length-1;
+        while(start<=end){
+            int mid = (start+end)/2;
+            if(arr[mid] == m) return mid;
+            if(arr[mid] > m && arr[mid-1] < m ) return mid;
+            else if(arr[mid] > m) {
+                end = mid-1;
+            }
+            else if(arr[mid] < m) {
+                start=mid+1;
+            }
+        }
+        return -1;
+    }
+}
+```

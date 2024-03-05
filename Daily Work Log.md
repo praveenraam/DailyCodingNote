@@ -1,3 +1,8 @@
+## Day 71:
+#### Date : 2.03.2024 
+
+- Solved array problem
+- Shopify website
 ## Day 70:
 #### Date : 21.02.2024 
 
