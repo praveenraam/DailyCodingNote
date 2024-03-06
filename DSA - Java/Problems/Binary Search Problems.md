@@ -213,3 +213,29 @@ public class Solution {
     }
 }
 ```
+
+### [Ceil The Floor](https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+    public static int[] getFloorAndCeil(int[] a, int n, int x) {
+        int floor = -1;
+        int ceiling = -1;
+        int start = 0,end = n-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(a[mid] == x) return new int[] {x,x};
+            else if(a[mid] < x){
+                start = mid+1;
+                floor = a[mid];
+            }else if(a[mid] > x){
+                end = mid-1;
+                ceiling = a[mid];
+            }
+        }
+        return new int[] {floor,ceiling};
+    }
+}
+```
+

@@ -87,7 +87,6 @@ public class Str {
         String Word = func();  
         System.out.println(Word);  
     }  
-  
     static String func(){  
         return "Hello World!!";  
     }  
@@ -207,7 +206,7 @@ If you make a change to the object via this ref variable , same object will be c
 
 ![[Pasted image 20231205112408.png]]
 
-After this topic , Scoping are covered in Next FIle
+After this topic , Scoping are covered in Next File
 ## Variable Arguments (Var Args)
 
 This is used to pass n number of parameter to the function

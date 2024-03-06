@@ -1,5 +1,17 @@
+## Day 73:
+#### Date : 06.04.2024
+- Shopify Website
+- Binary Search Problem
+## Day 73:
+#### Date : 05.04.2024
+- Shopify Website
+- Binary Search Problem
+## Day 72:
+#### Date : 03.04.2024
+- Shopify Website
+- Solved Array problems
 ## Day 71:
-#### Date : 2.03.2024 
+#### Date : 02.04.2024 
 
 - Solved array problem
 - Shopify website
