@@ -149,7 +149,7 @@ public class Inputs {
                 Count++;  
             }  
             GnNo = GnNo/10;  
-        }  
+        }
         System.out.println(Count);  
     }  
 }
