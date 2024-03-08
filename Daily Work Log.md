@@ -1,3 +1,7 @@
+## Day 75:
+#### Date : 08.04.2024
+- Shopify Website
+- Binary Search Problem
 ## Day 74:
 #### Date : 07.04.2024
 - Shopify Website

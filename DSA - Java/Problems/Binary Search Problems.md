@@ -280,3 +280,48 @@ public class Solution {
     }
 }
 ```
+
+### [First and Last Position of an Element In Sorted Array](https://www.codingninjas.com/studio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+
+```Java
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+
+    public static int[] firstAndLastPosition(ArrayList<Integer> arr, int n, int k) {
+        int first = First(arr,n,k);
+        int last = Last(arr,n,k);
+        return new int[] {first,last};
+    }
+    public static int First(ArrayList<Integer> arr,int n,int k){
+        int start = 0,end=n-1,ans=-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr.get(mid) == k){
+                ans = mid;
+                end = mid-1;
+            }else if(arr.get(mid) > k){
+                end = mid-1;
+            }else if(arr.get(mid) < k){
+                start = mid+1;
+            }
+        }
+        return ans;
+    }
+    public static int Last(ArrayList<Integer> arr,int n,int k){
+        int start=0,end=n-1,ans=-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr.get(mid) == k){
+                ans = mid;
+                start=mid+1;
+            }else if(arr.get(mid) > k){
+                end = mid-1;
+            }else if (arr.get(mid) < k){
+                start = mid+1;
+            }
+        }
+        return ans;
+    }
+}
+```
