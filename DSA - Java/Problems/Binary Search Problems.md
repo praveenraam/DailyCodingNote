@@ -325,3 +325,57 @@ public class Solution {
     }
 }
 ```
+### [ Search In Rotated Sorted Array](https://www.codingninjas.com/studio/problems/search-in-rotated-sorted-array_1082554?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+import java.util.ArrayList;
+public class Solution {
+    public static int search(ArrayList<Integer> arr, int n, int k) {
+        int start = 0,end=n-1;
+        while(start <= end){
+            int mid = start+(end-start)/2;
+            if(arr.get(mid) == k) return mid;
+            if(arr.get(start) <= arr.get(mid)){
+                if(arr.get(start) <= k && k <= arr.get(mid)){
+                    end=mid-1;
+                }else{
+                    start=mid+1;
+                }
+            }else{
+                if(arr.get(mid) <= k && k <= arr.get(end)){
+                    start = mid+1;
+                }else{
+                    end = mid-1;
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
+### [Search In A Rotated Sorted Array II](https://www.codingninjas.com/studio/problems/search-in-a-rotated-sorted-array-ii_7449547?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+public class Solution {
+    public static boolean searchInARotatedSortedArrayII(int []A, int key) {
+        int start=0,end=A.length-1;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+    
+            if(A[mid] == key) return true;
+            if(A[start]<=A[mid]){
+                if(A[start] <= key && A[mid] >= key){
+                    end = mid-1;
+                }else{
+                    start = mid+1;
+                }
+            }else if(A[mid]<=A[end]){
+                if(A[mid]<= key && A[end] >= key ){
+                    start = mid+1;
+                }else{
+                    end = mid-1;
+                }
+            }
+        }
+        return false;
+    }
+}
+```

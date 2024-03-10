@@ -13,6 +13,7 @@
 
 ### Creating a new theme 
 
+- Download **Theme access** app from the shopify app store and create a password as a developer
 - Create a folder and enter the command in the folder
 - Run the following command in terminal
 ``` terminal 
