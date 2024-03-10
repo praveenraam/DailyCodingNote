@@ -1288,3 +1288,53 @@ public class Solution {
 }
 ```
 
+### [Minimum Common Value](https://leetcode.com/problems/minimum-common-value/)
+
+```Java
+class Solution {
+    public int getCommon(int[] nums1, int[] nums2) {
+        int p1=0,p2=0;
+        while(p1<nums1.length && p2<nums2.length){
+            if(nums1[p1] == nums2[p2]) return nums1[p1];
+            if(nums1[p1]>nums2[p2]){
+                p2++;
+            }else if(nums1[p1]<nums2[p2]){
+                p1++;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+### [Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
+```Java
+class Solution {
+    public int[][] flipAndInvertImage(int[][] image) {
+        for(int i=0;i<image.length;i++){
+            int start = 0, end=image[i].length-1;
+            while(start<=end){
+                swap(image,start,end,i,true);
+                swap(image,start,end,i,false);
+                start++;end--;
+            }
+        }
+        return image;
+    }
+    public static void swap(int[][] arr,int start,int end,int index,boolean flag){
+        if(flag){
+            int temp = arr[index][start];
+            arr[index][start] = arr[index][end];
+            arr[index][end] = temp;
+        }else if(!flag){
+            if(arr[index][start] == 0) arr[index][start] = 1;
+            else if(arr[index][start] == 1) arr[index][start] =0;
+            if(start != end){
+                if(arr[index][end] == 0) arr[index][end] = 1;
+                else if(arr[index][end] == 1) arr[index][end] =0;
+            }
+        }
+    }
+}
+```
+

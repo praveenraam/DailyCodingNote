@@ -1,3 +1,7 @@
+## Day 76:
+#### Date : 09.04.2024
+- Shopify Website
+- Array problem
 ## Day 75:
 #### Date : 08.04.2024
 - Shopify Website

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shopify/ShopifyWork.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shopify/ShopifyWork.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shopify/ShopifyWork.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shopify/ShopifyWork.md"
+                "file": "DSA - Java/Problems/Array Problems.md"
               }
             }
           }
@@ -149,8 +149,13 @@
   },
   "active": "6f7131f19fc6ac37",
   "lastOpenFiles": [
-    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Problems/Recursion Problems.md",
+    "Shopify/Start Note.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/HashMap Problems.md",
+    "Shopify/Must Have Apps.md",
     "Shopify/ShopifyWork.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/Linear Search.md",
     "DSA - Java/Java/2D-Arrays.md",
@@ -168,13 +173,8 @@
     "DSA - Java/Java/Switch concepts.md",
     "DSA - Java/Java/First Program.md",
     "README.md",
-    "Shopify/Must Have Apps.md",
     "Shopify/Point to remember.md",
-    "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/Recursion Problems.md",
-    "DSA - Java/Problems/HashMap Problems.md",
     "DSA - Java/Git/Basic commands.md",
-    "DSA - Java/Git/Branches.md",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
