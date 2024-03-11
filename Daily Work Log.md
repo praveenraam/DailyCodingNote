@@ -1,3 +1,6 @@
+## Day 78:
+#### Date : 11.04.2024
+- Binary Search problem
 ## Day 77:
 #### Date : 10.04.2024
 - Array problem

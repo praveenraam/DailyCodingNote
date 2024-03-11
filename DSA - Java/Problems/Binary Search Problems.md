@@ -379,3 +379,66 @@ public class Solution {
     }
 }
 ```
+### [Rotation](https://www.codingninjas.com/studio/problems/rotation_7449070?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+public class Solution {
+    public static int findKRotation(int []arr){
+        int minIndex = 0;
+        int start=0,end=arr.length-1;
+
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(arr[mid] < arr[minIndex]) minIndex = mid;
+
+            if(arr[start] <= arr[mid]){
+                if(arr[start]<arr[minIndex]){
+                    minIndex = start;
+                    start = mid+1;
+                }else{
+                    start = mid+1;
+                }
+            }else if(arr[mid] <= arr[end]){
+                if(arr[mid] < arr[minIndex]){
+                    minIndex = mid;
+                    end=mid-1;
+                }else{
+                    end=mid-1;
+                }
+            }
+        }
+        return minIndex; // minimum value index, will be the number of times rotated
+    }
+}
+```
+
+### [Find Minimum in Rotated Sorted Array](https://www.codingninjas.com/studio/problems/rotated-array_1093219?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+public class Solution {
+    public static int findMin(int []arr) {
+        int min=Integer.MAX_VALUE;
+        int low = 0,end = arr.length-1;
+        while(low<=end){
+            int mid=low+(end-low)/2;
+            //Assign Min value
+            if(arr[mid] < min) min = arr[mid];
+            // Checking for the Sorted Array
+            if(arr[low]<=arr[mid]){
+                if(arr[low] < min){
+                    min = arr[low];
+                    low = mid+1;
+                }else {
+                    low = mid+1;
+                }
+            }else if(arr[mid] < arr[end]){
+                if(arr[mid] < min ){
+                    min = arr[mid];
+                    end = mid-1;
+                }else{
+                    end = mid-1;
+                }
+            }
+        }
+        return min;
+    }
+}
+```
