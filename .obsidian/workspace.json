@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5d2b9c446b95a752",
+        "id": "75524529843653f5",
         "type": "tabs",
         "children": [
           {
-            "id": "e5eef9d9b0247e0f",
+            "id": "489f456ed84298f8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Problems/Binary Search Problems.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Binary Search Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Binary Search Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Problems/Binary Search Problems.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,8 +139,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5eef9d9b0247e0f",
+  "active": "489f456ed84298f8",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
@@ -166,7 +159,6 @@
     "DSA - Java/Problems/Recursion Problems.md",
     "DSA - Java/Problems/HashMap Problems.md",
     "Shopify/Must Have Apps.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/Linear Search.md",
     "DSA - Java/Java/Arrays.md",

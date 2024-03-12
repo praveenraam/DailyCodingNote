@@ -239,7 +239,7 @@ public class Solution {
 }
 ```
 
-### [Number of Ocuurance in an sorted array](https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+### [Number of Occurance in an sorted array](https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 ```Java
 public class Solution {
     public static int count(int arr[], int n, int x) {
@@ -282,7 +282,6 @@ public class Solution {
 ```
 
 ### [First and Last Position of an Element In Sorted Array](https://www.codingninjas.com/studio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
-
 ```Java
 import java.util.* ;
 import java.io.*; 
@@ -442,3 +441,61 @@ public class Solution {
     }
 }
 ```
+
+### [Single Element in a Sorted Array](https://www.codingninjas.com/studio/problems/unique-element-in-sorted-array_1112654?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION)
+```Java
+import java.util.ArrayList;
+public class Solution
+{
+    public static int singleNonDuplicate(ArrayList<Integer> arr) {
+        int n = arr.size(); 
+        if (n == 1)
+            return arr.get(0);
+        if (!arr.get(0).equals(arr.get(1)))
+            return arr.get(0);
+        if (!arr.get(n - 1).equals(arr.get(n - 2)))
+            return arr.get(n - 1);
+
+        int low = 1, high = n - 2;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+           if (!arr.get(mid).equals(arr.get(mid + 1)) && !arr.get(mid).equals(arr.get(mid - 1))) {
+                return arr.get(mid);
+            }
+  
+            if ((mid % 2 == 1 && arr.get(mid).equals(arr.get(mid - 1)))
+                    || (mid % 2 == 0 && arr.get(mid).equals(arr.get(mid + 1)))) {
+                low = mid + 1;
+            }
+            else {
+                high = mid - 1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+### [Find Peak Element](https://www.codingninjas.com/studio/problems/find-peak-element_1081482?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+import java.util.ArrayList;
+public class Solution {
+    public static int findPeakElement(ArrayList<Integer> arr) {
+        int start = 1,end = arr.size()-2;
+        if(arr.get(end) < arr.get(end+1)) return end+1;
+        if(arr.get(start) < arr.get(start-1)) return start-1;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(arr.get(mid-1) < arr.get(mid) && arr.get(mid) > arr.get(mid+1)) return mid;
+            if(start == end) return start;
+            if(arr.get(mid) < arr.get(mid-1)) {
+                end = mid-1;
+            }else if(arr.get(mid) > arr.get(mid-1)){
+                start = mid+1;
+            }
+        }
+        return 0;
+    }
+}
+```
+
