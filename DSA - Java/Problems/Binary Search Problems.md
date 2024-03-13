@@ -499,3 +499,23 @@ public class Solution {
 }
 ```
 
+### [Find Nth Root Of M](https://www.codingninjas.com/studio/problems/nth-root-of-m_1062679?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
+
+```Java
+public class Solution {
+    public static int NthRoot(int n, int m) {
+        int start = 1,end = m;
+        while(start<=end){
+            int mid = start+(end - start)/2;
+            int tot=1;
+            for(int i=1;i<=n;i++){
+                tot*=mid;
+            }
+            if(tot == m) return mid;
+            if(tot < m) start=mid+1;
+            else if(tot > m) end = mid-1;
+        }
+        return -1;
+    }
+}
+```

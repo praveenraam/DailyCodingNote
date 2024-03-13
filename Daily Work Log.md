@@ -1,3 +1,9 @@
+## Day 80:
+#### Date : 13.04.2024
+- Binary Search problem
+## Day 79:
+#### Date : 12.04.2024
+- Binary Search problem
 ## Day 78:
 #### Date : 11.04.2024
 - Binary Search problem
