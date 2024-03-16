@@ -499,23 +499,55 @@ public class Solution {
 }
 ```
 
-### [Find Nth Root Of M](https://www.codingninjas.com/studio/problems/nth-root-of-m_1062679?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
+### [Square Root of a number](https://www.codingninjas.com/studio/problems/square-root-integral_893351?leftPanelTab=0%3Futm_source%3Dstriver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
 ```Java
-public class Solution {
-    public static int NthRoot(int n, int m) {
-        int start = 1,end = m;
-        while(start<=end){
-            int mid = start+(end - start)/2;
-            int tot=1;
-            for(int i=1;i<=n;i++){
-                tot*=mid;
-            }
-            if(tot == m) return mid;
-            if(tot < m) start=mid+1;
-            else if(tot > m) end = mid-1;
-        }
-        return -1;
-    }
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+    public static int sqrtN(long N) {
+        int start = 0,end =(int) N;
+        int ans = -1;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(mid*mid > N) end=mid-1;
+            else if(mid*mid <= N) {
+                ans = mid;
+                start= mid+1;
+            }
+        }
+        return ans;
+    }
 }
 ```
+
+### [Find Nth Root Of M](https://www.codingninjas.com/studio/problems/nth-root-of-m_1062679?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+public class Solution {
+    public static int func(int mid, int n, int m) {
+        long ans = 1;
+        for (int i = 1; i <= n; i++) {
+            ans = ans * mid;
+            if (ans > m) return 2;
+        }
+        if (ans == m) return 1;
+        return 0;
+    }
+    public static int NthRoot(int n, int m) {
+        int low = 1, high = m;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            int midN = func(mid, n, m);
+            if (midN == 1) {
+                return mid;
+            } else if (midN == 0) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
