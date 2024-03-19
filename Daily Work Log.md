@@ -1,5 +1,8 @@
-## Day 81:
-#### Date : 16.04.2024
+## Day 83:
+#### Date : 19.04.2024
+- String problem
+## Day 82:
+#### Date : 17.04.2024
 - Shopify works
 ## Day 81:
 #### Date : 16.04.2024

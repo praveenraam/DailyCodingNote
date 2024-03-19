@@ -1,3 +1,4 @@
+
 ### Starting out learning Shopify theme development and going to progress with Shopify App development 
 
 ### Starting a Shopify partner account and starting a store in it for testing the development code [Link](https://www.shopify.com/in/partners)

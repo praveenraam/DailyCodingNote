@@ -66,9 +66,6 @@ class Solution {
 }
 ```
 
-
-
-
 ###  [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/)
 
 ```Java
@@ -164,6 +161,113 @@ class Solution {
            }
        }
        return Result;
+    }
+}
+```
+
+### [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
+```Java
+class Solution {
+    public String removeOuterParentheses(String s) {
+        int counter = 0;
+        int pCounter = 0;
+        String Ans = "";
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i) == '(') {
+             counter++;
+            }
+            if(s.charAt(i) == ')') {
+                counter--;
+            }
+            if(counter >= 1){
+                if(counter >= pCounter && counter!= 1){
+                    Ans+="(";
+                }else if(counter <= pCounter && counter !=1){
+                    Ans+=")";
+                }if(pCounter == 2 && counter == 1){
+                    Ans+=")";
+                }
+            }if(counter == 0){
+                counter = 0;
+            }
+            pCounter = counter;
+        }
+        return Ans;
+    }
+}
+```
+
+### [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+```Java
+class Solution {
+    public String reverseWords(String s) {
+        String res ="";
+        int left = -1;
+        int right = s.length()-1;
+        boolean flag = false;
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i) != ' ') {
+                if(!flag)
+                    right = i;
+                flag = true;
+            }
+            if((s.charAt(i) == ' ' && flag) || i == 0){
+                left = i+1;
+                if(i == 0) left = i;
+                boolean flag2 = false;
+                while(left<=right){
+                    if(s.charAt(left) == ' ') {
+                        left++; continue;
+                    }
+                    res+=s.charAt(left);
+                    left++;
+                    flag2 = true;
+                }
+                if(flag2) res+=' ';
+                flag2 = false;
+                right = i-1;
+                left = -1;
+            }
+        }
+        return res.trim();
+    }
+}
+```
+
+###  [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)
+```Java
+class Solution {
+    public String largestOddNumber(String num) {
+        for(int i=num.length()-1;i>=0;i--){
+            int no = num.charAt(i) - 48;
+            if(no%2 != 0) return num.substring(0,i+1);
+        }
+        return "";
+    }
+}
+```
+
+### [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+```Java
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        String Ans = "";
+        String Temp = strs[0];
+        for (int i = 0; i < strs.length; i++) {
+            String value = strs[i];
+            String tempAns = "";
+            for (int j = 0; j < value.length(); j++) {
+                if (j < Temp.length() && Temp.charAt(j) != value.charAt(j)) break;
+                else if(j < Temp.length()){
+                    tempAns += Temp.charAt(j);
+                }else{
+                    break;
+                }
+            }
+            Temp = tempAns;
+            Ans = Temp;
+        }
+        return Ans;
     }
 }
 ```

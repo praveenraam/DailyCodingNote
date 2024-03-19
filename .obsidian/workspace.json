@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shopify/Start Note.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shopify/Start Note.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Shopify/Start Note.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Shopify/Start Note.md"
+                "file": "DSA - Java/Problems/String Problem.md"
               }
             }
           }
@@ -149,14 +149,16 @@
   },
   "active": "489f456ed84298f8",
   "lastOpenFiles": [
+    "DSA - Java/Java/Strings.md",
+    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "Shopify/Start Note.md",
     "Shopify/Liquid Introduction.md",
     "Shopify/Must Have Apps.md",
     "Shopify/Point to remember.md",
     "Shopify/ShopifyWork.md",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Mapping - 1.md",
     "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Java/Strings.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/OOPS/Basics.md",
     "DSA - Java/Java/Basic Math.md",
@@ -174,8 +176,6 @@
     "DSA - JS/Map.md",
     "DSA - JS/Stack.md",
     "DSA - JS/Queue.md",
-    "Shopify/Start Note.md",
-    "Daily Work Log.md",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
