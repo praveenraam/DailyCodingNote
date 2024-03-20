@@ -272,3 +272,40 @@ class Solution {
 }
 ```
 
+### [Check If One String Is A Rotation Of Another String](https://www.codingninjas.com/studio/problems/check-if-one-string-is-a-rotation-of-another-string_1115683?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
+```Java
+public class Solution {
+    public static int isCyclicRotation(String p, String q)  {
+        int start = -1;
+        for(int i=0;i<p.length();i++){
+            if(p.charAt(i) == q.charAt(0)){
+                start = i;
+                String res = (p.substring(start)+p.substring(0,start));
+                if(res.equals(q)) return 1;
+            }
+        }
+        return 0;
+    }
+}
+```
+
+### [Isomorphic Strings](https://www.codingninjas.com/studio/problems/isomorphic-strings-_1117636?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
+```Java
+import java.util.*;
+public class Solution {
+    public static boolean areIsomorphic(String str1, String str2) {
+        HashMap <Character,Character> Mapper = new HashMap<>();
+        if(str1.length() != str2.length() ) return false;
+        for(int i=0;i<str1.length();i++){
+            if( Mapper.get(str1.charAt(i)) == null ) Mapper.put(str1.charAt(i),str2.charAt(i));
+            if( Mapper.get(str1.charAt(i)) != str2.charAt(i)) return false;
+        }
+        Mapper.clear();
+        for(int i=0;i<str2.length();i++){
+            if(Mapper.get(str2.charAt(i)) == null ) Mapper.put(str2.charAt(i),str1.charAt(i));
+            if(Mapper.get(str2.charAt(i)) != str1.charAt(i)) return false;
+        }
+        return true;
+    }
+}
+```
