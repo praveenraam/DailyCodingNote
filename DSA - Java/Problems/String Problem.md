@@ -309,3 +309,23 @@ public class Solution {
     }
 }
 ```
+### [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+```Java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if(s.length() != t.length()) return false;
+        int[] arr = new int[26];
+        for(int i=0;i<s.length();i++){
+            int ch = s.charAt(i)-97;
+            arr[ch] = arr[ch] + 1;
+        }
+        for(int i=0;i<t.length();i++){
+            int ch = t.charAt(i)-97;
+            arr[ch] = arr[ch] - 1;
+            if(arr[ch] < 0) return false;
+        }
+        return true;
+    }
+}
+```
+
