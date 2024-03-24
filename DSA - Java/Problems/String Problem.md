@@ -328,4 +328,23 @@ class Solution {
     }
 }
 ```
+```Java
+import java.util.*;
+public class Solution {
+    public static boolean isAnagram(String str1, String str2) {
+        // to lower case
+        str1.toLowerCase(); 
+        str2.toLowerCase();
+        // converting to array
+        char[] s1 = str1.toCharArray();
+        char[] s2 = str2.toCharArray();
+        // sorting 
+        Arrays.sort(s1); 
+        Arrays.sort(s2);
+        
+        return Arrays.equals(s1,s2);
+    }
+}
+```
+
 
