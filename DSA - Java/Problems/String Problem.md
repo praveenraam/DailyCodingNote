@@ -347,4 +347,101 @@ public class Solution {
 }
 ```
 
+### [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)
+```Java
+class Solution {
+    public String frequencySort(String s) {
+     Map<Character,Integer> map = new HashMap<>();
+     for(int i=0;i<s.length();i++){
+        if(map.containsKey(s.charAt(i))){
+            map.put(s.charAt(i),map.get(s.charAt(i))+1);
+        }
+        else{
+            map.put(s.charAt(i),1);
+        }
+     }
+     List<Character> chars = new ArrayList<>(map.keySet());
+     Collections.sort(chars,(a,b) -> map.get(b) - map.get(a));
+     StringBuilder sb = new StringBuilder();
+     for(Character cb : chars){
+        for(int i=0;i<map.get(cb);i++){
+            sb.append(cb);
+        }
+     }
+     return sb.toString();
+    }
+}
+```
 
+### [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/description/)
+```Java
+class Solution {
+    public String frequencySort(String s) {
+     Map<Character,Integer> map = new HashMap<>();
+     for(int i=0;i<s.length();i++){
+        if(map.containsKey(s.charAt(i))){
+            map.put(s.charAt(i),map.get(s.charAt(i))+1);
+        }
+        else{
+            map.put(s.charAt(i),1);
+        }
+     }
+     List<Character> chars = new ArrayList<>(map.keySet());
+     Collections.sort(chars,(a,b) -> map.get(b) - map.get(a));
+     StringBuilder sb = new StringBuilder();
+     for(Character cb : chars){
+        for(int i=0;i<map.get(cb);i++){
+            sb.append(cb);
+        }
+     }
+     return sb.toString();
+    }
+}
+```
+
+### [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)
+```Java
+class Solution {
+    public int maxDepth(String s) {
+        int counter = 0;
+        int max = 0;
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);   
+            if(ch == '('){
+                counter++;
+                if(counter > max) max = counter;
+            }else if(ch == ')'){
+                counter--;
+            }
+        }
+        return max;
+    }
+}
+```
+
+### [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
+```Java
+class Solution {
+    public int romanToInt(String s) {
+        int sum = 0;
+        Map<Character,Integer> romanValues = new HashMap<>();
+        romanValues.put('I',1);
+        romanValues.put('V', 5);
+        romanValues.put('X', 10);
+        romanValues.put('L', 50);
+        romanValues.put('C', 100);
+        romanValues.put('D', 500);
+        romanValues.put('M', 1000);
+
+        for(int i=s.length()-1;i>=0;i--){
+            char ch = s.charAt(i);
+            if(i < s.length()-1 && romanValues.get(ch) < romanValues.get(s.charAt(i+1))){
+                sum-=romanValues.get(ch);
+            }else{
+                sum+=romanValues.get(ch);
+            }
+        }
+        return sum;
+    }
+}
+```
