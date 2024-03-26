@@ -266,3 +266,67 @@ class Solution {
 }
 ```
 
+### [Swap the last ans First number in digit]()
+```Java
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int inp = in.nextInt();
+        System.out.println(swapper(inp));
+    }
+    public static int swapper(int inp){
+        if(inp < 10) return inp;
+        int temp = inp;
+        int ans = 0;
+        int first = - 1, last = inp%10;
+        while(inp>0){
+            first = inp%10;
+            inp/=10;
+        }
+        inp = temp;
+        ans+=last;
+        inp = inp / 10;
+        int reverse = 0;
+        while(inp>10){
+            reverse = (reverse*10)+(inp%10);
+            inp = inp / 10;
+        }
+        while(reverse > 0){
+            ans = (ans*10)+(reverse%10);
+            reverse/=10;
+        }
+        ans = (ans*10)+(first);
+        return ans;
+    }
+}
+```
+
+### [Sum of prime divisors]()
+```Java
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int inp = in.nextInt();
+        System.out.println(Sum(inp));
+    }
+    public static int Sum(int n){
+        if( n < 2) return 0;
+        int sum = 0,div=2;
+        while(n>div){
+            if(n%div == 0){
+                boolean flag = isPrime(div);
+                if(flag) sum+=div;
+            }
+            div++;
+        }
+        return sum;
+    }
+    public static boolean isPrime(int n){
+        int div = 2;
+        while(n>div){
+            if(n%div == 0) return false;
+            div++;
+        }
+        return true;
+    }
+```
