@@ -305,28 +305,49 @@ class HelloWorld {
 ### [Sum of prime divisors]()
 ```Java
 public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int inp = in.nextInt();
-        System.out.println(Sum(inp));
-    }
-    public static int Sum(int n){
-        if( n < 2) return 0;
-        int sum = 0,div=2;
-        while(n>div){
-            if(n%div == 0){
-                boolean flag = isPrime(div);
-                if(flag) sum+=div;
-            }
-            div++;
+    Scanner in = new Scanner(System.in);
+    int inp = in.nextInt();
+    System.out.println(Sum(inp));
+}
+public static int Sum(int n){
+    if( n < 2) return 0;
+    int sum = 0,div=2;
+    while(n>div){
+        if(n%div == 0){
+            boolean flag = isPrime(div);
+            if(flag) sum+=div;
         }
-        return sum;
+        div++;
     }
-    public static boolean isPrime(int n){
-        int div = 2;
-        while(n>div){
-            if(n%div == 0) return false;
-            div++;
+    return sum;
+}
+public static boolean isPrime(int n){
+    int div = 2;
+    while(n>div){
+        if(n%div == 0) return false;
+        div++;
+    }
+    return true;
+}
+```
+
+```Java
+public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int No = in.nextInt();
+    int times = in.nextInt();
+    System.out.println(Sum(No,times));
+}
+public static int Sum(int no,int times){
+    int sum = no;
+    for(int i=1;i<times;i++){
+        int value = no;
+        for(int j=0;j<i;j++){
+            value = (value*10)+no;
         }
-        return true;
+        System.out.println(value);
+        sum+=value;
     }
+    return sum;
+}
 ```
