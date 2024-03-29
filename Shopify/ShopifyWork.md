@@ -1,4 +1,6 @@
 #### Date : 27.03.2024
+- Template picking and started to work on SEO content
+#### Date : 27.03.2024
 - Starting a work in Wix website for the client
 #### Date : 17.03.2024
 - https://fargirl.myshopify.com/ Products were added to the page
