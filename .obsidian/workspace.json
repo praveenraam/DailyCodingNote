@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Strings.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8202ce248b6633c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/Problems/String Problem.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Strings.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Strings.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Strings.md"
+                "file": "DSA - Java/Problems/String Problem.md"
               }
             }
           }
@@ -147,11 +160,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "489f456ed84298f8",
+  "active": "8202ce248b6633c6",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Java/Strings.md",
-    "DSA - Java/Problems/Array Problems.md",
     "Shopify/Start Note.md",
     "Shopify/Liquid Introduction.md",
     "Shopify/Must Have Apps.md",

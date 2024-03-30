@@ -445,3 +445,46 @@ class Solution {
     }
 }
 ```
+
+### [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+
+```Java
+class Solution {
+    public int lengthOfLastWord(String s) {
+        int counter = 0;
+        boolean flag = false;
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i) != ' '){
+                counter++;
+                flag = true;
+            } 
+            else if(flag && s.charAt(i) == ' '){
+                break;
+            }
+        }   
+        return counter;
+    }
+}
+```
+
+### [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+
+```Java
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+        if(s.length() == 0) return true;
+        int p1=0,p2=0;
+        int sc = 0;
+        int sSize = s.length();
+        while(p1<s.length() && p2<t.length()){
+            if(s.charAt(p1) == t.charAt(p2)){
+                p1++;
+                p2++;
+                sc++;
+            }else p2++;
+            if(sSize == sc) return true;
+        }
+        return false;
+    }
+}
+```

@@ -1,5 +1,8 @@
 ## Day 85:
 #### Date : 22.04.2024
+- Array and String problems
+## Day 85:
+#### Date : 22.04.2024
 - Academic and Wix work
 ## Day 85:
 #### Date : 22.04.2024

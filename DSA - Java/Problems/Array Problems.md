@@ -1338,3 +1338,56 @@ class Solution {
 }
 ```
 
+### [1299. Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/)
+```Java
+class Solution {
+    public int[] replaceElements(int[] arr) {
+        int max  = -1;
+        for(int i=arr.length-1;i>=0;i--){
+            int temp = max;
+            if(max < arr[i]) max = arr[i];
+            arr[i] = temp;   
+        }
+        return arr;
+    }
+}
+```
+
+### [27. Remove Element](https://leetcode.com/problems/remove-element/)
+
+```Java
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int counter = 0;
+        int index = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] != val ){
+                counter++;
+                nums[index] = nums[i]; index++;
+            }
+        }
+        return counter;
+    }
+}
+```
+
+### [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+
+```Java
+import java.util.*;
+
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Map<Integer,Integer> map = new HashMap<>();
+        
+        for(int i=0;i<nums.length;i++){
+            if(map.containsKey(nums[i])) map.put(nums[i],map.get(nums[i])+1);
+            else map.put(nums[i],1);
+            
+            if(map.get(nums[i]) > 1) return true;
+        }
+        return false;
+    }
+}
+```
+
