@@ -488,3 +488,55 @@ class Solution {
     }
 }
 ```
+
+### [929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)
+
+```Java
+class Solution {
+    public int numUniqueEmails(String[] emails) {
+        Set<String> set = new HashSet<>();
+        for(int i=0;i<emails.length;i++){
+            String s = emails[i];
+            StringBuilder sb = new StringBuilder();
+            boolean flag = true;
+            boolean flag2 = false;
+            for(int j=0;j<s.length();j++){
+                if(s.charAt(j) == '.' && flag2 ) sb.append('.');
+                else if(s.charAt(j) == '.' ) continue;
+                else if(s.charAt(j) == '+' && flag2){
+                    continue;
+                }
+                else if(s.charAt(j) == '+') flag = false;
+                else if(s.charAt(j) == '@' ) {
+                    sb.append(s.charAt(j));
+                    flag = true; flag2 = true;
+                }else if(flag) sb.append(s.charAt(j));
+            }
+            set.add(sb.toString());
+        }
+        return set.size();
+    }
+}
+```
+
+### [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
+
+```Java
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        Map<Character,Character> set = new HashMap<>();
+        if(s.length() != t.length()) return false;
+        for(int i=0;i<s.length();i++){
+            if(set.containsKey(s.charAt(i))) {
+                if(set.get(s.charAt(i)) != t.charAt(i)) return false;
+            }
+            else {
+                if(!set.containsValue(t.charAt(i)))
+                    set.put(s.charAt(i),t.charAt(i));
+                else return false;
+            }
+        }
+        return true;
+    }
+}
+```

@@ -1,6 +1,7 @@
+Topic no : 18
 Video [Link](https://youtu.be/KEs5UyBJ39g?si=D-emOEzYc14eiPNh)
 Know this [[Mapping - 1]]
-Next Topic [[]]
+Next Topic [[Collections]]
 
 **Hashing is an important topic in Data Structure**
 

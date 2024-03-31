@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/String Problem.md",
+                "file": "DSA - Java/Java/Collections.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "merge sort",
+                "query": "collection",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,11 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8202ce248b6633c6",
+  "active": "489f456ed84298f8",
   "lastOpenFiles": [
-    "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Java/Strings.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Hashing&Maps.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
+    "DSA - Java/Java/Recursion.md",
+    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/AVL Tree.md",
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/Architecture.md",
+    "DSA - Java/Problems/String Problem.md",
     "Shopify/Start Note.md",
     "Shopify/Liquid Introduction.md",
     "Shopify/Must Have Apps.md",
@@ -175,20 +182,12 @@
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/OOPS/Basics.md",
     "DSA - Java/Java/Basic Math.md",
-    "DSA - Java/Java/Architecture.md",
-    "DSA - Java/Java/First Program.md",
     "DSA - Java/Java/Data Types.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "DSA - JS/Sorting Algorithms.md",
     "DSA - JS/ProblemSeries1.md",
-    "DSA - JS/Array Introduction.md",
-    "DSA - JS/Object.md",
-    "DSA - JS/Set.md",
-    "DSA - JS/Map.md",
-    "DSA - JS/Stack.md",
-    "DSA - JS/Queue.md",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
