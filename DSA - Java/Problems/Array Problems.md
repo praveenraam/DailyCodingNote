@@ -1391,3 +1391,56 @@ class Solution {
 }
 ```
 
+### [169. Majority Element](https://leetcode.com/problems/majority-element/)
+
+```Java
+class Solution {
+    public int majorityElement(int[] nums) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<nums.length;i++){
+            int n = nums[i];
+            if(mp.containsKey(n)) mp.put(n,mp.get(n)+1);
+            else mp.put(n,1);
+
+            if(mp.get(n) > (nums.length)/2) return n;
+        }
+        return -1;
+
+    }
+}
+```
+
+### [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+
+```Java
+class Solution {
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        int counter = n;
+        if(flowerbed.length < 2) {
+            if(flowerbed[0] == 0) counter--;
+
+            if(counter > 0) return false;
+            return true;
+        }
+        if(flowerbed[0] == 0 && flowerbed[1] == 0){
+            counter--;
+            flowerbed[0] = 1;
+        }
+        if(flowerbed[flowerbed.length-1] == 0 && flowerbed[flowerbed.length-2] == 0){
+            counter--;
+            flowerbed[flowerbed.length-1] = 1;
+        }
+
+        for(int i=1;i<flowerbed.length-1;i++){
+            if(flowerbed[i-1] == 0 && flowerbed[i+1] == 0 && flowerbed[i] == 0){
+                counter--;
+                flowerbed[i] = 1;
+            }
+        }
+        
+        if(counter > 0) return false;
+        return true;
+    }
+}
+```
