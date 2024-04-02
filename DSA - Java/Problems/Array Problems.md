@@ -1444,3 +1444,24 @@ class Solution {
     }
 }
 ```
+
+### [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
+
+```Java
+class Solution {
+    public int pivotIndex(int[] nums) {
+        int totalSum  = 0;
+        for(int i=0;i<nums.length;i++){
+            totalSum+=nums[i];
+        }
+        int sum2 = 0;
+        for(int i=0;i<nums.length;i++){
+            sum2 += nums[i];
+            if(sum2 == totalSum) return i;
+            totalSum -= nums[i];
+        }
+
+        return -1;
+    }
+}
+```

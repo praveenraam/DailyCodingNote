@@ -1,3 +1,6 @@
+## Day 94:
+#### Date : 02.04.2024
+- Array and String problems
 ## Day 93:
 #### Date : 1.04.2024
 - Array problems
