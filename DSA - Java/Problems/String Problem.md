@@ -594,3 +594,43 @@ class Solution {
     }
 }
 ```
+### [Word Pattern](https://leetcode.com/problems/word-pattern/description/)
+
+```Java
+class Solution {
+    public boolean wordPattern(String pattern, String s) {
+        Map<Character,String> mp = new HashMap<>();
+        boolean space = true;
+        int pointer = 0;
+        
+        for(int i=0;i<pattern.length() && pointer<s.length();i++){
+            char ch = pattern.charAt(i);
+            StringBuilder sb = new StringBuilder();
+
+            while(space && pointer<s.length()){
+               if(s.charAt(pointer) != ' ') sb.append(s.charAt(pointer));
+               else space = false;
+               pointer++;
+            }
+
+            space = true;
+            
+            if(mp.containsKey(ch)){
+                if(mp.get(ch).equals(sb.toString())) continue;
+                else return false;
+            }else{
+                if(mp.containsValue(sb.toString())){
+                    return false;
+                }
+                mp.put(ch,sb.toString());
+            }
+        }
+        for(int i=0;i<pattern.length();i++){
+            if(!mp.containsKey(pattern.charAt(i))) return false;
+        }
+
+        if(pointer < s.length()) return false;
+        return true;
+    }
+}
+```
