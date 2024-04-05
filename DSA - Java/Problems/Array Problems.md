@@ -1465,3 +1465,27 @@ class Solution {
     }
 }
 ```
+
+### [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
+
+```Java
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        Map<Integer,Integer> mp = new HashMap<>();
+        int max = -1;
+        for(int i=nums2.length - 1;i>0;i--){
+            mp.put(nums2[i],max);
+            if(nums2[i-1] < nums2[i]) max = nums2[i];
+        }
+        mp.put(nums2[0],max);
+        mp.put(nums2[nums2.length-1],-1);
+        for(int i=0;i<nums1.length;i++){
+            if(mp.get(nums1[i]) > nums1[i]){
+                nums1[i] = mp.get(nums1[i]);
+            }else nums1[i] = -1;
+        }
+        return nums1;
+    }
+}
+```
+

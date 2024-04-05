@@ -1,8 +1,11 @@
+## Day 94: 
+#### Date : 05.04.2024
+- Array problems
 ## Day 94: (Failed to commit)
 #### Date : 02.04.2024
 - String problems
 ## Day 93:
-#### Date : 1.04.2024
+#### Date : 01.04.2024
 - Array problems
 ## Day 92:
 #### Date : 31.03.2024
