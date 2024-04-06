@@ -1,3 +1,6 @@
+## Day 95: 
+#### Date : 06.04.2024
+- Client project
 ## Day 94: 
 #### Date : 05.04.2024
 - Array problems

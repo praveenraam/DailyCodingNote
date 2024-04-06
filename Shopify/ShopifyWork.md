@@ -1,3 +1,5 @@
+#### Date : 06.03.2024
+- Home page design for the client website 
 #### Date : 27.03.2024
 - Template picking and started to work on SEO content
 #### Date : 27.03.2024
