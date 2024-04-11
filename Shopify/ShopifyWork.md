@@ -1,8 +1,10 @@
-#### Date : 09.03.2024
+#### Date : 10.04.2024
+- mobile view design for the client website 
+#### Date : 09.04.2024
 - R&D and Research page design for the client website 
-#### Date : 08.03.2024
+#### Date : 08.04.2024
 - Product page design for the client website 
-#### Date : 06.03.2024
+#### Date : 06.04.2024
 - Home page design for the client website 
 #### Date : 27.03.2024
 - Template picking and started to work on SEO content
