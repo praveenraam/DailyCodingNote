@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "3ef95e6af4b21baf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/Problems/String Problem.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8202ce248b6633c6",
             "type": "leaf",
             "state": {
@@ -161,10 +173,11 @@
   },
   "active": "489f456ed84298f8",
   "lastOpenFiles": [
-    "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Java/Strings.md",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/Collections.md",
+    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/Math Problems.md",
+    "DSA - Java/Java/Strings.md",
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
     "DSA - Java/Java/Recursion.md",
@@ -187,7 +200,6 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "DSA - JS/Sorting Algorithms.md",
-    "DSA - JS/ProblemSeries1.md",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
