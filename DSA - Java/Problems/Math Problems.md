@@ -351,3 +351,80 @@ public static int Sum(int no,int times){
     return sum;
 }
 ```
+
+### Vowels or consonant
+
+```C
+#include <stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+
+int main(){
+    
+    char ch;
+    scanf("%c",&ch);
+    
+    int chV = ch;
+    
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A'|| ch == 'E'|| ch == 'I'|| ch == 'O'|| ch == 'U'){
+        printf("Vowel");
+    }else if((97 <= ch && ch <= 122) || (65 <= ch && ch <= 90)){
+        printf("Consonant");
+    }else{
+        printf("Invalid");
+    }
+
+}
+```
+
+### Decimal to Octal and HexaDecimal
+
+```C
+#include <stdio.h>
+
+int main() {
+    int number;
+    scanf("%d", &number);
+    if (number < 0){
+        printf("Error: Please enter a positive integer");
+        return 0;
+    }
+    printf("%x\n", number);
+    printf("%o\n", number);
+
+    return 0;
+}
+```
+
+### Area of Circle, Rectange and Triangle
+
+```C
+#include <stdio.h>
+#include<string.h>
+
+int main(){
+    int sh;
+    scanf("%d",&sh);
+    
+    if(sh == 1){
+        float r;
+        scanf("%f",&r);
+        float ans = (22.0/7.0)*r*r;
+        printf("%.2f",ans);
+    }else if(sh == 2){
+        float l,b;
+        scanf("%f %f",&l,&b);
+        float ans = l*b;
+        printf("%.2f",ans);
+    }else if(sh == 3){
+        float l,b;
+        scanf("%f %f",&l,&b);
+        float ans = 0.5*(l*b);
+        printf("%.2f",ans);
+    }else {
+        printf("Invalid");
+    }
+    
+}
+```
