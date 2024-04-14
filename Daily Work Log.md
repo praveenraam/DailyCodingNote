@@ -1,4 +1,7 @@
 ## Day 100: 
+#### Date : 14.04.2024
+- Prepared C for PS Test Level 2
+## Day 100: 
 #### Date : 13.04.2024
 - Prepared C for PS Test
 ## Day 99: 

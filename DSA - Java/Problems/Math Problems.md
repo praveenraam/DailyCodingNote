@@ -302,6 +302,43 @@ class HelloWorld {
 }
 ```
 
+```C
+#include <stdio.h>
+
+int main(){
+    int inp;
+    scanf("%d",&inp);
+    
+    int dup = inp;
+    int Fno;
+    int Lno = inp%10;
+    dup/=10;
+    int rev = 0;
+    
+    while(dup>0){
+        Fno = dup%10;
+        dup/=10;
+        rev = (rev*10)+Fno;
+    }
+    int result = 0;
+    result = Lno;
+    /
+    dup = rev;
+    rev/=10;
+    while(rev>0){
+        int rem = rev%10;
+        result = (result*10)+rem;
+
+        rev/=10;
+    }
+    
+    result = (result*10)+Fno;
+    
+    printf("%d",result);
+    
+}
+```
+
 ### [Sum of prime divisors]()
 ```Java
 public static void main(String[] args) {
@@ -428,3 +465,157 @@ int main(){
     
 }
 ```
+
+
+### Palindrome of a single number
+
+```C
+#include <stdio.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int dup = n;
+    int rev = 0;
+    while(dup>0){
+        int rem = dup%10;
+        rev = (rev*10)+rem;
+        dup= dup/10;
+    }
+    
+    if(rev == n) printf("%d",1);
+    else printf("%d",0);
+    
+}
+```
+
+### Find the sum of digits of a number and print only if the sum is less than 10,else sum again example(932=9+3+2 = 14(greater than 10),so 1+4=5(lesser than 10),thus 5 will be the output
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    
+    int dup = n;
+    int sum = 0;
+    while(1){
+        if(dup<=0){
+            if(sum<10) break; 
+            dup = sum;
+            sum = 0;
+        }
+        int rem = dup%10;
+        sum+=rem;
+        dup/=10;
+    }
+    
+    printf("%d",sum);
+    
+}
+
+
+```
+
+### LCM 
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    
+    int min = a>b ? b : a;
+    
+    while(1){
+        if(min%a == 0 && min%b == 0){
+            printf("%d",min);
+            return 0;
+        }
+        min++;
+    }
+}
+```
+
+### GCD 
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    
+    int max = a>b ? a : b;
+    
+    while(1){
+        if(a%max == 0 && b%max == 0){
+            printf("%d",max);
+            return 0;
+        }
+        max--;
+    }
+    
+}
+```
+
+### Increment every digit by 1
+
+```C
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    
+    int dup = n;
+    int rev=0;
+    
+    while(dup>0){
+        int rem = dup%10; rem++;
+        rev = (rev*10)+rem;
+        dup/=10;
+    }
+    
+    dup = rev;
+    int inc = 0;
+    
+    while(dup>0){
+        int rem = dup%10;
+        inc = (inc*10)+rem;
+        dup/=10;
+    }
+    
+    printf("%d",inc);
+    
+}
+```
+
+### Abundant number
+
+```C
+#include<stdio.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    
+    int divi = 1;
+    int sum = 0;
+    
+    while(n>divi){
+        if(n%divi == 0){
+            sum+=divi;
+        }
+        divi++;
+    }
+    if(sum>n) printf("Yes");
+    else printf("No");
+    
+}
+```
+

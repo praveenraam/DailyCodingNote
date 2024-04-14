@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "75524529843653f5",
+        "id": "db72598f7989bbca",
         "type": "tabs",
         "children": [
           {
-            "id": "489f456ed84298f8",
+            "id": "355b60cbe16e8bf1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3ef95e6af4b21baf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Problems/String Problem.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8202ce248b6633c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Java/Collections.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "DSA - Java/Problems/Math Problems.md"
               }
             }
           }
@@ -171,12 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "489f456ed84298f8",
+  "active": "355b60cbe16e8bf1",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Pattern Printing and problems.md",
     "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Strings.md",
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
@@ -199,7 +176,6 @@
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
-    "DSA - JS/Sorting Algorithms.md",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
