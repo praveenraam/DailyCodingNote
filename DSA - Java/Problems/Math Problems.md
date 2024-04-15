@@ -619,3 +619,98 @@ int main(){
 }
 ```
 
+### Roman to Integer 
+
+```C
+#include<stdio.h>
+#include<string.h>
+int rtoi(char* roman){
+    int Values[26];
+    Values['I'-'A'] = 1;
+    Values['V'-'A'] = 5;
+    Values['X'-'A'] = 10;
+    Values['L'-'A'] = 50;
+    Values['C'-'A'] = 100;
+    Values['D'-'A'] = 500;
+    Values['M'-'A'] = 1000;
+    
+    int result = 0;
+    int prev = 0;
+    int length = strlen(roman);
+    for(int i=length-1;i>=0;i--){
+        int current = Values[roman[i]-'A'];
+        if(current>=prev){
+            result += current;
+        }else{
+            result -= current;
+        }
+    }
+    return result;
+}
+int main(){
+    char n[200];
+    scanf("%s",&n);
+    
+    printf("%d",rtoi(n));
+    
+}
+```
+
+### Integer to Roman
+
+```C
+#include<stdio.h>
+#include<string.h>
+
+void itor(int num){
+    int values[] = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+    char *symbol[] = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+    
+    char result[100];
+    result[0] = '\0';
+    
+    for(int i=0;i<13;i++){
+        while(num>=values[i]){
+            strcat(result,symbol[i]);
+            num-=values[i];
+        }
+    }
+    printf("%s",result);
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    
+    itor(n);
+    return 0;
+}
+```
+
+### Sum of Factors
+
+Ex : 12/2 -> 6/2 -> 3/3 -> 1 So , 2+2+3 -> 7
+
+```C
+#include <stdio.h>
+
+int main() {
+    int in;
+    scanf("%d",&in);
+    int sum=0;
+    
+    int dup = in;
+    
+    while(dup != 1){
+        if(dup%2 == 0){
+            sum+=2;
+            dup/=2;
+        }
+        else{
+            sum+=dup;
+            return
+        }
+        
+    }
+    printf("%d",sum);
+}
+```
