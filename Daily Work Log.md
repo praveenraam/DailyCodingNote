@@ -1,5 +1,9 @@
+## Day 102: 
+#### Date : 23.04.2024
+- Worked on client project - Mobile view
+- Full stack project from tomorrow given by Training and Placement team
 ## Day 101: 
-#### Date : 14.04.2024
+#### Date : 15.04.2024
 - Prepared C and completed PS Test Level 2
 ## Day 101: 
 #### Date : 14.04.2024

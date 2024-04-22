@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "db72598f7989bbca",
+        "id": "86edc0e8daa9ca7d",
         "type": "tabs",
         "children": [
           {
-            "id": "355b60cbe16e8bf1",
+            "id": "aae76ca29dc12931",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,8 +147,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "355b60cbe16e8bf1",
+  "active": "aae76ca29dc12931",
   "lastOpenFiles": [
+    "DSA - JS/Recursion and problem.md",
+    "Shopify/ShopifyWork.md",
+    "Shopify/Point to remember.md",
+    "Shopify/Must Have Apps.md",
+    "Shopify/Liquid Introduction.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 5.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 4.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 3.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 2.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
+    "DSA - Java/Java/Sorting Techniques.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
@@ -158,23 +169,12 @@
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
     "DSA - Java/Java/Recursion.md",
-    "DSA - Java/Java/Sorting Techniques.md",
     "DSA - Java/Java/AVL Tree.md",
     "DSA - Java/Java/First Program.md",
     "DSA - Java/Java/Architecture.md",
     "Shopify/Start Note.md",
-    "Shopify/Liquid Introduction.md",
-    "Shopify/Must Have Apps.md",
-    "Shopify/Point to remember.md",
-    "Shopify/ShopifyWork.md",
     "DSA - Java/Mapping - 1.md",
     "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
-    "DSA - Java/OOPS/Basics.md",
-    "DSA - Java/Java/Basic Math.md",
-    "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/Input Program.md",
-    "DSA - Java/Java/Type conversion and casting.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
     "Shopify",
