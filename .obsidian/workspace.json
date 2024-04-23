@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "86edc0e8daa9ca7d",
+        "id": "02c85fdbcd787942",
         "type": "tabs",
         "children": [
           {
-            "id": "aae76ca29dc12931",
+            "id": "3bc2591e9e9412ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Math Problems.md",
+                "file": "Placement/Project/Problem statement and details.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Math Problems.md",
+                "file": "Placement/Project/Problem statement and details.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Math Problems.md",
+                "file": "Placement/Project/Problem statement and details.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Math Problems.md"
+                "file": "Placement/Project/Problem statement and details.md"
               }
             }
           }
@@ -147,8 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aae76ca29dc12931",
+  "active": "3bc2591e9e9412ab",
   "lastOpenFiles": [
+    "Daily Work Log.md",
+    "Placement/Project/Problem statement and details.md",
+    "Placement/Untitled.md",
+    "Placement/Project",
+    "Placement/Project",
+    "DSA - Java/Mapping - 1.md",
+    "Untitled",
+    "Placement",
+    "DSA - Java/Problems/Math Problems.md",
     "DSA - JS/Recursion and problem.md",
     "Shopify/ShopifyWork.md",
     "Shopify/Point to remember.md",
@@ -160,7 +169,6 @@
     "DSA - Java/College Skills/Java Framework S4/Day 2.md",
     "DSA - Java/College Skills/Java Framework S4/Day 1.md",
     "DSA - Java/Java/Sorting Techniques.md",
-    "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
     "DSA - Java/Problems/String Problem.md",
@@ -171,10 +179,6 @@
     "DSA - Java/Java/Recursion.md",
     "DSA - Java/Java/AVL Tree.md",
     "DSA - Java/Java/First Program.md",
-    "DSA - Java/Java/Architecture.md",
-    "Shopify/Start Note.md",
-    "DSA - Java/Mapping - 1.md",
-    "DSA - Java/Java/2D-Arrays.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
     "Shopify",
@@ -188,11 +192,7 @@
     "DSA - Java/OOPS",
     "DSA - JS/IMGS",
     "DSA - JS",
-    "DSA - Java/Problems",
     "DSA - Java/Java/IMGs/Pasted image 20240211152011.png",
-    "OOPS",
-    "DSA - Java/College Skills/Java Framework S4",
-    "DSA - Java/College Skills",
     "DSA - Java/Java/IMGs/Pasted image 20240131085936.png",
     "DSA - Java/Java/IMGs/Pasted image 20240131085426.png",
     "Untitled.canvas"

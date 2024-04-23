@@ -1,5 +1,9 @@
-## Day 102: 
+## Day 103: 
 #### Date : 23.04.2024
+- Problem statement given
+- Learnt about the given Tech Stack for the Development of the project (LAMP)
+## Day 102: 
+#### Date : 22.04.2024
 - Worked on client project - Mobile view
 - Full stack project from tomorrow given by Training and Placement team
 ## Day 101: 
