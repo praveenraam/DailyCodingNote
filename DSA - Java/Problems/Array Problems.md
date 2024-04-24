@@ -1491,3 +1491,159 @@ class Solution {
 }
 ```
 
+### [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+
+```Java
+import java.util.*;
+
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+
+        Map<Integer,Integer> Map = new HashMap<>();
+        List<Integer>[] ListArr = new List[nums.length+1];
+
+        for(int i=0;i<nums.length;i++){
+            Map.put(nums[i],Map.getOrDefault(nums[i],0)+1);
+        }
+
+        for(int key : Map.keySet()){
+            int freq = Map.get(key);
+            if(ListArr[freq] == null){
+                ListArr[freq] = new ArrayList<>();
+            }
+            ListArr[freq].add(key);
+        }
+
+        int[] result = new int[k];
+        int counter = 0;
+
+        for(int i=ListArr.length-1;i>=0 && counter < k;i--){
+            if(ListArr[i] != null){
+                for(int j=0; j<ListArr[i].size() && counter < k;j++){
+                    result[counter] = ListArr[i].get(j);
+                    counter++;
+                }
+            }
+        }
+        return result;
+    }
+}
+```
+
+### [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+
+```Java
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+
+        int result[] = new int[nums.length];
+        result[0] = 1;
+        int left = 1;
+
+        for(int i=0;i<result.length;i++){
+            result[i] = left;
+            left*=nums[i];
+        }
+
+        int right = 1;
+        for(int i=result.length-2;i>=0;i--){
+            int temp = right*nums[i+1];
+            result[i] = result[i]*temp;
+            right = right*nums[i+1];
+        }
+        return result;
+    }
+}
+```
+
+### [535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/)
+
+```Java
+public class Codec {
+    Map<String,String> map = new HashMap<>();
+    // Encodes a URL to a shortened URL.
+    public String encode(String longUrl) {
+        String key = "number4";
+        map.put(key,longUrl);
+        return key;
+    }
+
+    // Decodes a shortened URL to its original URL.
+    public String decode(String shortUrl) {
+        return map.get(shortUrl);
+    }
+}
+```
+
+### [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+```Java
+import java.util.*;
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        
+        Set<Integer> set = new HashSet<>();
+        
+        if(nums.length < 1) return 0;
+
+        for(int i=0;i<nums.length;i++){
+            set.add(nums[i]);
+        }
+
+        int counter = 1;
+        for(int i=0;i<nums.length;i++){
+            if(!set.contains(nums[i]-1)){
+                int temp=1;
+                while(true){
+                    if(set.contains(nums[i]+1)) temp++;
+                    else break;
+                    nums[i]++;
+                }
+                if(temp>counter) counter = temp;
+            }
+        }
+        return counter;
+
+    }
+}
+```
+
+### [554. Brick Wall](https://leetcode.com/problems/brick-wall/)
+
+```Java
+class Solution {
+    public int leastBricks(List<List<Integer>> wall) {
+        Map<Integer,Integer> map = new HashMap<>();
+
+        int edgeTotal = 0;
+        int total = 0;
+
+        for(int i=0;i<wall.get(0).size();i++){
+            total += wall.get(0).get(i);
+        }
+        
+        for(int i=0;i<wall.size();i++){
+            for(int j=0;j<wall.get(i).size();j++){
+                int sum = wall.get(i).get(j);
+                edgeTotal += sum;
+            
+                map.put(edgeTotal,map.getOrDefault(edgeTotal,0)+1);
+            }
+            edgeTotal = 0;
+        }
+
+        int Max = 0;
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+           int current = entry.getValue();
+           if(entry.getKey() == total) continue;
+           if(current > Max) {
+                Max = current;
+           }
+        }
+
+        return (wall.size() - Max); 
+        
+    }
+}
+```
+
