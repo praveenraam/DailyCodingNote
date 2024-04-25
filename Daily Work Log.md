@@ -1,3 +1,6 @@
+## Day 105: 
+#### Date : 25.04.2024
+- Prepared Requirement gathering report (SRS Report) 
 ## Day 104: 
 #### Date : 24.04.2024
 - Solved Leetcode Problems
