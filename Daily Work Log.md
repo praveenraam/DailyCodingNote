@@ -1,3 +1,6 @@
+## Day 106: 
+#### Date : 26.04.2024
+- Solved leetcode problem and prepared use case diagram
 ## Day 105: 
 #### Date : 25.04.2024
 - Prepared Requirement gathering report (SRS Report) 

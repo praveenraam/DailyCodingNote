@@ -634,3 +634,36 @@ class Solution {
     }
 }
 ```
+
+### [38. Count and Say](https://leetcode.com/problems/count-and-say/)
+
+```Java
+class Solution {
+    public String countAndSay(int n) {
+        StringBuilder cur = new StringBuilder("1");
+        StringBuilder prev;
+        int counter;
+        char no;
+
+        for(int i=1;i<n;i++){
+            prev = cur;
+            cur = new StringBuilder();
+            counter = 1;
+            no = prev.charAt(0);
+
+            for(int j=1,len = prev.length();j<len;j++){
+                if(prev.charAt(j) != no){
+                    cur.append(counter);
+                    cur.append(no);
+                    counter = 1;
+                    no = prev.charAt(j);
+                }else{
+                    counter++;
+                }
+            }
+            cur.append(counter);
+            cur.append(no);
+        }
+        return cur.toString();
+    }
+}

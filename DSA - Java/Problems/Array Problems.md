@@ -1647,3 +1647,79 @@ class Solution {
 }
 ```
 
+### [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/)
+
+```Java
+import java.util.*;
+
+class Solution {
+    public int minSwaps(String s) {
+        Stack<Character> st = new Stack<>();
+        
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+  
+            if(ch == '['){
+                st.push('[');
+            }else{
+                if(!st.isEmpty()){
+                    st.pop();
+                }
+            }
+        }
+        return ((st.size()+1)/2);
+    }
+}
+```
+
+### [2001. Number of Pairs of Interchangeable Rectangles](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/)
+
+```Java
+class Solution {
+    public long interchangeableRectangles(int[][] rectangles) {
+
+        long counter = 0;
+        Map<Double,Long> mp = new HashMap<>();
+
+        for(int i=0;i<rectangles.length;i++){
+            double val = (double)rectangles[i][0]/(double)rectangles[i][1];
+
+            if(mp.containsKey(val)){
+                counter += mp.get(val);
+            }
+            mp.put(val,mp.getOrDefault(val,0L)+1);
+        }
+  
+        return counter;
+    }
+}
+```
+
+### [Rotate Matrix K times](https://www.naukri.com/code360/problems/moderate_7544412?leftPanelTabValue=PROBLEM)
+
+```Java
+import java.util.* ;
+import java.io.*; 
+import java.util.ArrayList;
+
+public class Solution {
+    public static ArrayList<ArrayList<Integer>> solve(ArrayList<ArrayList<Integer>> arr, int k) {
+        for(int i=0;i<arr.size();i++){
+            swapper(arr.get(i),k);
+        }
+        return arr;
+    }
+
+    public static void swapper( ArrayList<Integer> arr,int k){
+        int len = arr.size();
+        for(int i=0;i<k;i++){
+            int last = arr.get(len-1);
+            for(int j=len-1;j>0;j--){
+                arr.set(j,arr.get(j-1));
+            }
+            arr.set(0,last);
+        }
+    }
+}
+```
+

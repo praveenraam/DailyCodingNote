@@ -1,5 +1,5 @@
 
- 
+## [Requirement Gathering Report](https://docs.google.com/document/d/1YazCkWFGxgDThvjEoRTitwMpLsZVa4RSE58Gpupquf0/edit?usp=sharing)
 ## Project details :
  
 **Project ID:** 6 - Alumni Network platform
@@ -40,11 +40,4 @@
 - Single Page : 
     - Batch Wise list of Alumni with working company record
     - Search option with both company and student
-
-## [Requirement Gathering Report](https://docs.google.com/document/d/1YazCkWFGxgDThvjEoRTitwMpLsZVa4RSE58Gpupquf0/edit?usp=sharing)
-## Diagrams and Flowchart 
-
-- Use Case Diagram : https://i.stack.imgur.com/GXdeZ.png
-- ER Diagram : DB design
-- Website Flow 
-- User Registration and Authentication Flowchart [ImgLink](https://cdn-proxy.slickplan.com/wp-content/uploads/2021/07/login_process_flow_chart_template.png)
+    
