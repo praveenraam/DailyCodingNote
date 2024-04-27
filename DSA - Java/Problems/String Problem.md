@@ -667,3 +667,67 @@ class Solution {
         return cur.toString();
     }
 }
+```
+
+### [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) 
+
+```Java
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        
+        List<Integer> res = new ArrayList<>();
+        if(s.length() < p.length()) return res;
+
+        Map<Character,Integer> pMap = new HashMap<>();
+
+        for(char ch:p.toCharArray()){
+            pMap.put(ch,pMap.getOrDefault(ch,0)+1);
+        }
+        
+        int p1 = 0;
+        int p2 = p.length()-1;
+
+        while(p2<s.length()){
+            Map<Character,Integer> sMap = new HashMap<>();
+            for(int i=p1;i<=p2;i++){
+                char ch = s.charAt(i);
+                sMap.put(ch,sMap.getOrDefault(ch,0)+1);
+            }
+            if(pMap.equals(sMap)){
+                res.add(p1);
+            }
+            p1++;p2++;
+        }
+
+        return res;
+    }
+}
+```
+
+### [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+
+```Java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int j=0;
+
+        if(haystack.length() < needle.length()) return -1;
+
+        for(int i=0;i<haystack.length();i++){
+            int temp = i;
+
+            while( i<haystack.length() && haystack.charAt(i) == needle.charAt(j) ){
+                i++;
+                j++;
+                if(needle.length() == j) return temp;
+            }
+
+            i = temp;
+            j = 0;
+        
+        }
+
+        return -1;
+    }
+}
+```

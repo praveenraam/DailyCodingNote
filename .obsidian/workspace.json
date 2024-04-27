@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9cb0a90c87ea83b4",
+        "id": "d9470fd003604b75",
         "type": "tabs",
         "children": [
           {
-            "id": "c7978d64f74293fe",
+            "id": "e498fbd837e4c32e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,9 +139,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7978d64f74293fe",
+  "active": "e498fbd837e4c32e",
   "lastOpenFiles": [
     "Placement/Project/Diagram  and Flowcharts.md",
+    "Pasted image 20240427093032.png",
+    "Pasted image 20240427093011.png",
+    "Pasted image 20240427092937.png",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/String Problem.md",
     "Placement/IMGS/Pasted image 20240426105402.png",
@@ -189,9 +184,6 @@
     "DSA - Java/Java/IMGs/Pasted image 20240214140450.png",
     "DSA - Java/College Skills/SpringBoot",
     "DSA - Java/Java/IMGs/Pasted image 20240213125111.png",
-    "DSA - Java/Java/Pasted image 20240213125111.png",
-    "DSA - Java/Pasted image 20240213125111.png",
-    "Pasted image 20240213125111.png",
     "DSA - Java/OOPS",
     "DSA - JS/IMGS",
     "Untitled.canvas"
