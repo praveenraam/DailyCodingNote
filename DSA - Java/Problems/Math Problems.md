@@ -714,3 +714,22 @@ int main() {
     printf("%d",sum);
 }
 ```
+
+### [1822. Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/)
+
+```Java
+class Solution {
+    public int arraySign(int[] nums) {
+        int counter = 0;
+
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == 0) return 0;
+            else if(nums[i] < 0) counter++;
+        }
+
+        if(counter%2 == 0) return 1;
+        else return -1;
+
+    }
+}
+```

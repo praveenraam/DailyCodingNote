@@ -1723,3 +1723,93 @@ public class Solution {
 }
 ```
 
+### [665. Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
+```Java
+class Solution {
+    public boolean checkPossibility(int[] nums) {
+
+        int counter=0;
+
+        for(int i=1;i<nums.length;i++){
+            if(nums[i] < nums[i-1]){
+                counter++;
+                if (i - 2 < 0 || nums[i - 2] <= nums[i]) nums[i - 1] = nums[i]; 
+                else nums[i] = nums[i - 1];
+            } 
+            if(counter == 2) return false;
+        }
+
+        return true;
+    }
+}
+```
+
+### [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+```Java
+class Solution {
+    public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        for(int i=0;i<nums1.length;i++){
+            set1.add(nums1[i]);
+        }
+        for(int i=0;i<nums2.length;i++){
+            set2.add(nums2[i]);
+        }
+
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>()); 
+        res.add(new ArrayList<>());
+
+        for(int i=0;i<nums2.length;i++){
+            if(!(set1.contains(nums2[i]))){
+                set1.add(nums2[i]);
+                res.get(1).add(nums2[i]);
+            } 
+            
+        }
+        for(int i=0;i<nums1.length;i++){
+            if(!(set2.contains(nums1[i]))){
+                set2.add(nums1[i]);
+                res.get(0).add(nums1[i]);
+            }
+        }
+
+        return res;
+
+    }
+}
+```
+
+### [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+```Java
+class Solution {
+    public int maxArea(int[] height) {
+        int p1 = 0;
+        int p2 = height.length-1;
+        int ans = 0;
+
+        while(p1<p2){
+            int s = height[p1];
+            int e = height[p2];
+            int temp = 0;
+            int dif = p2-p1;
+
+            if(s > e){
+                temp = e*dif;
+                p2--;
+            }
+            else {
+                temp = s*dif;
+                p1++;
+            }
+
+            if(temp > ans) ans = temp;
+
+        }
+
+        return ans;
+    }
+}
+```

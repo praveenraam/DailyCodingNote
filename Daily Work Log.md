@@ -1,3 +1,10 @@
+## Day 108: 
+#### Date : 27.04.2024
+- Daily Learnins: Array Problems 
+- Login page for placement project
+## Day 107: 
+#### Date : 27.04.2024
+- Daily Learnins: String problems , Website flow
 ## Day 106: 
 #### Date : 26.04.2024
 - Solved leetcode problem and prepared use case diagram
