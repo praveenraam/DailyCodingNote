@@ -1,10 +1,14 @@
+## Day 109: 
+#### Date : 30.04.2024
+- Array and string Problems 
+- Login page for placement project
 ## Day 108: 
-#### Date : 27.04.2024
-- Daily Learnins: Array Problems 
+#### Date : 29.04.2024
+- Array Problems 
 - Login page for placement project
 ## Day 107: 
 #### Date : 27.04.2024
-- Daily Learnins: String problems , Website flow
+- String problems , Website flow
 ## Day 106: 
 #### Date : 26.04.2024
 - Solved leetcode problem and prepared use case diagram

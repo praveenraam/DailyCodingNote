@@ -731,3 +731,36 @@ class Solution {
     }
 }
 ```
+
+### [Valid-Palindrome](https://leetcode.com/problems/valid-palindrome)
+
+```Java
+class Solution {
+    public boolean isPalindrome(String s) {
+        int p1=0,p2=s.length()-1;
+
+        if(s.length() == 0) return false;
+
+        s = s.toLowerCase();
+        while(p1<p2){
+
+            char ch1 = s.charAt(p1);
+            char ch2 = s.charAt(p2);
+            
+            if((ch1 >= 'a' && ch1 <= 'z' || ch1 >= '0' && ch1 <= '9') && (ch2 >= 'a' && ch2 <= 'z'|| ch2 >= '0' && ch2 <= '9')){
+                if( ch1 == ch2 ){
+                    p1++; p2--;
+                } else return false;
+            }
+            if(!(ch1 >= 'a' && ch1 <= 'z' || ch1 >= '0' && ch1 <= '9')){
+                p1++;
+            }if(!(ch2 >= 'a' && ch2 <= 'z'|| ch2 >= '0' && ch2 <= '9')){
+                p2--;
+            }
+
+        }
+        return true;
+
+    }
+}
+```

@@ -1089,6 +1089,91 @@ public class Solution {
     }
 }
 ```
+
+### [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)
+```Java
+import java.util.*;
+class Solution {
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> res = new ArrayList<>();
+        
+        res.add(new ArrayList<>());
+        res.get(0).add(1);
+
+        if(numRows == 1) {
+            return res;
+        }
+
+        res.add(new ArrayList<>());
+        res.get(1).add(1);
+        res.get(1).add(1);
+
+        if(numRows == 2){
+            return res;
+        }
+
+        int counter = 3;
+        while(counter<=numRows){
+
+            res.add(new ArrayList<>());
+
+            for(int i=0;i<counter-1;i++){
+                if(i == 0) res.get(counter-1).add(1);
+                else {
+                    int sum = res.get(counter-2).get(i-1);
+                    sum += res.get(counter-2).get(i);
+                    res.get(counter-1).add(sum);
+                }
+            }
+            res.get(counter-1).add(1);
+            counter++;
+        }
+        return res;
+    }
+}
+```
+### [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)
+```Java
+class Solution {
+    public List<Integer> getRow(int rowIndex) {
+        List<List<Integer>> res = new ArrayList<>();
+        
+        res.add(new ArrayList<>());
+        res.get(0).add(1);
+
+        if(rowIndex == 0) {
+            return res.get(0);
+        }
+
+        res.add(new ArrayList<>());
+        res.get(1).add(1);
+        res.get(1).add(1);
+
+        if(rowIndex == 1){
+            return res.get(1);
+        }
+
+        int counter = 3;
+        while(counter<=(rowIndex+1)){
+
+            res.add(new ArrayList<>());
+
+            for(int i=0;i<counter-1;i++){
+                if(i == 0) res.get(counter-1).add(1);
+                else {
+                    int sum = res.get(counter-2).get(i-1);
+                    sum += res.get(counter-2).get(i);
+                    res.get(counter-1).add(sum);
+                }
+            }
+            res.get(counter-1).add(1);
+            counter++;
+        }
+        return res.get(rowIndex);
+    }
+}
+```
+
 ### [Majority Element](https://www.codingninjas.com/studio/problems/majority-element_6915220?utm_source=striver&utm_medium=website&utm_campaign=codestudio_a_zcourse&leftPanelTabValue=PROBLEM)
 ```Java
 import java.util.*;
