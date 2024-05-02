@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Type conversion and casting.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Type conversion and casting.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Type conversion and casting.md",
+                "file": "DSA - Java/Problems/Math Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Type conversion and casting.md"
+                "file": "DSA - Java/Problems/Math Problems.md"
               }
             }
           }
@@ -149,9 +149,13 @@
   },
   "active": "e498fbd837e4c32e",
   "lastOpenFiles": [
+    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Java/Binary Search.md",
+    "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Hashing&Maps.md",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Problems/HashMap Problems.md",
@@ -159,7 +163,6 @@
     "Pasted image 20240427093032.png",
     "Pasted image 20240427093011.png",
     "Pasted image 20240427092937.png",
-    "DSA - Java/Problems/String Problem.md",
     "Placement/IMGS/Pasted image 20240426105402.png",
     "Placement/IMGS/Pasted image 20240426174433.png",
     "Placement/Project/Problem statement and details.md",
@@ -183,9 +186,6 @@
     "Shopify/Liquid Introduction.md",
     "DSA - Java/College Skills/Java Framework S4/Day 5.md",
     "DSA - Java/College Skills/Java Framework S4/Day 4.md",
-    "DSA - Java/College Skills/Java Framework S4/Day 3.md",
-    "DSA - Java/College Skills/Java Framework S4/Day 2.md",
-    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
     "Shopify",

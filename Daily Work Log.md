@@ -1,6 +1,10 @@
 ## Day 109: 
 #### Date : 30.04.2024
 - Array and string Problems 
+- News feed page for placement project
+## Day 109: 
+#### Date : 30.04.2024
+- Array and string Problems 
 - Login page for placement project
 ## Day 108: 
 #### Date : 29.04.2024

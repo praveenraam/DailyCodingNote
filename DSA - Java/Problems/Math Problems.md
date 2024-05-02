@@ -733,3 +733,35 @@ class Solution {
     }
 }
 ```
+
+###  [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+
+```Java
+class Solution {
+    public int mySqrt(int x) {
+        int ans = 1;
+        int start=1,end=x;
+
+        if(x == 0) return 0;
+        
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            if(start == end){
+                if(mid*mid > x) return mid-1;
+            }
+            if(mid*mid == x) return mid;
+            if(mid*mid > x){
+                ans = mid;
+                end = mid-1;
+            }
+            if(mid*mid < x){
+                ans = mid;
+                start = start+1;
+            }
+        }
+        return ans;
+
+    }
+}
+```
+

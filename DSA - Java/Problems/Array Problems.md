@@ -1898,3 +1898,97 @@ class Solution {
     }
 }
 ```
+
+### [179. Largest Number](https://leetcode.com/problems/largest-number/)
+
+```Java
+class Solution {
+    public String largestNumber(int[] nums) {
+        String[] arr = new String[nums.length];
+
+        for(int i=0;i<nums.length;i++){
+            arr[i] = String.valueOf(nums[i]);
+        }
+
+        Arrays.sort(arr,new Comparator<String>(){
+            @Override
+            public int compare(String n1,String n2){
+                String s1=n1+n2,s2 = n2+n1;
+                return n2.compareTo(n1);
+            }
+        });
+
+        if(arr[0].equals("0")) return "0";
+
+        StringBuilder sb = new StringBuilder();
+        
+        for(String s : arr){
+            sb.append(s);
+        }
+
+        return sb.toString();
+        
+
+    }
+}
+```
+
+### [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/)
+
+```Java
+class Solution {
+    public int findMaxK(int[] nums) {
+        Set<Integer> st= new HashSet<>();
+        int max = -1;
+
+        for(int num : nums){
+            st.add(num);
+        }
+
+        for(int num : nums){
+            int tempMax = 0;
+            if(num < 0) continue;
+
+            if(st.contains(num*-1)){
+                if(num > max) max = num;
+            }
+
+        }
+
+        return max;
+
+    }
+}
+```
+
+### [2348. Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays/)
+
+```Java
+class Solution {
+    public long zeroFilledSubarray(int[] nums) {
+        int occurrence = 0;
+        long result = 0;
+
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == 0) occurrence++;
+            else if(occurrence != 0 ){
+                result+=(summation(occurrence));
+                occurrence = 0;
+            }
+
+            if((i+1) == nums.length && nums[i] == 0){
+                result+=(summation(occurrence));
+                occurrence = 0;
+            }
+        }
+
+        return result;
+    }
+
+    public static long summation(long n){
+        if(n<=1) return 1;
+        return n+(summation(n-1));
+    }
+}
+```
+
