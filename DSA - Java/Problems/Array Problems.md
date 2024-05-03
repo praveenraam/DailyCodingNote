@@ -1992,3 +1992,55 @@ class Solution {
 }
 ```
 
+### [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people)
+
+```Java
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        Arrays.sort(people);
+        int boat = 0;
+        int j=people.length-1;
+
+        for(int i=0;i<=j;i++){
+            if(i == j){
+                boat++;
+                break;
+            }
+            int sum = people[i]+people[j];
+            if(sum <= limit){
+                boat++;
+                j--;
+            }else{
+                boat++;
+                j--;
+                i--;
+            }
+        }
+        return boat;
+    }
+}
+```
+
+### [1968. Array With Elements Not Equal to Average of Neighbors](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/)
+
+```Java
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        boolean flag = true;
+
+        while(flag){
+            flag = false;
+            for(int i =1 ;i<nums.length-1;i++){
+                if(nums[i-1]+nums[i+1] == 2*nums[i]){
+                    int temp = nums[i];
+                    nums[i] = nums[i-1];
+                    nums[i-1] = temp;
+                    flag = true;
+                }
+            }
+        }
+
+        return nums;
+    }
+}
+```

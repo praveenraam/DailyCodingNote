@@ -820,3 +820,29 @@ class Solution {
 }
 ```
 
+### [187. Repeated DNA Sequence](https://leetcode.com/problems/repeated-dna-sequences)
+
+```Java
+class Solution {
+    public List<String> findRepeatedDnaSequences(String s) {
+        int start =0,end=10;
+        Set<String> set = new HashSet<>();
+        Set<String> ans = new HashSet<>();
+
+        while(end <= s.length()){
+            String st = s.substring(start,end);
+            if(set.contains(st)){
+                ans.add(st);
+            }
+            set.add(st);
+            end++; start++;
+        }
+
+        List<String> re = new ArrayList<>(ans);
+
+        return re;
+
+    }
+}
+```
+
