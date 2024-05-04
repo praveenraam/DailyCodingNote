@@ -2044,3 +2044,78 @@ class Solution {
     }
 }
 ```
+
+### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+
+```Java
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int p1=0,p2=numbers.length-1;
+
+        while(p1<=p2){
+            int sum = numbers[p1]+numbers[p2];
+
+            if(sum == target) return new int[] {p1+1,p2+1};
+            else if(sum > target) p2--;
+            else p1++;
+
+        }
+        return new int[] {-1,-1};
+    }
+}
+```
+
+### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+
+```Java
+class Solution {
+    public int trap(int[] height) {
+        int leftMax = height[0];
+        int water = 0;
+        Stack<Integer> rightMax = new Stack<>();
+
+        rightMax.push(height[height.length-1]);
+        for(int i=height.length-2;i>1;i--){
+            int temp = Math.max(rightMax.peek(),height[i]);
+            rightMax.push(temp);
+        }
+
+        for(int i=1;i<height.length-1;i++){
+            int min = Math.min(rightMax.peek(),leftMax);
+            int temp = min-height[i];
+            water += Math.max(0,temp);
+
+            rightMax.pop();
+            leftMax = Math.max(leftMax,height[i]);
+        }
+
+        return water;
+
+    }
+}
+```
+
+### [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+
+```Java
+
+class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<nums.length;i++){
+
+            if(!(mp.containsKey(nums[i]))) {
+                mp.put(nums[i],i);
+            }else{
+                int temp = Math.abs(i-mp.get(nums[i]));
+                if(temp <= k) return true;
+                mp.put(nums[i],i);
+            }
+        }
+
+        return false;
+
+    }
+}
+```

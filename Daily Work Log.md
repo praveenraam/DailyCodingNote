@@ -1,3 +1,6 @@
+## Day 112: 
+#### Date : 04.05.2024
+- Array and math problem
 ## Day 111: 
 #### Date : 03.05.2024
 - Array and string Problems 
