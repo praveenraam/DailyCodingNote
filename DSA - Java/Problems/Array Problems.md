@@ -2119,3 +2119,74 @@ class Solution {
     }
 }
 ```
+
+### [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+
+```Java
+class Solution {
+    public void merge(int[] a, int m, int[] b, int n) {
+        int p1 = m-1,p2=n-1,ls=a.length-1;
+  
+        while(p1>=0 && p2>=0){
+            if(a[p1] >= b[p2]){
+                a[ls] = a[p1];
+                p1--; ls--;
+            }else if(a[p1] < b[p2]){
+                a[ls] = b[p2];
+                p2--; ls--;
+            }
+        }
+  
+        while(p1>=0){
+            a[ls] = a[p1];
+            p1--; ls--;
+        }
+        while(p2>=0){
+            a[ls]= b[p2];
+            p2--;ls--;
+        }
+    }
+}
+```
+
+### [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+```Java
+class Solution {
+    public int removeDuplicates(int[] n) {
+        int p1=0,p2=1;
+        while(p2<n.length){
+            if(n[p1] == n[p2]) p2++;
+            else{
+                n[p1+1] = n[p2];
+                p1++;p2++;
+            }
+        }
+        return p1+1;
+    }
+
+}
+```
+
+### [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
+
+```Java
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int sum = 0;
+        int p1 = 0,p2=0;
+        
+        while(p1<mat.length && p2<mat[p1].length){
+            sum += (mat[p1][p2]);
+            mat[p1][p2] = 0;
+            p1++;p2++;
+        }
+        p1=0;p2=mat[0].length-1;
+
+        while(p1<mat.length && p2>=0){
+            sum += (mat[p1][p2]);
+            p1++;p2--;
+        }
+        return sum;
+    }
+}
+```

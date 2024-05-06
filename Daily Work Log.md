@@ -1,3 +1,7 @@
+## Day 113: 
+#### Date : 06.05.2024
+- Leetcode problems 
+- Placement PS Preparation
 ## Day 112: 
 #### Date : 04.05.2024
 - Array and math problem
