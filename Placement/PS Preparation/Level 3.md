@@ -1,3 +1,5 @@
+### Topic : Arrays
+
 
 ### Count of array elements divisible by specific number
 
@@ -597,5 +599,94 @@ int main() {
     
 }
 ```
-### 21 23 26
+### Remove continue duplicates
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int num[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&num[i]);
+    }
+    
+    for(int i=0;i<n;i++){
+        if(num[i] != num[i+1]) printf("%d",num[i]);
+    }
+    //printf("%d",num[n-1]);
+    
+}
+```
+### Maximum sum of the array
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int num[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&num[i]);
+    }
+    
+    int sum = num[0];
+    int max = sum;
+    
+    for(int i=1;i<n;i++){
+        sum += num[i];
+        if(max < sum) max = sum;
+    }
+    printf("%d",max);
+}
+```
+
+### Maximum count of the duplicate
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int num[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&num[i]);
+    }
+    
+    int arr[n];
+    
+    for(int i=0;i<n;i++){
+        arr[i] = 1;
+    }
+    
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(num[i] == num[j]){
+                arr[j] = arr[j]+1;
+            }
+        }
+    }
+    
+    int max = -1; int count=0;
+    for(int i=0;i<n;i++){
+        if(arr[i] == 1) continue;
+        if(arr[i] == max) count++;
+        if(arr[i] > max){
+            max = arr[i];
+            count=1;
+        }
+    }
+    
+    for(int i=0;i<count;i++){
+        printf("%d ",max);
+    }
+    
+}
+```
 

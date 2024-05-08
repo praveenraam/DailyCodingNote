@@ -872,3 +872,27 @@ class Solution {
     }
 }
 ```
+
+### [1461. Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/)
+
+```Java
+import java.lang.Math;
+
+class Solution {
+    public boolean hasAllCodes(String s, int k) {
+        Set<String> st = new HashSet<>();
+        int total = (int)(Math.pow(2.0,k));
+        int j=0;
+        
+        for(int i=k;i<=s.length();i++){
+            st.add(s.substring(j,i));
+            j++;
+        }
+
+        if(st.size() == total) return true;
+
+        return false;
+
+    }
+}
+```

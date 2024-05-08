@@ -2190,3 +2190,61 @@ class Solution {
     }
 }
 ```
+
+### [Rotate Array](https://leetcode.com/problems/rotate-array/)
+
+```Java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        if(nums.length < k){
+            k = k%nums.length;
+        }
+        int temp[] = new int[k];
+
+        int counter = nums.length-k;
+        for(int i=0;i<k;i++){
+            temp[i] = nums[counter];
+            counter++;
+        }
+
+        counter = nums.length-1;
+        for(int i=nums.length-k-1;i>=0;i--){
+            nums[counter] = nums[i];
+            counter--;
+        }
+
+        for(int i=0;i<k;i++){
+            nums[i] = temp[i];
+        }
+
+    }
+}
+```
+
+```Java
+class Solution {
+    public void rotate(int[] n, int k) {
+        
+        if(n.length < k ) k = k%n.length;
+
+        int i=0,j = n.length-1;
+        rotateAnArray(n,i,j);
+        i=0;j=k-1;
+        rotateAnArray(n,i,j);
+        i=k;j=n.length-1;
+        rotateAnArray(n,i,j);
+
+    }
+    public void rotateAnArray(int[] n,int i,int j){
+        while(i<j){
+            int temp = n[i];
+            n[i] = n[j];
+            n[j] = temp;
+
+            i++; j--;
+        }
+    }
+}
+```
+
+### 
