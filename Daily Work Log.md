@@ -1,3 +1,7 @@
+## Day 116: 
+#### Date : 09.05.2024
+- String problems in C
+- UI/UX figma model for Placement project
 ## Day 115: 
 #### Date : 08.05.2024
 - Leetcode problems 

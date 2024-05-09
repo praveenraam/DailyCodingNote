@@ -21,6 +21,10 @@ Next Topic : [[]]
 
 ### HashSet
 - The collection that is implemented without duplicates 
+### Function : 
+- ``set.add(variable/number)``
+- ``set.remove();``
+
 ## Queue
 - We use queue in the situation where we have a resource that is shared among a lot of consumers 
 - Ex : printer in the store, you can give many inputs to print but it prints in an order of FIFO which is queue
