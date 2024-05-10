@@ -1,3 +1,7 @@
+## Day 117: 
+#### Date : 10.05.2024
+- UI/UX figma model for Placement project
+- Website for IT Event (ITronz)
 ## Day 116: 
 #### Date : 09.05.2024
 - String problems in C

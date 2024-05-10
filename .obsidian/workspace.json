@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "Placement/PS Preparation/Level 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "Placement/PS Preparation/Level 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "Placement/PS Preparation/Level 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md"
+                "file": "Placement/PS Preparation/Level 3.md"
               }
             }
           }
@@ -148,11 +148,13 @@
   },
   "active": "fe6bef23a16411e1",
   "lastOpenFiles": [
+    "Placement/PS Preparation/Level 3 1.md",
+    "Placement/PS Preparation/Level 3.md",
+    "Placement/PS Preparation/Level 4.md",
     "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
-    "Placement/PS Preparation/Level 3.md",
-    "DSA - Java/Problems/String Problem.md",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
     "Placement/P.md",
@@ -186,8 +188,6 @@
     "DSA - JS/Recursion and problem.md",
     "Shopify/ShopifyWork.md",
     "Shopify/Point to remember.md",
-    "Shopify/Must Have Apps.md",
-    "Shopify/Liquid Introduction.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
     "Shopify",

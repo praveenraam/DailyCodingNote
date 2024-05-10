@@ -278,7 +278,7 @@ int main(){
 #include<stdio.h>
 
 int isPrime(int n){
-    if(n == 1 || n == 0) return n;
+    if(n == 1 || n == 0) return 0;
     int divi = 2;
     while(divi<n){
         if(n%divi == 0){
@@ -302,8 +302,7 @@ int main(){
         if(isPrime(num[i]) == 0){
             printf("%d ",num[i]);
         }
-    }
-    
+    } 
 }
 ```
 
@@ -352,7 +351,7 @@ int main() {
     }
     
     int ans[] = {0,0};
-    int min = 0;
+    int min = 100000;
     for(int i=0;i<size;i++){
         for(int j=i+1;j<size;j++){
             int no = abs(arr[i]+arr[j]);
