@@ -1,3 +1,11 @@
+## Day 119: 
+#### Date : 12.05.2024
+- UI/UX figma model for Placement project
+- Website for IT Event (ITronz)
+## Day 118: 
+#### Date : 11.05.2024
+- Cleared PS Level 4
+- Website for IT Event (ITronz)
 ## Day 117: 
 #### Date : 10.05.2024
 - UI/UX figma model for Placement project

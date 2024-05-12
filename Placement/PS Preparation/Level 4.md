@@ -236,3 +236,214 @@ int main() {
 }
 ```
 
+### Railway timing
+```C
+#include <stdio.h>
+
+int main(){
+    int hr,min,sec;
+    
+    scanf("%d:%d:%d",&hr,&min,&sec);
+    
+    if((!(hr>=0 && hr<=23)) || (!(min>=0 && min<=59)) || (!(sec>=0 && sec<=59))){
+        printf("Invalid");
+    }
+    
+    printf("Hours : %d\n",hr);
+    printf("Minute : %d\n",min);
+    printf("Seconds : %d\n",sec);
+    
+}
+```
+
+### Count of the longest word
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+    char in[1024];
+    fgets(in,sizeof(in),stdin);
+    
+    int count = 0; int max=-1;
+    
+    for(int i=0;i<strlen(in);i++){
+        if(in[i] == ' ' || i+1 == strlen(in)){
+            if(max < count) max = count;
+            count = 0;
+        }else{
+            count++;
+        }
+    }
+    
+    printf("%d",max);
+    
+}
+```
+
+### Longest palindrome
+
+```C
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+char* longpal(char* s){
+    int len = strlen(s);
+    int start = 0;
+    int maxlen=0;
+    
+    int expc(int left,int right){
+        while(left>=0 && right<len && s[right] == s[left]){
+            left--;
+            right++;
+        }
+        return right-left-1;
+    }
+    
+    for(int i=0;i<len;i++){
+        int len1 = expc(i,i);
+        int len2 = expc(i,i+1);
+        int max = len1>len2 ? len1 : len2;
+        if(maxlen < max){
+            maxlen = max;
+            start = i - (maxlen-1)/2;
+        }
+    }
+    char* res = malloc(maxlen+1);
+    strncpy(res,s+start,maxlen);
+    res[maxlen] = '\0';
+    return res;
+}
+
+
+int main(){
+    char wrd[200];
+    fgets(wrd,sizeof(wrd),stdin);
+    char* res = longpal(wrd);
+    printf("%s",res);
+}
+```
+
+### swap adjacent character
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char wrd[200];
+    fgets(wrd,sizeof(wrd),stdin);
+    
+    for(int i=0;i<strlen(wrd);i=i+2){
+        if(i>=strlen(wrd)) break;
+        
+        char temp = wrd[i];
+        wrd[i] = wrd[i+1];
+        wrd[i+1] = temp;
+    
+    }
+    
+    printf("%s",wrd);
+    
+}
+```
+
+### count the total characters in a string and check the number is odd, even, prime
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+int isPrime(int n){
+    if(n == 1 || n == 0) return 0;
+    
+    int divi = 2;
+    while(n>divi){
+        if(n%divi == 0){
+            return 0;
+        }
+        divi++;
+    }
+    
+    return 1;
+    
+}
+
+int main() {
+    char wrd[200];
+    fgets(wrd,sizeof(wrd),stdin);
+    int count = 0;
+    
+    for(int i=0;i<strlen(wrd);i++){
+        count++;
+    }
+    
+    printf("%d ",count);
+    
+    if(count%2 == 0) printf("Even ");
+    else printf("Odd ");
+    if(isPrime(count) == 0){
+        printf("NotPrime ");
+    }else{
+        printf("Prime");
+    }
+    
+}
+```
+
+### Replace a specific character with another and number with 'n'
+```C
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    char in[1024];
+    fgets(in,sizeof(in),stdin);
+    char in1,in2;
+    scanf("%c %c",&in1,&in2);
+    
+    for(int i=0;i<strlen(in);i++){
+        if(in1 == in[i]){
+            printf("%c",in2);
+        }
+        else if(in1 >= '0' && in2 <= '9'){
+            printf("n");
+        }
+        else{
+            printf("%c",in[i]);
+        }
+    }
+    
+}
+```
+
+### find the non - repeating character
+```C
+#include<string.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    char in[1024];
+    fgets(in,sizeof(in),stdin);
+    
+    int isBool = 1;
+    
+    for(int i=0;i<strlen(in);i++){
+        for(int j=i+1;j<strlen(in);j++){
+            if(in[i] == in[j]){
+                isBool = 0;
+            }        
+        }
+        if(isBool){
+            printf("%c",in[i]);
+            break;
+        }
+        isBool = 1;
+    }
+    
+}
+```
