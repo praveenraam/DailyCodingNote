@@ -1,3 +1,7 @@
+## Day 120: 
+#### Date : 13.05.2024
+- Learnt Linked List
+- Solved an math problem
 ## Day 119: 
 #### Date : 12.05.2024
 - UI/UX figma model for Placement project

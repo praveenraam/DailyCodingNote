@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "DSA - Java/Java/Linked List.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "DSA - Java/Java/Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md",
+                "file": "DSA - Java/Java/Linked List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placement/PS Preparation/Level 4.md"
+                "file": "DSA - Java/Java/Linked List.md"
               }
             }
           }
@@ -148,12 +148,21 @@
   },
   "active": "fe6bef23a16411e1",
   "lastOpenFiles": [
+    "DSA - Java/OOPS/Basics.md",
+    "DSA - Java/OOPS/File Handling.md",
+    "DSA - Java/OOPS/Exception handling.md",
+    "DSA - Java/OOPS/Advance concepts.md",
+    "DSA - Java/OOPS/InheritanceTypes.md",
+    "DSA - Java/Java/Linked List.md",
+    "Pasted image 20240513133638.png",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Hashing&Maps.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
+    "Placement/PS Preparation/Level 4.md",
     "Placement/PS Preparation/Level 3.md",
     "Placement/PS Preparation/Level 3 1.md",
-    "Placement/PS Preparation/Level 4.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Pattern Printing and problems.md",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
@@ -163,7 +172,6 @@
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Java/Binary Search.md",
     "DSA - Java/Java/Type conversion and casting.md",
-    "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Problems/HashMap Problems.md",
     "Placement/Project/Diagram  and Flowcharts.md",
@@ -177,23 +185,15 @@
     "DSA - Java/Mapping - 1.md",
     "Daily Work Log.md",
     "Pasted image 20240425125725.png",
-    "DSA - Java/Java/Arrays.md",
-    "DSA - Java/Java/Strings.md",
-    "DSA - Java/Java/Sorting Techniques.md",
-    "DSA - Java/Java/Sorting Techniques 2.md",
     "Placement/Project",
     "Placement/Project",
     "Untitled",
     "Placement",
-    "DSA - JS/Recursion and problem.md",
-    "Shopify/ShopifyWork.md",
-    "Shopify/Point to remember.md",
     "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
     "Shopify",
     "Pasted image 20240214141122.png",
     "DSA - Java/Java/IMGs/Pasted image 20240214140450.png",
-    "DSA - Java/Java/IMGs/Pasted image 20240213125111.png",
     "Untitled.canvas"
   ]
 }

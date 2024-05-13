@@ -1,5 +1,5 @@
 Topic no : 19
-Next Topic : [[]]
+Next Topic : [[Linked List]]
 
 
 #### All the collection types have own class declared and it's methods
