@@ -32,10 +32,9 @@ Video [Link](https://youtu.be/58YbpRDc4yw?si=feaZgsXsLzZKejEL)
 - Single Linked List : It is a one way list
 - Double Linked List : It is a two way list , as we an move front and backwards
 
-### Code for implementing
+### Code for implementing single Linked List
 
 ```Java
-  
 public class LL {  
     private Node head;  
     private Node tail;  
@@ -85,8 +84,58 @@ public class LL {
         temp.next = node;  
         size++;  
     }  
-    public void deleteHead(){  
+    public int deleteHead(){  
+        int val = head.value;  
+        head = head.next;  
+        if(head == null){  
+            tail = null;  
+        }  
+        size--;  
           
+        return val;  
+    }  
+    public int delete(int position){  
+        if(position == 0) return deleteHead();  
+        if(position == size-1) deleteTail();  
+        
+        Node prev = get(position - 1);  
+        int val = prev.value;  
+        
+        prev.next = prev.next.next;  
+        
+        return val;  
+    }  
+    public int deleteTail(){  
+        if(size <= 1) return deleteHead();  
+        
+        int val = tail.value;  
+        Node secondLast = get(size-2);  
+        tail = secondLast;  
+        tail.next = null;  
+        
+        size--;  
+        
+        return val;  
+    }  
+    public int getSize(){  
+        return size;  
+    }  
+    public Node get(int index){  
+        Node node = head;  
+        for(int i=0;i<index;i++){  
+            node = node.next;  
+        }  
+        return node;  
+    }  
+    public Node find(int val){  
+        Node node = head;  
+        while(node != null){  
+            if(node.value == val){  
+                return node;  
+            }  
+            node = node.next;  
+        }  
+        return null;  
     }  
     private class Node{  
         private int value;  
@@ -100,4 +149,101 @@ public class LL {
         }  
     }  
 }
+```
+
+### Code for implementing Double linked list
+
+```Java
+  
+public class DLL {  
+    private Node head;  
+    private Node tail;  
+    private int size;  
+  
+    public DLL(){  
+        this.size = 0;  
+    }  
+    public void insertFirst(int val){  
+        Node node = new DLL.Node(val);  
+  
+        node.next = head;  
+        node.prev = null;  
+        if(head != null) head.prev = node;  
+        head = node;  
+    }  
+    public void insertLast(int val){  
+        Node node = new Node(val);  
+        Node last = head;  
+  
+        node.next = null;  
+  
+        if(head == null){  
+            node.prev = null;  
+            head = node;  
+            return;  
+        }  
+  
+        while(last.next != null){  
+            last = last.next;  
+        }  
+  
+        last.next = node;  
+        node.prev = last;  
+  
+        size++;  
+    }  
+    public void insert(int after,int val){  
+        Node p = find(after);  
+  
+        if(p == null){  
+            System.out.println("Doesn't exist");  
+            return;  
+        }  
+        Node node = new Node(val);  
+        node.next = p.next;  
+        p.next = node;  
+        node.prev = p;  
+        if(node.next != null){  
+            node.next.prev = node;  
+        }  
+  
+    }  
+    public Node find(int val){  
+        Node node = head;  
+        while(node != null){  
+            if(node.value == val){  
+                return node;  
+            }  
+        }  
+        return node;  
+    }  
+    public void display(){  
+        Node node = head;  
+        while(node != null){  
+            System.out.print(node.value + " ");  
+            node = node.next;  
+        }  
+        System.out.println();  
+    }  
+  
+    private class Node{  
+        int value;  
+        Node prev;  
+        Node next;  
+  
+        public Node(int value){  
+            this.value = value;  
+        }  
+        public Node(int value,Node next){  
+            this.value = value;  
+            this.next = next;  
+        }  
+    }  
+}
+```
+
+### Code for implementing Circular linked list
+
+```Java
+
 ```

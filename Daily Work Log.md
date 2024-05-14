@@ -1,3 +1,6 @@
+## Day 121: 
+#### Date : 14.05.2024
+- Learnt Linked List
 ## Day 120: 
 #### Date : 13.05.2024
 - Learnt Linked List
