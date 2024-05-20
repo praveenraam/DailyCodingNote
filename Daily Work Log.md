@@ -1,3 +1,10 @@
+## Day 123: 
+#### Date : 15.05.2024
+- Starting to learn Operating System topic
+- Solved Leetcode problem
+## Day 122: 
+#### Date : 18.05.2024
+- Solved Leetcode problems
 ## Day 121: 
 #### Date : 14.05.2024
 - Learnt Linked List
