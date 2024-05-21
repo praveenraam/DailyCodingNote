@@ -1,5 +1,9 @@
+## Day 124: 
+#### Date : 21.05.2024
+- Introduction to OS
+- Solved Leetcode problem
 ## Day 123: 
-#### Date : 15.05.2024
+#### Date : 20.05.2024
 - Starting to learn Operating System topic
 - Solved Leetcode problem
 ## Day 122: 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3a928c0573227d7f",
+        "id": "92660f4667e0731f",
         "type": "tabs",
         "children": [
           {
-            "id": "fe6bef23a16411e1",
+            "id": "47c894e54e89c5eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Linked List.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#bigOnotation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Linked List.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Linked List.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Linked List.md"
+                "file": "DSA - Java/Git/Basic commands.md"
               }
             }
           }
@@ -146,54 +146,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe6bef23a16411e1",
+  "active": "47c894e54e89c5eb",
   "lastOpenFiles": [
-    "Placement/PS Preparation/Level 3.md",
+    "DSA - Java/Git/Forking and pull request.md",
+    "DSA - Java/Git/Squashing.md",
+    "DSA - Java/Git/Branches.md",
+    "DSA - Java/Git/Basic commands.md",
+    "DSA - Java/Git/Git - Git Hub.md",
+    "Operating-System/Introduction to OperatingSystem.md",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Linked List.md",
+    "Operating-System/Imgs/Pasted image 20240521085751.png",
+    "Operating-System/Imgs",
+    "Pasted image 20240521085644.png",
+    "Pasted image 20240521085719.png",
+    "DSA - Java/Java/Input Program.md",
+    "Operating-System",
+    "Studies/Freelancing Webinar.md",
+    "DSA - JS/IMGS/Pasted image 20231002120746.png",
+    "DSA - JS/Math algorithms.md",
+    "DSA - JS/Arrays and Objects.md",
+    "DSA - JS/Algorithm Analysis.md",
+    "DSA - JS/Circular Queue.md",
+    "DSA - JS/Queue.md",
+    "DSA - JS/Map.md",
+    "Placement/PS Preparation/Level 3.md",
     "DSA - Java/OOPS/Basics.md",
     "DSA - Java/OOPS/File Handling.md",
     "DSA - Java/OOPS/Exception handling.md",
     "DSA - Java/OOPS/Advance concepts.md",
     "DSA - Java/OOPS/InheritanceTypes.md",
     "Pasted image 20240513133638.png",
-    "DSA - Java/Java/Collections.md",
-    "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
     "Placement/PS Preparation/Level 4.md",
     "Placement/PS Preparation/Level 3 1.md",
-    "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Java/Pattern Printing and problems.md",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
-    "Placement/P.md",
     "Placement/PS Preparation",
-    "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
-    "DSA - Java/Java/Binary Search.md",
-    "DSA - Java/Java/Type conversion and casting.md",
-    "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Problems/HashMap Problems.md",
-    "Placement/Project/Diagram  and Flowcharts.md",
     "Pasted image 20240427093032.png",
     "Pasted image 20240427093011.png",
     "Pasted image 20240427092937.png",
     "Placement/IMGS/Pasted image 20240426105402.png",
     "Placement/IMGS/Pasted image 20240426174433.png",
-    "Placement/Project/Problem statement and details.md",
     "Placement/IMGS",
-    "DSA - Java/Mapping - 1.md",
-    "Daily Work Log.md",
-    "Pasted image 20240425125725.png",
     "Placement/Project",
     "Placement/Project",
-    "Untitled",
     "Placement",
-    "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "Untitled 1",
-    "Shopify",
-    "Pasted image 20240214141122.png",
-    "DSA - Java/Java/IMGs/Pasted image 20240214140450.png",
     "Untitled.canvas"
   ]
 }
