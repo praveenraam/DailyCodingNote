@@ -1,6 +1,6 @@
 Article [Link](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)
 Topic No : 1
-Next Topic : [[]]
+Next Topic : [[Functions of OS]]
 ## Why we need an OS
 
 - It acts an intermediate between the Hardware and the user

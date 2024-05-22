@@ -127,6 +127,8 @@ class Solution {
 
 ### [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)
 
+**Fast and Slow pointer method**
+
 ```Java
 class Solution {
     public int pairSum(ListNode head) {
@@ -202,3 +204,64 @@ class Solution {
     }
 }
 ```
+
+### [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)
+
+```Java
+class Solution {
+
+    public ListNode swapNodes(ListNode head, int k) {
+    
+        ListNode getFirst = head;
+        int count = 0;
+
+        while(count < k-1){
+            getFirst = getFirst.next;
+            count++;
+        }  
+
+        ListNode temp = getFirst;
+        ListNode getLast = head;
+
+        while(temp.next != null){
+            temp = temp.next;
+            getLast = getLast.next;
+        }
+
+        int swap = getLast.val;
+        getLast.val = getFirst.val;
+        getFirst.val = swap;
+
+        return head;  
+
+    }
+}
+```
+
+### [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+```Java
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+
+        if (head == null || head.next == null) return null;
+        ListNode temp = new ListNode(0);
+        temp.next = head;
+        ListNode p1 = temp;
+        ListNode p2 = temp;
+
+        while(n >0){
+            p2 = p2.next;
+            n--;
+        }
+
+        while(p2.next != null){
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+        p1.next = p1.next.next;
+        return temp.next;  
+    }
+}
+```
+

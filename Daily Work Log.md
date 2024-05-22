@@ -1,3 +1,7 @@
+## Day 125: 
+#### Date : 22.05.2024
+- Functions OS
+- Solved Leetcode problem
 ## Day 124: 
 #### Date : 21.05.2024
 - Introduction to OS
