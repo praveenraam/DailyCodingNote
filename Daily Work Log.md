@@ -1,3 +1,7 @@
+## Day 126: 
+#### Date : 23.05.2024
+- System call in OS
+- Solved Leetcode problem  (Linked List)
 ## Day 125: 
 #### Date : 22.05.2024
 - Functions OS

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Collections.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md"
+                "file": "DSA - Java/Java/Collections.md"
               }
             }
           }
@@ -148,7 +148,13 @@
   },
   "active": "41fd7c64cd906d1b",
   "lastOpenFiles": [
+    "DSA - Java/Java/Linked List.md",
+    "Operating-System/System Call.md",
     "Operating-System/Types of OS.md",
+    "Operating-System/Imgs/Pasted image 20240523095928.png",
+    "Operating-System/Functions of OS.md",
+    "Operating-System/Imgs/Pasted image 20240523085108.png",
+    "DSA - Java/Problems/LinkedList.md",
     "Operating-System/Imgs/Pasted image 20240522113736.png",
     "Operating-System/Imgs/Pasted image 20240522112606.png",
     "Operating-System/Imgs/Pasted image 20240522105457.png",
@@ -158,7 +164,6 @@
     "Shopify/Liquid Introduction.md",
     "Shopify/Start Note.md",
     "DSA - Java/College Skills/Java Framework S4/Day 3.md",
-    "Operating-System/Functions of OS.md",
     "Operating-System/Introduction to OperatingSystem.md",
     "Operating-System/Imgs/Pasted image 20240522085040.png",
     "DSA - Java/Git/Basic commands.md",
@@ -168,7 +173,6 @@
     "DSA - Java/Git/Git - Git Hub.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Hashing&Maps.md",
-    "DSA - Java/Java/Linked List.md",
     "Operating-System/Imgs/Pasted image 20240521085751.png",
     "Operating-System/Imgs",
     "Pasted image 20240521085644.png",
@@ -176,15 +180,12 @@
     "DSA - Java/Java/Input Program.md",
     "Operating-System",
     "Studies/Freelancing Webinar.md",
-    "DSA - JS/IMGS/Pasted image 20231002120746.png",
     "DSA - JS/Math algorithms.md",
     "DSA - JS/Arrays and Objects.md",
     "DSA - JS/Algorithm Analysis.md",
     "DSA - JS/Circular Queue.md",
     "DSA - JS/Queue.md",
     "DSA - JS/Map.md",
-    "Placement/PS Preparation/Level 3.md",
-    "Pasted image 20240513133638.png",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
     "Placement/PS Preparation",

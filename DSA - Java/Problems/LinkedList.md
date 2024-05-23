@@ -265,3 +265,149 @@ class Solution {
 }
 ```
 
+### [707. Design Linked List](https://leetcode.com/problems/design-linked-list/)
+
+```Java
+class MyLinkedList {
+    ListNode head;
+    int size;
+
+    public class ListNode{
+        int val;
+        ListNode next;
+
+        ListNode(int val){
+            this.val = val;
+        }
+    }
+
+    public MyLinkedList() {
+        this.head = null;
+        this.size = 0;
+    }
+    
+    public int get(int index) {
+        if(index < 0 || index >= this.size) return -1;
+        
+        ListNode curr = this.head;
+        while(index-- > 0){
+            curr = curr.next;
+        }
+        return curr.val;
+    }
+    
+    public void addAtHead(int val) {
+        ListNode newHead = new ListNode(val);
+        newHead.next = head;
+        head = newHead;
+        size++;
+    }
+    
+    public void addAtTail(int val) {
+        if(head == null) {
+        	addAtHead(val);
+            return;
+        }
+        ListNode traverse = head;
+        while(traverse.next != null){
+            traverse = traverse.next;
+        }
+
+        ListNode newNode = new ListNode(val);
+        traverse.next = newNode;
+        size++;
+
+    }
+    
+    public void addAtIndex(int index, int val) {
+        if(index > size){
+            return;
+        }
+        else if(index == 0){
+
+            ListNode newHead = new ListNode(val);
+            newHead.next = head;
+            head = newHead;
+            size++;
+            return;
+
+        }else if(size == index){
+
+            ListNode traverse = head;
+            while(traverse.next != null){
+                traverse = traverse.next;
+            }
+
+            ListNode newNode = new ListNode(val);
+            traverse.next = newNode;
+            size++;
+            return;
+
+        }else{
+
+            int count = 1;
+            ListNode prev = null;
+            ListNode cur = head;
+            size++;
+
+            while(count <= index){
+                prev = cur;
+                cur = cur.next;
+                count++;
+            }
+            ListNode newNode = new ListNode(val);
+            prev.next = newNode;
+            newNode.next =  cur;
+            size++;
+            return;
+        }
+    }
+    
+    public void deleteAtIndex(int index) {
+
+        if(index>=size){
+            return;
+        }
+        
+        if(index == 0){
+            head = head.next;
+            size--;
+        }else{
+            int count = 1;
+            ListNode prev = null;
+            ListNode cur = head;
+
+            while(count <= index){
+                prev = cur;
+                cur = cur.next;
+                count++;
+            }
+
+            prev.next = cur.next;
+            size--;
+        }
+    }
+}
+```
+
+### [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
+```
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        Set<ListNode> st = new HashSet<>();
+
+        while(head != null){
+            
+            if(st.contains(head)) return true;
+            st.add(head);
+
+            head = head.next;
+
+        }
+
+        return false;
+
+    }
+}
+```
