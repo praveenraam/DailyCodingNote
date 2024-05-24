@@ -1,3 +1,6 @@
+## Day 127: 
+#### Date : 24.05.2024
+- Solved Leetcode problem (Linked List)
 ## Day 126: 
 #### Date : 23.05.2024
 - System call in OS

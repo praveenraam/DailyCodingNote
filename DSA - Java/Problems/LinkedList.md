@@ -392,7 +392,7 @@ class MyLinkedList {
 
 ### [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
-```
+```Java
 public class Solution {
     public boolean hasCycle(ListNode head) {
         Set<ListNode> st = new HashSet<>();
@@ -411,3 +411,6 @@ public class Solution {
     }
 }
 ```
+
+### []()
+
