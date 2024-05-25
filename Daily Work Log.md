@@ -1,3 +1,7 @@
+## Day 128: 
+#### Date : 25.05.2024
+- Solved Leetcode problem (Linked List,Array)
+- Prepared and written exam 
 ## Day 127: 
 #### Date : 24.05.2024
 - Solved Leetcode problem (Linked List)

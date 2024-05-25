@@ -2247,4 +2247,32 @@ class Solution {
 }
 ```
 
-### 
+### [Move Zeroes]()
+
+```Java
+class Solution {
+    public void moveZeroes(int[] n) {
+        int i=0,j=1,c=0;
+
+        for(i =0;i<n.length;i++){
+            if(n[i] == 0) c++;
+        }
+        if(c == 0) return;
+        i=0;
+        while(j<n.length){
+            if(n[i] == 0 && n[j] != 0){
+                swap(n,i,j);
+                i++; j++;
+            }else if(n[j] == 0) j++;
+            else{
+                i++;
+            }
+        }
+    }
+    public static void swap(int[] n,int i,int j){
+        int temp = n[i];
+        n[i] = n[j];
+        n[j] = temp;
+    }
+}
+```

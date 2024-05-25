@@ -412,5 +412,34 @@ public class Solution {
 }
 ```
 
-### []()
+### [Sort List](https://leetcode.com/problems/sort-list/)
+```Java
+class Solution {
+    public ListNode sortList(ListNode head) {
+        int count = 0;
+        ListNode temp = head;
 
+        while(temp != null){
+            count++; temp = temp.next;
+        }
+
+        int[] arr = new int[count];
+        temp = head;
+
+        for(int i=0;i<count;i++){
+            arr[i] = temp.val;
+            temp = temp.next;
+        }
+
+        Arrays.sort(arr);
+        temp = head;
+        for(int i=0;i<count;i++){
+            temp.val = arr[i];
+            temp = temp.next;
+        }
+
+        return head;
+
+    }
+}
+```
