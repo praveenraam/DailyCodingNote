@@ -103,7 +103,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "DSA - Java/Problems/LinkedList.md",
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -148,6 +148,10 @@
   },
   "active": "41fd7c64cd906d1b",
   "lastOpenFiles": [
+    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Recursion Problems.md",
+    "DSA - Java/Problems/HashMap Problems.md",
+    "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Linked List.md",
     "Operating-System/System Call.md",
@@ -155,7 +159,6 @@
     "Operating-System/Imgs/Pasted image 20240523095928.png",
     "Operating-System/Functions of OS.md",
     "Operating-System/Imgs/Pasted image 20240523085108.png",
-    "DSA - Java/Problems/LinkedList.md",
     "Operating-System/Imgs/Pasted image 20240522113736.png",
     "Operating-System/Imgs/Pasted image 20240522112606.png",
     "Operating-System/Imgs/Pasted image 20240522105457.png",
@@ -183,9 +186,6 @@
     "DSA - JS/Math algorithms.md",
     "DSA - JS/Arrays and Objects.md",
     "DSA - JS/Algorithm Analysis.md",
-    "DSA - JS/Circular Queue.md",
-    "DSA - JS/Queue.md",
-    "DSA - JS/Map.md",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
     "Placement/PS Preparation",
