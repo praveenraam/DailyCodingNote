@@ -2276,3 +2276,71 @@ class Solution {
     }
 }
 ```
+
+### [15. 3Sum](https://leetcode.com/problems/3sum/)
+
+```Java
+class Solution {
+    public List<List<Integer>> threeSum(int[] n) {
+        List<List<Integer>> ls = new ArrayList<>();
+        Set<List<Integer>> st = new HashSet<>();
+
+        Arrays.sort(n);
+
+        for(int i=0;i<n.length;i++){
+            int p1 = i+1;
+            int p2 = n.length-1;
+
+            while(p1<p2){
+                int sum =  n[i]+n[p1]+n[p2];
+                if(sum == 0){
+                    List<Integer> sol = new ArrayList<>();
+                    sol.add(n[i]);
+                    sol.add(n[p1]);
+                    sol.add(n[p2]);
+                    if(!st.contains(sol)){
+                        ls.add(sol);
+                        st.add(sol);
+                    }
+                    p1++;
+                    p2--;
+
+                }else if(sum > 0){
+                    p2--;
+                }else{
+                    p1++;
+                }
+            }
+        }
+        return ls;
+    }
+}
+```
+
+### [1984. Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/)
+
+```Java
+class Solution {
+    public int minimumDifference(int[] n, int k) {
+        
+        if(n.length < k || n.length == 1) return 0;
+
+        Arrays.sort(n);
+
+        int p1=k-1;
+        int p2=0;
+        int diff = 0;
+        int min = Integer.MAX_VALUE;
+        
+        while(p1<n.length){ 
+            
+            diff = n[p1] - n[p2];
+            if(diff<min) min = diff;
+
+            p1++; p2++;
+        }
+
+        return min;
+    }
+}
+```

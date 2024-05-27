@@ -896,3 +896,72 @@ class Solution {
     }
 }
 ```
+
+###[Valid Parenthese](https://leetcode.com/problems/valid-parentheses/)
+
+```Java
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> st = new Stack<>();
+
+        for(int i=0;i<s.length();i++){
+
+            char ch = s.charAt(i);
+
+            if(ch == '('){
+                st.push(')');
+            }else if(ch == '{'){
+                st.push('}');
+            }else if(ch == '['){
+                st.push(']');
+            }else if(st.isEmpty() || st.pop() != ch){
+                return false;
+            }
+
+        }
+        return st.isEmpty();
+    }
+}
+```
+
+### [BaseBall game](https://leetcode.com/problems/baseball-game/)
+
+```Java
+class Solution {
+    public int calPoints(String[] op) {
+        Stack<Integer> st = new Stack<>();
+
+        for(int i=0;i<op.length;i++){
+
+            char ch = op[i].charAt(0);
+
+            if(ch == '+'){
+                int firstPop = st.pop();
+                int sum = firstPop + (st.peek());
+                
+                st.push(firstPop);
+                st.push(sum);
+            }
+            else if(ch == 'D'){
+                int sum = st.peek()*2;
+                
+                st.push(sum);
+            }
+            else if(ch == 'C'){
+                st.pop();
+            }
+            else{
+                int add = Integer.parseInt(op[i]);
+                
+                st.push(add);
+            }
+        }
+        
+        int sum = 0;
+        while(!st.isEmpty()){
+            sum+= st.pop();
+        }
+        return sum;
+    }   
+}
+```

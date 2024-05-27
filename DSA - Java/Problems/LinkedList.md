@@ -444,3 +444,136 @@ class Solution {
 }
 ```
 
+### [Rotate List](https://leetcode.com/problems/rotate-list/)
+
+```Java
+class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+
+        if(head == null) return null;
+        
+
+        int len = 0;
+        ListNode forCount = head;
+
+        while(forCount != null){
+            len++;  forCount = forCount.next;
+        }
+
+        if(len == k) return head;
+
+        k = k%len;
+        int diff = (len - k)+1;
+
+        int count = 0;
+        forCount = head;
+
+        ListNode res = new ListNode(0);
+        ListNode dupPoint = res;
+
+        while(forCount != null){
+            count++;
+
+            if(count>=diff){
+                ListNode newNode = new ListNode(forCount.val);
+                dupPoint.next = newNode;
+                dupPoint = dupPoint.next; 
+            }
+
+            forCount = forCount.next;
+        }
+        
+        count=1;
+        forCount = head;
+        while(count<diff){
+            ListNode newNode = new ListNode(forCount.val);
+            dupPoint.next = newNode;
+
+            dupPoint = dupPoint.next;
+            forCount = forCount.next;
+
+            count++;
+        }
+
+        return res.next;
+    }
+}
+```
+
+
+### [Partition List](https://leetcode.com/problems/partition-list/)
+```Java
+class Solution {
+    public ListNode partition(ListNode head, int x) {
+        ListNode res = new ListNode(0);
+        ListNode resDup = res;
+        ListNode temp = head;
+
+        while(temp != null){
+            if(temp.val < x){
+                ListNode newOne = new ListNode(temp.val);
+                resDup.next = newOne;
+                resDup = resDup.next;
+            }
+            temp = temp.next;
+        }
+
+        temp = head;
+
+        while(temp != null){
+            if(temp.val >= x){
+                ListNode newOne = new ListNode(temp.val);
+                resDup.next = newOne;
+                resDup = resDup.next;
+            }
+            temp = temp.next;
+        }
+        
+        return res.next;
+    }
+}
+```
+
+### [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)
+```Java
+class Solution {
+    public ListNode insertionSortList(ListNode head) {
+        
+        ListNode temp = head;
+        int count = 0;
+
+        while(temp.next != null){
+            count++;
+            temp = temp.next;
+        }
+
+        temp = head;
+        int n = count;
+        while(count>0){
+            
+            temp = head;
+            ListNode cur = temp.next;
+
+            while(cur != null && n>){
+                
+                int fr = temp.val;
+                int sc = cur.val;
+
+                if(fr>sc){
+                    int intTemp = temp.val;
+                    temp.val = cur.val;
+                    cur.val = intTemp;
+                }
+
+                temp = temp.next;
+                cur = cur.next;
+
+            }
+            n--;
+            count--;
+        }
+
+        return head;
+    }
+}
+```

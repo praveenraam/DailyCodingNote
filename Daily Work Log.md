@@ -1,3 +1,6 @@
+## Day 129: 
+#### Date : 26.05.2024
+- Solved Leetcode problem (Linked List,Arrays)
 ## Day 128: 
 #### Date : 25.05.2024
 - Solved Leetcode problem (Linked List,String)
