@@ -577,3 +577,97 @@ class Solution {
     }
 }
 ```
+
+### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+
+```Java
+import java.util.*;
+
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+        ListNode rs = new ListNode(0);
+        ListNode temp = rs;
+        int bal = 0;
+        ListNode t1 = l1,t2 = l2;
+
+        while(t1 != null && t2 != null){
+
+            int v1 = t1.val , v2 = t2.val;
+            int sum = v1+v2+bal;
+
+            if(sum >= 10){
+                ListNode newOne = new ListNode(sum%10);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 1;
+            }else{
+
+                ListNode newOne = new ListNode(sum);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 0;
+            }
+
+            t1 = t1.next; t2 = t2.next;
+        } 
+
+        while(t1 != null){
+            int v1 = t1.val;
+
+            int sum = v1 + bal;
+
+            if(sum >= 10){
+
+                ListNode newOne = new ListNode(sum%10);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 1;
+            }else{
+
+                ListNode newOne = new ListNode(sum);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 0;
+            }
+            t1 = t1.next;
+        }
+
+        while(t2 != null){
+            int v1 = t2.val;
+
+            int sum = v1 + bal;
+
+            if(sum >= 10){
+
+                ListNode newOne = new ListNode(sum%10);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 1;
+            }else{
+
+                ListNode newOne = new ListNode(sum);
+                temp.next = newOne;
+                temp = temp.next;
+
+                bal = 0;
+            }
+            t2 = t2.next;
+        }
+
+        if(bal == 1){
+
+            ListNode newOne = new ListNode(bal);
+            temp.next = newOne;
+            temp = temp.next;
+
+        }
+        return rs.next;
+    }
+}
+```

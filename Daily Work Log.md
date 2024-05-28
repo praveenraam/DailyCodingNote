@@ -1,8 +1,12 @@
+## Day 130: 
+#### Date : 28.05.2024
+- Solved Leetcode problem (Linked List,Arrays,String)
+- Website for IT Event (ITronz)
 ## Day 129: 
-#### Date : 26.05.2024
+#### Date : 27.05.2024
 - Solved Leetcode problem (Linked List,Arrays)
 ## Day 128: 
-#### Date : 25.05.2024
+#### Date : 26.05.2024
 - Solved Leetcode problem (Linked List,String)
 - Website for IT Event (ITronz)
 ## Day 128: 

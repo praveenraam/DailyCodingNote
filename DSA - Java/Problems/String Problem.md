@@ -965,3 +965,83 @@ class Solution {
     }   
 }
 ```
+
+### [1832. Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram)
+
+```Java
+class Solution {
+    public boolean checkIfPangram(String s) {
+        
+        if(s.length() < 26) return false;
+
+        int[] ar = new int[26];
+
+        for(char ch : s.toCharArray()){
+            ar[ch-'a'] = 1;
+        }
+
+        for(int in : ar){
+            if(in == 0) return false;
+        }
+
+        return true;
+
+    }
+}
+```
+
+### [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+
+```Java
+class Solution {
+    public boolean checkInclusion(String s1, String s2) {
+        
+        int[] ar1 = new int[26];
+        for(char ch : s1.toCharArray()){
+            ar1[ch-'a'] = ar1[ch-'a']+1;
+        }
+
+        int[] ar2 = new int[26];
+        int n = s1.length();
+
+
+        for(int i=0;i<s2.length();i++){
+            
+            char ch = s2.charAt(i);
+
+            ar2[ch-'a'] = ar2[ch-'a']+1;
+
+            if(i>=s1.length()){
+                ar2[s2.charAt(i-n)-'a'] = ar2[s2.charAt(i-n)-'a']-1;
+            }
+
+            if(Arrays.equals(ar1,ar2)) return true;
+        }
+
+        return false;
+
+    }
+}
+```
+
+### [2405. Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)
+
+```Java
+class Solution {
+    public int partitionString(String s) {
+        
+        Set<Character> st = new HashSet<>();
+        int res = 1;
+
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(st.contains(ch)){
+                st = new HashSet<>();
+                res++;
+            }
+            st.add(ch);
+        }
+        return res;
+    }
+}
+```
