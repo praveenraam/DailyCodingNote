@@ -1,3 +1,8 @@
+## Day 131: 
+#### Date : 29.05.2024
+- Solved Leetcode problem (Linked List,Arrays,Math)
+- Website for IT Event (ITronz)
+- MicroKernel in OS
 ## Day 130: 
 #### Date : 28.05.2024
 - Solved Leetcode problem (Linked List,Arrays,String)

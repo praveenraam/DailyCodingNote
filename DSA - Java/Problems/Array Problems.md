@@ -2344,3 +2344,44 @@ class Solution {
     }
 }
 ```
+
+### [3115. Maximum Prime Difference](https://leetcode.com/problems/maximum-prime-difference)
+
+```Java
+class Solution {
+    public int maximumPrimeDifference(int[] nums) {
+        
+        int first = -1;
+        int last = -1;
+
+        for(int i=0;i<nums.length;i++){
+            if(first == -1 && isPrime(nums[i])){
+                first = i;
+            }
+            if(first != -1 && isPrime(nums[i])){
+                last = i;
+            }
+        }
+
+        if(first != -1 && last != -1) return last-first;
+        return 0;
+
+
+    }
+    public static boolean isPrime(int n){
+        if(n < 2){
+            return false;
+        }
+        int i=2;
+        while(i <= Math.sqrt(n)){
+
+            if(n%i == 0){
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+}
+```
+

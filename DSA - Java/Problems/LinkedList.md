@@ -671,3 +671,39 @@ class Solution {
     }
 }
 ```
+
+### [1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists)
+
+```Java
+class Solution {
+    public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
+        int count = 1;
+        ListNode temp = list1;
+
+        ListNode conn = null;
+        ListNode address = null;
+
+        while(temp != null){
+            if(count == a){
+                conn = temp;
+            }
+            if((count-1) == b){
+                address = temp.next;
+            }
+            count++;
+            temp = temp.next;
+        }
+
+        conn.next = list2;
+        temp = list2;
+
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        temp.next = address;
+
+        return list1;
+    }
+}
+```

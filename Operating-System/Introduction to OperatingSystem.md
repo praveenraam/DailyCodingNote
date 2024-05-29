@@ -1,4 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)
+Topic Wise [Link](https://www.geeksforgeeks.org/operating-systems/)
 Topic No : 1
 Next Topic : [[Functions of OS]]
 ## Why we need an OS
@@ -7,6 +8,9 @@ Next Topic : [[Functions of OS]]
 - OS is a software managing the hardware
 - OS is the only program that runs all time on the computer( called kernel ) with all else is application program
 
+
+
+---
 ## Characteristics of OS
 
 #### Device Management : 
@@ -22,6 +26,7 @@ Next Topic : [[Functions of OS]]
 #### Efficiency :
 - The computer's OS uses the Computer potential efficiently and makes convenient for the user
 
+--- 
 ## Functionality of OS
 #### Resource Management :
 - When parallel accessing happens in the OS means when multiple users are accessing the system the OS works as Resource Manager, Its responsibility is to provide hardware to the user. It decreases the load in the system.
@@ -35,6 +40,7 @@ Next Topic : [[Functions of OS]]
 - Privacy features is also provided by the OS with password and stopping the un authorized accesses
 - It provide security from the malwares and attack of virus 
 
+--- 
 ## Layering of OS
 
 - Every computer needs an OS to run the other applications and programs
@@ -45,12 +51,13 @@ Next Topic : [[Functions of OS]]
 
 - It will be easy to modify, debug, test the OS module
 
+---
 ## I/O System Management :
 
 **I/O Traffic controller** is the module responsible for the I/O of the computer, it consist of the 
 - Memory management component
 - general device drivers
-
+--- 
 ## Assembler
 
 **Converts the assembly level program to the machine level program**
@@ -71,6 +78,7 @@ The Loader has three phases :
 - Relocate 
 - Link the object program 
 
+--- 
 ## Components of OS 
 
 ### Shell 
@@ -90,6 +98,7 @@ The kernel is the core of the OS, **All other components are depends on the Kern
 - Hybrid Kernel
 - Exo kernel
 
+--- 
 ## Difference between 32 and 64 bit OS 
 
 | 32-Bit Operating System                                                                                          | 64-Bit Operating System                                                                 |

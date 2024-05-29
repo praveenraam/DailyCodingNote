@@ -809,3 +809,47 @@ class Solution {
     }
 }
 ```
+
+### [258. Add Digits](https://leetcode.com/problems/add-digits)
+
+```Java
+class Solution {
+    public int addDigits(int num) {
+        
+        while(num>=10){
+            int sum = 0;
+
+            while(num>0){
+                int rem = num%10;
+                sum += rem;
+                num/=10;
+            }
+            num = sum;
+        }
+        return num;
+    }
+}
+```
+
+### [202. Happy Number](https://leetcode.com/problems/happy-number/)
+
+```Java
+class Solution {
+    public boolean isHappy(int n) {
+        Set<Integer> st = new HashSet<>();
+
+        while(n != 1){
+            int sum = 0;
+            while(n>0){
+                int rem = n%10; rem*=rem;
+                sum += rem;
+                n/=10;
+            }
+            if(st.contains(sum)) return false;
+            st.add(sum);
+            n = sum;
+        }
+        return true;
+    }
+}
+```
