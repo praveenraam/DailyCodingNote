@@ -11,8 +11,12 @@
             "id": "d5609aeb5e5cb39a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Operating-System/Monolithic Kernel.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Operating-System/Monolithic Kernel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Operating-System/Monolithic Kernel.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Operating-System/Monolithic Kernel.md"
+              }
             }
           }
         ],
@@ -140,16 +148,18 @@
   },
   "active": "d5609aeb5e5cb39a",
   "lastOpenFiles": [
-    "Operating-System/System Call.md",
     "Operating-System/MicroKernel.md",
+    "Operating-System/Monolithic Kernel.md",
+    "Operating-System/Introduction to OperatingSystem.md",
+    "Daily Work Log.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "Operating-System/System Call.md",
     "Operating-System/Imgs/Pasted image 20240521085751.png",
     "Operating-System/Types of OS.md",
     "Operating-System/Functions of OS.md",
-    "Operating-System/Introduction to OperatingSystem.md",
     "Studies/ObsidianTutorial/Link vs Hashtags.md",
     "Studies/ObsidianTutorial/Basic.md",
     "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Java/Sorting Techniques.md",
     "DSA - Java/Problems/String Problem.md",
@@ -163,7 +173,6 @@
     "Operating-System/Imgs/Pasted image 20240522112606.png",
     "Operating-System/Imgs/Pasted image 20240522105457.png",
     "Operating-System/Imgs/Pasted image 20240522105445.png",
-    "Daily Work Log.md",
     "Shopify/Must Have Apps.md",
     "Shopify/Liquid Introduction.md",
     "Shopify/Start Note.md",

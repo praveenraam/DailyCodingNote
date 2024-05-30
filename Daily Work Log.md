@@ -1,3 +1,7 @@
+## Day 132: 
+#### Date : 30.05.2024
+- Solved Leetcode problem (Arrays)
+- Monolithic Kernel in OS
 ## Day 131: 
 #### Date : 29.05.2024
 - Solved Leetcode problem (Linked List,Arrays,Math)

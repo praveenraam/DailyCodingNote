@@ -2385,3 +2385,147 @@ class Solution {
 }
 ```
 
+### [2610. Convert an Array Into a 2D Array With Conditions](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/)
+
+```Java
+class Solution {
+    public List<List<Integer>> findMatrix(int[] n) {
+        
+        Map<Integer,Integer> mp = new HashMap<>();
+        int max = Integer.MIN_VALUE;
+        
+        for(int i=0;i<n.length;i++){
+            mp.put(n[i],mp.getOrDefault(n[i],0)+1);
+            if(max < mp.get(n[i])) max = mp.get(n[i]);
+        }
+
+        List<List<Integer>> rs = new ArrayList<>();
+        int count = 1;
+
+        for(int i=0;i<max;i++){
+            List<Integer> ls = new ArrayList<>();
+            List<Integer> rem = new ArrayList<>();
+
+            for(Map.Entry<Integer,Integer> entry : mp.entrySet()){
+                ls.add(entry.getKey());
+                if(entry.getValue() == count){
+                    rem.add(entry.getKey());
+                }
+            }
+            for(int j=0;j<rem.size();j++){
+                mp.remove(rem.get(j));
+            }
+            rs.add(ls);
+            count++;      
+        }
+        return rs;
+    }
+}
+```
+
+### [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
+
+```Java
+class Solution {
+    public void setZeroes(int[][] m) {
+        int[] c = new int[m.length];
+        int[] r = new int[m[0].length];
+
+        for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[i].length;j++){
+                if(m[i][j] == 0) {
+                    r[j] = -1;
+                    c[i] = -1; 
+                }
+            }
+        }
+
+        for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[i].length;j++){
+                if(r[j] == -1 || c[i] == -1){
+                    m[i][j] = 0;
+                }
+            }
+        }
+    }
+}
+```
+
+### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+
+```Java
+class Solution {
+    public List<Integer> spiralOrder(int[][] m) {
+        List<Integer> ls = new ArrayList<>();
+
+        int row = 0,rowMax = m.length-1;
+        int col = 0,colMax = m[0].length-1;
+
+        while(row<=rowMax && col<=colMax){
+            for(int i=col;i<=colMax;i++){
+                ls.add(m[row][i]);
+            } row++;
+
+            for(int i=row;i<=rowMax;i++){
+                ls.add(m[i][colMax]);
+            } colMax--;
+
+            if(row<=rowMax){
+                for(int i=colMax;i>=col;i--){
+                    ls.add(m[rowMax][i]);
+                } 
+            }rowMax--;
+            
+            if(col<=colMax){
+                for(int i=rowMax;i>=row;i--){
+                    ls.add(m[i][col]);
+                } 
+            } col++;
+        }
+        return ls;
+    }
+}
+```
+
+### [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)
+
+```Java
+class Solution {
+    public int[][] generateMatrix(int n) {
+        int ar[][] = new int[n][n];
+
+        int val = 1;
+
+        int row=0,rowMax=n-1;
+        int col=0,colMax=n-1;
+
+        while(row<=rowMax && col<=colMax){
+
+            for(int i=col;i<=colMax;i++){
+                ar[row][i] = val;
+                val++;
+            }  row++;
+
+            for(int i=row;i<=rowMax;i++){
+                ar[i][colMax] = val;
+                val++;
+            }  colMax--;
+
+            if(row<=rowMax){
+                for(int i=colMax;i>=col;i--){
+                    ar[rowMax][i] = val;
+                    val++;
+                }
+            } rowMax--;
+
+            if(col <= colMax){
+                for(int i=rowMax;i>=row;i--){
+                    ar[i][col] = val;
+                    val++;
+                }
+            }col++;
+        }
+        return ar;
+    }
+}
+```
