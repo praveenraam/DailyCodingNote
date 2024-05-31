@@ -707,3 +707,32 @@ class Solution {
     }
 }
 ```
+
+### [2487. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/)
+
+```Java
+class Solution {
+    public ListNode removeNodes(ListNode head) {
+        Stack<ListNode> st = new Stack<>();
+        ListNode dup = head;
+
+        while(dup!= null){
+            while(!st.isEmpty() && st.peek().val < dup.val){
+                st.pop();
+            }
+            st.push(dup);
+            dup = dup.next;
+        }   
+
+        ListNode res = null;
+        ListNode next = null;
+
+        while(!st.isEmpty()){
+            res = st.pop();
+            res.next = next;
+            next = res;
+        }
+        return res;
+    }
+}
+```

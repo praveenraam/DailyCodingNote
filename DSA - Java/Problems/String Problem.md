@@ -1045,3 +1045,58 @@ class Solution {
     }
 }
 ```
+
+### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+
+```Java
+class Solution {
+    public int evalRPN(String[] tokens) {
+        Stack<Integer> st = new Stack<>();
+
+        for(int i=0;i<tokens.length;i++){
+            char ch = tokens[i].charAt(0);
+            
+            if(tokens[i].equals("+")){
+                st.push(st.pop()+st.pop());
+            }
+            else if(tokens[i].equals("-")){
+                int a = st.pop();
+                int b = st.pop();
+                st.push(b-a);
+            }
+            else if(tokens[i].equals("*")){
+                st.push(st.pop()*st.pop());
+            }
+            else if(tokens[i].equals("/")){
+                int a = st.pop();
+                int b = st.pop();
+                st.push(b/a);
+            }else{
+                st.push(Integer.parseInt(tokens[i]));
+            }
+        }
+        return st.pop();
+    }
+}
+```
+
+### [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)
+
+```Java
+class Solution {
+    public String removeStars(String s) {
+        Stack<Character> st = new Stack<>();
+        StringBuilder sb = new StringBuilder();
+
+        for(char ch : s.toCharArray()){
+            if(ch == '*' && !st.isEmpty()) st.pop();
+            else st.push(ch);
+        }
+
+        while(!st.isEmpty()){
+            sb.insert(0,st.pop());
+        }
+        return sb.toString();
+    }
+}
+```

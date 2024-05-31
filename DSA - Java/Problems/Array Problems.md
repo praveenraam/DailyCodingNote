@@ -2529,3 +2529,28 @@ class Solution {
     }
 }
 ```
+
+### [946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
+
+```Java
+class Solution {
+    public boolean validateStackSequences(int[] pu, int[] po) {
+        Stack<Integer> st = new Stack<>();
+
+        int p1=0,p2=0;
+
+        while(p1<pu.length || p2<po.length){
+            
+            if(!st.isEmpty() && st.peek() == po[p2]){
+                st.pop();
+                p2++;
+            }else if(p1<pu.length){
+                st.push(pu[p1]);
+                p1++;
+            }else return false;
+            
+        }
+        return true;
+    }
+}
+```
