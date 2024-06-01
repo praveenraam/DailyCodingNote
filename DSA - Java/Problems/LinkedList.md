@@ -736,3 +736,27 @@ class Solution {
     }
 }
 ```
+
+### [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+
+```Java
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        List<Integer> ls = new ArrayList<>();
+        ListNode temp = head;
+
+        while(temp != null){
+            ls.add(temp.val);
+            temp = temp.next;
+        }
+
+        int p1 = 0,p2 = ls.size()-1;
+
+        while(p1<=p2){
+            if(ls.get(p1) != ls.get(p2)) return false;
+            p1++; p2--;
+        }
+        return true;
+    }
+}
+```

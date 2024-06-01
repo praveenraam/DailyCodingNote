@@ -1100,3 +1100,70 @@ class Solution {
     }
 }
 ```
+
+### [2114. Maximum Number of Words Found in Sentences](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/)
+
+```Java
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        int max = 0;
+        for(String s : sentences){
+            String[] ar = s.split(" ");
+            if(ar.length > max) max = ar.length;
+        }
+        return max;
+    }
+}
+```
+
+### [1816. Truncate Sentence](https://leetcode.com/problems/truncate-sentence/)
+
+```Java
+class Solution {
+    public String truncateSentence(String s, int k) {
+        String[] ar = s.split(" ");
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<k;i++){
+            sb.append(ar[i]);
+            if(i+1 != k) sb.append(' ');
+        }
+        return sb.toString();
+    }
+}
+```
+
+### [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+
+```Java
+class Solution {
+    public int maxVowels(String s, int k) {
+        int p1=0,p2=0;
+        int count = 0;
+        int max = 0;
+
+        Set<Character> st = new HashSet<>();
+        st.add('a'); st.add('e'); st.add('i'); st.add('o'); st.add('u');
+
+        while(p2<k){
+            if(st.contains(s.charAt(p2))){
+                count++;
+            }
+            max = Math.max(count,max);
+            p2++;
+        }
+        p2--;
+        while(p2<s.length()){
+            if(st.contains(s.charAt(p1))){
+                count--;
+            }
+            p1++; p2++;
+
+            if(p2< s.length() && st.contains(s.charAt(p2))){
+                count++;
+            }
+            max = Math.max(count,max);
+        }
+        return max;
+    }
+}
+```

@@ -2554,3 +2554,25 @@ class Solution {
     }
 }
 ```
+
+### [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
+
+```Java
+class Solution {
+    public int totalFruit(int[] fruits) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        int p1 = 0,p2=0;
+        while(p2<fruits.length){
+            mp.put(fruits[p2],mp.getOrDefault(fruits[p2],0)+1);
+
+            if(mp.size()>2){
+                mp.put(fruits[p1],mp.get(fruits[p1])-1);
+                mp.remove(fruits[p1++],0);
+            }
+            p2++;
+        }
+        return p2-p1;
+    }
+}
+```

@@ -853,3 +853,26 @@ class Solution {
     }
 }
 ```
+
+### [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+
+```Java
+class Solution {
+    public boolean isPerfectSquare(int num) {
+        int p2 = num,p1=1;
+
+        while(p1<=p2){
+            long mid = p1+(p2-p1)/2;
+            long check = mid*mid;
+
+            if(check == num) return true;
+            else if(check > num){
+                p2 = (int)mid-1;
+            }else{
+                p1 = (int)mid+1;
+            }
+        }
+        return false;
+    }
+}
+```
