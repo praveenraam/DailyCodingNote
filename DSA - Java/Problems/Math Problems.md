@@ -876,3 +876,25 @@ class Solution {
     }
 }
 ```
+
+### [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)
+
+```Java
+class Solution {
+    public int totalMoney(int n) {
+        
+        int baseStart = 1;
+        int res = 0;
+        int count=0;
+        for(int i=0;count<n;i++){
+            int adder = baseStart;
+            for(int j=0;j<7 && count<n;j++){
+                res += adder;
+                adder++; count++;
+            }
+            baseStart++;
+        }
+        return res;
+    }
+}
+```

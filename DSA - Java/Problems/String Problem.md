@@ -1167,3 +1167,50 @@ class Solution {
     }
 }
 ```
+
+### [3168. Minimum Number of Chairs in a Waiting Room](https://leetcode.com/contest/weekly-contest-400/problems/minimum-number-of-chairs-in-a-waiting-room/)
+
+```Java
+class Solution {
+    public int minimumChairs(String s) {
+        int count = 0;
+        int maxC = 0;
+        
+        for(char ch : s.toCharArray()){
+            
+            if(ch == 'E'){
+                count++;
+            }else{
+                count--;
+            }
+            maxC = Math.max(count,maxC);    
+        }
+        return maxC;
+        
+    }
+}
+```
+
+### [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/)
+
+```Java
+class Solution {
+    public String firstPalindrome(String[] words) {
+        
+        for(int i=0;i<words.length;i++){
+            if(palindrome(words[i])) return words[i];
+        }
+        return "";
+    }
+    public static boolean palindrome(String s){
+        int p1 = 0;
+        int p2 = s.length() - 1;
+
+        while(p1 <= p2){
+            if(s.charAt(p1) != s.charAt(p2)) return false;
+            p1++; p2--;
+        }
+        return true;
+    }
+}
+```
