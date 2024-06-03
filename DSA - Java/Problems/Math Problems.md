@@ -880,7 +880,7 @@ class Solution {
 ### [1716. Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)
 
 ```Java
-class Solution {
+	xclass Solution {
     public int totalMoney(int n) {
         
         int baseStart = 1;

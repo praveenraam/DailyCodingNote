@@ -1,3 +1,10 @@
+## Day 136: 
+#### Date : 03.06.2024
+- Solved Leetcode problem (Arraya)
+## Day 135: 
+#### Date : 02.06.2024
+- Solved Leetcode problem (LinkedList,String,Math)
+- Participated LeetCode contest
 ## Day 134: 
 #### Date : 01.06.2024
 - Solved Leetcode problem (Arrays,LinkedList,String,Math)

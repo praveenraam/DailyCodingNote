@@ -2576,3 +2576,124 @@ class Solution {
     }
 }
 ```
+
+### [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
+
+```Java
+class Solution {
+    public int[] asteroidCollision(int[] a) {
+        
+        Stack<Integer> st = new Stack<>();
+        int i=0;
+
+        while(i<a.length){
+
+            if(st.isEmpty()){
+                st.push(a[i]);
+                i++;
+            }else{
+
+                if(st.peek() > 0 && a[i] < 0){
+
+                    if(Math.abs(st.peek()) > Math.abs(a[i])){
+                        i++;
+                    }else if(Math.abs(st.peek()) < Math.abs(a[i])){
+                        st.pop();
+                    }else{
+                        st.pop();
+                        i++;
+                    }
+
+                }else{
+                    st.push(a[i]);
+                    i++;
+                }
+
+            }
+
+        }
+
+        int[] ar = new int[st.size()];
+        i = ar.length-1;
+
+        while(!st.isEmpty()){
+
+            ar[i] = st.pop();
+            i--;
+        }
+        return ar;
+    }
+}
+```
+
+### [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+
+```Java
+class Solution {
+    public int[] dailyTemperatures(int[] tp) {
+        
+        Stack<Integer> st = new Stack<>();
+        int[] res = new int[tp.length];
+
+        for(int i=0;i<tp.length;i++){
+
+            if(st.isEmpty()){
+                st.push(i);
+            }
+            else{
+                while(!st.isEmpty() && tp[st.peek()] < tp[i]){
+                    res[st.peek()] = i-st.pop(); 
+                }
+                st.push(i);
+            }
+        }
+        return res;
+    }
+}
+```
+
+### [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+
+```Java
+class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int p1=0,p2=0;
+        int sum = 0;
+        int minCount = Integer.MAX_VALUE;
+
+        while(p2<nums.length){
+            sum += nums[p2];
+
+            while(sum >= target){
+                if(minCount > (p2-p1 + 1)) minCount = p2-p1+1;
+                sum -= nums[p1];  p1++;
+            }
+            p2++;
+        }
+
+        if(minCount == Integer.MAX_VALUE) return 0;
+        return minCount;
+    }
+}
+```
+
+### [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
+
+```Java
+class Solution {
+    public int[][] transpose(int[][] m) {
+        int n = m.length;
+        int o = m[0].length;
+
+        int[][] ar = new int[o][n];
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<o;j++){
+                ar[j][i] = m[i][j];
+            }
+        }
+        System.gc();
+        return ar;
+    }
+}
+```
