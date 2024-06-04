@@ -593,3 +593,49 @@ class Solution {
     }
 }
 ```
+
+### [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)
+
+```Java
+class Solution {
+    public int arrangeCoins(int n) {
+        long p1 = 1,p2 = n;
+        int rs = 0;
+
+        while(p1<=p2){
+            int mid = (int)((p1+p1)/2);
+            long ans = (long) ((mid/2.0)*(mid+1));
+
+            if(ans > n){
+                p2 = mid-1;
+            }else{
+                p1 = mid+1;
+                rs = Math.max(rs,mid);
+            }
+        }
+        return rs;
+    }
+}
+```
+
+### [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+
+```Java
+class Solution {
+    public int singleNonDuplicate(int[] num) {
+        
+        int p1 = 0,p2=num.length-1;
+
+        while(p1<p2){
+            int mid = ((p1+p2)/2);
+
+            if((mid%2 == 0 && num[mid+1] == num[mid]) || (mid%2 == 1 && num[mid-1] == num[mid])){
+                p1=mid+1;
+            }else{
+                p2=mid;
+            }
+        }
+        return num[p1];
+    }
+}
+```

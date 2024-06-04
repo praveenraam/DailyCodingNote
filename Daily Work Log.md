@@ -1,6 +1,10 @@
+## Day 137: 
+#### Date : 04.06.2024
+- Solved Leetcode problem
+- N Queen method
 ## Day 136: 
 #### Date : 03.06.2024
-- Solved Leetcode problem (Arraya)
+- Solved Leetcode problem (Arrays)
 ## Day 135: 
 #### Date : 02.06.2024
 - Solved Leetcode problem (LinkedList,String,Math)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/LinkedList.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/LinkedList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Problems/LinkedList.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "DSA - Java/Problems/LinkedList.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   "active": "f649d294539a84fa",
   "lastOpenFiles": [
     "DSA - Java/Problems/HashMap Problems.md",
-    "DSA - Java/Problems/LinkedList.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Problems/Math Problems.md",
     "Operating-System/Kernel InOut Sub-system.md",
     "Operating-System/Monolithic Kernel.md",
@@ -181,7 +182,6 @@
     "Operating-System/Imgs/Pasted image 20240522105445.png",
     "Shopify/Must Have Apps.md",
     "Shopify/Liquid Introduction.md",
-    "Shopify/Start Note.md",
     "Operating-System/Imgs/Pasted image 20240522085040.png",
     "Operating-System/Imgs",
     "Pasted image 20240521085644.png",
