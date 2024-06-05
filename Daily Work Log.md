@@ -1,3 +1,7 @@
+## Day 138: 
+#### Date : 05.06.2024
+- Solved Leetcode problem
+- Studied Trees
 ## Day 137: 
 #### Date : 04.06.2024
 - Solved Leetcode problem

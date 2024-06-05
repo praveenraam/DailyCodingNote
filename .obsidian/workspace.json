@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Types of Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Types of Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md",
+                "file": "DSA - Java/Java/Types of Tree.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/LinkedList.md"
+                "file": "DSA - Java/Java/Types of Tree.md"
               }
             }
           }
@@ -148,10 +148,19 @@
   },
   "active": "f649d294539a84fa",
   "lastOpenFiles": [
+    "Pasted image 20240605113747.png",
+    "Pasted image 20240605113103.png",
+    "Pasted image 20240605112312.png",
+    "Pasted image 20240605111433.png",
+    "Pasted image 20240605111412.png",
+    "Pasted image 20240605111228.png",
+    "Pasted image 20240605110806.png",
+    "DSA - Java/Java/Types of Tree.md",
+    "Pasted image 20240605110412.png",
+    "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Problems/HashMap Problems.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Problems/Math Problems.md",
     "Operating-System/Kernel InOut Sub-system.md",
     "Operating-System/Monolithic Kernel.md",
@@ -175,16 +184,7 @@
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Java/Linked List.md",
     "Operating-System/Imgs/Pasted image 20240523095928.png",
-    "Operating-System/Imgs/Pasted image 20240523085108.png",
-    "Operating-System/Imgs/Pasted image 20240522113736.png",
-    "Operating-System/Imgs/Pasted image 20240522112606.png",
-    "Operating-System/Imgs/Pasted image 20240522105457.png",
-    "Operating-System/Imgs/Pasted image 20240522105445.png",
-    "Shopify/Must Have Apps.md",
-    "Shopify/Liquid Introduction.md",
-    "Operating-System/Imgs/Pasted image 20240522085040.png",
     "Operating-System/Imgs",
-    "Pasted image 20240521085644.png",
     "Operating-System",
     "Placement/PS Preparation/main.exe",
     "Placement/PS Preparation/main.c",
