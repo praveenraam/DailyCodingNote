@@ -1,3 +1,6 @@
+## Day 139: 
+#### Date : 06.06.2024
+- Solved Leetcode problem (Tree)
 ## Day 138: 
 #### Date : 05.06.2024
 - Solved Leetcode problem

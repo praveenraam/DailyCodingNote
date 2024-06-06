@@ -54,3 +54,63 @@ class Solution {
     }
 }
 ```
+
+### [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+```Java
+class Solution {
+    public int maxDepth(TreeNode root) {
+        return counter(root,0);
+    }
+    public static int counter(TreeNode root,int count){
+        if(root == null) return count;
+
+        count++;
+        int maxLeft = counter(root.left,count);
+        int maxRight = counter(root.right,count);
+
+        return Math.max(maxLeft,maxRight);
+    }
+}
+```
+
+### [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/)
+
+```Java
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        
+        if(root == null) return null;
+
+        swapper(root);
+
+        return root;
+    }
+    public static void swapper(TreeNode root){
+        if(root == null) return;
+
+        TreeNode mytree = new TreeNode(root.val);
+        mytree = root.right;
+        root.right = root.left;
+        root.left = mytree;
+
+        swapper(root.right);
+        swapper(root.left);
+    }
+}
+```
+
+### [100. Same Tree](https://leetcode.com/problems/same-tree/description/)
+
+```Java
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+
+        if(p == null && q == null) return true;
+
+        if(p == null || q == null || p.val != q.val) return false;
+
+        return isSameTree(p.left , q.left) && isSameTree(p.right,q.right);
+
+    }
+}
+```
