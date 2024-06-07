@@ -114,3 +114,51 @@ class Solution {
     }
 }
 ```
+
+### [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+
+```Java
+class Solution {
+    int ans = 0;
+
+    public int diameterOfBinaryTree(TreeNode root) {
+        helper(root);
+        return ans;
+    }
+
+    public int helper(TreeNode root){
+
+        if(root == null) return 0;
+
+        int right = helper(root.right);
+        int left = helper(root.left);
+        
+        ans = Math.max(ans,right+left);
+
+        return Math.max(right,left)+1;
+    }
+}
+```
+
+### [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+
+```Java
+class Solution {
+    public boolean isBalanced(TreeNode root) {
+        
+        if(root == null) return true;
+        
+        boolean res = true;
+
+        if(root.left == null && root.right != null){
+            res = false;
+        }else if(root.left != null && root.right == null){
+            res = false;
+        }
+        if(root.left == null && root.right == null) return res;
+
+        if(res == false) return res;
+        return res && isBalanced(root.left) && isBalanced(root.right);
+    }
+}
+```
