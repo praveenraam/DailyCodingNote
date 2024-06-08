@@ -162,3 +162,65 @@ class Solution {
     }
 }
 ```
+
+### [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+```Java
+class Solution {
+    public boolean isSubtree(TreeNode root, TreeNode sr) {
+        if(root == null) return false;
+        if(isSame(root,sr)) return true;
+        return isSubtree(root.left,sr) || isSubtree(root.right,sr);
+    }
+    public boolean isSame(TreeNode root,TreeNode sr){
+        if(root == null && sr == null){
+            return true;
+        }else if(root == null || sr == null) return false;
+
+        if(root.val != sr.val) return false;
+        
+        return isSame(root.right,sr.right) && isSame(root.left,sr.left);
+    }
+}
+```
+
+### [112. Path Sum](https://leetcode.com/problems/path-sum/)
+
+```Java
+class Solution {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        return calculate(root,0,targetSum);
+    }
+    public boolean calculate(TreeNode root,int count,int targetSum){
+        if(root == null) return false;
+        count += root.val;
+        if(count == targetSum && (root.left == null && root.right == null)) return true;
+
+        return calculate(root.left,count,targetSum) || calculate(root.right,count,targetSum);
+    }
+}
+```
+
+### [3174. Clear Digits](https://leetcode.com/contest/biweekly-contest-132/problems/clear-digits/)
+```Java
+class Solution {
+    public String clearDigits(String s) {
+        
+        Stack<Character> st = new Stack<>();
+
+        for(char ch : s.toCharArray()){
+
+            if('0' <= ch && ch <= '9'){
+                if(!st.isEmpty()) st.pop();
+            }else st.push(ch);
+
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        while(!st.isEmpty()){
+            sb.insert(0,st.pop());
+        }
+        return sb.toString();
+    }
+}
+```
