@@ -224,3 +224,39 @@ class Solution {
     }
 }
 ```
+
+### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
+```Java
+class Solution {
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        if(root == null) return 0;
+        int sum = 0;
+        if(low<=root.val && root.val <= high){
+            sum += root.val;
+        }
+        return sum+(rangeSumBST(root.left,low,high)+rangeSumBST(root.right,low,high));
+
+    }
+}
+```
+
+### [2331. Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree)
+```Java
+class Solution {
+    public boolean evaluateTree(TreeNode root) {
+
+        if(root.val == 1) return true;
+        else if(root.val == 0) return false;
+
+        if(root.val == 2){
+
+            return evaluateTree(root.left) || evaluateTree(root.right);
+
+        }else{
+
+            return evaluateTree(root.left) && evaluateTree(root.right);
+
+        }
+    }
+}
+```
