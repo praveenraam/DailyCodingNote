@@ -1,5 +1,9 @@
 ## Day 142: 
 #### Date : 09.06.2024
+- Solved Leetcode problem (Arrays and String)
+- Prepared PT
+## Day 142: 
+#### Date : 09.06.2024
 - Solved Leetcode problem (Tree)
 - Prepared PT
 ## Day 141: 

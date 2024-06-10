@@ -1214,3 +1214,71 @@ class Solution {
     }
 }
 ```
+
+### [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/)
+```Java
+class Solution {
+    public String reverseWords(String s) {
+        String ar[] = s.split(" ");
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0;i<ar.length;i++){
+            sb.append(' ');
+            sb.append(reverser(ar[i]));
+        }
+        return sb.toString().trim();
+    }
+    public StringBuilder reverser(String s){
+        int i=s.length()-1;
+        StringBuilder sb = new StringBuilder();
+
+        while(i>=0){
+            sb.append(s.charAt(i));
+            i--;
+        }
+        return sb;
+    }
+}
+```
+
+### [844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare)
+```Java
+class Solution {
+    public boolean backspaceCompare(String s, String t) {
+        StringBuilder s1 = new StringBuilder();
+        StringBuilder s2 = new StringBuilder();
+        
+        Stack<Character> st = new Stack<>();
+        int i=0;
+
+        while(i<s.length()){
+            if(s.charAt(i) == '#'){
+                if(!st.isEmpty()){
+                    st.pop();
+                }
+            }
+            else st.push(s.charAt(i));
+            i++;
+        }
+        while(!st.isEmpty()){
+            s1.insert(0,st.pop());
+        }
+
+        i=0;
+        while(i<t.length()){
+            if(t.charAt(i) == '#') {
+                if(!st.isEmpty()){
+                    st.pop();
+                }
+            }
+            else st.push(t.charAt(i));
+            i++;
+        }
+        while(!st.isEmpty()){
+            s2.insert(0,st.pop());
+        }
+
+        return s1.toString().equals(s2.toString());
+    }
+}
+```
