@@ -1,5 +1,11 @@
-## Day 142: 
-#### Date : 09.06.2024
+## Day 145:
+#### Date : 13.06.2024
+- Solved Leetcode problem (Tree)
+## Day 144: (Failed to Commit)
+#### Date : 11.06.2024
+- Solved Leetcode problem (String)
+## Day 143: 
+#### Date : 10.06.2024
 - Solved Leetcode problem (Arrays and String)
 - Prepared PT
 ## Day 142: 

@@ -260,3 +260,76 @@ class Solution {
     }
 }
 ```
+
+### [606. Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)
+
+```Java
+class Solution {
+    public String tree2str(TreeNode root) {
+        StringBuilder sb = new StringBuilder();
+        helper(root,sb);
+        return sb.toString().substring(1,sb.length()-1);
+    }
+    public void helper(TreeNode root,StringBuilder sb){
+        
+        if(root == null) return;
+
+        sb.append('(');
+        sb.append(root.val);
+
+        if(root.left == null && root.right != null){
+            sb.append("()");
+        }
+
+        helper(root.left,sb);
+        helper(root.right,sb);
+        sb.append(')');
+    }
+}
+```
+
+### [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
+
+```Java
+class Solution {
+    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+        
+        if(root1 == null && root2 == null) return null;
+
+        int val1 = root1 != null ? root1.val : 0;
+        int val2 = root2 != null ? root2.val : 0;
+
+        TreeNode rs = new TreeNode(val1+val2);
+
+        rs.left = mergeTrees(
+            (root1 != null && root1.left != null) ? root1.left : null,
+            (root2 != null && root2.left != null) ? root2.left : null
+        );
+
+        rs.right = mergeTrees(
+            (root1 != null && root1.right != null) ? root1.right : null,
+            (root2 != null && root2.right != null) ? root2.right : null
+        );
+        
+        return rs;
+    }
+}
+```
+
+### [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+```Java
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        
+        while(root != null){
+            if(root.val > q.val && root.val > p.val){
+                root = root.left;
+            }else if(root.val < q.val && root.val < p.val){
+                root = root.right;
+            }else return root;
+        }
+        return null;
+    }
+}
+```
