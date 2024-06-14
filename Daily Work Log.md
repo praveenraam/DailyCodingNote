@@ -1,3 +1,6 @@
+## Day 146:
+#### Date : 14.06.2024
+- Solved Leetcode problem (Tree)
 ## Day 145:
 #### Date : 13.06.2024
 - Solved Leetcode problem (Tree)

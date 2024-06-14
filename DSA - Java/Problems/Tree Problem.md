@@ -333,3 +333,83 @@ class Solution {
     }
 }
 ```
+
+### [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)
+
+```Java
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+
+    public List<Integer> rightSideView(TreeNode root) {
+        helper(root,0);
+        return ls;
+    }
+    public void helper(TreeNode root,int level){
+        if(root == null) return;
+
+        if(level == ls.size()) ls.add(root.val);
+
+        if(root.right != null) helper(root.right,level+1);
+        if(root.left != null) helper(root.left,level+1);
+    }
+
+}
+```
+
+### [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+```Java
+class Solution {
+
+    List<List<Integer>> ls = new ArrayList<>();
+
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if(root == null) return ls;
+        helper(root,0);
+        return ls;
+    }
+
+    public void helper(TreeNode root,int level){
+        if(ls.size() == level) ls.add(new ArrayList<Integer>());
+
+        ls.get(level).add(root.val);
+
+        if(root.left != null) helper(root.left,level+1);
+        if(root.right != null) helper(root.right,level+1);
+
+    }
+}
+```
+
+### [701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)
+
+```Java
+class Solution {
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        
+        if(root == null) return new TreeNode(val);
+
+        TreeNode dup = root;
+
+        while(true){
+            if(root.val > val){
+                if(root.left == null){
+                    TreeNode newOne = new TreeNode(val);
+                    root.left = newOne;
+                    break;
+                }
+                root = root.left;
+
+            }else if(root.val < val){
+                if(root.right == null){
+                    TreeNode newOne = new TreeNode(val);
+                    root.right = newOne;
+                    break;
+                }
+                root = root.right;
+            }
+        }
+        return dup;
+    }
+}
+```
