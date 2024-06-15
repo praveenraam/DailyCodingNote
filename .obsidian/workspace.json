@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Placement/PS Preparation/Level 3.md",
+                "file": "DSA - Java/Problems/Tree Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placement/PS Preparation/Level 3.md",
+                "file": "DSA - Java/Problems/Tree Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placement/PS Preparation/Level 3.md",
+                "file": "DSA - Java/Problems/Tree Problem.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placement/PS Preparation/Level 3.md"
+                "file": "DSA - Java/Problems/Tree Problem.md"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "f649d294539a84fa",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/Math Problems.md",
+    "DSA - Java/Problems/HashMap Problems.md",
+    "Placement/PS Preparation/Level 3.md",
     "Operating-System/Kernel InOut Sub-system.md",
     "Operating-System/MicroKernel.md",
     "Operating-System/Monolithic Kernel.md",
@@ -164,10 +169,6 @@
     "Pasted image 20240605110806.png",
     "Pasted image 20240605110412.png",
     "DSA - Java/Problems/LinkedList.md",
-    "DSA - Java/Problems/HashMap Problems.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
-    "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Problems/Recursion Problems.md",
     "DSA - Java/Problems/String Problem.md",
     "Operating-System/Imgs/Pasted image 20240531184052.png",

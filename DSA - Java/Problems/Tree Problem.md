@@ -413,3 +413,23 @@ class Solution {
     }
 }
 ```
+
+### [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
+
+```Java
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        if(root == null) return true;
+        return find(root.left,root.right);
+    }
+    public boolean find(TreeNode right,TreeNode left){
+        if(left == null && right == null){
+            return true;
+        }
+        if(left == null || right == null) return false;
+
+        if(right.val == left.val) return find(left.right,right.left) && find(left.left,right.right);;
+        return false;
+    }
+}
+```
