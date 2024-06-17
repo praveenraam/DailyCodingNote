@@ -2721,3 +2721,29 @@ class Solution {
     }
 }
 ```
+
+### [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/)
+
+```Java
+class Solution {
+    public int[] rearrangeArray(int[] nums) {
+        
+        int res = 0;
+        int[] ar = new int[nums.length];
+        int pn = 0,nn = 1;
+
+        for(int i=0;i<nums.length;i++){
+
+            if(nums[i] > 0){
+                ar[pn] = nums[i];
+                pn+=2;
+            }
+            else if(nums[i] < 0){
+                ar[nn] = nums[i];
+                nn+=2;
+            }
+        }
+        return ar;
+    }
+}
+```

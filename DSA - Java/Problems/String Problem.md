@@ -1327,3 +1327,35 @@ class Solution {
     }
 }
 ```
+
+### [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great)
+```Java
+class Solution {
+    public String makeGood(String s) {
+        Stack<Character> st = new Stack<>();
+
+        for(int i=0;i<s.length();i++){
+
+            if(!st.isEmpty()){
+                if(Character.isUpperCase(st.peek()) && !Character.isUpperCase(s.charAt(i)) && Character.toLowerCase(st.peek()) == s.charAt(i)){
+                    st.pop();
+                }
+                else if(Character.isLowerCase(st.peek()) && !Character.isLowerCase(s.charAt(i)) && Character.toUpperCase(st.peek()) == s.charAt(i)){
+                    st.pop();
+                }
+                else{
+                    st.push(s.charAt(i));
+                }
+            }
+            else st.push(s.charAt(i));
+        }
+        
+        StringBuilder sb = new StringBuilder();
+        while(!st.isEmpty()){
+            sb.insert(0,st.pop());
+        }
+
+        return sb.toString();
+    }
+}
+```
