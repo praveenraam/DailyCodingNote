@@ -1359,3 +1359,29 @@ class Solution {
     }
 }
 ```
+
+### [1208. Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/description/)
+
+```Java
+class Solution {
+    public int equalSubstring(String s, String t, int mc) {
+        
+        int p1 = 0;
+        int ans = 0; int cost = 0;
+
+        for(int i=0;i<s.length();i++){
+            int dif = Math.abs(s.charAt(i)-t.charAt(i));
+
+            cost += dif;
+
+            while(cost > mc) {
+                cost -= Math.abs(s.charAt(p1)-t.charAt(p1));
+                p1++;
+            }
+
+            if((i-p1+1)>ans) ans = (i-p1+1);
+        }
+        return ans;
+    }
+}
+```

@@ -2747,3 +2747,62 @@ class Solution {
     }
 }
 ```
+
+### [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/)
+
+```Java
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> st1 = new HashSet<>();
+
+        for(int n : nums1){
+            st1.add(n);
+        }
+
+        Set<Integer> st2 = new HashSet<>();
+
+        for(int n : nums2){
+            if(st1.contains(n)) st2.add(n);
+        }
+
+        int[] ar = new int[st2.size()];
+        int i =0;
+        for(int n : st2){
+            ar[i] = n;
+            i++;
+        }
+
+        return ar;
+    }
+}
+```
+
+### [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+
+```Java
+class Solution {
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int n :  nums1){
+            mp.put(n,mp.getOrDefault(n,0)+1);
+        }
+
+        List<Integer> ls = new ArrayList<>();
+
+        for(int n : nums2){
+            if(mp.containsKey(n)){
+                ls.add(n);
+                mp.put(n,mp.get(n)-1);
+                if(mp.get(n) == 0) mp.remove(n);
+            }
+        }
+        
+        int[] arr = new int[ls.size()];
+        for(int i=0;i<ls.size();i++){
+            arr[i] = ls.get(i);
+        }
+        return arr;
+    }
+}
+```

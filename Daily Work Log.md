@@ -1,3 +1,15 @@
+## Day 150:
+#### Date : 18.06.2024
+- Solved Leetcode problem (Arrays)
+- Prepared Semester
+## Day 149:
+#### Date : 17.06.2024
+- Solved Leetcode problem (Arrays,String)
+- Prepared Semester
+## Day 148:
+#### Date : 16.06.2024
+- Solved Leetcode problem (Arrays)
+- Prepared Semester
 ## Day 147:
 #### Date : 15.06.2024
 - Solved Leetcode problem (Tree)
