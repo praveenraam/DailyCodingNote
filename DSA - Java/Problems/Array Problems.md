@@ -2806,3 +2806,33 @@ class Solution {
     }
 }
 ```
+
+### [958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/)
+
+```Java
+class Solution {
+    public int maxSubarrayLength(int[] nums, int k) {
+
+       int p1 = 0;
+       int p2 = 0;
+
+        Map<Integer,Integer> mp = new HashMap<>();
+        int res = 0;
+
+        while(p2<nums.length){
+            
+            mp.put(nums[p2],mp.getOrDefault(nums[p2],0)+1);
+
+            while(mp.containsKey(nums[p2]) && mp.get(nums[p2]) > k) {
+                mp.put(nums[p1], mp.get(nums[p1]) - 1);
+                p1++;
+            }
+
+            if((p2-p1+1)>res) res = p2-p1+1;
+            
+            p2++;
+        }
+        return res;
+    }
+}
+```

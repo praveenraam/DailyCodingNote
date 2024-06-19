@@ -1,3 +1,7 @@
+## Day 151:
+#### Date : 19.06.2024
+- Solved Leetcode problem (Arrays)
+- Prepared Semester
 ## Day 150:
 #### Date : 18.06.2024
 - Solved Leetcode problem (Arrays)
