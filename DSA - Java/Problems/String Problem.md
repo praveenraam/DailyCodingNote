@@ -1361,7 +1361,6 @@ class Solution {
 ```
 
 ### [1208. Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/description/)
-
 ```Java
 class Solution {
     public int equalSubstring(String s, String t, int mc) {
@@ -1385,3 +1384,64 @@ class Solution {
     }
 }
 ```
+### [2264. Largest 3-Same-Digit Number in String](https://leetcode.com/problems/largest-3-same-digit-number-in-string)
+
+```Java
+class Solution {
+    public String largestGoodInteger(String num) {
+
+        int res = -1;
+
+        for(int i=0;i<num.length()-2;i++){
+            if(num.charAt(i) == num.charAt(i+1) && num.charAt(i+1) == num.charAt(i+2)){
+                res = Math.max(res,num.charAt(i) - '0');
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0;i<3;i++){
+            sb.append((char)(48+res));
+        }
+        return res == -1 ? "" : sb.toString();
+    }
+}
+```
+
+### [1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)
+
+```Java
+class Solution {
+    public int countCharacters(String[] words, String c) {
+
+        int res = 0;
+
+        for(int i=0;i<words.length;i++){
+            Map<Character,Integer> dup = new HashMap<>();
+            
+            for(char ch : c.toCharArray()){
+                dup.put(ch,dup.getOrDefault(ch,0)+1);
+            }
+
+            int counter = 0;
+            boolean flag = true;
+
+            for(char ch : words[i].toCharArray()){
+                if(dup.containsKey(ch)){
+                    counter++;
+                    dup.put(ch,dup.get(ch)-1);
+
+                    if(dup.get(ch) <= 0) dup.remove(ch);
+
+                }else{
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) res += counter;
+        }
+        return res;
+    }
+}
+```
+
