@@ -847,3 +847,52 @@ class BrowserHistory {
     }
 }
 ```
+
+### [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
+
+```Java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode dup = head;
+
+        while(dup != null){
+            reverse(dup,k);
+            int i=0;
+            while(i<k && dup != null){
+                dup = dup.next;
+                i++;
+            }
+        }
+        return head;
+    }
+    public void reverse(ListNode head,int k){
+        
+        ListNode dup = head;
+        Stack<Integer> st = new Stack<>();
+
+        for(int i=0;i<k;i++){
+            if(dup == null) return;
+            st.push(dup.val);
+
+            dup = dup.next;
+        }
+
+        dup = head;
+        for(int i=0;i<k;i++){
+            if(dup == null) return;
+            dup.val = st.pop();
+            dup = dup.next;
+        }
+    }
+}
+```
