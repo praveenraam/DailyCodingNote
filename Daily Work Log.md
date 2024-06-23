@@ -1,3 +1,7 @@
+## Day 154:
+#### Date : 23.06.2024
+- Solved Leetcode problem (String,Array)
+- Prepared Semester
 ## Day 153:
 #### Date : 22.06.2024
 - Solved Leetcode problem (Tree)

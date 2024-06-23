@@ -1445,3 +1445,22 @@ class Solution {
 }
 ```
 
+### [1436. Destination City](https://leetcode.com/problems/destination-city/description/)
+```Java
+class Solution {
+    public String destCity(List<List<String>> paths) {
+        
+        Map<String,String> mp = new HashMap<>();
+
+        for(int i=0;i<paths.size();i++){
+            mp.put(paths.get(i).get(0),paths.get(i).get(1));
+        }
+
+        StringBuilder sb = new StringBuilder(paths.get(0).get(0));
+        while(mp.containsKey(sb.toString())){
+            sb = new StringBuilder(mp.get(sb.toString()));
+        }
+        return sb.toString();
+    }
+}
+```
