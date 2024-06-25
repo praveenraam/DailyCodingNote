@@ -1,3 +1,11 @@
+## Day 156:
+#### Date : 25.06.2024
+- Solved Leetcode problem (Math,Geometry)
+- Prepared Semester
+## Day 155: (Failed to commit)
+#### Date : 24.06.2024
+- Solved Leetcode problem (Tree,HashMap)
+- Prepared Semester
 ## Day 154:
 #### Date : 23.06.2024
 - Solved Leetcode problem (String,Array)

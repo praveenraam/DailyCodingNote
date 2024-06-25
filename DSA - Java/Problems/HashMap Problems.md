@@ -56,3 +56,43 @@ public class Solution {
     }
 }
 ```
+
+### [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
+
+```Java
+class RandomizedSet {
+
+    private ArrayList<Integer> ls;
+    private Map<Integer,Integer> mp;
+
+    public RandomizedSet() {
+        ls = new ArrayList<>();
+        mp = new HashMap<>();
+    }
+    
+    public boolean insert(int val) {
+        if(mp.containsKey(val)) return false;
+
+        ls.add(val);
+        mp.put(val,ls.size()-1);
+        return true;
+    }
+    
+    public boolean remove(int val) {
+        if(!mp.containsKey(val)) return false;
+
+        int index = mp.get(val);
+        ls.set(index,ls.get(ls.size()-1));
+        mp.put(ls.get(index),index);
+        ls.remove(ls.size()-1);
+        mp.remove(val);
+
+        return true;
+    }
+    
+    public int getRandom() {
+        Random rand = new Random();
+        return ls.get(rand.nextInt(ls.size()));  
+    }
+}
+```

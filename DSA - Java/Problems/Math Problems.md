@@ -898,3 +898,60 @@ class Solution {
     }
 }
 ```
+
+### [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
+```Java
+class Solution {
+    public String intToRoman(int num) {
+        
+        StringBuilder sb = new StringBuilder();
+        int[] no = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+        String[] ch = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+
+        for(int i=0;i<no.length;i++){
+            while(num>=no[i]){
+                sb.append(ch[i]);
+                num -= no[i];
+            }
+        }
+        return sb.toString();
+    }
+}
+```
+
+### [Geometric Problem : 1041. Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle/)
+
+```Java
+class Solution {
+    public boolean isRobotBounded(String i) {
+        int x = 0,y = 0;
+        char[] chAr = {'N','S','E','W'};
+        int p = 0;
+
+        for(char ch : i.toCharArray()){
+
+            if(ch == 'G'){
+                if(chAr[p] == 'N') y+=1;
+                else if(chAr[p] == 'S') y-=1;
+                else if(chAr[p] == 'E') x+=1;
+                else if(chAr[p] == 'W') x-=1;
+            }else if(ch == 'L'){
+                if(p == 0) p = 3;
+                else if(p == 1) p = 2;
+                else if(p == 2) p = 0;
+                else if(p == 3) p = 1;
+            }else if(ch == 'R'){
+                if(p == 0) p = 2;
+                else if(p == 1) p = 3;
+                else if(p == 2) p = 1;
+                else if(p == 3) p = 0;
+            }
+        }
+        if(x == 0 && y == 0) return true;
+        if(p == 0) return false;
+        return true;
+    }
+}
+```
+
