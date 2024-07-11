@@ -2873,3 +2873,77 @@ class Solution {
     }
 }
 ```
+
+### [1598. Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/)
+
+```Java
+class Solution {
+    public int minOperations(String[] logs) {
+        int res = 0;
+        for(int i=0;i<logs.length;i++){
+            if(logs[i].contains("../")){
+                if(res > 0) res--;
+            }else if(logs[i].contains("./")) continue;
+            else{
+                res++;
+            }
+        }
+        return res;
+    }
+}
+```
+
+### [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+```Java
+class Solution {
+    public int removeDuplicates(int[] n) {
+        
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<n.length;i++){
+
+            mp.put(n[i],mp.getOrDefault(n[i],0)+1);            
+            if(mp.get(n[i]) > 2) mp.put(n[i],2);
+
+        }
+
+        int j=0;
+        for(int i=0;i<n.length;i++){
+            if(mp.get(n[i]) != null && mp.get(n[i]) <= 2){
+                n[j] = n[i]; j++;
+
+                mp.put(n[i],mp.get(n[i])-1);
+                if(mp.get(n[i]) == 0) mp.remove(n[i]);
+            }
+        }
+        return j;
+    }
+}
+```
+
+### [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/)
+
+```Java
+class Solution {
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        
+        int l=0,r=arr.length-1;
+
+        while(r-l >= k){
+            
+            if(Math.abs(arr[l] - x) > Math.abs(arr[r] - x)){
+                l++;
+            }else{
+                r--;
+            }
+        }
+
+        List<Integer> ls = new ArrayList<>();
+        for(int i=l;i<=r;i++){
+            ls.add(arr[i]);
+        }
+        return ls;
+    }
+}
+```

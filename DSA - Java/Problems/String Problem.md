@@ -1464,3 +1464,75 @@ class Solution {
     }
 }
 ```
+
+
+### [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+
+```java
+class Solution {
+    public String removeKdigits(String num, int k) {
+        
+        if(k == 0) return num;
+        if(num.length() == k) return "0";
+        
+        Stack<Character> st = new Stack<>();
+        for(int i=0;i<num.length();i++){
+            char ch = num.charAt(i);
+            while(k>0 && !st.isEmpty() && (st.peek()>ch)){
+                
+                st.pop();
+                k--;              
+            }
+            st.push(ch);
+        }
+        while(k>0){
+            st.pop();
+            k--;
+        }
+        
+        StringBuilder sb = new StringBuilder();
+        while(!st.isEmpty()){
+            sb.insert(0,st.pop());
+        }
+        while(sb.toString().length() >= 1 && sb.toString().charAt(0) == '0'){
+            sb.deleteCharAt(0);
+        }
+        
+        return sb.toString().length() == 0 ? "0" : sb.toString();
+    }
+}
+```
+
+### [1190. Reverse Substrings Between Each Pair of Parentheses](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)
+
+```Java
+class Solution {
+    public String reverseParentheses(String s) {
+        int begin = 0;
+        int end;
+
+        for(int i=0;i<s.length();i++){
+
+            char ch = s.charAt(i);
+
+            if(ch == '('){
+                begin = i;
+            }
+            else if(ch == ')'){
+                end = i;
+                String rev = reverse(s.substring(begin+1,end));
+                return reverseParentheses(s.substring(0,begin) + rev + s.substring(end+1));
+            }
+        }
+        return s;
+    }
+    public String reverse(String s){
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=s.length()-1;i>=0;i--){
+            sb.append(s.charAt(i));
+        }
+        return sb.toString();
+    }
+}
+```
