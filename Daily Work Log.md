@@ -1,3 +1,8 @@
+## Day 174
+#### Date : 12.07.2024
+- Bit Manipulation
+- Prepared PS level 5
+- Solved Leetcode Problems
 ## Day 173 
 #### Date : 11.07.2024
 - Prepared For Level 5 PS Test

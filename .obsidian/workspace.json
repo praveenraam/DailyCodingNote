@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "be99e63eb1927c10",
+        "id": "acf39e669e96b937",
         "type": "tabs",
         "children": [
           {
-            "id": "0a10463f7785d7c0",
+            "id": "15ebd4f8b9489be4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,15 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a10463f7785d7c0",
+  "active": "15ebd4f8b9489be4",
   "lastOpenFiles": [
-    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
+    "Daily Work Log.md",
     "Placement/PS Preparation/Level 5.md",
     "Placement/PS Preparation/Level 3.md",
     "Placement/PS Preparation/Level 4.md",
-    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Bit Manipulation.md",
+    "DSA - Java/Java/Bit Manipulation.md",
     "DSA - Java/Problems/Tree Problem.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Java/Types of Tree.md",
+    "DSA - Java/Java/Linked List.md",
+    "DSA - Java/Problems/String Problem.md",
+    "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Problems/HashMap Problems.md",
     "Operating-System/Kernel InOut Sub-system.md",
@@ -163,7 +168,6 @@
     "Operating-System/System Call.md",
     "Operating-System/Functions of OS.md",
     "Operating-System/Introduction to OperatingSystem.md",
-    "DSA - Java/Java/Types of Tree.md",
     "Pasted image 20240605113747.png",
     "Pasted image 20240605113103.png",
     "Pasted image 20240605112312.png",
@@ -179,11 +183,7 @@
     "Shopify/ShopifyWork.md",
     "Placement/Project/Diagram  and Flowcharts.md",
     "Placement/Project/Problem statement and details.md",
-    "Daily Work Log.md",
     "Operating-System/Imgs/Pasted image 20240521085751.png",
-    "Operating-System/Types of OS.md",
-    "Studies/ObsidianTutorial/Link vs Hashtags.md",
-    "Studies/ObsidianTutorial/Basic.md",
     "Operating-System/Imgs",
     "Operating-System",
     "Placement/PS Preparation/main.exe",

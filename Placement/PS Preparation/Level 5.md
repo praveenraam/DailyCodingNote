@@ -1,5 +1,5 @@
 Questions [Doc](https://docs.google.com/document/d/19XtlW0zlLAvF-gdkJxOrFFdf37RFQ47B5mYSveZSad8/edit?usp=sharing)
-Pending Ques : 7, 8, 9, 11, 13, 16, 22
+Pending Ques : 8, 9, 11, 13 
 ### 1.Recursive Fibonacci Series
 
 ```C
@@ -186,6 +186,85 @@ int main() {
 }
 ```
 
+### 7.String Compression
+
+```C
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+char* comp(char* str){
+    
+    char* res = (char*)malloc((strlen(str)*2 +1)*sizeof(char));
+    
+    int count = 1;
+    int j=0;
+    
+    for(int i=0;i<strlen(str);i++){
+        if(str[i] == str[i+1]) count++;
+        else{
+            res[j] = str[i];
+            j++;
+            if(count > 1){
+                res[j] = count+'0';
+                j++;
+            }
+            count=1;
+        }
+    }
+    return res;
+}
+
+int main(){
+    char str[1024];
+    scanf("%s",str);
+    
+    printf("%s",comp(str));
+}
+
+```
+
+### 8.Matrix Transpose
+
+```C
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int** transpose(int m,int n,int arr[m][n]){
+    
+    int** ans = (int**)malloc(n*sizeof(int*));
+    
+    for(int i=0;i<n;i++){
+        ans[i] = (int*)malloc(m*sizeof(int));
+    }
+    
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            ans[j][i] = arr[i][j];
+        }
+    }
+    
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",ans[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return ans;
+}
+
+int main(){
+    int m=3,n=4;
+    int arr[3][4] = {
+        {1,2,3,4},{3,4,5,6},{5,6,7,8}
+    };
+    
+    transpose(m,n,arr);
+    
+}
+```
 ### 10.Sort the Array
 
 ```C
@@ -297,6 +376,46 @@ int main() {
 }
 ```
 
+### 16.GCD & LCM
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int lcm(int n,int m){
+    
+    int res = 0;
+    
+    for(int i=(n>m ? n : m);1;i++){
+        
+        if(i%n == 0 && i%m == 0) return i;
+        
+    }
+    return -1;
+}
+
+int gcd(int n,int m){
+    
+    int res = 0;
+    for(int i=1;i<n && i<m;i++){
+        
+        if(n%i==0 && m%i == 0){
+            res = i;
+        }
+        
+    }
+    return res;
+}
+
+int main() {
+
+    int n1,n2;
+    scanf("%d %d",&n1,&n2);
+    
+    printf("%d",gcd(n1,n2));
+    
+}
+```
 ### 17.Binary to Decimal
 
 ```C
@@ -305,7 +424,7 @@ int main() {
 #include <string.h>
 #include <stdlib.h>
 int BinaryToDecimal(char* str){
-	return (int)strtol(str,NULL,2);
+		return (int)strtol(str,NULL,2);
 }
 
 int main() {
@@ -439,6 +558,42 @@ int main() {
 }
 ```
 
+### 22.Sum of Prime
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int isPrime(int n){
+    
+    if(n <= 1) return 0;
+    
+    int divi = 2;
+    while(n>divi){
+        if(n%divi == 0) return 0; 
+        divi++;
+    }
+    return 1;
+}
+
+int isSumOfPrime(int n){
+    
+    for(int i=1;i<n;i++){
+        if(isPrime(i)) {
+            for(int j=1;j<n;j++){
+                if(isPrime(j) && (i+j == n)) return 1;
+            }
+        }
+    }
+    return 0;
+}
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    printf("%d",isSumOfPrime(n));
+}
+```
 ### 23. Armstrong or perfect numbers
 
 ```C
@@ -602,3 +757,5 @@ int main() {
     printf("%c",firstRepeat(str));
 }
 ```
+
+### 

@@ -1536,3 +1536,84 @@ class Solution {
     }
 }
 ```
+
+### [1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/)
+
+```Java
+class Solution {
+    public int maximumGain(String s, int x, int y) {
+        
+        int min = Math.min(x,y);
+        int aC = 0;
+        int bC = 0;
+        int res = 0;
+
+        for(int i=0;i<s.length();i++){
+
+            char ch = s.charAt(i);
+
+            if(ch != 'a' && ch != 'b'){
+                res+=(Math.min(aC,bC)*min);
+                aC = 0;
+                bC = 0;
+            }
+            else if(ch == 'a'){
+
+                if(x < y && bC > 0){
+                    bC--;
+                    res+=y;
+                }
+                else 
+                    aC++;
+            }else if(ch == 'b'){
+
+                if(x>y && aC > 0){
+                    aC--;
+                    res+=x;
+                }
+                else
+                    bC++;
+            }
+        }
+        res+=(Math.min(aC,bC)*min);
+        return res;
+    }
+}
+```
+
+### [1717. Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/)
+
+```Java
+class Solution {
+    public char findKthBit(int n, int k) {
+        StringBuilder prev = new StringBuilder();
+        StringBuilder curr = new StringBuilder("0");
+
+        for(int i=1;i<n;i++){
+            prev = curr;
+            String s = invert(prev.toString()); 
+            s = rev(s);
+            curr.append("1"+s);
+        }
+        return curr.toString().charAt(k-1);
+    }
+    public String invert(String s){
+
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(ch == '1') sb.append('0');
+            else sb.append('1');
+        }
+        return sb.toString();
+    }
+    public String rev(String s){
+
+        StringBuilder sb = new StringBuilder();
+        for(int i=s.length()-1;i>=0;i--){
+            sb.append(s.charAt(i));
+        }
+        return sb.toString();
+    }
+}
+```

@@ -1,5 +1,5 @@
 Topic No : 20
-Next Topic : [[]]
+Next Topic : [[Types of Tree]]
 Video [Link](https://youtu.be/58YbpRDc4yw?si=feaZgsXsLzZKejEL)
 ### Why Linked List
 
