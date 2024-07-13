@@ -2947,3 +2947,47 @@ class Solution {
     }
 }
 ```
+
+### [2751. Robot Collisions](https://leetcode.com/problems/robot-collisions/description/)
+
+```Java
+class Solution {
+    public List<Integer> survivedRobotsHealths(int[] p, int[] h, String d) {
+        
+        List<Integer> no = new ArrayList<>();
+        for(int i=0;i<p.length;i++){
+            no.add(i);
+        }
+        no.sort((a,b) -> Integer.compare(p[a],p[b]));
+
+        Deque<Integer> st = new ArrayDeque<>();
+
+        for(int i : no){
+            if(d.charAt(i) == 'R'){
+                st.push(i);
+                continue;
+            }
+            while (!st.isEmpty() && h[i] > 0) {
+                if (h[st.peek()] < h[i]) {
+                    h[st.pop()] = 0;
+                    h[i] -= 1;
+                }else if(h[st.peek()] > h[i]){
+                    h[st.peek()] = h[st.peek()]-1;
+                    h[i] = 0;
+                }else{
+                    h[st.pop()] = 0;
+                    h[i] = 0;
+                }
+            }
+        }
+
+        List<Integer> res = new ArrayList<>();
+        for(int i : h){
+            if(i > 0){
+                res.add(i);
+            }
+        }
+        return res;
+    }
+}
+```

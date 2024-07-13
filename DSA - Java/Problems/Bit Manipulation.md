@@ -71,4 +71,56 @@ class Solution {
 }
 ```
 
-### 
+### [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+
+```Java
+class Solution {
+    public int hammingWeight(int n) {
+        
+        int count=0;
+        while(n != 0){
+            int no = n & 1;
+            if(no == 1) count++;
+            n = n >> 1;
+        }
+        return count;
+    }
+}
+```
+
+### [2859. Sum of Values at Indices With K Set Bits](2859. Sum of Values at Indices With K Set Bits)
+
+```Java
+class Solution {
+    public int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+        
+        int res = 0;
+        for(int i=0;i<nums.size();i++){
+
+            int n = i;
+            int c = 0;
+            while(n!=0){
+                if((n&1) == 1) c++;
+                n>>=1;
+            }
+            if(c == k) res+=nums.get(i);
+        }
+        return res;
+    }
+}
+```
+
+### [136. Single Number](https://leetcode.com/problems/single-number/description/)
+
+```Java
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums[0];
+
+        for(int i=1;i<nums.length;i++){
+            n^=nums[i];
+        }
+        return n;
+    }
+}
+```

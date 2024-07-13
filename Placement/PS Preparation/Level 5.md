@@ -758,4 +758,69 @@ int main() {
 }
 ```
 
-### 
+### Find the max and min length of the word in the given string
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void is(char* str){
+    
+    int lastSpace = 0,max = -1, maxCount = 0;
+    int min = 0, minCount = 100000; 
+    int count = 0;
+    
+    for(int i=0;i<strlen(str);i++){
+        
+        if(str[i] == ' '){
+            
+            if(count > maxCount){
+                maxCount = count;
+                max = lastSpace;
+                lastSpace = i+1;
+            }
+            if(count < minCount){
+                minCount = count;
+                min = lastSpace;
+                lastSpace = i+1;
+            }
+            count=0;
+            
+        }else{
+            count++;
+        }
+    }
+    count = 0;
+    for(int i=strlen(str)-1;i>=0;i--){
+        if(str[i] == ' '){
+            
+            if(count > maxCount){
+                maxCount = count;
+                max = i+1;
+            }
+            if(count < minCount){
+                minCount = count;
+                min = i+1;
+            }
+            count=0;
+            break;
+        }else{
+            count++;
+        }
+    }
+    
+    for(int i=max;str[i] != ' ' & i<strlen(str);i++){
+        printf("%c",str[i]);
+    }
+    printf("\n");
+    for(int i=min;str[i]!=' ' & i<strlen(str);i++){
+        printf("%c",str[i]);
+    }
+}
+
+int main() {
+    is("google isee the largest companys");
+}
+```
