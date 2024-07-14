@@ -124,3 +124,17 @@ class Solution {
     }
 }
 ```
+
+### [268. Missing Number](https://leetcode.com/problems/missing-number/)
+
+```Java
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n=0,i;
+        for(i=0;i<nums.length;i++){
+            n = n ^ (nums[i] ^ i);
+        }
+        return n^i;
+    }
+}
+```

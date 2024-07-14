@@ -1617,3 +1617,60 @@ class Solution {
     }
 }
 ```
+
+### [726. Number of Atoms](https://leetcode.com/problems/number-of-atoms/)
+
+```Java
+class Solution {
+
+    Map<String,Integer> mp = new TreeMap<>();
+    Stack<Integer> st = new Stack<>();
+    StringBuilder sb = new StringBuilder();
+    int mul = 1;
+
+    public String countOfAtoms(String formula) {
+        
+        int i = formula.length()-1, end = i;
+
+        while(i>=0){
+            char ch = formula.charAt(i);
+            
+            if(ch == '('){
+                mul /= st.pop();
+                i--; continue;
+            }
+
+            end = i; int val = 1;
+
+            if(Character.isDigit(ch)){
+
+                while(Character.isDigit(formula.charAt(i))) i--;
+                val = Integer.parseInt(formula.substring(i+1,end+1));
+            }
+            st.push(val);
+            mul *= val;
+
+            end = i;
+            
+            if(Character.isLetter(formula.charAt(i))){
+                while(Character.isLowerCase(formula.charAt(i))) i--;
+
+                if(mp.get(formula.substring(i,end+1)) == null){
+                    mp.put(formula.substring(i,end+1),mul);
+                }else{
+                    mp.put(formula.substring(i,end+1),mul+mp.get(formula.substring(i,end+1)));
+                }
+                mul/=st.pop();
+            }
+            i--;
+        }
+
+        for(Map.Entry<String,Integer> entry : mp.entrySet()){
+            sb.append(entry.getKey());
+            if(entry.getValue() > 1) sb.append(entry.getValue());
+        }
+
+        return sb.toString();
+    }
+}
+```

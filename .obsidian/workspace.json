@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Placement/PS Preparation/Level 5.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placement/PS Preparation/Level 5.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placement/PS Preparation/Level 5.md",
+                "file": "DSA - Java/Problems/String Problem.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placement/PS Preparation/Level 5.md"
+                "file": "DSA - Java/Problems/String Problem.md"
               }
             }
           }
@@ -148,13 +148,14 @@
   },
   "active": "15ebd4f8b9489be4",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Bit Manipulation.md",
+    "DSA - Java/Java/Collections.md",
+    "Placement/PS Preparation/Level 5.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/Bit Manipulation.md",
-    "DSA - Java/Problems/Bit Manipulation.md",
     "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "Daily Work Log.md",
-    "Placement/PS Preparation/Level 5.md",
     "Placement/PS Preparation/Level 3.md",
     "Placement/PS Preparation/Level 4.md",
     "DSA - Java/Problems/Tree Problem.md",
@@ -182,7 +183,6 @@
     "Studies/Freelancing Webinar.md",
     "Shopify/ShopifyWork.md",
     "Placement/Project/Diagram  and Flowcharts.md",
-    "Placement/Project/Problem statement and details.md",
     "Operating-System/Imgs/Pasted image 20240521085751.png",
     "Operating-System/Imgs",
     "Operating-System",
