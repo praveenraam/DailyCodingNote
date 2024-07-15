@@ -639,3 +639,141 @@ class Solution {
     }
 }
 ```
+
+### [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+
+```Java
+class Solution {
+    public int[] sortedSquares(int[] num) {
+        int[] ar = new int[num.length];
+        int l = 0,r = num.length-1;
+        int i = num.length-1;
+
+        while(l<=r){
+            if(num[l]*num[l] >= num[r]*num[r]){
+                ar[i] = num[l]*num[l];
+                l++;        
+            }else{
+                ar[i] = num[r]*num[r];
+                r--;
+            }
+            i--;
+        }
+        return ar;
+    }
+}
+```
+
+### [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+
+```Java
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int l = 0,r = nums.length-1;
+
+        while(l<r){
+            int mid = (l+r)/2;
+
+            if((mid%2 == 1 && nums[mid] == nums[mid-1]) || (mid%2 == 0 && nums[mid] == nums[mid+1])){
+                l = mid+1;
+            }else{
+                r = mid;
+            }
+        }
+        
+        return nums[l];
+    }
+}
+```
+
+### [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+
+```Java
+class Solution {
+    public int shipWithinDays(int[] weights, int days) {
+        
+        int l = 0;
+        int r = Integer.MAX_VALUE;
+        int res = Integer.MAX_VALUE;
+
+        while(l<=r){
+            int mid = (l+r)/2;
+
+            if(canShip(weights,mid,days)) {
+                r = mid-1;
+                res = Math.min(res,mid);
+            }
+            else l = mid+1;
+        }
+        return l;
+    }
+    public boolean canShip(int[] weight,int cap,int days){
+        int w = 0;
+        int day = 1;
+        for(int i=0;i<weight.length;i++){
+            if(cap < weight[i] || day > days ) return false;
+            else if(w+weight[i] > cap){
+                day++;
+                w = weight[i];
+            }else w+=weight[i];
+        }
+        return day<=days;
+    }
+}
+```
+
+### [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+
+```Java
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+        int l = 1;
+        int r =  Integer.MAX_VALUE;
+
+        while(l<=r){
+            int mid = l+(r-l)/2;
+            if(canEat(piles,mid,h)) r = mid-1;
+            else l=mid+1;
+        }
+        return l;
+    }
+    public boolean canEat(int[] ar , int ph,int h){
+        int Hrs = 0;
+
+        for(int pile : ar){
+            int div = pile/ph;
+            Hrs+=div;
+            if(pile%ph != 0) Hrs++;
+        }
+        return Hrs<=h;
+    }
+}
+```
+
+### [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/)
+
+```Java
+class Solution {
+    public int[] successfulPairs(int[] spells, int[] potions, long success) {
+        
+        int[] ar = new int[spells.length];
+        Arrays.sort(potions);
+
+        for(int i=0;i<spells.length;i++){
+
+            int l = 0, r = potions.length-1;
+
+            while(l<=r){
+                int mid = l+(r-l)/2;
+                if((long)spells[i]*(long)potions[mid] >= success){
+                    r = mid-1;
+                }else{
+                    l = mid+1;
+                }
+            }
+            ar[i] = potions.length-r-1;
+        }
+        return ar;
+    }
+}
+```

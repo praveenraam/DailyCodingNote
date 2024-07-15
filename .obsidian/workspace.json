@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "acf39e669e96b937",
+        "id": "c5446b89e726e0fc",
         "type": "tabs",
         "children": [
           {
-            "id": "15ebd4f8b9489be4",
+            "id": "3d9c9811a044c6f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Problems/String Problem.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/String Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/String Problem.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Problems/String Problem.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,18 +138,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15ebd4f8b9489be4",
+  "active": "3d9c9811a044c6f1",
   "lastOpenFiles": [
+    "Placement/Project/Problem statement and details.md",
+    "Placement/Project/Readme.md",
+    "Placement/Project/Diagram and Flowcharts.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
+    "Placement/PS Preparation/Level 5.md",
+    "Placement/PS Preparation/Level 4.md",
+    "Placement/PS Preparation/Level 3.md",
+    "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Problems/Bit Manipulation.md",
     "DSA - Java/Java/Collections.md",
-    "Placement/PS Preparation/Level 5.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Java/Bit Manipulation.md",
-    "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
     "Daily Work Log.md",
-    "Placement/PS Preparation/Level 3.md",
-    "Placement/PS Preparation/Level 4.md",
     "DSA - Java/Problems/Tree Problem.md",
     "DSA - Java/Java/Types of Tree.md",
     "DSA - Java/Java/Linked List.md",
@@ -180,9 +175,6 @@
     "DSA - Java/Problems/LinkedList.md",
     "DSA - Java/Problems/Recursion Problems.md",
     "Operating-System/Imgs/Pasted image 20240531184052.png",
-    "Studies/Freelancing Webinar.md",
-    "Shopify/ShopifyWork.md",
-    "Placement/Project/Diagram  and Flowcharts.md",
     "Operating-System/Imgs/Pasted image 20240521085751.png",
     "Operating-System/Imgs",
     "Operating-System",
