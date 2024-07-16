@@ -1,5 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/types-of-operating-systems)
-Topic No : 3
+Topic No : 3 Basics of OS
 Next Topic : [[System Call]]
 ## Batch Operation System
 

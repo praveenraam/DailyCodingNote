@@ -1,5 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/microkernel-in-operating-systems)
-Topic No : 5
+Topic No : 5 System Structure
 Next Topic : [[Monolithic Kernel]]
 
 Micro Kernel is a Type of OS kernel where it will only provide the **most Basic kernel service** for the **OS like Memory Management and process scheduling**, while other services are **implemented in the User level**, the communication for the processes are done through message passing. This system is more modular and flexible than traditional one.

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c5446b89e726e0fc",
+        "id": "5ba4414ede44fd96",
         "type": "tabs",
         "children": [
           {
-            "id": "3d9c9811a044c6f1",
+            "id": "d21e4ee874a8d1a4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,8 +138,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d9c9811a044c6f1",
+  "active": "d21e4ee874a8d1a4",
   "lastOpenFiles": [
+    "Operating-System/Privileged and Non Privileged Instructions.md",
+    "Operating-System/Dual Mode ops.md",
+    "Operating-System/Kernel InOut Sub-system.md",
+    "Operating-System/Imgs/Pasted image 20240716142143.png",
+    "Operating-System/Monolithic Kernel.md",
+    "Operating-System/MicroKernel.md",
+    "Operating-System/System Call.md",
+    "Operating-System/Types of OS.md",
+    "Operating-System/Functions of OS.md",
+    "Operating-System/Introduction to OperatingSystem.md",
     "Placement/Project/Problem statement and details.md",
     "Placement/Project/Readme.md",
     "Placement/Project/Diagram and Flowcharts.md",
@@ -157,13 +167,6 @@
     "DSA - Java/Java/Types of Tree.md",
     "DSA - Java/Java/Linked List.md",
     "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Problems/HashMap Problems.md",
-    "Operating-System/Kernel InOut Sub-system.md",
-    "Operating-System/MicroKernel.md",
-    "Operating-System/Monolithic Kernel.md",
-    "Operating-System/System Call.md",
-    "Operating-System/Functions of OS.md",
-    "Operating-System/Introduction to OperatingSystem.md",
     "Pasted image 20240605113747.png",
     "Pasted image 20240605113103.png",
     "Pasted image 20240605112312.png",
@@ -172,10 +175,7 @@
     "Pasted image 20240605111228.png",
     "Pasted image 20240605110806.png",
     "Pasted image 20240605110412.png",
-    "DSA - Java/Problems/LinkedList.md",
-    "DSA - Java/Problems/Recursion Problems.md",
     "Operating-System/Imgs/Pasted image 20240531184052.png",
-    "Operating-System/Imgs/Pasted image 20240521085751.png",
     "Operating-System/Imgs",
     "Operating-System",
     "Placement/PS Preparation/main.exe",

@@ -1,5 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/introduction-of-system-call)
-Topic No : 4
+Topic No : 4 System Structure
 Next Topic : [[MicroKernel]]
 
 ## Introduction

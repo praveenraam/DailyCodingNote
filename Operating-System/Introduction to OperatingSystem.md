@@ -1,6 +1,6 @@
 Article [Link](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)
 Topic Wise [Link](https://www.geeksforgeeks.org/operating-systems/)
-Topic No : 1
+Topic No : 1 Basics of OS
 Next Topic : [[Functions of OS]]
 ## Why we need an OS
 

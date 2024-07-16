@@ -1,5 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/functions-of-operating-system)
-Topic No : 2
+Topic No : 2 Basics of OS
 Next Topic : [[Types of OS]]
 
 ## Memory Management : 

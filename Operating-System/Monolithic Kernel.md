@@ -1,5 +1,5 @@
 Article [Link](https://www.geeksforgeeks.org/monolithic-kernel-and-key-differences-from-microkernel/)
-Topic No : 6
+Topic No : 6 System Structure
 Next Topic : [[Kernel InOut Sub-system]]
 
 This kernel was a simple kernel system where the kernel directly controls all the functions. All the system recourses are accessible for the kernel. Every part of the OS is within the kernel in monolithic System. It was introduced in 1970.

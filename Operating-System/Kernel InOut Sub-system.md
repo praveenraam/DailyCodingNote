@@ -1,8 +1,8 @@
 Article [Link](https://www.geeksforgeeks.org/kernel-i-o-subsystem-in-operating-system/)
-Topic No : 7
-Next Topic : [[]]
+Topic No : 7 System Structure
+Next Topic : [[Dual Mode ops]]
 
-There are several services that are related to the I/O system by the kernel. It is build on the hardware and device driver infrastructure. It is responsible for the protecting itself from malicious user and errant processes
+There are several services that are related to the I/O system by the kernel such as I/O scheduling, buffering, cache, spooling, device reservation and more. It is build on the hardware and device driver infrastructure. It is responsible for the protecting itself from malicious user and errant processes
 
 #### I/O scheduling 
 
@@ -14,7 +14,8 @@ OS developers makes the schedule by maintaining a wait queue of request for each
 
 Buffering is a memory area where the data transferred between two devices or between device and application. Buffering is done for three reasons
 - To match the speed of transfer between the producer and the consumer
-
+- Adaption of data for different transfer size
+- To support copy semantics for the application
 #### Cache 
 
 Cache memory is the a space where it hold the data that is very fast. Access to the cache memory is easier to access the original file. The instructions of the current running processes stored in the disk, cached in primary memory and then it is copied to the CPU's secondary memory and primary cache. 
@@ -44,3 +45,23 @@ Informing about the error happened to the user is essential for timely intervent
 ###### User alerts : 
 Providing alerts to the users, either through the user interface or system notification, can prompt immediate attention to potential issue
 
+### Advantages and Importance
+
+One of the critical component of an OS is kernel's I/O Subsystem, which is in between of OS and I/O devices. It manages the request from the user application and translate them into the hardware commands 
+
+#### Device Independence : 
+The Kernel I/O provides device independence to the user's applications. It means that the application developer can write code independent of hardware problem as Kernel I/O subsystem takes care of the hardware details
+
+#### Efficient memory management : 
+This manages the I/O requests  and schedule them in an optimized way that use the available resources. This ensures that I/O devices are not over utilized.
+
+#### Concurrency Management :
+It manages the issue raised when multiples applications try to access the same device simultaneously, it gives exclusive access to application and allow multiple app's to share the device appropriately
+
+## Disadvantages
+
+#### Complex Implementation : 
+This is a complex code that requires a lot of resources to maintain. Any issue in the I/O system can affect the performance and stability of the system/
+
+#### Security Risks
+It can be easily exposed if it is not implemented correctly. The attackers exploit vulnerabilities in the Kernel I/O system to gain un authorized access.
