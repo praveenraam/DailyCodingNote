@@ -1,3 +1,10 @@
+## Day 179
+#### Date : 17.07.2024
+- Solved Leetcode Problems
+## Day 178
+#### Date : 16.07.2024
+- OS
+- Solved Leetcode Problems
 ## Day 177
 #### Date : 15.07.2024
 - Updated Old repo's

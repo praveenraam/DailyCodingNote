@@ -502,3 +502,44 @@ class Solution {
 }
 ```
 
+### [1110. Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/description/)
+
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+
+    Set<Integer> st = new HashSet<>();
+    List<TreeNode> res = new ArrayList<>();
+
+    public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
+        for(int i : to_delete){
+            st.add(i);
+        }
+        helper(root,true);
+        return res;
+    }
+    public TreeNode helper(TreeNode node,boolean is_root){
+        if(node == null) return null;
+
+        boolean delete = st.contains(node.val);
+        if(is_root && !delete) res.add(node);
+        node.left = helper(node.left,delete);
+        node.right = helper(node.right,delete);
+        return delete ? null : node;
+    }
+}
+```

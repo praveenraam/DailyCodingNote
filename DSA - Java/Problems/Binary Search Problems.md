@@ -887,3 +887,51 @@ class Solution {
     }
 }
 ```
+
+### [1898. Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/description/)
+
+```Java
+class Solution {
+    public int maximumRemovals(String s, String p, int[] removable) {
+        int l=0,r=removable.length-1;
+        int max = Integer.MIN_VALUE;
+        char[] sA = s.toCharArray();
+
+        while(l<=r){
+
+            int mid = l+(r-l)/2;
+
+            for(int i=l;i<=mid;i++){
+                sA[removable[i]] = '*';
+            }
+
+            if(isSequence(sA,p)){
+                l = mid+1;
+                max = Math.max(max,mid);
+            } 
+            else{
+                r = mid-1;
+                for(int i = l;i<=mid;i++){
+                    sA[removable[i]] = s.charAt(removable[i]);
+                }
+            }
+            
+        }
+        if(max == Integer.MIN_VALUE) return 0;
+        return max+1;
+    }
+    public boolean isSequence(char[] sA,String p){
+
+        int i=0,j=0;
+    
+        while(i<sA.length && j<p.length()){
+
+            if(sA[i] == p.charAt(j)){
+                j++;
+            } 
+            i++;
+        }
+        return j == p.length();
+    }
+}
+```
