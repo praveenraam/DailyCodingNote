@@ -935,3 +935,80 @@ class Solution {
     }
 }
 ```
+
+### [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)
+
+```Java
+class TimeMap {
+
+    Map<String,TreeMap<Integer,String>> mp;
+
+    public TimeMap() {
+        mp = new HashMap<>();
+    }
+    
+    public void set(String key, String value, int timestamp) {
+        if(!mp.containsKey(key)){
+            mp.put(key,new TreeMap<>());
+        }
+        mp.get(key).put(timestamp,value);
+    }
+    
+    public String get(String key, int timestamp) {
+        TreeMap<Integer,String> tm = mp.get(key);
+        if(tm == null) return "";
+        if(tm.floorKey(timestamp) == null) return "";
+        return tm.get(tm.floorKey(timestamp));
+    }
+}
+
+/**
+ * Your TimeMap object will be instantiated and called as such:
+ * TimeMap obj = new TimeMap();
+ * obj.set(key,value,timestamp);
+ * String param_2 = obj.get(key,timestamp);
+ */
+```
+
+### [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)
+
+```Java
+class Solution {
+    public int splitArray(int[] nums, int k) {
+        
+        int tot = 0,max = Integer.MIN_VALUE;
+
+        for(int i : nums){
+            tot+=i;
+            max = Math.max(max,i);
+        }
+
+        int l = max , r = tot, res = Integer.MAX_VALUE;
+
+        while(l<=r){
+
+            int mid = l+(r-l)/2;
+
+            int sum = 0, count = 1;
+            for(int i=0;i<nums.length;i++){
+
+                if(nums[i] + sum <= mid){
+                    sum+=nums[i];
+                }else{
+                    sum = nums[i];
+                    count++;
+                }
+
+            }
+
+            if(count <= k){
+                r = mid-1; 
+                res = Math.min(res,mid);
+            }else{  
+                l = mid+1;
+            }
+        }
+        return res;
+    }
+}
+```

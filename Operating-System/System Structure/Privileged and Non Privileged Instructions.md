@@ -1,6 +1,6 @@
 Article [Link](https://www.geeksforgeeks.org/privileged-and-non-privileged-instructions-in-operating-system/)
 Topic No : 9 System Structure
-Next Topic : [[]]
+Next Topic : [[Intro to Process Management]]
 
 ##### The instructions are divided into two categories : Privileged and non privileged
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5ba4414ede44fd96",
+        "id": "6685da783bfb6f0c",
         "type": "tabs",
         "children": [
           {
-            "id": "d21e4ee874a8d1a4",
+            "id": "4b52621b509f7569",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Bit Manipulation.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Bit Manipulation.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Bit Manipulation.md",
+                "file": "DSA - Java/Problems/Array Problems.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Bit Manipulation.md"
+                "file": "DSA - Java/Problems/Array Problems.md"
               }
             }
           }
@@ -146,16 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d21e4ee874a8d1a4",
+  "active": "71b30a88c170084e",
   "lastOpenFiles": [
+    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Problems/Bit Manipulation.md",
+    "DSA - Java/Mapping - 1.md",
+    "Operating-System/CPU Scheduling/Process State.md",
+    "Operating-System/Imgs/Pasted image 20240718111922.png",
+    "DSA - Java/Java/Bit Manipulation.md",
     "Operating-System/CPU Scheduling/Intro to Process Management.md",
+    "Operating-System/Imgs/Pasted image 20240718100313.png",
+    "Operating-System/Imgs/Pasted image 20240718094935.png",
+    "Operating-System/Imgs/Pasted image 20240718093922.png",
+    "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/System Call.md",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
     "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
     "Operating-System/Basics of OS",
-    "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/System Structure/Kernel InOut Sub-system.md",
     "Operating-System/Imgs/Pasted image 20240716142143.png",
@@ -165,28 +174,19 @@
     "Placement/Project/Problem statement and details.md",
     "Placement/Project/Readme.md",
     "Placement/Project/Diagram and Flowcharts.md",
-    "DSA - Java/Problems/Binary Search Problems.md",
     "Placement/PS Preparation/Level 5.md",
     "Placement/PS Preparation/Level 4.md",
     "Placement/PS Preparation/Level 3.md",
     "DSA - Java/Problems/String Problem.md",
-    "DSA - Java/Problems/Bit Manipulation.md",
     "DSA - Java/Java/Collections.md",
     "DSA - Java/Problems/Array Problems.md",
-    "DSA - Java/Java/Bit Manipulation.md",
     "Daily Work Log.md",
     "DSA - Java/Problems/Tree Problem.md",
-    "DSA - Java/Java/Types of Tree.md",
-    "DSA - Java/Java/Linked List.md",
     "Pasted image 20240605113747.png",
     "Pasted image 20240605113103.png",
     "Pasted image 20240605112312.png",
     "Pasted image 20240605111433.png",
     "Pasted image 20240605111412.png",
-    "Pasted image 20240605111228.png",
-    "Pasted image 20240605110806.png",
-    "Pasted image 20240605110412.png",
-    "Operating-System/Imgs/Pasted image 20240531184052.png",
     "Operating-System/Imgs",
     "Operating-System",
     "Placement/PS Preparation/main.exe",

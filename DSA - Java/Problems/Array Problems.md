@@ -2991,3 +2991,50 @@ class Solution {
     }
 }
 ```
+
+### [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/)
+
+```Java
+class Solution {
+    public int minimumLength(String s) {
+        int l = 0,r = s.length()-1;
+        // StringBuilder fr = new StringBuilder()
+
+        while(l<r && s.charAt(l) == s.charAt(r)){
+           
+            char ch = s.charAt(r);
+            while(l<=r && s.charAt(l) == ch ){
+                l++;
+            }
+            while(l<=r && s.charAt(r) == ch ){
+                r--;
+            }
+        }
+        return r-l+1 > 0 ? r-l+1 : 0;
+    }
+}
+```
+
+
+### [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/)
+
+```Java
+class Solution {
+    public int minimumLength(String s) {
+        int l = 0,r = s.length()-1;
+        // StringBuilder fr = new StringBuilder()
+
+        while(l<r && s.charAt(l) == s.charAt(r)){
+           
+            char ch = s.charAt(r);
+            while(l<=r && s.charAt(l) == ch ){
+                l++;
+            }
+            while(l<=r && s.charAt(r) == ch ){
+                r--;
+            }
+        }
+        return r-l+1 > 0 ? r-l+1 : 0;
+    }
+}
+```

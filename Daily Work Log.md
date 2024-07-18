@@ -1,6 +1,10 @@
 ## Day 179
 #### Date : 17.07.2024
 - Solved Leetcode Problems
+- Os CPU scheduling
+## Day 179
+#### Date : 17.07.2024
+- Solved Leetcode Problems
 ## Day 178
 #### Date : 16.07.2024
 - OS
