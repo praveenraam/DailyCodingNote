@@ -3038,3 +3038,39 @@ class Solution {
     }
 }
 ```
+
+### [1380. Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/)
+
+```Java
+class Solution {
+    public List<Integer> luckyNumbers (int[][] m) {
+
+        List<Integer> ls = new ArrayList<>();
+            
+        for(int i=0;i<m.length;i++){
+
+            int minInd = 0;
+
+            for(int j=0;j<m[i].length;j++){
+
+                if(m[i][minInd] > m[i][j]){
+                    minInd = j;
+                }
+
+            }
+
+            boolean flag = true;
+            for(int j=0;j<m.length;j++){
+
+                if(m[i][minInd] < m[j][minInd]){
+                    flag = false;
+                }
+
+            }
+            
+            if(flag) ls.add(m[i][minInd]);
+        }
+        return ls;
+    }
+}
+```

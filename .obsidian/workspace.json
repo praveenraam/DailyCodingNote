@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6685da783bfb6f0c",
+        "id": "77c2fa0193fac094",
         "type": "tabs",
         "children": [
           {
-            "id": "4b52621b509f7569",
+            "id": "f9932a3789dc50ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Problems/Array Problems.md"
+                "file": "DSA - Java/Git/Basic commands.md"
               }
             }
           }
@@ -146,10 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71b30a88c170084e",
+  "active": "f9932a3789dc50ad",
   "lastOpenFiles": [
-    "DSA - Java/Problems/Binary Search Problems.md",
+    "DSA - Java/Git/Git - Git Hub.md",
+    "Placement/PS Preparation/Level 5.md",
+    "Placement/PS Preparation/Level 3.md",
+    "Placement/PS Preparation/Level 4.md",
     "DSA - Java/Problems/Bit Manipulation.md",
+    "DSA - Java/Problems/Array Problems.md",
+    "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Mapping - 1.md",
     "Operating-System/CPU Scheduling/Process State.md",
     "Operating-System/Imgs/Pasted image 20240718111922.png",
@@ -174,14 +179,9 @@
     "Placement/Project/Problem statement and details.md",
     "Placement/Project/Readme.md",
     "Placement/Project/Diagram and Flowcharts.md",
-    "Placement/PS Preparation/Level 5.md",
-    "Placement/PS Preparation/Level 4.md",
-    "Placement/PS Preparation/Level 3.md",
     "DSA - Java/Problems/String Problem.md",
     "DSA - Java/Java/Collections.md",
-    "DSA - Java/Problems/Array Problems.md",
     "Daily Work Log.md",
-    "DSA - Java/Problems/Tree Problem.md",
     "Pasted image 20240605113747.png",
     "Pasted image 20240605113103.png",
     "Pasted image 20240605112312.png",

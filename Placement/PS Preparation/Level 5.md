@@ -880,7 +880,6 @@ int main() {
     while(ar[i]<=n){  
         printf("%s",str[i]);  
         n-=ar[i];  
-       
     }  
   }  
   return 0;  
@@ -944,5 +943,142 @@ int main() {
         }
     }
     printf("%d",ans);
+}
+```
+
+### Circular Prime
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int isPrime(int n){
+    
+    if(n == 0 || n == 1) return 1;
+    
+    int divi = 2;
+    while(divi<n){
+        if(n%divi == 0) return 0;
+        divi++;
+    }
+    return 1;
+}
+int isCircular(int n){
+    
+    int dup = n;
+    int rem = dup%10; dup/=10;
+    int no = 0;
+    while(dup!=0){
+        no = no*10 + dup%10;
+        dup/=10;
+    }
+    while(no != 0){
+        rem = rem*10 + no%10;
+        no/=10;
+    }
+    
+    if(!isPrime(n)) return 0;
+    
+    while(rem!=n){
+        if(!isPrime(rem)) return 0;
+        
+        int var = rem%10; rem/=10;
+        int no2 = 0;
+        
+        while(rem!=0){
+            no2 = no2*10+(rem%10);
+            rem/=10;
+        }
+        while(no2!=0){
+            var = var*10+(no2%10);
+            no2/=10;
+        }
+        
+        rem = var;
+    }
+    return 1;
+}
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    
+    printf("%d",isCircular(n));
+
+}
+```
+
+### Find the pivot 
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int is(int ar[],int n){
+    
+    int tot = 0;
+    for(int i=0;i<n;i++){
+        tot+=ar[i];
+    }
+    int tot2 = 0;
+    for(int i=0;i<n;i++){
+        tot2+=ar[i];
+        if(tot == tot2) return i;
+        tot-=ar[i];
+    }
+    return -1;
+}
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("%d",is(arr,n));
+}
+```
+
+### Sum of max in row and col
+
+```C
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int is(int n,int m, int ar[n][m]){
+    int res = 0;
+    for(int i=0;i<n;i++){
+        int maxInd = 0;
+        for(int j=0;j<m;j++){
+            if(ar[i][maxInd] < ar[i][j]){
+                maxInd = j;
+            }
+        }
+        res+=ar[i][maxInd];
+        
+        int MI = 0;
+        for(int j=0;j<m;j++){
+            if(ar[j][i] > ar[MI][i]){
+                MI = j;
+            }
+        }
+        res+=ar[MI][i];
+        
+    }
+    return res;
+}
+
+int main() {
+    int ar[][3] = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+    
+    printf("%d",is(3,3,ar));
+    
 }
 ```
