@@ -3074,3 +3074,122 @@ class Solution {
     }
 }
 ```
+
+### [155. Min Stack](https://leetcode.com/problems/min-stack/description/)
+
+```Java
+    class MinStack {
+    
+    ArrayList<Integer> ls;
+
+    public MinStack() {
+        ls = new ArrayList<>();    
+    }
+    
+    public void push(int val) {
+        ls.add(val);
+    }
+    
+    public void pop() {
+        ls.remove(ls.size()-1);
+    }
+    
+    public int top() {
+        return ls.get(ls.size()-1);
+    }
+    
+    public int getMin() {
+        return Collections.min(ls);
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(val);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
+```
+
+### [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)
+
+```Java
+class MyStack {
+    
+    ArrayList<Integer> ls;
+
+    public MyStack() {
+        ls = new ArrayList<>();
+    }
+    
+    public void push(int x) {
+        ls.add(x);
+    }
+    
+    public int pop() {
+        int no = ls.get(ls.size()-1);
+        ls.remove(ls.size()-1);
+        return no;
+    }
+    
+    public int top() {
+        return ls.get(ls.size()-1);
+    }
+    
+    public boolean empty() {
+        return ls.size() == 0;
+    }
+}
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack obj = new MyStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * boolean param_4 = obj.empty();
+ */
+```
+
+### [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+
+```Java
+class MyQueue {
+    List<Integer> ls;
+    int p1 , p2;
+
+    public MyQueue() {
+        ls = new ArrayList<>();
+        p1 = 0;p2 = 0;    
+    }
+    
+    public void push(int x) {
+        ls.add(x); p2++;
+    }
+    
+    public int pop() {
+        int no = ls.get(p1);
+        p1++;
+        return no;
+    }
+    
+    public int peek() {
+        return ls.get(p1);
+    }
+    
+    public boolean empty() {
+        return p1 == p2;
+    }
+}
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
+```

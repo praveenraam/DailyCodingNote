@@ -1,3 +1,6 @@
+Article [Link](https://www.geeksforgeeks.org/introduction-of-process-management/)
+Topic No : 10 CPU Scheduling
+Next Topic : [[Process State]]
 ### What is a process 
 It is just execution of a program. The process is an activity
 
