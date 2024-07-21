@@ -68,6 +68,9 @@ Saving the context of one process and loading an another process is called conte
 
 **Note : Don't get confuse with context and mode switching**
 
+In order for a process execution to be continued from the same point at a later time, context switching is a mechanism to store and restore the state or context of a CPU in the PCB
+![[Process Table and Process Control Block (PCB)#PCB is a data structure used by the OS to store the information about the process.]]
+
 ### CPU Bounding vs I/O Bounding 
 
 When time spent in the CPU or in run time is higher by the process, it is CPU Bounding, while time spend in the I/O process than CPU time then it is I/O Bounding 

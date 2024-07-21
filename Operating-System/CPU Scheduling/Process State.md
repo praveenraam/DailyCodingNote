@@ -1,6 +1,6 @@
 Article [Link](https://www.geeksforgeeks.org/states-of-a-process-in-operating-systems/)
 Topic No : 11 System Structure
-Next Topic : [[Intro to Process Management]]
+Next Topic : [[Process Table and Process Control Block (PCB)]]
 
 ![[Pasted image 20240718111922.png]]
 ### New State :

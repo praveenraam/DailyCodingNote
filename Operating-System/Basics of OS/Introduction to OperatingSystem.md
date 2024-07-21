@@ -8,8 +8,6 @@ Next Topic : [[Functions of OS]]
 - OS is a software managing the hardware
 - OS is the only program that runs all time on the computer( called kernel ) with all else is application program
 
-
-
 ---
 ## Characteristics of OS
 

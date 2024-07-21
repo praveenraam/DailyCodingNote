@@ -1674,3 +1674,32 @@ class Solution {
     }
 }
 ```
+
+### [71. Simplify Path](https://leetcode.com/problems/simplify-path/description/)
+
+```Java
+class Solution {
+    public String simplifyPath(String path) {
+        String ar[] = path.split("/");
+
+        Stack<String> st = new Stack<>();
+        System.out.println(Arrays.toString(ar));
+        for(String s : ar){
+
+            if(s.equals("..")){
+                if(!st.isEmpty()){
+                    st.pop();
+                }
+            }else if(!s.equals(".") && !s.equals("")){
+                st.push(s);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for(String s : st){
+            sb.append("/").append(s);
+        }
+        return sb.length() == 0 ? "/" : sb.toString();
+    }
+}
+```
