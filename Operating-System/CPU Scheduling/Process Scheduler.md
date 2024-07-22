@@ -1,6 +1,6 @@
-Article [Link](https://www.geeksforgeeks.org/states-of-a-process-in-operating-systems/)
-Topic No : 13 System Structure
-Next Topic : [[]]
+Article [Link](https://www.geeksforgeeks.org/process-schedulers-in-operating-system/)
+Topic No : 13 CPU Scheduling
+Next Topic : [[Preemptive and Non-preemptive]]
 
 Process schedulers are important component of the OS, where it is responsible for the order or time for a process to get executed during the multi tasking in one or more cores of the processor
 
@@ -14,10 +14,10 @@ It is very essential in the multi tasking OS, such as the OS that allow multiple
 
 #### Preemptive Scheduling :
 
-A process can't be taken out of the processor before getting executed.
+A process can be removed from the execution and an another process with high priority is added to the core for the execution, once the high priority process is executed the removed process is executed again
 #### Non-Preemptive Scheduling :
 
-A process can be removed from the execution and an another process with high priority is added to the core for the execution, once the high priority process is executed the removed process is executed again
+A process can't be taken out of the processor before getting executed.
 
 ## Type of Schedulers 
 
@@ -30,6 +30,7 @@ It is responsible for selecting one process from the ready queue to running stat
 #### Medium term scheduler
 It is responsible for suspending a process from a scheduler. It remove the process from main memory to disk and vice versa. It also helps in maintaining balance CPU and I/O bound process. This reduce the degree of multiprogramming 
 
+![[Pasted image 20240722210511.png]]
 ## Dispatcher 
 - It is responsible for loading and unloading process from the processor's core selected by the Short term scheduler. 
 - Context switching is done

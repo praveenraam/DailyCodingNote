@@ -96,3 +96,69 @@ class RandomizedSet {
     }
 }
 ```
+
+### [705. Design HashSet](https://leetcode.com/problems/design-hashset/description/)
+
+```Java
+class MyHashSet {
+    Map<Integer,Boolean> mp;
+    public MyHashSet() {
+        mp = new HashMap<>();
+    }
+    
+    public void add(int key) {
+        mp.put(key,true);
+    }
+    
+    public void remove(int key) {
+        mp.remove(key);
+    }
+    
+    public boolean contains(int key) {
+        return mp.containsKey(key);
+    }
+}
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet obj = new MyHashSet();
+ * obj.add(key);
+ * obj.remove(key);
+ * boolean param_3 = obj.contains(key);
+ */
+```
+
+### [706. Design HashMap](https://leetcode.com/problems/design-hashmap/description/)
+
+```Java
+class MyHashMap {
+
+    int[] ar;
+
+    public MyHashMap() {
+        ar = new int[1000001];
+        for(int i=0;i<ar.length;i++) ar[i] = -1;
+    }
+    
+
+    public void put(int key, int value) {
+        ar[key] = value;
+    }
+    
+    public int get(int key) {
+        return ar[key] == -1 ? -1 : ar[key];
+    }
+    
+    public void remove(int key) {
+        ar[key] = -1;
+    }
+}
+
+/**
+ * Your MyHashMap object will be instantiated and called as such:
+ * MyHashMap obj = new MyHashMap();
+ * obj.put(key,value);
+ * int param_2 = obj.get(key);
+ * obj.remove(key);
+ */
+```

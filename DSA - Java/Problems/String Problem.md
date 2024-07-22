@@ -1703,3 +1703,51 @@ class Solution {
     }
 }
 ```
+
+### [1209. Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/)
+
+```Java
+class Solution {
+    public String removeDuplicates(String s, int k) {
+        int i=0;
+        Stack<Character> st = new Stack<>();
+
+        while(i<s.length()){
+
+            if(st.isEmpty()){
+                st.push(s.charAt(i));
+                i++; continue;
+            }
+
+            if(st.peek() == s.charAt(i)){
+                i++;
+            }
+
+        }
+
+    }
+}
+```
+
+### [2418. Sort the People](https://leetcode.com/problems/sort-the-people/)
+
+```Java
+class Solution {
+    public String[] sortPeople(String[] n, int[] h) {
+        HashMap<Integer,String> mp = new HashMap<>();
+
+        for(int i=0;i<n.length;i++){
+            mp.put(h[i],n[i]);
+        }
+
+        Arrays.sort(h);
+
+        int j = 0;
+        for(int i=h.length-1;i>=0;i--){
+            n[j] = mp.get(h[i]);
+            j++;
+        }
+        return n;
+    }
+}
+```

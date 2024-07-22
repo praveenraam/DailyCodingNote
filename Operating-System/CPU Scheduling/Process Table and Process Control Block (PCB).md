@@ -1,5 +1,5 @@
-Article [Link](https://www.geeksforgeeks.org/states-of-a-process-in-operating-systems/)
-Topic No : 12 System Structure
+Article [Link](https://www.geeksforgeeks.org/operating-system-process-table-process-control-block-pcb)
+Topic No : 12 CPU Scheduling
 Next Topic : [[Process Scheduler]]
 ##### PCB is a data structure used by the OS to store the information about the process.
 

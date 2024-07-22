@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "80a1dd182f904395",
+        "id": "47dfe05b9217af0f",
         "type": "tabs",
         "children": [
           {
-            "id": "260186bd661c917e",
+            "id": "d03a15130eaae1b6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Operating-System/CPU Scheduling/Dispatcher and scheduler.md"
+              }
             }
           }
         ],
@@ -138,18 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "260186bd661c917e",
+  "active": "d03a15130eaae1b6",
   "lastOpenFiles": [
+    "Operating-System/Imgs/Pasted image 20240722221728.png",
+    "Operating-System/Imgs/Pasted image 20240722210511.png",
+    "Pasted image 20240722221728.png",
+    "Operating-System/CPU Scheduling/Preemptive and Non-preemptive.md",
+    "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
     "Operating-System/CPU Scheduling/Process Scheduler.md",
-    "Operating-System/CPU Scheduling/Intro to Process Management.md",
+    "Pasted image 20240722210511.png",
+    "Operating-System/CPU Scheduling/Time spent in Context Switching.md",
+    "Operating-System/Imgs/Pasted image 20240722183109.png",
+    "Operating-System/Imgs/Pasted image 20240722183054.png",
     "Operating-System/CPU Scheduling/Process Table and Process Control Block (PCB).md",
     "Operating-System/CPU Scheduling/Process State.md",
+    "Operating-System/CPU Scheduling/Intro to Process Management.md",
+    "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/System Call.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
     "Pasted image 20240721163117.png",
     "Operating-System/Imgs/Pasted image 20240721161814.png",
     "DSA - Java/Problems/DynamicProgramming.md",
-    "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "DSA - Java/Git/Basic commands.md",
     "DSA - Java/Git/Git - Git Hub.md",
     "Placement/PS Preparation/Level 5.md",
@@ -163,22 +180,13 @@
     "DSA - Java/Java/Bit Manipulation.md",
     "Operating-System/Imgs/Pasted image 20240718100313.png",
     "Operating-System/Imgs/Pasted image 20240718094935.png",
-    "Operating-System/Imgs/Pasted image 20240718093922.png",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
     "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS",
     "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/System Structure/Kernel InOut Sub-system.md",
-    "Operating-System/Imgs/Pasted image 20240716142143.png",
     "Operating-System/System Structure/Monolithic Kernel.md",
-    "Operating-System/System Structure/MicroKernel.md",
-    "Operating-System/Basics of OS/Functions of OS.md",
-    "Placement/Project/Problem statement and details.md",
-    "Placement/Project/Readme.md",
-    "Pasted image 20240605113747.png",
-    "Pasted image 20240605113103.png",
-    "Pasted image 20240605112312.png",
     "Operating-System/Imgs",
     "Operating-System",
     "Placement/PS Preparation/main.exe",
