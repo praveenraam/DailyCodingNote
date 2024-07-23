@@ -1,3 +1,13 @@
+## Day 191
+#### Date : 23.07.2024
+- Solved Leetcode Problems
+- OS FCFS, convey effect
+- Alumni Network project
+## Day 190
+#### Date : 22.07.2024
+- Solved Leetcode Problems
+- OS Preemptive, Non-Preemptive and Dispatcher
+- Alumni Network project
 ## Day 189
 #### Date : 21.07.2024
 - Solved Leetcode Problems

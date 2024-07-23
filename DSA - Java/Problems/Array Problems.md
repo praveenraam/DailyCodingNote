@@ -3193,3 +3193,62 @@ class MyQueue {
  * boolean param_4 = obj.empty();
  */
 ```
+
+### [1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/)
+
+```Java
+class Solution {
+    public int countStudents(int[] students, int[] sandwiches) {
+        List<Integer> q = new ArrayList<>();
+
+        for(int i : students){
+            q.add(i);
+        }
+
+        int j = 0,count = 0;
+
+        while(!q.isEmpty()){
+            if(sandwiches[j] == q.get(0)){
+                j++;  q.remove(0);
+                count = 0;
+            }
+            else{
+                count++;
+                if(count == q.size()) return count;
+                int front = q.remove(0);
+                q.add(front);
+            }
+        }
+        return 0;
+    }
+}
+```
+
+### [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/)
+
+```Java
+class NumArray {
+    int[] ar;
+    public NumArray(int[] nums) {
+        ar = new int[nums.length];
+        int sum = 0;
+        for(int i=0;i<nums.length;i++){
+            sum+=nums[i];
+            ar[i] = sum;
+            System.out.println(ar[i]);
+        }
+
+    }
+    
+    public int sumRange(int left, int right) {
+        if(left == 0) return ar[right];
+        return ar[right] - ar[left-1];
+    }
+}
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray obj = new NumArray(nums);
+ * int param_1 = obj.sumRange(left,right);
+ */
+ ```
