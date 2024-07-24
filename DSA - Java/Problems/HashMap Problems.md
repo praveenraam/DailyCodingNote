@@ -162,3 +162,30 @@ class MyHashMap {
  * obj.remove(key);
  */
 ```
+
+### [1603. Design Parking System](https://leetcode.com/problems/design-parking-system/description/)
+
+```Java
+class ParkingSystem {
+    int[] ar = new int[3];
+
+    public ParkingSystem(int big, int medium, int small) {
+        ar[0] = big;
+        ar[1] = medium;
+        ar[2] = small;
+    }
+    
+    public boolean addCar(int carType) {
+        
+        if(ar[carType-1] == 0) return false;
+        ar[carType-1] -= 1;
+        return true;
+    }
+}
+
+/**
+ * Your ParkingSystem object will be instantiated and called as such:
+ * ParkingSystem obj = new ParkingSystem(big, medium, small);
+ * boolean param_1 = obj.addCar(carType);
+ */
+```

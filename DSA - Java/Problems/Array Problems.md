@@ -3252,3 +3252,122 @@ class NumArray {
  * int param_1 = obj.sumRange(left,right);
  */
  ```
+
+ ### [2191. Sort the Jumbled Numbers](https://leetcode.com/problems/sort-the-jumbled-numbers/description/)
+
+ ```Java
+ class Solution {
+    public int[] sortJumbled(int[] mapping, int[] nums) {
+        int[][] arr = new int[nums.length][2];
+
+        for(int i=0;i<nums.length;i++){
+            arr[i][0] = nums[i];
+            arr[i][1] = mapper(mapping,nums[i]);
+        }
+    
+        Arrays.sort(arr,Comparator.comparingInt(o->o[1]));
+
+        for(int i=0;i<nums.length;i++){
+            nums[i] = arr[i][0];
+        }
+
+        return nums;
+    }
+    public int mapper(int[] map,int n){
+
+        String s = Integer.toString(n);
+        int res = 0;
+
+        int i=0;
+        while(i<s.length()){
+            res = res*10 + map[s.charAt(i) - '0'];
+            i++;
+        }
+        return res;
+    }
+}
+```
+
+[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
+
+```Java
+class Solution {
+    public boolean isValidSudoku(char[][] b) {
+        Map<Integer,HashSet<Integer>> mpR = new HashMap<>();
+        Map<Integer,HashSet<Integer>> mpC = new HashMap<>();
+
+        for(int i=0;i<b.length;i++){
+            
+            HashSet<Integer> hstR = new HashSet<>();
+            mpR.put(i,hstR);
+
+            for(int j=0;j<b.length;j++){
+
+                if(i == 0){
+                    HashSet<Integer> hstC = new HashSet<>();
+                    mpC.put(j,hstC);
+                }
+                if(b[i][j] == '.') continue;
+
+                if(mpR.get(i).contains(b[i][j]-'0')) return false;
+                if(mpC.get(j).contains(b[i][j]-'0')) return false;
+                
+                mpR.get(i).add(b[i][j]-'0');
+                mpC.get(j).add(b[i][j]-'0');
+            }
+            System.out.println(mpC);
+        }
+
+        for(int i=0;i<b.length;i=i+3){
+
+            for(int j=0;j<b.length;j=j+3){
+
+                if(!checkBox(b,i,j)) return false;
+
+            }
+
+        }
+
+        return true;
+    }
+    public boolean checkBox(char[][] b,int k,int m){
+        HashSet<Integer> st = new HashSet<>();
+
+        for(int i=k;i<k+3;i++){
+            for(int j=m;j<m+3;j++){
+                if(b[i][j] == '.') continue;
+                if(st.contains(b[i][j]-'0')) return false;
+                st.add(b[i][j]-'0');
+            }
+        }
+        return true;
+    }
+}
+```
+
+### [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/)
+
+```Java
+class Solution {
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        
+        HashMap<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<nums2.length;i++){
+            int max = -1;
+            for(int j=i+1;j<nums2.length;j++){
+                if(nums2[i] < nums2[j]){
+                    max = nums2[j];
+                    break;
+                } 
+            }
+            mp.put(nums2[i],max);
+        }
+
+        for(int i=0;i<nums1.length;i++){
+            nums1[i] = mp.get(nums1[i]);
+        }
+        return nums1;
+    }
+}
+```

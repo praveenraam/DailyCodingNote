@@ -1012,3 +1012,34 @@ class Solution {
     }
 }
 ```
+
+### [1608. Special Array With X Elements Greater Than or Equal X](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/)
+
+```Java
+class Solution {
+    public int specialArray(int[] nums) {
+        Arrays.sort(nums);
+
+        int l = 0,r = nums.length;
+        while(l<=r){
+            int mid = (l+r)/2;
+
+            if(count(nums,mid) == mid) return mid;
+            else if(count(nums,mid) > mid) l = mid+1;
+            else if(count(nums,mid) < mid) r = mid-1;
+
+        }
+        return -1;
+    }
+
+    public int count(int[] nums,int no){
+        int count = 0;
+        for(int i=0;i<nums.length;i++){
+
+            if(nums[i] >= no) count++;
+
+        }
+        return count;
+    }
+}
+```

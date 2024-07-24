@@ -1,6 +1,6 @@
 Article [Link](https://www.geeksforgeeks.org/convoy-effect-operating-systems/)
 Topic No : 17 CPU Scheduling
-Next Topic : [[]]
+Next Topic : [[Short Job First]]
 
 Convey effect only occurs in the case of FCFS Algorithm, where the whole OS slows
 

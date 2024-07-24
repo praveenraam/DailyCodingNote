@@ -1,7 +1,7 @@
-## Day 191
-#### Date : 23.07.2024
+## Day 192
+#### Date : 24.07.2024
 - Solved Leetcode Problems
-- OS FCFS, convey effect
+- OS SJF, SRTF
 - Alumni Network project
 ## Day 190
 #### Date : 22.07.2024

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "01a31a6c987903c0",
+        "id": "500e8db7a0aeeb79",
         "type": "tabs",
         "children": [
           {
-            "id": "cb52aa8f253520ca",
+            "id": "10aee03dcdc2dc8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating-System/CPU Scheduling/Convoy Effect.md",
+                "file": "Operating-System/CPU Scheduling/SJF with Predicted BT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Operating-System/CPU Scheduling/Convoy Effect.md",
+                "file": "Operating-System/CPU Scheduling/SJF with Predicted BT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Operating-System/CPU Scheduling/Convoy Effect.md",
+                "file": "Operating-System/CPU Scheduling/SJF with Predicted BT.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Operating-System/CPU Scheduling/Convoy Effect.md"
+                "file": "Operating-System/CPU Scheduling/SJF with Predicted BT.md"
               }
             }
           }
@@ -134,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,10 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb52aa8f253520ca",
+  "active": "10aee03dcdc2dc8b",
   "lastOpenFiles": [
-    "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
+    "Operating-System/CPU Scheduling/SJF with Predicted BT.md",
+    "Operating-System/CPU Scheduling/SRTF (SJF).md",
+    "Operating-System/CPU Scheduling/Short Job First.md",
     "Operating-System/CPU Scheduling/Convoy Effect.md",
+    "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
+    "Operating-System/Imgs/Pasted image 20240724142633.png",
     "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
     "().md",
     "Pasted image 20240723175151.png",
@@ -170,7 +175,6 @@
     "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/System Call.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
-    "Pasted image 20240721163117.png",
     "DSA - Java/Problems/DynamicProgramming.md",
     "DSA - Java/Git/Basic commands.md",
     "DSA - Java/Git/Git - Git Hub.md",
@@ -181,12 +185,9 @@
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/Problems/Binary Search Problems.md",
     "DSA - Java/Mapping - 1.md",
-    "DSA - Java/Java/Bit Manipulation.md",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
-    "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS",
-    "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/Imgs",
     "Operating-System",
     "Placement/PS Preparation/main.exe",
