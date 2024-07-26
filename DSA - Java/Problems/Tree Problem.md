@@ -543,3 +543,79 @@ class Solution {
     }
 }
 ```
+
+### [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
+
+```Java
+class Solution {
+    public int minDiffInBST(TreeNode root) {
+        List<Integer> ls = inOrder(root);
+
+        int min = Integer.MAX_VALUE;
+        for(int i=1;i<ls.size();i++){
+            min = Math.min(min,ls.get(i)-ls.get(i-1));
+            System.out.println(min);
+        }
+        System.out.println(ls);
+        return min;
+    }
+    public List<Integer> inOrder(TreeNode root){
+        List<Integer> ls = new ArrayList<>();
+
+        if(root == null) return ls;
+
+        ls.addAll(inOrder(root.left));
+        ls.add(root.val);
+        ls.addAll(inOrder(root.right));
+
+        return ls;
+    }
+}
+```
+
+### [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    
+    List<List<Integer>> ls = new ArrayList<>();
+
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        func(root,0);
+        return ls;
+    }
+    public void func(TreeNode root,int level){
+
+        if(root == null) return;
+
+        if(level >= ls.size()){
+            ls.add(new ArrayList<>());
+        }
+        
+        List<Integer> nsLs = ls.get(level);
+        if(level%2 == 1){
+            nsLs.add(root.val);
+        }else{
+            nsLs.add(0,root.val);
+        }
+
+        func(root.right,level+1);
+        func(root.left,level+1);
+    }
+}
+```

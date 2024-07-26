@@ -1,3 +1,13 @@
+## Day 194
+#### Date : 26.07.2024
+- Solved Leetcode problem tree
+- OS LRTF, PLJF, RR, SRR
+- Alumni Network project
+- Github readme update
+## Day 193
+#### Date : 25.07.2024
+- OS SJF
+- Alumni Network project
 ## Day 192
 #### Date : 24.07.2024
 - Solved Leetcode Problems

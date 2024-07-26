@@ -1,6 +1,7 @@
 Article  [Link](https://www.geeksforgeeks.org/shortest-remaining-time-first-preemptive-sjf-scheduling-algorithm/)
 Topic No : 18 CPU Scheduling
 Next Topic : [[SRTF (SJF)]]
+
 SRTF - Shortest remaining time first
 
 We learn about SJF, now we implemented Preemptive algorithm in SJF, where for every unit of time we check the smallest execution time
