@@ -1,6 +1,6 @@
 Article  [Link](https://www.geeksforgeeks.org/selfish-round-robin-cpu-scheduling/)
 Topic No : 22 CPU Scheduling
-Next Topic : [[Selfish Round Robin]]
+Next Topic : [[Priority Scheduling]]
 
 ### What is SRR ?
 - The SSR is a modified version of the traditional round robin scheduling algo. 

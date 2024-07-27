@@ -1,3 +1,9 @@
+## Day 195
+#### Date : 27.07.2024
+- Solved Leetcode problem tree
+- OS HRRN, Starvation and ageing, MLQ, MLFQ
+- Alumni Network project
+- Github readme update
 ## Day 194
 #### Date : 26.07.2024
 - Solved Leetcode problem tree

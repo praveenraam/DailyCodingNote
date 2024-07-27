@@ -619,3 +619,88 @@ class Solution {
     }
 }
 ```
+
+### [652. Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/)
+
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    HashMap<String,Integer> mp = new HashMap<>();
+    List<TreeNode> ls = new ArrayList<>();
+
+    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
+        dfs(root);
+        return ls;
+    }
+    public String dfs(TreeNode root){
+
+        if(root == null) return "N";
+
+        String left = dfs(root.left);
+        String right = dfs(root.right);
+
+        String curr = root.val + "," + left + "," + right;
+
+        if(mp.containsKey(curr) && mp.get(curr) == 1){
+            ls.add(root);
+            mp.put(curr,mp.getOrDefault(curr,0)+1);
+        }else{
+            mp.put(curr,mp.getOrDefault(curr,0)+1);
+        }
+        return curr;
+    } 
+}
+```
+
+### [958. Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/)
+
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean isCompleteTree(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<>();
+
+        q.add(root);
+        boolean flag = false;
+
+        while(!q.isEmpty()){
+            TreeNode temp = q.poll();
+            if(temp == null) flag = true;
+            else{
+                if(flag) return false;
+                q.add(temp.left);
+                q.add(temp.right);
+            }
+        }
+        return true;
+    }
+}
+```
