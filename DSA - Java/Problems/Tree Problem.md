@@ -704,3 +704,46 @@ class Solution {
     }
 }
 ```
+
+### [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/)
+
+```Java
+
+class Solution {
+
+    int res=0;
+
+    public int goodNodes(TreeNode root) {
+        dfs(root,root.val);
+        return res;
+    }
+    public void dfs(TreeNode root,int max){
+
+        if(root == null) return;
+
+        if(root.val >= max) {
+            res++;
+            max = root.val;
+        }
+        dfs(root.right,max);
+        dfs(root.left,max);
+    }
+}
+```
+
+### [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
+
+```Java
+class Solution {
+    public boolean isValidBST(TreeNode root) {
+        return check(root,null,null);
+    }
+    public boolean check(TreeNode root,Integer min,Integer max){
+        if(root == null) return true;
+
+        if((min!= null && min >= root.val) || (max!=null && max <= root.val)) return false;
+
+        return check(root.left, min,root.val) && check(root.right,root.val,max);
+    } 
+}
+```

@@ -955,3 +955,19 @@ class Solution {
 }
 ```
 
+### [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/)
+
+```Java
+class Solution {
+    public int titleToNumber(String columnTitle) {
+        int i = 0;
+        int ans = 0;
+        for(int j=columnTitle.length()-1;j>=0;j--){
+            int ch1 = (int)columnTitle.charAt(j)-'A';
+            ans+=((int) Math.pow(26,i)*(ch1+1));
+            i++;
+        }
+        return ans;
+    }
+}
+```
