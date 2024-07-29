@@ -1,8 +1,12 @@
 ## Day 196
+#### Date : 29.07.2024
+- Solved Leetcode problem tree
+- Alumni Network project
+- React Native 
+## Day 196
 #### Date : 28.07.2024
 - Solved Leetcode problem tree
 - Alumni Network project
-- Github readme update
 - React Native 
 ## Day 195
 #### Date : 27.07.2024

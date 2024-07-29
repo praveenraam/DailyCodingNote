@@ -747,3 +747,49 @@ class Solution {
     } 
 }
 ```
+
+### [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
+
+```Java
+class Solution {    
+    HashSet<Integer> st = new HashSet<>();
+
+    public int kthSmallest(TreeNode root, int k) {
+        dfs(root);
+        ArrayList<Integer> ls = new ArrayList<>(st);
+        return ls.get(k-1);
+    }
+    public void dfs(TreeNode root){
+        if(root == null) return;
+         
+        st.add(root.val);
+        
+        dfs(root.left);
+        dfs(root.right);
+    }
+}
+```
+
+### [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
+
+```Java
+class Solution { 
+    int val = 0;
+
+    public int sumNumbers(TreeNode root) {
+        func(root,0);
+        return val;
+    }
+    public void func(TreeNode root,int cur){
+        if(root == null){
+            return;
+        }
+        cur = cur*10 + root.val;
+        if(root.right == null && root.left == null){
+            val += cur;
+            return;
+        }
+        func(root.right,cur); func(root.left,cur);
+    }
+}
+```
