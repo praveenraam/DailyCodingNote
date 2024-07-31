@@ -793,3 +793,72 @@ class Solution {
     }
 }
 ```
+
+### [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)
+
+```Java
+
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+    public List<Integer> largestValues(TreeNode root) {
+        if(root == null) return new ArrayList<>();
+        dfs(root,0);
+        return ls;
+    }
+    public void dfs(TreeNode root,int level){
+        if(root == null) return;
+
+        if(ls.size()<=level){
+            ls.add(root.val);
+        }
+        else{
+            ls.set(level,Math.max(root.val,ls.get(level)));
+        }
+
+        dfs(root.left,++level);
+        dfs(root.right,level);
+    }
+}
+```
+
+### [1609. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/description/)
+
+```Java
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+
+    public boolean isEvenOddTree(TreeNode root) {
+        return dfs(root,0);
+    }
+    public boolean dfs(TreeNode root,int level){
+
+        if(root == null) return true;
+
+        if(level%2 == 0){
+
+            if(root.val%2 == 0) return false;
+
+            if(ls.size() <= level){
+                ls.add(root.val);
+            }
+            else if(ls.get(level) >= root.val){
+                return false;
+            }
+            ls.set(level,root.val);
+        }else{
+
+            if(root.val%2 == 1) return false;
+
+            if(ls.size() <= level){
+                ls.add(root.val);
+            }
+            else if(ls.get(level) <= root.val){
+                return false;
+            }
+            ls.set(level,root.val);
+
+        }
+        return dfs(root.left,level+1) && dfs(root.right,level+1);
+    }
+}
+```

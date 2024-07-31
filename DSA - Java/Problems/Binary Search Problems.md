@@ -1043,3 +1043,24 @@ class Solution {
     }
 }
 ```
+
+### [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
+
+```Java
+class Solution {
+    int ans=-1;
+    public int search(int[] nums, int target) {
+        bs(nums,0,nums.length-1,target);
+        return ans;
+    }
+    public void bs(int[] ar,int s,int e,int target){
+
+        if(s>e) return;
+        int mid = (e+s)/2;
+
+        if(ar[mid] == target) ans = mid;
+        else if(ar[mid] > target) bs(ar,s,mid-1,target);
+        else bs(ar,mid+1,e,target);
+    }
+}
+```

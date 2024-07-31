@@ -1,4 +1,13 @@
-## Day 196
+## Day 198
+#### Date : 31.07.2024
+- Solved Leetcode problem tree
+- Alumni Network project
+- Java Script recap
+## Day 197
+#### Date : 30.07.2024
+- Solved Leetcode problem tree
+- Alumni Network project
+## Day 197
 #### Date : 29.07.2024
 - Solved Leetcode problem tree
 - Alumni Network project
