@@ -1751,3 +1751,24 @@ class Solution {
     }
 }
 ```
+
+### [2678. Number of Senior Citizens](https://leetcode.com/problems/number-of-senior-citizens/description/)
+
+```Java
+class Solution {
+    public int countSeniors(String[] d) {
+        int count = 0;
+
+        for(int i=0;i<d.length;i++){
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(d[i].charAt(11));
+            sb.append(d[i].charAt(12));
+
+            if(Integer.valueOf(sb.toString())> 60) count++;
+
+        }
+        return count;
+    }
+}
+```

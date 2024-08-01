@@ -896,3 +896,37 @@ class Solution {
     }
 }
 ```
+
+
+### [2181. Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/description/)
+
+```Java
+class Solution {
+    public ListNode mergeNodes(ListNode head) {
+        if(head.next == null) return null;
+
+        ListNode res = new ListNode();
+        ListNode dup = res;
+        int sum = 0;
+        head = head.next;
+
+        while(head.next != null){
+            if(head.val == 0){
+                ListNode newOne = new ListNode(sum);
+                sum = 0;
+                dup.next = newOne;
+                dup = dup.next;
+            } 
+            else{
+                sum+=head.val;
+            }
+
+            head = head.next;
+        }
+        ListNode newOne = new ListNode(sum);
+        sum = 0;
+        dup.next = newOne;
+        return res.next;
+    }
+}
+```

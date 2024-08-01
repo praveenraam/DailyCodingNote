@@ -1,3 +1,8 @@
+## Day 199
+#### Date : 01.08.2024
+- Solved Leetcode problem tree, String, LinkedList
+- Alumni Network project
+- React Native using Typescript
 ## Day 198
 #### Date : 31.07.2024
 - Solved Leetcode problem tree
