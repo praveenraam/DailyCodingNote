@@ -881,3 +881,60 @@ class Solution {
     }
 }
 ```
+
+### [1302. Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/description/)
+
+```Java
+class Solution {
+    int sum = 0;
+    int maxLevel = -1;
+    public int deepestLeavesSum(TreeNode root) {
+        dfs(root,0);
+        return sum;
+    }
+    public void dfs(TreeNode root,int level){
+
+        if(root == null) return;
+        if(maxLevel < level){
+            sum=0;
+            maxLevel = level;
+        }
+        if(maxLevel == level){
+            sum+=root.val;
+        }
+        
+
+        dfs(root.left,level+1);
+        dfs(root.right,level+1);
+    }
+}
+```
+
+### [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/)
+
+```Java
+class Solution {
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        return func(nums,0,nums.length-1);
+    }
+    public TreeNode func(int[] nums,int s,int e){
+
+        if(s>e) return null;
+
+        int max = Integer.MIN_VALUE;
+        int maxInd = -1;
+
+        for(int i=s;i<=e;i++){
+            if(max < nums[i]){
+                max = nums[i];
+                maxInd = i;
+            }
+        }
+        TreeNode res = new TreeNode(max);
+        res.left = func(nums,s,maxInd-1);
+        res.right = func(nums,maxInd+1,e);
+
+        return res;
+    }
+}
+```
