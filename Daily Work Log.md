@@ -1,3 +1,8 @@
+## Day 202
+#### Date : 03.08.2024
+- Solved Leetcode problem Tree, String, Array
+- Alumni Network project
+- React Native using Typescript
 ## Day 201
 #### Date : 02.08.2024
 - Solved Leetcode problem tree, Matrix

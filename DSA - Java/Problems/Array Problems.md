@@ -3400,3 +3400,83 @@ class Solution {
 
 }
 ```
+
+### [1460. Make Two Arrays Equal by Reversing Subarrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/description/)
+
+```Java
+class Solution {
+    public boolean canBeEqual(int[] target, int[] arr) {
+        
+        int[] a1 = new int[1001];
+        int[] a2 = new int[1001];
+
+        for(int i : target){
+            a1[i]++;
+        }
+        for(int i : arr){
+            a2[i]++;
+        }
+        return Arrays.equals(a1,a2);
+    }
+}
+```
+
+### [2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description/)
+
+```Java
+class Solution {
+    public int triangularSum(int[] nums) {
+    
+        while(nums.length != 1){
+            int ar[] = new int[nums.length-1];
+            for(int i=0;i<ar.length;i++){
+                int val = nums[i]+nums[i+1];
+                if(val>=10) val%=10;
+                ar[i] = val;
+            }
+            nums = ar;
+        }
+        return nums[0];
+    }   
+}
+```
+
+### [2244. Minimum Rounds to Complete All Tasks](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/)
+
+```Java
+class Solution {
+    public int minimumRounds(int[] t) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int i : t){
+            mp.put(i,mp.getOrDefault(i,0)+1);
+        }
+
+        int count = -1;
+
+        for(int i :mp.keySet()){
+            int val = mp.get(i);
+            if(val <= 1) return -1;
+            count+=((val/3));
+            if(val%3 != 0) count++;
+        }
+        return count==-1?count:count+1;
+    }
+}
+```
+
+### [3232. Find if Digit Game Can Be Won](https://leetcode.com/problems/find-if-digit-game-can-be-won/description/)
+
+```Java
+class Solution {
+    public boolean canAliceWin(int[] nums) {
+        int s1=0,s2=0;
+
+        for(int i : nums){
+            if(i<10) s1+=i;
+            else s2+=i;
+        }
+        return s1!=s2;
+    }
+}
+```

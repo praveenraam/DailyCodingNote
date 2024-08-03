@@ -938,3 +938,55 @@ class Solution {
     }
 }
 ```
+
+### [1038. Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/description/)
+
+```Java
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+
+    public TreeNode bstToGst(TreeNode root) {
+        dfs(root,0);
+        System.out.println(ls);
+        return root;
+    }
+    public int dfs(TreeNode root,int sum){
+
+        if(root == null) return sum;
+        sum = dfs(root.right,sum);
+        sum += root.val;
+        root.val = sum;
+        
+        sum = dfs(root.left,sum);
+
+        return sum;
+    }
+}
+```
+
+### [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/)
+
+```Java
+class Solution {
+    List<List<Integer>> ls = new ArrayList<>();
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        bfs(root,0);
+        Collections.reverse(ls);
+        return ls;
+    }
+    public void bfs(TreeNode root, int level){
+
+        if(root == null) return;
+
+        if(ls.size() == level){
+            ls.add(new ArrayList<>());
+        }
+
+        List<Integer> col = ls.get(level);
+        col.add(root.val);
+
+        bfs(root.left,level+1);
+        bfs(root.right,level+1);
+    }
+}
+```

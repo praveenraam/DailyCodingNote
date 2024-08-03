@@ -1772,3 +1772,41 @@ class Solution {
     }
 }
 ```
+
+### [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/)
+
+```Java
+class Solution {
+    public String minRemoveToMakeValid(String s) {
+        Stack<Character> st = new Stack<>();
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0;i<s.length();i++){
+
+            char ch = s.charAt(i);
+            if(ch == '(') st.push(ch);
+            else if(ch == ')') {
+                if(!st.isEmpty())st.pop();
+                else continue;
+            } sb.append(ch);
+        }
+
+        st.clear();
+
+        for(int i=sb.toString().length()-1;i>=0;i--){
+
+            char ch = sb.toString().charAt(i);
+
+            if(ch == ')') st.push(ch);
+            else if(st.isEmpty() && ch == '('){
+                sb.deleteCharAt(i);
+            }
+            else if(!st.isEmpty() && ch == '('){
+                st.pop();
+            }
+        }
+
+        return sb.toString();
+    }
+}
+```
