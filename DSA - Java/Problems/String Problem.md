@@ -1810,3 +1810,40 @@ class Solution {
     }
 }
 ```
+
+### [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
+
+```Java
+class Solution {
+    public String removeOccurrences(String s, String part) {
+        StringBuilder sb = new StringBuilder();
+        int i = 0;
+        while(i<s.length()){
+            sb.append(s.charAt(i));
+
+            if(sb.length() >= part.length()){
+                if(sb.toString().substring(sb.length()-part.length()).equals(part)){
+                    sb.delete(sb.length()-part.length(),sb.length());
+                }
+            }
+            i++;   
+        }
+        return sb.toString();
+    }
+}
+```
+
+```Java
+class Solution {
+    public String removeOccurrences(String s, String part) {
+        StringBuilder sb = new StringBuilder(s);
+
+        while(true){
+            int i = sb.indexOf(part);
+            if(i==-1) break;
+            sb.delete(i,i+part.length());
+        }
+        return sb.toString();
+    }
+}
+```

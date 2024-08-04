@@ -990,3 +990,66 @@ class Solution {
     }
 }
 ```
+
+### [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/description/)
+
+```Java
+class Solution {
+    public TreeNode removeLeafNodes(TreeNode root, int target) {
+        dfs(root,target);
+        if(root.val == target && isLeaf(root)) return null;
+        return root;
+    }
+    public void dfs(TreeNode root,int target){
+
+        if(root == null) return;
+
+        
+        dfs(root.left,target);
+        dfs(root.right,target);
+
+        if(root.left != null && root.left.val == target && isLeaf(root.left)){
+            root.left = null;
+        }
+        if(root.right != null && root.right.val == target && isLeaf(root.right)){
+            root.right = null;
+        }
+
+    }
+    public boolean isLeaf(TreeNode root){
+        if(root == null) return false;
+        if(root.right == null && root.left == null) return true;
+        return false;
+    }
+}
+```
+
+### [2265. Count Nodes Equal to Average of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/)
+
+```Java
+class Solution {
+    int res = 0;
+    public int averageOfSubtree(TreeNode root) {
+        dfs(root,0);
+        return res;
+    }
+    public int[] dfs(TreeNode root,int level){
+        if(root == null) return new int[] {0,0};
+
+        int[] left = dfs(root.left,level+1);
+        int[] right = dfs(root.right,level+1);        
+
+        int sum = left[0]+right[0];
+        int count = left[1]+right[1];
+        sum+=root.val; count++;
+
+        if(sum == 0) res++;
+        else if(root.val == (sum/count)) {
+            System.out.println(sum/count);
+            res++;
+        }
+
+        return new int[] {sum,count};
+    }
+}
+```

@@ -3480,3 +3480,34 @@ class Solution {
     }
 }
 ```
+
+### [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/description/)
+
+```Java
+class Solution {
+    public int rangeSum(int[] nums, int n, int left, int right) {
+        int[] ar = new int[(n*(n+1))/2];
+
+        int p1 = 0;
+        for(int i=0;i<nums.length;i++){
+            int sum = 0;
+            for(int j=i;j<nums.length;j++){
+                sum+=nums[j];
+                ar[p1] = sum;
+                p1++;
+            }
+        }
+        int res = 0;
+        left--;
+
+        Arrays.sort(ar);
+
+        final int mod = (int) 1e9 + 7;
+        for(int i=left;i<right;i++){
+            res = (res + ar[i]) % mod;
+        }
+
+        return res;
+    }
+}
+```

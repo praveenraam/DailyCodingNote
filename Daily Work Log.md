@@ -1,3 +1,7 @@
+## Day 204
+#### Date : 04.08.2024
+- Solved Leetcode problem Tree, String, Array
+- Alumni Network project
 ## Day 202
 #### Date : 03.08.2024
 - Solved Leetcode problem Tree, String, Array
