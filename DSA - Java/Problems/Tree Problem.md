@@ -1053,3 +1053,42 @@ class Solution {
     }
 }
 ```
+
+### [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree/description/)
+
+```Java
+class Solution {
+    public TreeNode addOneRow(TreeNode root, int val, int depth) {
+        if(depth == 1){
+            TreeNode res = new TreeNode();
+            res.val = val;
+            res.left = root;
+            return res;
+        }
+        bfs(root,1,val,depth);
+        return root;
+    }
+    public void bfs(TreeNode root,int level,int val,int depth){
+
+        if(root == null) return;
+
+        if(level+1 == depth){
+
+            TreeNode rightDup = root.right;
+            TreeNode leftDup = root.left;
+
+            TreeNode newOne = new TreeNode(val);
+            TreeNode newTwo = new TreeNode(val);
+
+            root.left = newOne;
+            root.right = newTwo;
+
+            root.left.left = leftDup;
+            root.right.right = rightDup;
+            return;
+        }
+        bfs(root.left,level+1,val,depth);
+        bfs(root.right,level+1,val,depth);
+    }
+}
+```

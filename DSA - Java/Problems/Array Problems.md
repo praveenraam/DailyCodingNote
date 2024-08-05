@@ -3511,3 +3511,34 @@ class Solution {
     }
 }
 ```
+
+### [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/description/)
+
+```Java
+class Solution {
+    public int[] pivotArray(int[] nums, int pivot) {
+        int[] ar = new int[nums.length];
+
+        int p1 = 0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] < pivot){
+                ar[p1] = nums[i];
+                p1++;
+            }   
+        }
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == pivot){
+                ar[p1] = nums[i];
+                p1++;
+            }   
+        }
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] > pivot){
+                ar[p1] = nums[i];
+                p1++;
+            }   
+        }
+        return ar;
+    }
+}
+```

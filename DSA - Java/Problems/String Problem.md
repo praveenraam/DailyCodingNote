@@ -1847,3 +1847,55 @@ class Solution {
     }
 }
 ```
+
+### [2053. Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array/description/)
+
+```Java
+class Solution {
+    public String kthDistinct(String[] arr, int k) {
+        HashMap<String,Integer> mp = new HashMap<>();
+
+        for(String s : arr){
+            mp.put(s,mp.getOrDefault(s,0)+1);
+        }
+
+        int count = 0;
+        for(String s : arr){
+
+            if(mp.get(s) == 1) {
+                count++;
+                System.out.println(count + " "+s);
+                if(count == k) return s;
+            }
+
+        }
+        return "";
+    }
+}
+```
+
+### [2125. Number of Laser Beams in a Bank](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/description/)
+
+```Java
+class Solution {
+    public int numberOfBeams(String[] bank) {
+        int count = 0;
+        
+        int prevCount = 0;
+        int curCount = 0;
+
+        for(int i=0;i<bank.length;i++){    
+            for(int j=0;j<bank[i].length();j++){
+                if(bank[i].charAt(j) == '1'){
+                    curCount++;
+                }
+            }
+            if(curCount == 0) continue;
+            count+=(curCount*prevCount);
+            prevCount = curCount;
+            curCount = 0;
+        }
+        return count;
+    }
+}
+```
