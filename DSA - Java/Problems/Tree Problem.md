@@ -1092,3 +1092,26 @@ class Solution {
     }
 }
 ```
+
+### [1305. All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/)
+
+```Java
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+
+    public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
+
+        dfs(root1);
+        dfs(root2);
+        
+        Collections.sort(ls);
+        return ls;
+    }
+    public void dfs(TreeNode root){
+
+        if(root == null) return;
+        ls.add(root.val);
+        dfs(root.right); dfs(root.left);
+    }
+}
+```

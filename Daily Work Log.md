@@ -1,3 +1,8 @@
+## Day 206
+#### Date : 06.08.2024
+- Solved Leetcode problem Tree, String, Array
+- Alumni Network project
+- Learnt React Native
 ## Day 205
 #### Date : 05.08.2024
 - Solved Leetcode problem Tree, String, Array

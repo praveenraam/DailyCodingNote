@@ -971,3 +971,13 @@ class Solution {
     }
 }
 ```
+
+### [2413. Smallest Even Multiple](https://leetcode.com/problems/smallest-even-multiple/description/)
+
+```Java
+class Solution {
+    public int smallestEvenMultiple(int n) {
+        return n%2 == 1 ? n*2 : n;
+    }
+}
+```

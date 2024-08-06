@@ -3542,3 +3542,28 @@ class Solution {
     }
 }
 ```
+
+### [1476. Subrectangle Queries](https://leetcode.com/problems/subrectangle-queries/description/)
+
+```Java
+class SubrectangleQueries {
+    int[][] ar;
+    public SubrectangleQueries(int[][] rectangle) {
+        ar = rectangle;
+    }
+    
+    public void updateSubrectangle(int row1, int col1, int row2, int col2, int newValue) {
+        for(int i=row1;i<=row2;i++){
+            for(int j=col1;j<=col2;j++){
+                ar[i][j] = newValue;
+            }
+        }
+    }
+    
+    public int getValue(int row, int col) {
+        return ar[row][col];
+    }
+}
+```
+
+### []

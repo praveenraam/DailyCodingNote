@@ -1899,3 +1899,67 @@ class Solution {
     }
 }
 ```
+
+### [3016. Minimum Number of Pushes to Type Word II](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/description/)
+
+```Java
+class Solution {
+    public int minimumPushes(String word) {
+        int[] ar = new int[26];
+
+        for(char ch : word.toCharArray()){
+            int no = ch-'a';
+            ar[no]+=1;
+        }
+        Arrays.sort(ar);
+
+        int count = 0;
+        int mul = 1; int res = 0;
+
+        for(int i=25;i>=0;i--){
+            if(count == 8){
+                mul++;
+                count = 0;
+            }
+            res+=(mul*ar[i]);
+            count++;
+        }
+        return res;
+    }
+}
+```
+
+### [443. String Compression](https://leetcode.com/problems/string-compression/description/)
+
+```Java
+class Solution {
+    public int compress(char[] chars) {
+        StringBuilder sb = new StringBuilder();
+        int count = 1;
+
+        for(int i=0;i<chars.length;i++){
+            char ch = chars[i];
+            if(sb.length() != 0 && ch == sb.charAt(sb.length()-1)){
+                count++;
+            }
+            else{
+                if(count == 1){
+                    sb.append(ch);
+                }
+                else{
+                    sb.append(count);
+                    sb.append(ch);
+                    count = 1;
+                }
+            }
+            if(i+1 == chars.length && count != 1) sb.append(count); 
+        }
+
+        for(int i=0;i<sb.length();i++){
+            chars[i] = sb.charAt(i);
+        }
+        System.out.println(sb);
+        return sb.length();
+    }
+}
+```
