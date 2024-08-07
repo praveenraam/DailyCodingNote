@@ -1963,3 +1963,48 @@ class Solution {
     }
 }
 ```
+
+### [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/description/)
+
+```Java
+class Solution {
+    public int numJewelsInStones(String jewel, String stones) {
+        HashMap<Character,Integer> mp = new HashMap<>();
+        int res = 0;
+        for(char ch : stones.toCharArray()){
+            mp.put(ch,mp.getOrDefault(ch,0)+1);
+        }
+        for(int i=0;i<jewel.length();i++){
+            if(mp.containsKey(jewel.charAt(i))){
+                res+=mp.get(jewel.charAt(i));
+                mp.remove(jewel.charAt(i));
+            }
+        }
+        return res;
+    }
+}
+```
+
+### [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/)
+
+```Java
+class Solution {
+    public int minSteps(String s, String t) {
+        int[] ar1 = new int[26];
+        int[] ar2 = new int[26];
+
+        for(char ch : s.toCharArray()){
+            ar1[ch-'a']++;
+        }
+        for(char ch : t.toCharArray()){
+            ar2[ch-'a']++;
+        }
+
+        int res = 0;
+        for(int i=0;i<26;i++){
+            res+= Math.abs(ar1[i]-ar2[i]);
+        }
+        return res/2;
+    }
+}
+```

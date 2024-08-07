@@ -1115,3 +1115,32 @@ class Solution {
     }
 }
 ```
+
+### [161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
+
+```Java
+class Solution {
+    List<Integer> ls = new ArrayList<>();
+
+    public int maxLevelSum(TreeNode root) {
+        bfs(root,0);   
+        int max = 0;
+
+        for(int i=0;i<ls.size();i++){
+            if(ls.get(max) < ls.get(i)){
+                max = i;
+            }
+        }
+        return max+1;
+    }
+    public void bfs(TreeNode root,int level){
+        if(root == null) return;
+        if(ls.size() <= level) ls.add(root.val);
+        else{
+            ls.set(level,ls.get(level)+root.val);
+        }
+        bfs(root.left,level+1);
+        bfs(root.right,level+1);
+    }
+}
+```

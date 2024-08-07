@@ -65,3 +65,35 @@ class Solution {
     }
 }
 ```
+
+### [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
+
+```Java
+class Solution {
+    HashMap<Integer,Integer> mp = new HashMap<>();
+    public int minCostClimbingStairs(int[] c) {
+        int one = func(c,0);
+        int two = func(c,1);
+        return Math.min(one,two);        
+    }
+    public int func(int[] c,int i){
+
+        if(i >= c.length) return 0;
+
+        int one;
+        if(!mp.containsKey(i+1)){
+            one = func(c,i+1)+c[i];
+        }else 
+            one = mp.get(i+1)+c[i];
+
+        int two;
+        if(!mp.containsKey(i+2)){
+            two = func(c,i+2)+c[i];
+        }
+        else two = mp.get(i+2)+c[i];
+
+        mp.put(i,Math.min(one,two));
+        return mp.get(i);
+    } 
+}
+```
