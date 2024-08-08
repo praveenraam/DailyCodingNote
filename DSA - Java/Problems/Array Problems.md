@@ -3566,4 +3566,88 @@ class SubrectangleQueries {
 }
 ```
 
-### []
+### [2545. Sort the Students by Their Kth Score](https://leetcode.com/problems/sort-the-students-by-their-kth-score/description/)
+
+```Java
+class Solution {
+    public int[][] sortTheStudents(int[][] score, int k) {
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        int[][] arr = new int[score.length][score[0].length];
+
+        for(int i=0;i<score.length;i++){
+            mp.put(score[i][k],i);
+        }
+
+        ArrayList<Integer> ls = new ArrayList<>(mp.keySet());
+        Collections.sort(ls);
+
+        int j = arr.length-1;
+        for(int i : ls){
+            int ind = mp.get(i);
+            arr[j] = score[ind];
+            j--;
+        }
+        return arr;
+    }
+}
+```
+
+### [1381. Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/description/)
+
+```Java
+class CustomStack {
+    int[] arr;
+    int i=0;
+    public CustomStack(int maxSize) {
+        arr = new int[maxSize];
+    }
+    
+    public void push(int x) {
+        if(i>=arr.length) {
+            return;
+        }
+        arr[i] = x;
+        i++;
+    }
+    
+    public int pop() {
+        i--;
+        if(i<0) {
+            i=0;
+            return -1;
+        }
+        return arr[i];
+    }
+    
+    public void increment(int k, int val) {
+        for(int j=0;j<k&&j<arr.length;j++){
+            arr[j]+=val;
+        }
+    }
+}
+```
+
+
+### [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
+
+```Java
+class OrderedStream {
+    String[] ar;
+    int i=0;
+
+    public OrderedStream(int n) {
+        ar = new String[n];
+    }
+    
+    public List<String> insert(int idKey, String value) {
+        List<String> res = new ArrayList<>();
+        ar[idKey-1] = value;
+
+        for(int j=i;j<ar.length && ar[j] != null;j++){
+            res.add(ar[j]);
+            i++;
+        }
+        return res;
+    }
+}
+```

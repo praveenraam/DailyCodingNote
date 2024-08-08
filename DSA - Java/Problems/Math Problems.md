@@ -981,3 +981,22 @@ class Solution {
     }
 }
 ```
+
+### [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
+
+```Java
+class Solution {
+    public int tribonacci(int n) {
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        if(n == 2) return 1;
+        return func(n,0,1,1,3);
+    }
+    public int func(int n,int prevO,int prevT,int cur,int count){
+
+        if(count == n) return prevO+prevT+cur;
+
+        return func(n,prevT,cur,prevO+prevT+cur,count+1);
+    }
+}
+```

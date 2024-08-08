@@ -2008,3 +2008,26 @@ class Solution {
     }
 }
 ```
+
+### [357. Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/description/)
+
+```Java
+class Solution {
+    public int countNumbersWithUniqueDigits(int n) {
+        int sum = 0;
+        for(int i=1;i<=n;i++){
+
+            int mul = 9;
+            int adder = 1*mul;
+            int counter = 1;
+
+            while(counter<i){
+                adder*=mul;
+                mul--; counter++;
+            }
+            sum+=adder;
+        }
+        return sum+1;
+    }
+}
+```
