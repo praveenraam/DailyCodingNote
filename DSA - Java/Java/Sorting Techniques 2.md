@@ -62,5 +62,3 @@ public static void MergeFunc(int[] arr,int low,int mid,int high){
 
 
 ## Quick Sort
-
-

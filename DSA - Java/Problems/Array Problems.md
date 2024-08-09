@@ -3651,3 +3651,71 @@ class OrderedStream {
     }
 }
 ```
+
+### [3242. Design Neighbor Sum Service](https://leetcode.com/problems/design-neighbor-sum-service/description/)
+
+```Java
+class neighborSum {
+
+    int[][] ar;
+    public neighborSum(int[][] grid) {
+        ar = grid;
+    }
+    
+    public int adjacentSum(int value) {
+        int sum = 0; int[] index=new int[2];
+        
+        for(int i=0;i<ar.length;i++){
+            for(int j=0;j<ar.length;j++){
+                if(value == ar[i][j]){
+                    index[0] = i;
+                    index[1] = j;
+                }
+            }
+        }
+
+        if(index[0]-1 >= 0){
+            sum+=ar[index[0]-1][index[1]];
+        }
+        if(index[1]-1 >= 0){
+            sum+=ar[index[0]][index[1]-1];
+        }
+        if(index[0]+1 < ar.length){
+            sum+=ar[index[0]+1][index[1]];
+        }
+        if(index[1]+1 < ar[index[0]].length){
+            sum+=ar[index[0]][index[1]+1];
+        }
+        return sum;
+    }
+    
+    public int diagonalSum(int value) {
+        int sum = 0; int[] index=new int[2];
+        
+        for(int i=0;i<ar.length;i++){
+            for(int j=0;j<ar.length;j++){
+                if(value == ar[i][j]){
+                    index[0] = i;
+                    index[1] = j;
+                }
+            }
+        }
+
+        if(index[0]-1 >= 0 && index[1]-1 >= 0){
+            sum+=ar[index[0]-1][index[1]-1];
+        }
+        if(index[0]-1 >=0 && index[1]+1 < ar[index[0]].length){
+            sum+=ar[index[0]-1][index[1]+1];
+        }
+        if(index[0]+1 < ar.length && index[1]-1 >= 0){
+            sum+=ar[index[0]+1][index[1]-1];
+        }
+        if(index[0]+1 < ar.length && index[1]+1 < ar[index[0]].length){
+            sum+=ar[index[0]+1][index[1]+1];
+        }
+        return sum;
+    }
+}
+```
+
+### 

@@ -930,3 +930,35 @@ class Solution {
     }
 }
 ```
+
+### [3217. Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)
+
+```Java
+class Solution {
+    public ListNode modifiedList(int[] nums, ListNode head) {
+        HashSet<Integer> st = new HashSet<>();
+
+        for(int i=0;i<nums.length;i++){
+            st.add(nums[i]);
+        }
+
+        ListNode dup = new ListNode();
+        while(st.contains(head.val)){
+            head = head.next;
+        }
+        dup = head;
+
+        while(dup != null && dup.next != null){
+            if(dup.next != null && st.contains(dup.next.val)){
+                dup.next = dup.next.next;
+                continue;
+            }
+            dup = dup.next;
+        }
+
+        return head;
+    }
+}
+```
+
+[]

@@ -2031,3 +2031,90 @@ class Solution {
     }
 }
 ```
+
+### [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)
+
+```Java
+class Solution {
+    public String multiply(String num1, String num2) {
+        
+        if(num1.equals("0") || num2.equals("0")){
+            return "0";
+        }
+
+        int[] ar = new int[num1.length() + num2.length()];
+
+        num1 = reverseString(num1);
+        num2 = reverseString(num2);
+
+        for(int i=0;i<num1.length();i++){
+            for(int j=0;j<num2.length();j++){
+                int val = Integer.parseInt(String.valueOf(num1.charAt(i))) * Integer.parseInt(String.valueOf(num2.charAt(j)));
+                ar[i+j] += val;
+                ar[i+j+1] += ar[i+j]/10;
+                ar[i+j] = ar[i+j]%10;
+            }
+        }
+
+        for(int i=0;i<ar.length/2;i++){
+            int temp = ar[i];
+            ar[i] = ar[ar.length-i-1];
+            ar[ar.length-i-1] = temp;
+        }
+
+        int startIndex = 0;
+        while (startIndex < ar.length) {
+            if (ar[startIndex] != 0) {
+                break;
+            }
+            startIndex++;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for(int i=startIndex;i<ar.length;i++){
+            sb.append(ar[i]);
+        }
+        return sb.toString();
+    }
+    public String reverseString(String word){
+        StringBuilder sb = new StringBuilder(word);
+        return sb.reverse().toString();
+    }
+}
+```
+
+### [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)
+
+```Java
+class Solution {
+    public int myAtoi(String s) {
+
+        boolean isNegative = false;
+
+        int i = 0;
+        while(i<s.length() && s.charAt(i) == ' '){
+            i++;
+        }
+
+        if(i<s.length()){
+            if(s.charAt(i) == '-'){
+                isNegative = true; i++;
+            }else if(s.charAt(i) == '+'){
+                i++;
+            }
+        }
+
+        int res = 0;
+        while(i<s.length() && s.charAt(i)-'0' >= 0 && s.charAt(i)-'0' <= 9){
+
+            int digit = s.charAt(i)-'0';
+            if(res > (Integer.MAX_VALUE-digit)/10){
+                return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            }
+            res = res*10 + (digit);
+            i++;
+        }
+        return isNegative ? -1*res : res;
+    }
+}
+```

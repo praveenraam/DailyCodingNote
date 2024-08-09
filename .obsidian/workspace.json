@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Bit Manipulation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "51ccf4486545c439",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA - Java/Java/Sorting Techniques 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Bit Manipulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md",
+                "file": "DSA - Java/Java/Bit Manipulation.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Sorting Techniques.md"
+                "file": "DSA - Java/Java/Bit Manipulation.md"
               }
             }
           }
@@ -150,6 +162,11 @@
   "active": "fe047155b7fbfd22",
   "lastOpenFiles": [
     "DSA - Java/Java/Sorting Techniques 2.md",
+    "DSA - Java/Java/Heap and PriorityQueue.md",
+    "DSA - Java/Java/Recursion.md",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Bit Manipulation.md",
+    "DSA - Java/Java/Sorting Techniques.md",
     "Operating-System/CPU Scheduling/MLQ & MLFQ.md",
     "Pasted image 20240727192406.png",
     "Operating-System/CPU Scheduling/MLFQ Scheduling.md",
@@ -169,7 +186,6 @@
     "Pasted image 20240727160729.png",
     "Operating-System/CPU Scheduling/RR with different AT.md",
     "Operating-System/CPU Scheduling/RRR with different At",
-    "DSA - Java/Java/Bit Manipulation.md",
     "DSA - Java/Java/Types of Tree.md",
     "Placement/Github/Bio.md",
     "Placement/Github/Started.md",
@@ -183,10 +199,6 @@
     "Operating-System/CPU Scheduling/Short Job First.md",
     "Operating-System/CPU Scheduling/Convoy Effect.md",
     "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
-    "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
-    "().md",
-    "Operating-System/CPU Scheduling/Preemptive and Non-preemptive.md",
-    "Operating-System/CPU Scheduling/Process Scheduler.md",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
     "Operating-System/Basics of OS",
