@@ -961,4 +961,124 @@ class Solution {
 }
 ```
 
-[]
+### [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/)
+
+```Java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        
+        ListNode dup = head;
+        TreeMap<Integer,Integer> mp = new TreeMap<>();
+
+        while(dup != null){
+            mp.put(dup.val,mp.getOrDefault(dup.val,0)+1);
+            dup = dup.next;
+        }
+        
+        ListNode res = new ListNode();
+        dup = res;
+
+        for(int i : mp.keySet()){
+            if(mp.get(i) == 1){
+                ListNode newOne = new ListNode(i);
+                res.next = newOne;
+                res = res.next;
+            }
+        }
+
+        return dup.next;
+    }
+}
+```
+
+### [1019. Next Greater Node In Linked List](https://leetcode.com/problems/next-greater-node-in-linked-list/description/)
+
+```Java
+class Solution {
+    public int[] nextLargerNodes(ListNode head) {
+        int size = 0;
+        ListNode dup = head;
+
+        while(dup != null){
+            size++;
+            dup = dup.next;
+        }
+
+        dup = head;
+        int[] ar = new int[size];
+
+        int i = 0;
+        while(dup != null){
+
+            int funcRes = findGreater(dup.next,dup.val);
+            int val = dup.val >= funcRes ? 0 : funcRes;
+            ar[i] = val; i++;
+            dup = dup.next;
+        }
+        return ar;
+    }
+    public int findGreater(ListNode start,int cur){
+        int max = 0;
+        while(start != null){
+            if(start.val > cur) return start.val;
+            start = start.next;
+        }
+        return max;
+    }
+}
+```
+
+### [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/)
+
+```Java
+lass Solution {
+    public ListNode oddEvenList(ListNode head) {
+        ListNode dup = head;
+        ListNode res = new ListNode();
+        ListNode it = res;
+
+        int count = 1;
+        while(dup != null){
+            if(count%2 == 1){
+                ListNode nex = new ListNode(dup.val);
+                it.next = nex;
+                it = it.next;
+            }
+            dup = dup.next; count++;
+        }
+
+        count = 1;
+        dup = head;
+        while(dup!=null){
+            if(count%2 == 0){
+                ListNode nex = new ListNode(dup.val);
+                it.next = nex;
+                it = it.next;
+            }
+            dup = dup.next; count++;
+        }
+
+        return res.next;
+    }
+}
+```
+
+### [382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description/)
+
+```Java
+class Solution {
+    List<Integer> ls;
+    public Solution(ListNode head) {
+        ls = new ArrayList<>();
+        while(head != null){
+            ls.add(head.val);
+            head = head.next;
+        }
+    }
+    
+    public int getRandom() {
+        int k =  (int)(Math.random()*ls.size());
+        return ls.get(k);
+    }
+}
+```
