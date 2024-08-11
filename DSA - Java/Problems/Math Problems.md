@@ -1000,3 +1000,23 @@ class Solution {
     }
 }
 ```
+
+### [Power of Two](https://leetcode.com/problems/power-of-two/description/)
+
+```Java
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        int p1 = 0,p2 = n;
+
+        while(p1<=p2){
+            int mid = (p1+p2)/2;
+            double val = Math.pow(2,mid);
+
+            if(val == n) return true;
+            if(val < n) p1 = mid+1;
+            else p2 = mid-1;
+        }
+        return false;
+    }
+}
+```
