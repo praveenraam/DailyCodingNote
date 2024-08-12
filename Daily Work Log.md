@@ -1,3 +1,8 @@
+## Day 212
+#### Date : 12.08.2024
+- Solved Leetcode problem  Heap
+- React Native
+- Alumni Network Project
 ## Day 211
 #### Date : 11.08.2024
 - Solved Leetcode problem Math, Heap

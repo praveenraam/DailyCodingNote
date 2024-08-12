@@ -95,3 +95,101 @@ class Solution {
     }
 }
 ```
+
+### [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+
+```Java
+class KthLargest {
+    PriorityQueue<Integer> hp;
+    int d;
+    public KthLargest(int k, int[] nums) {
+        d = k;
+        hp = new PriorityQueue<>();
+        for(int i:nums){
+            
+            hp.offer(i);
+            if(hp.size() > k){
+                hp.poll();
+            }
+        }
+    }
+    
+    public int add(int val) {
+        hp.add(val);
+        if(hp.size() > d) hp.poll();  
+        return hp.peek();
+    }
+}
+```
+
+### [1642. Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/)
+
+```Java
+class Solution {
+    public int furthestBuilding(int[] a, int bricks, int ladders) {
+        int i=0;
+        Queue<Integer> hp = new PriorityQueue<>(Collections.reverseOrder());
+
+        for(i=0;i<a.length-1;i++){
+
+            if(a[i] >= a[i+1]) continue;
+
+            int diff = a[i+1]-a[i];
+
+            if(diff <= bricks){
+                bricks-=diff;
+                hp.offer(diff);
+            }
+            else if(ladders > 0){
+                
+                if(!hp.isEmpty() && hp.peek() > diff){
+                    bricks+=(hp.remove()-diff);
+                    hp.offer(diff);
+                }
+                ladders--;
+                
+            }else break;
+        }
+        return i;
+    }
+}
+```
+
+### [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
+
+```Java
+class Solution {
+    public int leastInterval(char[] tasks, int n) {
+        if(n == 0) return tasks.length;
+
+        PriorityQueue<Integer> hp = new PriorityQueue<>(Collections.reverseOrder());
+        
+        int[] ar = new int[26];
+        for(int i=0;i<tasks.length;i++){
+            ar[(int)tasks[i]-'A']+=1;
+        }
+
+        for(int i=0;i<26;i++){
+            if(ar[i] == 0) continue;
+            hp.offer(ar[i]);
+        }
+
+
+        Queue<Pair<Integer,Integer>> q = new LinkedList<>();
+
+        int i = 0;
+        while(!hp.isEmpty() || !q.isEmpty()){
+            i++;
+            if(!hp.isEmpty()){
+                int val = hp.poll();
+                val--;
+                if(val > 0) q.add(new Pair(val,i+n));
+            }
+            if(!q.isEmpty() && q.peek().getValue() == i){
+                hp.add(q.poll().getKey());
+            }
+        }
+        return i;
+    }
+}
+```
