@@ -193,3 +193,98 @@ class Solution {
     }
 }
 ```
+### [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+
+```Java
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        Queue<Integer> hp = new PriorityQueue<>();
+
+        for(ListNode res : lists){
+            while(res != null){
+                hp.offer(res.val);
+                res = res.next;
+            }
+        }
+
+        ListNode res = new ListNode();
+        ListNode dup = res;
+        while(!hp.isEmpty()){
+            ListNode newOne = new ListNode(hp.poll());
+            res.next = newOne;
+            res = res.next;
+        }
+
+        return dup.next;
+    }
+}
+```
+
+### [Minimum Number Game](https://leetcode.com/problems/minimum-number-game/description/)
+
+```Java
+class Solution {
+    public int[] numberGame(int[] nums) {
+        Queue<Integer> hp = new PriorityQueue<>();
+        int[] ar = new int[nums.length];
+
+        for(int i=0;i<nums.length;i++) hp.offer(nums[i]);
+
+        int i = 0;
+        while(!hp.isEmpty()){
+            int v1 = hp.poll();
+            int v2 = hp.poll();
+
+            ar[i++] = v2;
+            ar[i++] = v1;
+        }
+
+        return ar;
+    }
+}
+```
+
+### [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/)
+
+```Java
+class SeatManager {
+    Queue<Integer> hp = new PriorityQueue<>();
+
+    public SeatManager(int n) {
+        for(int i=1;i<=n;i++){
+            hp.offer(i);
+        }
+    }
+    
+    public int reserve() {
+        return hp.poll();    
+    }
+    
+    public void unreserve(int seatNumber) {
+        hp.offer(seatNumber);
+    }
+}
+```
+
+### [Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/)
+
+```Java
+class SmallestInfiniteSet {
+    Queue<Integer> hp = new PriorityQueue<>();
+
+    public SmallestInfiniteSet() {
+        for(int i=1;i<=1000;i++){
+            hp.offer(i);
+        }
+    }
+    
+    public int popSmallest() {
+        return hp.poll();
+    }
+    
+    public void addBack(int num) {
+        if(hp.contains(num)) return;
+        hp.offer(num);
+    }
+}
+```
