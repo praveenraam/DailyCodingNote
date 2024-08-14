@@ -3718,4 +3718,59 @@ class neighborSum {
 }
 ```
 
-### 
+### [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/description/)
+
+```Java
+class Solution {
+    public int[] findingUsersActiveMinutes(int[][] logs, int k) {
+        Map<Integer,HashSet<Integer>> mp = new HashMap<>();
+
+        for(int[] i : logs){
+            if(!mp.containsKey(i[0])){
+                mp.put(i[0],new HashSet<>());
+            }
+            mp.get(i[0]).add(i[1]);
+        }
+
+        int[] res = new int[k];
+        for(int i : mp.keySet()){
+            int ind = mp.get(i).size();
+            res[ind-1]+=1;
+        }
+
+        return res;
+    }
+}
+```
+
+### [Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/description/)
+
+```Java
+class Solution {
+    public List<List<Integer>> groupThePeople(int[] gs) {
+        HashMap<Integer,Stack<Integer>> mp = new HashMap<>();
+
+        for(int i=0;i<gs.length;i++){
+            if(!mp.containsKey(gs[i])){
+                mp.put(gs[i],new Stack<>());
+            }
+            mp.get(gs[i]).add(i);
+        }
+        ArrayList<Integer> ls = new ArrayList<>(mp.keySet());
+
+        List<List<Integer>> res = new ArrayList<>();
+
+        int lsInd = 0;
+        for(int i=0;i<ls.size();i++){
+            res.add(new ArrayList<>());
+            for(int j=0;j<ls.get(i);j++){
+                res.get(lsInd).add(mp.get(ls.get(i)).pop());
+            }
+            if(mp.get(ls.get(i)).size() != 0) i--;
+            lsInd++;
+        }
+
+        return res;
+    }
+}
+```

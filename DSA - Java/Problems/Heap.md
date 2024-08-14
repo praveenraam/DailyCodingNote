@@ -288,3 +288,80 @@ class SmallestInfiniteSet {
     }
 }
 ```
+
+### [Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu/description/)
+
+```Java
+class Solution {
+    public int[] getOrder(int[][] tasks) {
+        int[] res = new int[tasks.length];
+
+        Queue<int[]> hp = new PriorityQueue<>((a,b)->Integer.compare(a[0],b[0]));
+        
+        int i = 0;
+        for(int[] n: tasks){
+            hp.offer(new int[] {n[0],n[1],i});
+            i++;
+        }
+
+        Queue<int[]> q = new PriorityQueue<>((a, b) -> a[1] == b[1] ? a[2] - b[2] : a[1] - b[1]);
+
+        int time = 0;
+        i = 0;
+        while(!hp.isEmpty() || !q.isEmpty()){
+            
+            if(q.isEmpty() && time < hp.peek()[0]){
+                time = hp.peek()[0];
+            }
+
+            while(!hp.isEmpty() && hp.peek()[0] <= time){
+                q.offer(hp.poll());
+            }
+
+            int[] val = q.poll();
+            time+=val[1];
+            res[i++] = val[2];
+        }
+
+        return res;
+    }
+}
+```
+
+### [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
+
+```Java
+class Solution {
+    public int maxProduct(int[] nums) {
+        Queue<Integer> hp = new PriorityQueue<>(Collections.reverseOrder());
+
+        for(int i=0;i<nums.length;i++) hp.offer(nums[i]);
+
+        return (hp.poll()-1)*(hp.peek()-1);
+
+    }
+}
+```
+
+### [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
+
+```Java
+class Solution {
+    public int[] kthSmallestPrimeFraction(int[] arr, int k) {
+        Queue<double[]> hp = new PriorityQueue<>((a,b)->Double.compare(a[0],b[0]));
+
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                double dif = (double) (arr[i])/(arr[j]);
+                hp.offer(new double[] {dif,(double)arr[i],(double)arr[j]});
+            }
+        }
+
+        for(int i=1;i<k;i++) hp.poll();
+
+        double[] res = hp.peek();
+
+        return new int[] {(int)res[1],(int)res[2]};
+    }
+}
+```
