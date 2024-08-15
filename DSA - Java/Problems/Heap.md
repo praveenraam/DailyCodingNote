@@ -365,3 +365,25 @@ class Solution {
     }
 }
 ```
+
+### [1561. Maximum Number of Coins You Can Get](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/description/)
+
+```Java
+class Solution {
+    public int maxCoins(int[] piles) {
+        Queue<Integer> hp = new PriorityQueue<>(Collections.reverseOrder());
+
+        for(int i : piles) hp.offer(i);
+
+        int sum = 0;
+        int count = 0;
+        while(!hp.isEmpty()){
+            if(count == hp.size()) return sum;
+            hp.poll();
+            sum+=hp.poll(); 
+            count++;
+        }
+        return sum;
+    }
+}
+```

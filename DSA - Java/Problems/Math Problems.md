@@ -1020,3 +1020,19 @@ class Solution {
     }
 }
 ```
+
+### [3099. Harshad Number](https://leetcode.com/problems/harshad-number/description/)
+
+```Java
+class Solution {
+    public int sumOfTheDigitsOfHarshadNumber(int x) {
+        int dup = x;
+        int val = 0;
+        while(dup>0){
+            int ld = dup%10; dup/=10;
+            val += ld;
+        }
+        return x%val == 0 ? val : -1;
+    }
+}
+```

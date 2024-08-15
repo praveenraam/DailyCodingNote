@@ -3774,3 +3774,62 @@ class Solution {
     }
 }
 ```
+
+### [1551. Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/)
+
+```Java
+class Solution {
+    public int minOperations(int n) {
+        int[] ar = new int[n];
+        for(int i=0;i<n;i++){
+            ar[i] = (2*i)+1;
+        }        
+        int p1=0,p2=n-1;
+        int count=0;
+        while(p1<p2){
+
+            while(ar[p1] != n && ar[p2] != n){
+                ar[p1]++;
+                ar[p2]--;
+                count++;
+            }
+            if(ar[p1] == n) p1++;
+            if(ar[p2] == n) p2--;
+        }
+        return count;
+    }
+}
+```
+
+```Java
+class Solution {
+    public int minOperations(int n) {
+        return n*n/4;
+    }
+}
+```
+
+
+### [2442. Count Number of Distinct Integers After Reverse Operations](https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/)
+
+```Java
+class Solution {
+    public int countDistinctIntegers(int[] nums) {
+        HashSet<Integer> st = new HashSet<>();
+
+        for(int i=0;i<nums.length;i++){
+            st.add(nums[i]);
+            st.add(rev(nums[i]));
+        }
+        return st.size();
+    }
+    public int rev(int n){
+        int res = 0;
+        while(n>0){
+            int ld = n%10; n/=10;
+            res = (res*10)+ld;
+        }
+        return res;
+    }
+}
+```
