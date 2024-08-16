@@ -387,3 +387,71 @@ class Solution {
     }
 }
 ```
+
+### [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/description/)
+
+```Java
+class Solution {
+    public int maxIceCream(int[] costs, int coins) {
+        PriorityQueue<Integer> hp = new PriorityQueue<>();
+
+        for(int i : costs) hp.offer(i);
+        int res = 0;
+        while(!hp.isEmpty()){
+            if(hp.peek() > coins) return res;
+            coins-=hp.poll(); res++;
+        }
+        return res;
+    }
+}
+```
+
+### [The kth Factor of n](https://leetcode.com/problems/the-kth-factor-of-n/description/)
+
+```Java
+class Solution {
+    public int kthFactor(int n, int k) {
+        int res = 0;
+        for(int i=1;i<=n;i++){
+            if(n%i == 0) res++;
+            if(res == k) return i;
+        }
+        return -1;
+    }
+}
+```
+
+### [Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
+
+```Java
+class Solution {
+    
+    HashSet<Character> st = new HashSet<>();
+
+    public String sortVowels(String s) {
+        addData();
+        PriorityQueue<Character> hp = new PriorityQueue<>((a,b)->Character.compare(b,a));
+
+        for(int i=0;i<s.length();i++){
+            if(isVowel(s.charAt(i))) hp.offer(s.charAt(i));
+        }
+        StringBuilder sb = new StringBuilder(s);  
+        for(int i=s.length()-1;i>=0;i--){  
+            if(isVowel(sb.charAt(i))){  
+                sb.setCharAt(i, hp.poll());  
+            }  
+        } 
+        return sb.toString();
+    }
+    public boolean isVowel(char ch){
+        return st.contains(ch);
+    }
+    public void addData(){
+        st.add('A'); st.add('a');
+        st.add('E'); st.add('e');
+        st.add('I'); st.add('i');
+        st.add('O'); st.add('o');
+        st.add('U'); st.add('u');
+    }
+}
+```

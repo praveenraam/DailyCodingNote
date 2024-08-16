@@ -1144,3 +1144,30 @@ class Solution {
     }
 }
 ```
+
+### [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+
+```Java
+class Solution {
+    List<TreeNode> ls = new ArrayList<>();
+
+    public void flatten(TreeNode root) {
+        dfs(root);
+        TreeNode dup = new TreeNode();
+
+        for(int i=0;i<ls.size();i++){
+            dup.right = ls.get(i);
+            dup.left = null;
+            dup = dup.right;
+        }
+        root = dup.right;
+    }
+    public void dfs(TreeNode root){
+        if(root == null) return;
+
+        ls.add(root);
+        dfs(root.left);
+        dfs(root.right);
+    }
+}
+```

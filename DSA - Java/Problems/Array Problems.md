@@ -3833,3 +3833,51 @@ class Solution {
     }
 }
 ```
+
+### [Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
+
+```Java
+class Solution {
+    public boolean lemonadeChange(int[] bills) {
+        int[] freq = new int[2];
+
+        for(int i : bills){
+            if(i == 5){
+                freq[0]+=1;
+            }
+            else if(i == 10){
+                freq[1]+=1;
+                if(freq[0] >= 1) freq[0]-=1;
+                else return false;
+            }
+            else if(i == 20){
+                if(freq[1] >= 1 && freq[0] >= 1){
+                    freq[1]-=1; freq[0]-=1;
+                }
+                else if(freq[0] >= 3) freq[0]-=3;
+                else return false;
+            }
+        }
+        return true;
+    }
+}
+```
+
+### [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array)
+
+```Java
+class Solution {
+    public int minPairSum(int[] nums) {
+        int max = -1;
+
+        Arrays.sort(nums);
+        int p1 = 0,p2 = nums.length-1;
+
+        while(p1<p2){
+            max = Math.max(max,nums[p1]+nums[p2]);
+            p1++; p2--;
+        }
+        return max;
+    }
+}
+```
