@@ -455,3 +455,24 @@ class Solution {
     }
 }
 ```
+
+### [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/description/)
+
+```Java
+import java.math.BigInteger;
+import java.util.PriorityQueue;
+
+class Solution {
+    public String kthLargestNumber(String[] nums, int k) {
+        PriorityQueue<BigInteger> hp = new PriorityQueue<>((a,b)->b.compareTo(a));
+
+        for(int i=0;i<nums.length;i++){
+            BigInteger no = new BigInteger(nums[i]);
+            hp.offer(no);
+        }
+        for(int i=0;i<k-1;i++) hp.poll();
+
+        return String.valueOf(hp.peek());
+    }
+}
+```

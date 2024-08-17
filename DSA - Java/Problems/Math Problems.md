@@ -1036,3 +1036,42 @@ class Solution {
     }
 }
 ```
+
+### [Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+```Java
+class Solution {
+    public double myPow(double x, int n) {
+        return func(x,(long) n);
+    }
+    public double func(double x,long n){
+        if(n == 0) return 1.00;
+        if(n < 0){
+            return 1.0/func(x,-n);
+        }
+        else{
+            if(n%2 == 1){
+                return x*func(x*x,(n-1)/2);
+            }else{
+                return func(x*x,n/2);
+            }
+        }
+    }
+}
+```
+
+
+### [Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/description/)
+
+```Java
+class Solution {
+    public int twoEggDrop(int n) {
+        int s = 0;
+        for(int i=1;i<=n;i++){
+            s+=i;
+            if(s>=n) return i;
+        }
+        return -1;
+    }
+}
+```

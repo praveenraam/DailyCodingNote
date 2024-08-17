@@ -1171,3 +1171,36 @@ class Solution {
     }
 }
 ```
+
+### [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)
+
+```Java
+
+class Solution {
+    List<List<Node>> ls = new ArrayList<>();
+
+    public Node connect(Node root) {
+        dfs(root,0);
+        for(int i=0;i<ls.size();i++){
+            int j=0;
+            for(j=0;j<ls.get(i).size()-1;j++){
+                ls.get(i).get(j).next = ls.get(i).get(j+1);
+            }
+            ls.get(i).get(j).next = null;
+        }
+        return root;
+    }
+    public void dfs(Node root,int level){
+        if(root == null) return;
+
+        if(ls.size() <= level){
+            ls.add(new ArrayList<>());
+        }
+
+        ls.get(level).add(root);
+
+        dfs(root.left,level+1);
+        dfs(root.right,level+1);
+    }
+}
+```

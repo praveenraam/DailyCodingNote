@@ -3881,3 +3881,30 @@ class Solution {
     }
 }
 ```
+
+### [Summary Ranges](https://leetcode.com/problems/summary-ranges/)
+
+```Java
+class Solution {
+    public List<String> summaryRanges(int[] nums) {
+        HashSet<Integer> st = new HashSet<>();
+        ArrayList<String> ls = new ArrayList<>();
+
+        for(int n : nums){ st.add(n); }
+
+        for(int i=0;i<nums.length;i++){
+            int dup = i; int add = 1;
+            StringBuilder sb = new StringBuilder(); sb.append(nums[i]);
+            while(st.contains(nums[dup]+add)){
+                add++; i++;
+            }
+            if(dup != i && i<nums.length){
+                sb.append("->");
+                sb.append(nums[i]);
+            }
+            ls.add(sb.toString());
+        }
+        return ls;
+    }
+}
+```
