@@ -1,5 +1,9 @@
 ## Day 217
 #### Date : 17.08.2024
+- Solved Leetcode problem Arrays, String
+- Spotify App Project started
+## Day 217
+#### Date : 17.08.2024
 - Solved Leetcode problem Heap, Arrays, Trees, Math
 - Java Questions
 - Alumni Network Project

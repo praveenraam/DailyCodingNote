@@ -3908,3 +3908,37 @@ class Solution {
     }
 }
 ```
+
+
+### [Find Players With Zero or One Losses](https://leetcode.com/problems/find-players-with-zero-or-one-losses/description/)
+
+```Java
+class Solution {
+    public List<List<Integer>> findWinners(int[][] mat) {
+        HashMap<Integer,Integer> wi = new HashMap<>();
+        HashMap<Integer,Integer> lo = new HashMap<>();
+
+        for(int i=0;i<mat.length;i++){
+            lo.put(mat[i][1],lo.getOrDefault(mat[i][1],0)+1);
+        }
+        for(int i=0;i<mat.length;i++){
+            if(!lo.containsKey(mat[i][0])){
+                wi.put(mat[i][0],wi.getOrDefault(mat[i][0],0)+1);
+            }
+        }
+        List<List<Integer>> ls = new ArrayList<>();
+        ls.add(new ArrayList<>());
+        ls.add(new ArrayList<>());
+        
+        for(int i : wi.keySet()){
+            ls.get(0).add(i);
+        }
+        for(int i : lo.keySet()){
+            if(lo.get(i) == 1) ls.get(1).add(i);
+        }
+        Collections.sort(ls.get(0));
+        Collections.sort(ls.get(1));
+        return ls;
+    }
+}
+```

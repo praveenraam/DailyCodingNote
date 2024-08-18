@@ -2118,3 +2118,23 @@ class Solution {
     }
 }
 ```
+
+### [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problemsnumber-of-pairs-of-strings-with-concatenation-equal-to-target/description/)
+
+```Java
+class Solution {
+    public int numOfPairs(String[] nums, String target) {
+        
+        int count = 0;
+
+        for(int i=0;i<nums.length;i++){
+            for(int j=0;j<nums.length;j++){
+                if(j == i) continue;
+                if(target.equals(nums[i]+nums[j])) count++;
+            }
+        }
+
+        return count;
+    }
+}
+```
