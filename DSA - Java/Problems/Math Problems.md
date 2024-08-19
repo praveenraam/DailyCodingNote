@@ -1075,3 +1075,42 @@ class Solution {
     }
 }
 ```
+
+### [2523. Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/description/)
+
+```Java
+class Solution {
+    public int[] closestPrimes(int left, int right) {
+        int no = -1;
+        int min = Integer.MAX_VALUE;
+        int[] ar = new int[2];
+
+        for(int i=left;i<=right;i++){
+            boolean prime = isPrime(i);
+
+            if(prime && no == -1) no = i;
+            else if(prime){
+                int diff = i-no;
+                if(diff<min){
+                    min = diff;
+                    ar[0] = no;
+                    ar[1] = i;
+                }
+                no = i;
+            }
+        }
+        return ar[0] == 0 && ar[1] == 0 ? new int[] {-1,-1} : ar;
+    }
+    public boolean isPrime(int n){
+        
+        if(n <= 1) return false;
+        if(n == 2) return true;
+
+        int i=2;
+        for(i=i;i*i<=n;i++){
+            if(n%i == 0) return false;
+        }
+        return true;
+    }
+}
+```

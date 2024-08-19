@@ -1204,3 +1204,49 @@ class Solution {
     }
 }
 ```
+
+### [2196. Create Binary Tree From Descriptions](https://leetcode.com/problems/create-binary-tree-from-descriptions/description/)
+
+```Java
+class Solution {  
+    public TreeNode createBinaryTree(int[][] d) {
+        TreeMap<Integer,TreeNode> tm = new TreeMap<>();
+        for(int i=0;i<d.length;i++){
+            if(!tm.containsKey(d[i][0])){
+                tm.put(d[i][0],new TreeNode(d[i][0]));
+            }
+            if(!tm.containsKey(d[i][1])){
+                tm.put(d[i][1],new TreeNode(d[i][1]));
+            }
+        }
+
+        for(int i=0;i<d.length;i++){
+            if(d[i][2] == 1){
+                tm.get(d[i][0]).left = tm.get(d[i][1]);
+            }
+            else{
+                tm.get(d[i][0]).right = tm.get(d[i][1]);
+            }
+        }
+
+        HashSet<Integer> st = new HashSet<>();
+        for(int i=0;i<d.length;i++){
+            st.add(d[i][1]);
+        }
+        for(int i=0;i<d.length;i++){
+            if(!st.contains(d[i][0])) return tm.get(d[i][0]);
+        }
+        return null;
+    }
+}
+```
+
+### [2236. Root Equals Sum of Children](https://leetcode.com/problems/root-equals-sum-of-children/)
+
+```Java
+class Solution {
+    public boolean checkTree(TreeNode root) {
+        return root.val == (root.right.val + root.left.val);
+    }
+}
+```
