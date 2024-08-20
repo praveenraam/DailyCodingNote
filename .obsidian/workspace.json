@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Interview Questions/Set 1.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Interview Questions/Set 1.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Interview Questions/Set 1.md",
+                "file": "DSA - Java/Git/Basic commands.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA - Java/Java/Interview Questions/Set 1.md"
+                "file": "DSA - Java/Git/Basic commands.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "8cf98fd8e0e79ee1",
   "lastOpenFiles": [
-    "DSA - Java/Java/Heap and PriorityQueue.md",
     "DSA - Java/Java/Interview Questions/Set 1.md",
+    "DSA - Java/Java/Heap and PriorityQueue.md",
     "DSA - Java/Java/Basic Math.md",
     "DSA - Java/Java/Interview Questions/D.md",
     "DSA - Java/Java/Interview Questions",

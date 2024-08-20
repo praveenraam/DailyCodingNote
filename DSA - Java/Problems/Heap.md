@@ -476,3 +476,16 @@ class Solution {
     }
 }
 ```
+
+### [912. Sort an Array](https://leetcode.com/problems/sort-an-array/description/)
+
+```Java
+class Solution {
+    public int[] sortArray(int[] nums) {
+        PriorityQueue<Integer> hp = new PriorityQueue<>();
+        for(int i=0;i<nums.length;i++) hp.offer(nums[i]);
+        for(int i=0;i<nums.length;i++) nums[i] = hp.poll();
+        return nums;
+    }
+}
+```

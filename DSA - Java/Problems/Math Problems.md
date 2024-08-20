@@ -1114,3 +1114,32 @@ class Solution {
     }
 }
 ```
+
+### [650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/)
+
+```Java
+class Solution {
+    public int minSteps(int n) {
+        if(isPrime(n)) {
+            return n;
+        }
+        int res = 0;
+        for(int i=2;n>1;i++){
+            if(n%i == 0) {
+                res+=i;
+                n/=i;
+                i=1;
+            }
+        }
+        return res;
+    }
+    public boolean isPrime(int n){
+        if(n <= 1) return false;
+        int i;
+        for(i=2;i*i<=n;i++){
+            if(n%i == 0) return false;
+        }
+        return true;
+    }
+}
+```

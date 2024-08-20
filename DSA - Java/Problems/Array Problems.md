@@ -3942,3 +3942,27 @@ class Solution {
     }
 }
 ```
+
+### [2150. Find All Lonely Numbers in the Array](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/description/)
+
+```Java
+class Solution {
+    public List<Integer> findLonely(int[] nums) {
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        HashSet<Integer> st = new HashSet<>();
+
+        for(int i=0;i<nums.length;i++){
+            mp.put(nums[i],mp.getOrDefault(nums[i],0)+1);
+            st.add(nums[i]);
+        }
+
+        List<Integer> ls = new ArrayList<>();
+        for(int n : mp.keySet()){
+            if(mp.get(n) == 1 && !st.contains(n-1) && !st.contains(n+1)){
+                ls.add(n);
+            }
+        }
+        return ls;
+    }   
+}
+```
