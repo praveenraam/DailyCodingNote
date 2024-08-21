@@ -2138,3 +2138,30 @@ class Solution {
     }
 }
 ```
+
+### [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
+
+```Java
+class Solution {
+    public String reverseVowels(String s) {
+        Stack<Character> st = new Stack<>();
+        for(char ch : s.toCharArray()){
+            if(ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e' || ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || ch == 'U' || ch == 'u'){
+                st.push(ch);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e' || ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || ch == 'U' || ch == 'u'){
+                sb.append(st.pop());
+            }else{
+                sb.append(ch);
+            }
+        }
+        return sb.toString();
+    }
+}
+```x

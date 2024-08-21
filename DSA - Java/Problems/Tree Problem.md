@@ -1250,3 +1250,72 @@ class Solution {
     }
 }
 ```
+
+### [Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/description/)
+
+```Java
+class Solution {
+    List<List<Integer>> ls = new ArrayList<>();
+    public TreeNode reverseOddLevels(TreeNode root) {
+        dfs(root,0);
+        reverse(root,0);
+        return root;
+    }
+    public void dfs(TreeNode root,int level){
+        if(root == null){
+            return;
+        }
+        if(ls.size() >= level) ls.add(new ArrayList<>());
+        ls.get(level).add(root.val);
+
+        dfs(root.left,level+1);
+        dfs(root.right,level+1);
+    }
+    public void reverse(TreeNode root,int level){
+
+        if(root == null) return;
+
+        if(level%2 == 1){
+            int in = ls.get(level).size()-1;
+            root.val = ls.get(level).get(in);
+            ls.get(level).remove(ls.get(level).size()-1);
+
+            reverse(root.left,level+1);
+            reverse(root.right,level+1);
+        }
+        else{
+            reverse(root.left,level+1);
+            reverse(root.right,level+1);
+            return;
+        };
+    }
+}
+```
+
+### [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)
+
+```Java
+class Solution {
+    List<List<Node>> ls = new ArrayList<>();
+
+    public Node connect(Node root) {
+        dfs(root,0);
+        for(int i = 0;i<ls.size();i++){
+            for(int j=0;j<ls.get(i).size()-1;j++){
+                ls.get(i).get(j).next = ls.get(i).get(j+1);
+            } 
+            ls.get(i).get(ls.get(i).size()-1).next = null;
+        }
+        return root;
+    }
+    public void dfs(Node root,int level){
+        if(root == null) return;
+        
+        if(ls.size() <= level) ls.add(new ArrayList<>());
+        ls.get(level).add(root);
+
+        dfs(root.left,level+1);
+        dfs(root.right,level+1);
+    }
+}
+```

@@ -1,6 +1,10 @@
+## Day 221
+#### Date : 21.08.2024
+- Solved Leetcode problem Arrays, Math
+- React Native
 ## Day 220
 #### Date : 20.08.2024
-- Solved Leetcode problem Math, Tree
+- Solved Leetcode problem Arrays, Math
 - React Native
 ## Day 219
 #### Date : 19.08.2024

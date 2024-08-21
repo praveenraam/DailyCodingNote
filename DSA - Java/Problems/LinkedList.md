@@ -1082,3 +1082,73 @@ class Solution {
     }
 }
 ```
+
+### [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/)
+
+```Java
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+
+        if(l1 == null && l2 == null) return l1;
+
+        Stack<Integer> st1 = new Stack<>();
+        Stack<Integer> st2 = new Stack<>();
+
+        while(l1 != null){
+            st1.push(l1.val); l1 = l1.next;
+        }
+        while(l2 != null){
+            st2.push(l2.val); l2 = l2.next;
+        }
+
+        Stack<Integer> res = new Stack<>();
+        int carry = 0;
+        while(!st1.isEmpty() && !st2.isEmpty()){
+            int val = st1.pop()+st2.pop()+carry;
+            carry = 0;
+            if(val >= 10){
+                carry = 1;
+                val = val%10;
+            }
+            res.push(val);
+        }
+        
+        while(!st1.isEmpty()){
+            int val = st1.pop();
+            if(carry == 1) {
+                val+=carry;
+                carry = 0;
+                if(val>=10){
+                    carry = 1;
+                    val = val%10;
+                }
+            }
+            res.push(val);
+        }
+        while(!st2.isEmpty()){
+            int val = st2.pop();
+            if(carry == 1) {
+                val+=carry;
+                carry = 0;
+                if(val>=10){
+                    carry = 1;
+                    val = val%10;
+                }
+            }
+            res.push(val);
+        }
+        if(carry == 1){
+            System.out.println("in");
+            res.push(1);
+            carry = 0;
+        }
+        ListNode ans = new ListNode(res.pop());
+        ListNode dup = ans;
+        while(!res.isEmpty()){
+            ListNode newOne = new ListNode(res.pop());
+            dup.next = newOne; dup = newOne;
+        }
+        return ans;
+    }
+}
+```
