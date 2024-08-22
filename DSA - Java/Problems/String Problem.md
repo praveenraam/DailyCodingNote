@@ -2164,4 +2164,32 @@ class Solution {
         return sb.toString();
     }
 }
-```x
+```
+
+### [2325. Decode the Message](https://leetcode.com/problems/decode-the-message/description/)
+
+```Java
+class Solution {
+    public String decodeMessage(String key, String message) {
+        HashMap<Character,Character> mp = new HashMap<>();
+
+        int al = 0;
+        for(int i=0;i<key.length();i++){
+            char ch = key.charAt(i);
+            if(mp.containsKey(ch) || ch == ' ') continue;
+            char in = (char)(al+'a'); al++;
+            mp.put(ch,in);
+        }
+        StringBuilder sb = new StringBuilder();
+
+        for(int i=0;i<message.length();i++){
+            if(message.charAt(i) == ' '){
+                sb.append(" "); continue;
+            }
+            sb.append(mp.get(message.charAt(i)));
+        }
+
+        return sb.toString();
+    }
+}
+```
