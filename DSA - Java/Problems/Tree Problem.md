@@ -1319,3 +1319,38 @@ class Solution {
     }
 }
 ```
+
+### [Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)
+
+```Java
+class FindElements {
+    HashSet<Integer> st = new HashSet<>();
+    public FindElements(TreeNode root) {
+        st.add(0);
+        root.val = 0;
+        func(root);
+    }
+
+    public void func(TreeNode root){
+        if(root == null) return;
+        
+        if(root.left != null){
+            int val = (2*root.val)+1;
+            st.add(val); 
+            root.left.val = val;
+        }
+        if(root.right != null){
+            int val = (2*root.val)+2;
+            st.add(val); 
+            root.right.val = val;
+        }
+
+        func(root.right); func(root.left);
+    }
+    
+    public boolean find(int target) {
+        // System.out.println(st);
+        return st.contains(target);
+    }
+}
+```

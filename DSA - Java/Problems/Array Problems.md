@@ -3986,3 +3986,20 @@ class Solution {
     }
 }
 ```
+
+### [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)
+
+```Java
+class Solution {
+    public int sumOfUnique(int[] nums) {
+        Map<Integer,Integer> mp = new HashMap<>();
+
+        for(int i : nums) mp.put(i,mp.getOrDefault(i,0)+1);
+
+        int sum = 0;
+        for(int i : mp.keySet()) if(mp.get(i) == 1) sum+=i;
+
+        return sum;
+    }
+}
+```

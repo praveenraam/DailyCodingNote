@@ -1,6 +1,9 @@
+## Day 223
+#### Date : 23.08.2024
+- Solved Leetcode problem Arrays,Tree
 ## Day 222
 #### Date : 22.08.2024
-- Solved Leetcode problem Arrays
+- Solved Leetcode problem Arrays1
 ## Day 221
 #### Date : 21.08.2024
 - Solved Leetcode problem Arrays, Math
