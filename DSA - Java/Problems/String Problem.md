@@ -2193,3 +2193,32 @@ class Solution {
     }
 }
 ```
+
+### [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+
+```Java
+class Solution {
+    public List<String> buildArray(int[] target, int n) {
+        List<String> ls = new ArrayList<>();
+        Stack<Integer> st = new Stack<>();
+
+        int count = 1;
+        int i = 0;
+
+        while(i<target.length && count<=n){
+            st.push(count++);
+            ls.add("Push");
+
+            if(st.peek() == target[i]){
+                i++; continue;
+            }
+
+            if(st.peek() != target[i]){
+                ls.add("Pop");
+                st.pop();
+            }
+        }
+        return ls;
+    }
+}
+```
