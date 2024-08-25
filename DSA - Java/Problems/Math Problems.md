@@ -1143,3 +1143,97 @@ class Solution {
     }
 }
 ```
+
+### [3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)
+
+```Java
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+
+        int closeOne = Integer.MAX_VALUE;
+        int res = 0;
+
+        for(int i=0;i<nums.length-2;i++){
+            int l = i+1,r= nums.length-1;
+            while(l<r){
+
+                int val = nums[i]+nums[l]+nums[r];
+                if(Math.abs(val-target)<closeOne) {
+                    closeOne = Math.abs(val-target);
+                    res = val;
+                }
+                if(val > target) r--;
+                else l++;
+            }
+        }
+        return res;
+    }
+}class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+
+        int closeOne = Integer.MAX_VALUE;
+        int res = 0;
+
+        for(int i=0;i<nums.length-2;i++){
+            int l = i+1,r= nums.length-1;
+            while(l<r){
+
+                int val = nums[i]+nums[l]+nums[r];
+                if(Math.abs(val-target)<closeOne) {
+                    closeOne = Math.abs(val-target);
+                    res = val;
+                }
+                if(val > target) r--;
+                else l++;
+            }
+        }
+        return res;
+    }
+}
+```
+
+### [4Sum](https://leetcode.com/problems/4sum/description/)
+
+```Java
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        
+        Arrays.sort(nums);
+        List<List<Integer>> ls = new ArrayList<>();
+        HashSet<List<Integer>> st = new HashSet<>();
+
+        for(int i=0;i<nums.length-3;i++){
+            for(int j=i+1;j<nums.length-2;j++){
+                if(i == j) continue;
+                int l = j+1,r = nums.length-1;
+                while(l<r){
+                    if(i == l || i == l) l++;
+                    if(i == r || r == i) r--;
+                    long val = (long)nums[l]+nums[r]+nums[i]+nums[j];
+                    if(val > target){
+                        r--;
+                    }else if(val < target){
+                        l++;
+                    }
+                    else if(val == target){
+                        List<Integer> in = new ArrayList<>();
+                        in.add(nums[i]);
+                        in.add(nums[j]);
+                        in.add(nums[l]);
+                        in.add(nums[r]);
+                        if(!st.contains(in)){
+                            ls.add(in);
+                            st.add(in);
+                        }
+                        st.add(in);
+                        l++; r--;
+                    }
+                }
+            }
+        }
+        return ls;
+    }
+}
+```

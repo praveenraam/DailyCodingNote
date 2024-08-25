@@ -1,3 +1,6 @@
+## Day 225
+#### Date : 25.08.2024
+- Solved Leetcode problem Math
 ## Day 224
 #### Date : 24.08.2024
 - Solved Leetcode problem Arrays,String
