@@ -1237,3 +1237,18 @@ class Solution {
     }
 }
 ```
+
+### [342. Power of Four](https://leetcode.com/problems/power-of-four/description/)
+
+```Java
+class Solution {
+    public boolean isPowerOfFour(int n) {
+        for(int i=0;i<=n;i++){
+            double val = Math.pow(4,i);
+            if(val == n) return true;
+            if(val > n) return false;
+        }
+        return false;
+    }
+}
+```
