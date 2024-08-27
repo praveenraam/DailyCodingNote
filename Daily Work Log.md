@@ -1,5 +1,9 @@
-## Day 225
-#### Date : 25.08.2024
+## Day 227
+#### Date : 27.08.2024
+- Solved Leetcode problem String
+- Aptitude
+## Day 226
+#### Date : 26.08.2024
 - Solved Leetcode problem Math
 ## Day 225
 #### Date : 25.08.2024

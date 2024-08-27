@@ -2222,3 +2222,33 @@ class Solution {
     }
 }
 ```
+
+### [2810. Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/description/)
+
+```Java
+class Solution {
+    public String finalString(String s) {
+        StringBuilder sb = new StringBuilder();
+        for(char ch : s.toCharArray()){
+            if(ch == 'i') sb = sb.reverse();
+            else sb.append(ch);
+        }
+        return sb.toString();
+    }
+}
+```
+
+### [Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description/)
+
+```Java
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int count = 0;
+        for(String s : operations){
+            if(s.equals("--X") || s.equals("X--")) count--;
+            else count++;
+        }
+        return count;
+    }
+}
+```
