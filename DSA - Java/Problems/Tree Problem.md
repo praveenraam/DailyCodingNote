@@ -1354,3 +1354,22 @@ class FindElements {
     }
 }
 ```
+
+### [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/)
+
+```Java
+class Solution {
+    int count = 0;
+    public int countNodes(TreeNode root) {
+        dfs(root);
+        return count;
+    }
+    public void dfs(TreeNode root){
+        if(root == null) return;
+        count++;
+        dfs(root.left);
+        dfs(root.right);
+    }
+}
+```
+

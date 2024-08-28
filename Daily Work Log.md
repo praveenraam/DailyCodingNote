@@ -1,3 +1,7 @@
+## Day 228
+#### Date : 28.08.2024
+- Solved Leetcode problem String, Arrays, Tree
+- Aptitude
 ## Day 227
 #### Date : 27.08.2024
 - Solved Leetcode problem String

@@ -4032,3 +4032,53 @@ class Solution {
     }
 }
 ```
+
+### [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
+
+```Java
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        int count = 0;
+        for(int i : nums){
+            if(mp.containsKey(i)){
+                count+=mp.get(i);
+                mp.put(i,mp.get(i)+1);
+            }else{
+                mp.put(i,1);
+            }
+        }
+        return count;
+    }
+}
+```
+
+### [Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/description/)
+
+```Java
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int count = 0;
+        for(String s : operations){
+            if(s.equals("--X") || s.equals("X--")) count--;
+            else count++;
+        }
+        return count;
+    }
+}
+```
+
+### [Faulty Keyboard](https://leetcode.com/problems/faulty-keyboard/description/)
+
+```Java
+class Solution {
+    public String finalString(String s) {
+        StringBuilder sb = new StringBuilder();
+        for(char ch : s.toCharArray()){
+            if(ch == 'i') sb = sb.reverse();
+            else sb.append(ch);
+        }
+        return sb.toString();
+    }
+}
+```
