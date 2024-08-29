@@ -1,3 +1,7 @@
+## Day 229
+#### Date : 29.08.2024
+- Solved Leetcode problem String, Arrays
+- Introduction to graph
 ## Day 228
 #### Date : 28.08.2024
 - Solved Leetcode problem String, Arrays, Tree

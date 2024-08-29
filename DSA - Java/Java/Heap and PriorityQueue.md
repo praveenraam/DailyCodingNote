@@ -1,5 +1,5 @@
 Topic No : 22
-Next Topic [[]]
+Next Topic [[Graphs]]
 Video [Link](https://www.youtube.com/watch?v=Qf-TDPr0nYw&t=124s)
 
 

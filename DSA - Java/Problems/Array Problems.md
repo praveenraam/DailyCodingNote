@@ -4082,3 +4082,34 @@ class Solution {
     }
 }
 ```
+
+### [853. Car Fleet](https://leetcode.com/problems/car-fleet/)
+
+```Java
+class Solution {
+    public int carFleet(int target, int[] position, int[] speed) {
+        HashMap<Integer,Integer> mp = new HashMap<>();
+
+        for(int i=0;i<position.length;i++){
+            mp.put(position[i],speed[i]);
+        }
+
+        List<Integer> ls = new ArrayList<>(mp.keySet());
+        Collections.sort(ls);
+
+        Stack<Double> st = new Stack<>();
+
+        for(int i=ls.size()-1;i>=0;i--){
+            int val = ls.get(i);
+            double time = (double)(target-val)/(mp.get(val));
+            
+            if(st.isEmpty()) st.push(time);
+            else if(st.peek() == time) continue;
+            else if(st.peek() > time) continue;
+            else st.push(time);
+        }
+
+        return st.size();
+    }
+}
+```

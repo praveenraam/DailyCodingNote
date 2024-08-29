@@ -2252,3 +2252,34 @@ class Solution {
     }
 }
 ```
+
+### [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
+
+```Java
+class Solution {
+    public int characterReplacement(String s, int k) {
+        HashMap<Character,Integer> mp = new HashMap<>();
+
+        int f = 0,res = 0;
+        for(int i=0;i<s.length();i++){
+
+            mp.put(s.charAt(i),mp.getOrDefault(s.charAt(i),0)+1);
+
+            int var = 0;
+            for(int j=0;j<26;j++){
+                char ch = (char)('A'+j);
+                if(mp.get(ch) == null) continue;
+                var = Math.max(var,mp.get(ch));
+            }
+            int len = i-f+1;
+            if((len-var) <= k){
+                res = Math.max(res,len);
+            }else{
+                mp.put(s.charAt(f),mp.get(s.charAt(f))-1);
+                f++;
+            }
+        }
+        return res;
+    }
+}
+```
