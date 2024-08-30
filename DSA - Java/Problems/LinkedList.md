@@ -1152,3 +1152,51 @@ class Solution {
     }
 }
 ```
+
+### [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/description/)
+
+```Java
+/**
+ * // This is the interface that allows for creating nested lists.
+ * // You should not implement it, or speculate about its implementation
+ * public interface NestedInteger {
+ *
+ *     // @return true if this NestedInteger holds a single integer, rather than a nested list.
+ *     public boolean isInteger();
+ *
+ *     // @return the single integer that this NestedInteger holds, if it holds a single integer
+ *     // Return null if this NestedInteger holds a nested list
+ *     public Integer getInteger();
+ *
+ *     // @return the nested list that this NestedInteger holds, if it holds a nested list
+ *     // Return empty list if this NestedInteger holds a single integer
+ *     public List<NestedInteger> getList();
+ * }
+ */
+public class NestedIterator implements Iterator<Integer> {
+
+    List<Integer> ls = new ArrayList<>();
+    int i=-1;
+    public NestedIterator(List<NestedInteger> nestedList) {
+        addToList(nestedList);   
+    }
+
+    @Override
+    public Integer next() {
+        if(hasNext()) return ls.get(++i);
+        return null;
+    }
+
+    @Override
+    public boolean hasNext() {
+        return i+1<ls.size();
+    }
+
+    private void addToList(List<NestedInteger> nestedList){
+        for(int i=0;i<nestedList.size();i++){
+            if(nestedList.get(i).isInteger()) ls.add(nestedList.get(i).getInteger());
+            else addToList(nestedList.get(i).getList());
+        }
+    }
+}
+```

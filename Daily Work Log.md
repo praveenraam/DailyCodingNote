@@ -1,3 +1,7 @@
+## Day 230
+#### Date : 30.08.2024
+- Solved Leetcode problem LinkedList, BinarySearch
+- React Native
 ## Day 229
 #### Date : 29.08.2024
 - Solved Leetcode problem String, Arrays

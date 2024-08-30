@@ -1064,3 +1064,24 @@ class Solution {
     }
 }
 ```
+
+### [278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
+
+```Java
+public class Solution extends VersionControl {
+    public int firstBadVersion(int n) {
+        int s = 1, e = n;
+
+        while (s < e) {
+            int mid = s + (e - s) / 2; // Corrected to prevent potential overflow
+            boolean isBad = isBadVersion(mid);
+            if (!isBad) {
+                s = mid + 1;
+            } else {
+                e = mid;
+            }
+        }
+        return s;
+    }
+}
+```
