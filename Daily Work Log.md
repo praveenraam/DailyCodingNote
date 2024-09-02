@@ -1,3 +1,7 @@
+## Day 233
+#### Date : 02.09.2024
+- Solved Leetcode problem Array
+- React Native Weather Application
 ## Day 232
 #### Date : 01.09.2024
 - Solved Leetcode problem Array

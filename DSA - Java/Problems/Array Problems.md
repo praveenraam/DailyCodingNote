@@ -4132,3 +4132,23 @@ class Solution {
     }
 }
 ```
+
+### [1894. Find the Student that Will Replace the Chalk](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/)
+
+```Java
+class Solution {
+    public int chalkReplacer(int[] chalk, int k) {
+        int res  = 0;
+
+        int i=0;
+        while(k>=chalk[i]){
+            k-=chalk[i];
+            // System.out.println(k + " " +i);
+            res=i++;
+            if(i>=chalk.length) i = 0;
+        }
+        // System.out.println(k + " " +i);
+        return i==0 ? 0 : res+1;
+    }
+}
+```
