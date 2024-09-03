@@ -97,3 +97,46 @@ class Solution {
     } 
 }
 ```
+
+### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)
+
+```Java
+class Solution {
+    public String longestPalindrome(String s) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(s.charAt(0));
+        for(int i=0;i<s.length();i++){
+            String od = func(s,i,i);
+            String ev = func(s,i,i+1);
+
+            if(od.length() > sb.length()) sb = new StringBuilder(od);
+            if(ev.length() > sb.length()) sb = new StringBuilder(ev);
+        }
+        return sb.toString();
+    }   
+    public String func(String s,int left,int right){
+        while(left>=0 && right <s.length() && s.charAt(left) == s.charAt(right)){
+            left--; right++;
+        }
+        return s.substring(left+1,right);
+    }
+}
+```
+
+### [55. Jump Game](https://leetcode.com/problems/jump-game/description/)
+
+```Java
+class Solution {
+    public boolean canJump(int[] nums) {
+        int i=0;
+        int max = 0;
+
+        while(i<nums.length-1){
+            if(max<i) return false; 
+            int val = i+nums[i++];
+            max = Math.max(val,max);
+        }
+        return max>=nums.length-1;
+    }
+}
+```

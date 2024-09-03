@@ -4152,3 +4152,28 @@ class Solution {
     }
 }
 ```
+
+### [1945. Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/description/)
+
+```Java
+class Solution {
+    public int getLucky(String s, int k) {
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=0;i<s.length();i++){
+            sb.append((s.charAt(i)-'a')+1);
+        }
+
+        int res = 0,ans = 0;
+        for(int i=0;i<k;i++){
+            for(int j=0;j<sb.length();j++){
+                res+=(sb.charAt(j)-'0');
+            }
+            System.out.println(res); 
+            sb = new StringBuilder();
+            sb.append(res); ans = res; res = 0;
+        }
+        return ans;
+    }
+}
+```
