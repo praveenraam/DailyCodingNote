@@ -4177,3 +4177,91 @@ class Solution {
     }
 }
 ```
+
+### [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+
+```Java
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int[] arr = new int[nums1.length+nums2.length];
+
+        int j=0;
+        for(int i : nums1) arr[j++] = i;
+        for(int i : nums2) arr[j++] = i;
+
+        Arrays.sort(arr);
+        int len = arr.length;
+        if(arr.length%2 == 0) return (double)(arr[arr.length/2]+arr[(arr.length/2)-1])/(double)2;
+        else return (double)(arr[arr.length/2]);
+    }
+}
+```
+
+### [874. Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/description/)
+
+```Java
+class Solution {
+    public int robotSim(int[] commands, int[][] obs) {
+        HashMap<Integer,HashSet<Integer>> st = new HashMap<>();
+
+        for(int[] i : obs) {
+            if(!st.containsKey(i[0])) st.put(i[0],new HashSet<>());
+            st.get(i[0]).add(i[1]);
+        }
+        int res = 0;
+        int[] pos = new int[2]; pos[0] = 0; pos[1] = 0;
+        char dir = 'N';
+
+        for(int i=0;i<commands.length;i++){
+            if(commands[i] == 0) continue;
+            if(commands[i] == -1){
+                if(dir == 'N') dir = 'E';
+                else if(dir == 'E') dir = 'S';
+                else if(dir == 'S') dir = 'W';
+                else dir = 'N';
+            }
+            else if(commands[i] == -2){
+                if(dir == 'N') dir = 'W';
+                else if(dir == 'E') dir = 'N';
+                else if(dir == 'S') dir = 'E';
+                else dir = 'S';
+            }else{
+                
+
+                if(dir == 'N') {
+                    if(st.containsKey(pos[0]) && st.get(pos[0]).contains(pos[1]+1)){
+                        commands[i--]--;
+                        continue;
+                    }
+                    pos[1]++;
+                }
+                else if(dir == 'S') {
+                    if(st.containsKey(pos[0]) && st.get(pos[0]).contains(pos[1]-1)){
+                        commands[i--]--;
+                        continue;
+                    }
+                    pos[1]--;
+                }
+                else if(dir == 'W') {
+                    if(st.containsKey(pos[0]-1) && st.get(pos[0]-1).contains(pos[1])){
+                        commands[i--]--;
+                        continue;
+                    }
+                    pos[0]--;
+                }
+                else {
+                    if(st.containsKey(pos[0]+1) && st.get(pos[0]+1).contains(pos[1])){
+                        commands[i--]--;
+                        continue;
+                    }
+                    pos[0]++;
+                }                
+                commands[i--]--;
+                System.out.println( " " +pos[0] + " "+pos[1] + " "+dir + " " );
+                res = Math.max((pos[0]*pos[0])+(pos[1]*pos[1]),res);
+            }
+        }
+        return res;
+    }
+}
+```
