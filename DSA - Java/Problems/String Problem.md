@@ -2283,3 +2283,48 @@ class Solution {
     }
 }
 ```
+
+### [389. Find the Difference](https://leetcode.com/problems/find-the-difference/)
+
+```Java
+class Solution {
+    public char findTheDifference(String s, String t) {
+        HashMap<Character,Integer> mp = new HashMap<>();
+
+        for(char c : t.toCharArray()) mp.put(c,mp.getOrDefault(c,0)+1);
+        for(char c : s.toCharArray()) {
+            if(mp.get(c) == 1) mp.remove(c);
+            else mp.put(c,mp.get(c)-1);
+        }
+        for(char c : mp.keySet()) if(mp.get(c) == 1) return c;
+        return ' ';
+    }
+}
+```
+
+### [67. Add Binary](https://leetcode.com/problems/add-binary/description/)
+
+```Java
+class Solution {
+    public String addBinary(String a, String b) {
+        
+        int i=a.length()-1;
+        int j=b.length()-1;
+        int carry = 0;
+        StringBuilder sb = new StringBuilder();
+
+        while(i>=0 || j>=0 || carry == 1){
+            if(i>=0){
+                carry += a.charAt(i--)-'0';
+            }
+            if(j>=0){
+                carry+= b.charAt(j--)-'0';
+            }
+
+            sb.append(carry%2);
+            carry/=2;
+        }
+        return sb.reverse().toString();
+    }
+}
+```
