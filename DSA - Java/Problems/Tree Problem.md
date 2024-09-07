@@ -1373,3 +1373,19 @@ class Solution {
 }
 ```
 
+### [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/)
+
+```Java
+class Solution {
+    public boolean isSubPath(ListNode head, TreeNode root) {
+        if(root == null) return false;
+        if(func(head,root)) return true;
+        return isSubPath(head,root.left) || isSubPath(head,root.right);
+    }
+    public boolean func(ListNode head,TreeNode root){
+        if(head == null) return true;
+        if(root == null || root.val != head.val) return false;
+        return func(head.next,root.right) || func(head.next,root.left);
+    }
+}
+```
