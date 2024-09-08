@@ -1200,3 +1200,95 @@ public class NestedIterator implements Iterator<Integer> {
     }
 }
 ```
+
+### [725. Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/)
+
+```Java
+class Solution {
+    public ListNode[] splitListToParts(ListNode head, int k) {
+        ListNode[] res = new ListNode[k];
+
+        int countNo = func(head);
+        int per = countNo/k;
+        int extra = countNo%k;
+
+        int i=0;
+        System.out.println(extra);
+        while(head != null){
+            int count = 0;
+            
+            res[i] = head;
+            while((per-1) > count && head != null){
+                head = head.next;
+                count++;
+                // System.out.println("IN");
+            }
+
+            if((extra) > 0 && per != 0 && head != null){
+                head = head.next;
+                // System.out.println("IN Extra" + extra);
+            }
+
+            if(head != null){
+                ListNode dup = head;
+                head = head.next;
+                dup.next = null;
+            }
+
+            i++; extra--;
+        }
+        return res;
+    }
+    public int func(ListNode head){
+        int count = 0;
+        while(head != null){
+            count++;
+            head = head.next;
+        }
+        return count;
+    }
+}class Solution {
+    public ListNode[] splitListToParts(ListNode head, int k) {
+        ListNode[] res = new ListNode[k];
+
+        int countNo = func(head);
+        int per = countNo/k;
+        int extra = countNo%k;
+
+        int i=0;
+        System.out.println(extra);
+        while(head != null){
+            int count = 0;
+            
+            res[i] = head;
+            while((per-1) > count && head != null){
+                head = head.next;
+                count++;
+                // System.out.println("IN");
+            }
+
+            if((extra) > 0 && per != 0 && head != null){
+                head = head.next;
+                // System.out.println("IN Extra" + extra);
+            }
+
+            if(head != null){
+                ListNode dup = head;
+                head = head.next;
+                dup.next = null;
+            }
+
+            i++; extra--;
+        }
+        return res;
+    }
+    public int func(ListNode head){
+        int count = 0;
+        while(head != null){
+            count++;
+            head = head.next;
+        }
+        return count;
+    }
+}
+```

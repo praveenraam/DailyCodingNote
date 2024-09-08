@@ -2328,3 +2328,46 @@ class Solution {
     }
 }
 ```
+
+### [500. Keyboard Row](https://leetcode.com/problems/keyboard-row/description/)
+
+```Java
+class Solution {
+    public String[] findWords(String[] words) {
+        
+        Map<Integer,String> mp = new HashMap<>();
+        mp.put(0,"qwertyuiop"); mp.put(1,"asdfghjkl"); mp.put(2,"zxcvbnm");
+        List<String> ls = new ArrayList<>();
+
+        for(String s : words){
+            char ch = Character.toLowerCase(s.charAt(0));
+
+            int no = -1;
+            for(int i : mp.keySet()){
+                if(mp.get(i).contains(String.valueOf(ch))){
+                    no = i;
+                    break;
+                }
+            }
+
+            int i;
+            for(i=0;i<s.length();i++){
+                char c = Character.toLowerCase(s.charAt(i));
+
+                if(!mp.get(no).contains(String.valueOf(c))){
+                    break;
+                }
+            }
+            if(i == s.length()) ls.add(s);
+        }
+
+        System.out.println(ls);
+        String[] ar = new String[ls.size()];
+        for(int i=0;i<ls.size();i++){
+            ar[i] = ls.get(i);
+        }
+
+        return ar;
+    }
+}
+```

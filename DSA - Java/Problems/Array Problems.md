@@ -4284,3 +4284,26 @@ class Solution {
     }
 }
 ```
+
+### [2274. Maximum Consecutive Floors Without Special Floors](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/description/)
+
+```Java
+class Solution {
+    public int maxConsecutive(int bottom, int top, int[] special) {
+        
+        Arrays.sort(special);
+
+        // int res = 0;
+        int res = Math.max(special[0] - bottom,0);
+        for(int i=0;i<special.length-1;i++){
+            int diff = special[i+1]-special[i]-1;
+
+            res = Math.max(res,diff);
+        }
+        int diff = top - special[special.length-1];
+        res = Math.max(res,diff);
+        
+        return res == 1 ? 0 : res;
+    }
+}
+```
