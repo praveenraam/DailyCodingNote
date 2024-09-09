@@ -4307,3 +4307,64 @@ class Solution {
     }
 }
 ```
+
+### [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/)
+
+```Java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public int[][] spiralMatrix(int m, int n, ListNode head) {
+        
+        int[][] res = new int[m][n];
+
+        int row = 0,rowMax = m-1;
+        int col = 0,colMax = n-1;
+
+        while(row<=rowMax && col<=colMax){
+
+            for(int i=col;i<=colMax;i++){
+                if(head != null){
+                    res[row][i] = head.val;
+                    head = head.next;
+                }else res[row][i] = -1;
+            } row++;
+
+            for(int i=row;i<=rowMax;i++){
+                if(head!=null){
+                    res[i][colMax] = head.val;
+                    head = head.next;
+                }else res[i][colMax] = -1;
+            } colMax--;
+
+            if(row<=rowMax){
+                for(int i=colMax;i>=col;i--){
+                    if(head!=null){
+                        res[rowMax][i] = head.val;
+                        head = head.next;
+                    }else res[rowMax][i] = -1;
+                }
+            } rowMax--;
+
+            if(col<=colMax){
+                for(int i=rowMax;i>=row;i--){
+                    if(head!=null){
+                        res[i][col] = head.val;
+                        head = head.next;
+                    }else res[i][col] = -1;
+                }
+            } col++;
+        }
+
+        return res;
+    }
+}
+```

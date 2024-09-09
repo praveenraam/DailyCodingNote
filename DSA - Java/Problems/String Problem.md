@@ -2371,3 +2371,25 @@ class Solution {
     }
 }
 ```
+
+### [657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)
+
+```Java
+class Solution {
+    public boolean judgeCircle(String moves) {
+        
+        int p1 = 0,p2 = 0;
+
+        for(char ch : moves.toCharArray()){
+            if(ch == 'R'){
+                p2++;
+            }else if(ch == 'L'){
+                p2--;
+            }else if(ch == 'U'){
+                p1++;
+            }else p1--;
+        }
+        return p1 == 0  && p2 == 0;
+    }
+}
+```
