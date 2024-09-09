@@ -1292,3 +1292,35 @@ class Solution {
     }
 }
 ```
+
+### [2807. Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)
+
+```Java
+class Solution {
+    public ListNode insertGreatestCommonDivisors(ListNode head) {
+        ListNode dup = head.next;
+        ListNode last = head;
+
+        while(dup != null){
+            int val = gcd(dup.val,last.val);
+            ListNode newOne = new ListNode(val);
+
+            last.next = newOne;
+            newOne.next = dup;
+            last = dup;
+            dup = dup.next;
+        }
+
+        return head;
+    }
+    public int gcd(int n1, int n2){
+        int i = Math.min(n1,n2);
+        for(i=i;i>=0;i--){
+            if(n1%i == 0 && n2%i == 0){
+                return i;
+            }
+        }
+        return 1;
+    }
+}
+```

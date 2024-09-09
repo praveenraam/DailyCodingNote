@@ -1389,3 +1389,47 @@ class Solution {
     }
 }
 ```
+
+### [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/description/)
+
+```Java
+class Solution {
+    HashMap<Integer,Integer> mp = new HashMap<>();
+    public int[] findMode(TreeNode root) {
+    
+        dfs(root);
+
+        int count = 0,max=0;
+        
+        for(int n : mp.keySet()){
+            int val = mp.get(n);
+
+            if(max == val) count++;
+            if(max < val) {
+                count = 1;
+                max = val;
+            }
+        }
+        
+        int[] res = new int[count]; int i=0;
+        for(int n: mp.keySet()){
+            
+            if(mp.get(n) == max){
+                res[i++] = n;
+            }
+        }
+    
+        return res;
+    }
+
+    public void dfs(TreeNode root){
+
+        if(root == null) return;
+
+        mp.put(root.val,mp.getOrDefault(root.val,0)+1);
+
+        dfs(root.right);
+        dfs(root.left);
+    }
+}
+```
