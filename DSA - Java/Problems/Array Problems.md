@@ -4368,3 +4368,39 @@ class Solution {
     }
 }
 ```
+
+### [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
+
+```Java
+class Solution {
+    public int longestOnes(int[] nums, int k) {
+        
+        int i = 0;
+        int j = 0;
+
+        int zC = 0;
+        int max = 0;
+
+        while(i<=j && j<nums.length){
+            if(0 == nums[j]) zC++;
+            if(zC > k){
+                while(i<=j){
+                    if(nums[i] == 0){
+                        i++;
+                        break;
+                    }
+                    i++;
+                }
+                zC--;
+            }
+            max = Math.max(max,j-i+1);
+            System.out.println(i + " " + j);
+            j++;
+
+        }
+        return max;
+    }
+}
+```
+
+### []

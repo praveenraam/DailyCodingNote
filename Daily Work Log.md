@@ -1,3 +1,7 @@
+## Day 242
+#### Date : 11.09.2024
+- React Native Calculator Application
+- Leetcode Array, String, Bit Manipulation
 ## Day 241
 #### Date : 10.09.2024
 - React Native Calculator Application

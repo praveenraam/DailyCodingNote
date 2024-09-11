@@ -2393,3 +2393,41 @@ class Solution {
     }
 }
 ```
+
+### [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
+
+```Java
+class Solution {
+    public int maxConsecutiveAnswers(String answerKey, int k) {
+        int T = func(answerKey,k,'T');
+        int F = func(answerKey,k,'F');
+        return Math.max(T,F);
+    }
+
+    public int func(String aK, int k,char bool){
+
+        int i=0,j=0;
+        int wC = 0;
+        int max = 0;
+
+        while(i<=j && j < aK.length()){
+
+            if(aK.charAt(j) != bool) wC++;
+            if(wC > k){
+
+                while(i<=j){
+                    if(aK.charAt(i) != bool){
+                        i++;
+                        break;
+                    }
+                    i++;
+                }
+                wC--;
+            }
+            max = Math.max(max,j-i+1);
+            j++;
+        }
+        return max;
+    }
+}
+```

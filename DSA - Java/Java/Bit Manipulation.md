@@ -99,6 +99,10 @@ OR   -> 1111 -> which is 15
 ```
 
 #### XOR operator (^)
+
+Using XOR Operation, we can find the difference between two number's binary value in each row
+The 1 represent the values are different and 0 represent both values are same
+
 ```
 Odd No of 1  -> 1
 Even No of 1 -> 0

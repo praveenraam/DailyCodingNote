@@ -138,3 +138,46 @@ class Solution {
     }
 }
 ```
+
+### [https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description/](2220. Minimum Bit Flips to Convert Number)
+
+```Java
+class Solution {
+    public int minBitFlips(int start, int goal) {
+        int count = 0;
+        int val = start ^ goal;
+
+        while(val != 0){
+            int rez = val & 1;
+            if(rez == 1) count++;
+            val >>=1;
+        }
+        return count;
+    }
+}
+```
+
+### [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+
+```Java
+class Solution {
+    public int[] countBits(int n) {
+        int[] ar = new int[n+1];
+
+        for(int i=0;i<=n;i++){
+
+            int dup = i;
+            int count = 0;
+            while(dup!=0){
+                int val = dup & 1;
+                if(val == 1) count++;
+
+                dup >>=1;
+            }
+
+            ar[i] = count;
+        }
+        return ar;
+    }
+}
+```
