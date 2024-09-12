@@ -1252,3 +1252,30 @@ class Solution {
     }
 }
 ```
+
+### [1742. Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/description/)
+
+```Java
+class Solution {
+    public int countBalls(int lowLimit, int highLimit) {
+        
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        int max = 0;
+
+        for(int i=lowLimit;i<=highLimit;i++){
+            
+            String s = String.valueOf(i);
+
+            int val = 0;
+            for(char ch : s.toCharArray()){
+                val+= (Integer.parseInt(String.valueOf(ch)));
+            }
+            // System.out.println(i + " " + val);
+            mp.put(val,mp.getOrDefault(val,0)+1);
+            max = Math.max(max,mp.get(val));
+        }
+
+        return max;
+    }
+}
+```

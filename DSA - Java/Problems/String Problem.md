@@ -2431,3 +2431,33 @@ class Solution {
     }
 }
 ```
+
+### [1684. Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/)
+
+```Java
+class Solution {
+    public int countConsistentStrings(String allowed, String[] words) {
+        HashSet<Character> st = new HashSet<>();
+        int res = 0;
+
+        for(char ch : allowed.toCharArray()){
+            st.add(ch);
+        }   
+
+        for(int i=0;i<words.length;i++){
+            boolean flag = true;
+
+            for(char ch : words[i].toCharArray()){
+
+                if(!st.contains(ch)){
+                    flag = false;
+                    break;
+                }
+
+            }
+            if(flag) res++;
+        }
+        return res;
+    }
+}
+```

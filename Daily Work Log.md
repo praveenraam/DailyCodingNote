@@ -1,3 +1,8 @@
+## Day 243
+#### Date : 12.09.2024
+- React Native Calculator Application
+- Leetcode Array, String
+- SQL Basics
 ## Day 242
 #### Date : 11.09.2024
 - React Native Calculator Application

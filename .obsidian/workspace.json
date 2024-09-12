@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ac322c60f215bf34",
+        "id": "89737d91c119d324",
         "type": "tabs",
         "children": [
           {
-            "id": "34180fef6b0d3f21",
+            "id": "b002426ce9a2342c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Java/Graphs.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA - Java/Java/Graphs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA - Java/Java/Graphs.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Java/Graphs.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,8 +139,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34180fef6b0d3f21",
+  "active": "b002426ce9a2342c",
   "lastOpenFiles": [
+    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
+    "SQL/Syntax/3.WHERE.md",
+    "SQL/Syntax/4.ORDER BY.md",
+    "SQL/Syntax/2.Select.md",
+    "SQL/Introduction.md",
+    "SQL/Syntax/1.Important Commands.md",
+    "DSA - Java/Java/Graphs.md",
+    "SQL/Syntax",
+    "Untitled",
+    "SQL",
     "Pasted image 20240829011642.png",
     "Pasted image 20240829010329.png",
     "Pasted image 20240829010110.png",
@@ -166,35 +168,25 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/Graphs.md",
     "DSA - Java/Git/Basic commands.md",
     "DSA - Java/Java/Interview Questions/Set 1.md",
     "DSA - Java/Java/Interview Questions/D.md",
     "DSA - Java/Java/Interview Questions",
     "Placement/PS Preparation/Level 5.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
-    "DSA - Java/Java/Recursion.md",
-    "DSA - Java/Java/Collections.md",
-    "DSA - Java/Java/Sorting Techniques.md",
-    "Operating-System/CPU Scheduling/MLQ & MLFQ.md",
     "Pasted image 20240727192406.png",
-    "Operating-System/CPU Scheduling/MLFQ Scheduling.md",
     "Pasted image 20240727185228.png",
     "Pasted image 20240727185222.png",
     "Pasted image 20240727185214.png",
     "Pasted image 20240727185204.png",
     "Pasted image 20240727185115.png",
     "Pasted image 20240727161754.png",
-    "Pasted image 20240727161737.png",
     "Operating-System/CPU Scheduling/RRR with different At",
     "Placement/Github",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
     "Operating-System/Basics of OS",
     "Operating-System/Imgs",
-    "Operating-System",
-    "Placement/PS Preparation/main.exe",
-    "Placement/PS Preparation/main.c",
     "Untitled.canvas"
   ]
 }
