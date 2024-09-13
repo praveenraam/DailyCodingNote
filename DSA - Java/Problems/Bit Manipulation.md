@@ -181,3 +181,24 @@ class Solution {
     }
 }
 ```
+
+### [1310. XOR Queries of a Subarray](https://leetcode.com/problems/xor-queries-of-a-subarray/description/)
+
+```Java
+class Solution {
+    public int[] xorQueries(int[] arr, int[][] queries) {
+        
+        int[] res = new int[queries.length];
+        int j=0;
+
+        for(int[] ar: queries){
+            int val = 0;
+            for(int i=ar[0];i<=ar[1];i++){
+                val = arr[i]^val;
+            }
+            res[j++] = val;
+        }
+        return res;
+    }
+}
+```
