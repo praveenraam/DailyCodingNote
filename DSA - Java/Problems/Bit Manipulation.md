@@ -202,3 +202,30 @@ class Solution {
     }
 }
 ```
+
+### [2419. Longest Subarray With Maximum Bitwise AND](https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/description/)
+
+```Java
+class Solution {
+    public int longestSubarray(int[] nums) {
+        
+        int max = 0;
+
+        for(int num : nums){
+            max = Math.max(num,max);
+        }
+
+        int res = 1,len = 0;
+        for(int num : nums){
+            if(num == max){
+                len++;
+            }
+            else{
+                res = Math.max(len,res); 
+                len = 0;
+            }
+        }
+        return Math.max(len,res);
+    }
+}
+```
