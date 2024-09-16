@@ -2461,3 +2461,36 @@ class Solution {
     }
 }
 ```
+
+### [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/)
+
+```Java
+class Solution {
+    public int findMinDifference(List<String> timePoints) {
+        
+        int[] ar = new int[timePoints.size()];
+        
+        for(int i = 0;i<ar.length;i++){
+
+            String[] sAr = timePoints.get(i).split(":");
+            int hr = Integer.parseInt(sAr[0]);
+            int mn = Integer.parseInt(sAr[1]);
+
+            int tot = hr*60;
+            tot+=mn;
+
+            ar[i] = tot;
+        }
+        Arrays.sort(ar);
+        System.out.println(Arrays.toString(ar));
+
+        int res = Integer.MAX_VALUE;
+        for(int i = 1;i<ar.length;i++){ 
+            res = Math.min(res,ar[i]-ar[i-1]);
+        }
+
+        res = Math.min(res,(1440-ar[ar.length-1]+ar[0]));
+        return res;
+    }
+}
+```
