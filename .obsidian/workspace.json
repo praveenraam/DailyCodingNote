@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "89737d91c119d324",
+        "id": "f413fbafea23e383",
         "type": "tabs",
         "children": [
           {
-            "id": "b002426ce9a2342c",
+            "id": "cf0c17e71869fbc0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "SQL/Syntax/9. Aggregate Function.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "SQL/Syntax/9. Aggregate Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "SQL/Syntax/9. Aggregate Function.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "SQL/Syntax/9. Aggregate Function.md"
+              }
             }
           }
         ],
@@ -139,11 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b002426ce9a2342c",
+  "active": "cf0c17e71869fbc0",
   "lastOpenFiles": [
-    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
-    "SQL/Syntax/3.WHERE.md",
+    "SQL/Syntax/3.WHERE and AND, OR.md",
+    "SQL/Syntax/9. Aggregate Function.md",
+    "SQL/Syntax/8. SELECT TOP.md",
+    "SQL/Syntax/7. DELETE.md",
+    "SQL/Syntax/6. UPDATE.md",
     "SQL/Syntax/4.ORDER BY.md",
+    "SQL/Syntax/5. INTO.md",
+    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
     "SQL/Syntax/2.Select.md",
     "SQL/Introduction.md",
     "SQL/Syntax/1.Important Commands.md",
@@ -168,12 +181,7 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Git/Basic commands.md",
-    "DSA - Java/Java/Interview Questions/Set 1.md",
-    "DSA - Java/Java/Interview Questions/D.md",
     "DSA - Java/Java/Interview Questions",
-    "Placement/PS Preparation/Level 5.md",
-    "DSA - Java/Java/Sorting Techniques 2.md",
     "Pasted image 20240727192406.png",
     "Pasted image 20240727185228.png",
     "Pasted image 20240727185222.png",

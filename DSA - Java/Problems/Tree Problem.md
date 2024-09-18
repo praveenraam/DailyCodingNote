@@ -1433,3 +1433,31 @@ class Solution {
     }
 }
 ```
+
+### [897. Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/description/)
+
+```Java
+class Solution {
+    PriorityQueue<Integer> hp = new PriorityQueue<>();
+    public TreeNode increasingBST(TreeNode root) {
+        dfs(root);
+        TreeNode res = new TreeNode(0);
+        TreeNode dup = res;
+
+        while(!hp.isEmpty()){
+            TreeNode newOne = new TreeNode(hp.poll());
+            dup.right = newOne;
+            dup = newOne;
+        }
+        return res.right;
+    }
+    public void dfs(TreeNode root){
+
+        if(root == null) return;
+
+        hp.add(root.val);
+        dfs(root.left);
+        dfs(root.right);
+    }
+}
+```
