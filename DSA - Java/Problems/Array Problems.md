@@ -4403,4 +4403,24 @@ class Solution {
 }
 ```
 
-### []
+### [386. Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/)
+
+```Java
+class Solution {
+    public List<Integer> lexicalOrder(int n) {
+        List<String> ls = new ArrayList<>();
+        for(int i=1;i<=n;i++){
+            ls.add(String.valueOf(i));
+        }
+
+        Collections.sort(ls);
+        System.out.println(ls);
+
+        List<Integer> res = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            res.add(Integer.parseInt(ls.get(i)));
+        }
+        return res;
+    }
+}
+```
