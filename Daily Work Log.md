@@ -1,3 +1,7 @@
+## Day 254
+#### Date : 22.09.2024
+- React Native Workout Tracker
+- Leetcode Top 150
 ## Day 253
 #### Date : 21.09.2024
 - React Native Workout Tracker
