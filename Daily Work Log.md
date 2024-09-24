@@ -1,3 +1,8 @@
+## Day 255
+#### Date : 23.09.2024
+- React Native Workout Tracker
+- Leetcode Top 150
+- Completed C level 5
 ## Day 254
 #### Date : 22.09.2024
 - React Native Workout Tracker
