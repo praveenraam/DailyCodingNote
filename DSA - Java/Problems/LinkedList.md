@@ -1324,3 +1324,43 @@ class Solution {
     }
 }
 ```
+
+### [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
+
+```Java
+/*
+// Definition for a Node.
+class Node {
+    int val;
+    Node next;
+    Node random;
+
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
+*/
+
+class Solution {
+    public Node copyRandomList(Node head) {
+        HashMap<Node,Node> mp = new HashMap<>();
+
+        Node iter = head;
+        while(iter != null){
+            mp.put(iter,new Node(iter.val));
+            iter = iter.next;
+        }
+
+        iter = head;
+        while(iter != null){
+            mp.get(iter).next = mp.get(iter.next);
+            mp.get(iter).random = mp.get(iter.random);
+            iter = iter.next;
+        }
+
+        return mp.get(head);
+    }
+}
+```
