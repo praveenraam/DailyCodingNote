@@ -1,3 +1,7 @@
+## Day 269
+#### Date : 09.10.2024
+- Leetcode Top 150
+- React Native Workout Tracker
 ## Day 268
 #### Date : 07.10.2024
 - Leetcode Top 150
