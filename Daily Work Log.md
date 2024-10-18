@@ -1,5 +1,8 @@
-## Day 273
-#### Date : 16.10.2024
+## Day 275
+#### Date : 18.10.2024
+- Aptitude 
+- ## Day 274
+#### Date : 17.10.2024
 - Leetcode Top 150
 - React Native Workout Tracker
 ## Day 273
