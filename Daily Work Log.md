@@ -1,4 +1,9 @@
 ## Day 280
+#### Date : 24.10.2024
+- Aptitude
+- Leetcode Problems
+- Laravel - Alumni Network
+## Day 280
 #### Date : 23.10.2024
 - Aptitude
 - Leetcode Problems
