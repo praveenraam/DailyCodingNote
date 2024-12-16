@@ -1,12 +1,44 @@
-## Day 279
+## Day 291
+#### Date : 16.10.2024
+- OOPS in Java
+## Day 290
 #### Date : 14.10.2024
 - Made some changes for developing API in laravel Alumni Network
-## Day 279
+## Day 289
 #### Date : 11.12.2024
 - Documentation was read for Laravel API
-## Day 279
+## Day 286
 #### Date : 9.12.2024
 - Alumni Network React Native Application was planned, we are making laravel API for the mobile Application.
+## Day 285
+#### Date : 28.10.2024
+- Leetcode
+- Laravel - Alumni Network
+## Day 284
+#### Date : 27.10.2024
+- Leetcode Problems
+## Day 283
+#### Date : 26.10.2024
+- Leetcode Problems
+- Laravel - Alumni Network
+## Day 282
+#### Date : 25.10.2024
+- Leetcode Problems
+## Day 281
+#### Date : 24.10.2024
+- Aptitude
+- Leetcode Problems
+- Laravel - Alumni Network
+## Day 280
+#### Date : 23.10.2024
+- Aptitude
+- Leetcode Problems
+- Laravel - Alumni Network
+## Day 279
+#### Date : 22.10.2024
+- Aptitude
+- Leetcode Problems
+- Laravel - Alumni Network
 ## Day 278
 #### Date : 21.10.2024
 - Aptitude
