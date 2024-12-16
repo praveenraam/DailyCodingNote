@@ -6,6 +6,7 @@ Here we only covers the Primitive Datatype
 There are several data types in Java Programming
 It is mandatory to represent the datatype before the declaring the variable 
 
+Primitive Data types are stored inside the stack memory, only the objects are stored inside the heap memory.
 #### Integer
 
 Integer is mentioned as int in Java 

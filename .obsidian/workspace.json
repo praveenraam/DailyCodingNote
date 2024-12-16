@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "09dc5bae02027189",
+        "id": "9dd4aa4431e45584",
         "type": "tabs",
         "children": [
           {
-            "id": "19cdc82a6962fe0d",
+            "id": "371718c2871befc9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OOPS - Java/Introduction.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "New tab"
             }
           }
         ]
@@ -52,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "wrapper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOPS - Java/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Introduction"
+              "title": "Backlinks"
             }
           },
           {
@@ -112,12 +107,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOPS - Java/Introduction.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Introduction"
+              "title": "Outgoing links"
             }
           },
           {
@@ -139,10 +133,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OOPS - Java/Introduction.md"
+                "file": "OOPS - Java/Wrapper Class.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction"
+              "title": "Outline of Wrapper Class"
             }
           }
         ],
@@ -163,41 +157,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19cdc82a6962fe0d",
+  "active": "71b30a88c170084e",
   "lastOpenFiles": [
-    "DSA - Java/OOPS/Exception handling.md",
+    "OOPS - Java/Wrapper Class.md",
+    "OOPS - Java/new Keyword.md",
+    "OOPS - Java/Constructors.md",
     "OOPS - Java/Introduction.md",
+    "DSA - Java/Java/Arrays.md",
+    "DSA - Java/Java/2D-Arrays.md",
+    "DSA - Java/Java/Architecture.md",
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/Data Types.md",
+    "OOPS - Java/IMGS",
+    "OOPS - Java/IMGS/Pasted image 20241216134834.png",
+    "DSA - Java/Java/Graphs.md",
+    "DSA - Java/Java/Heap and PriorityQueue.md",
+    "DSA - Java/Java/Bit Manipulation.md",
+    "DSA - Java/Java/Types of Tree.md",
+    "DSA - Java/Java/Linked List.md",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Hashing&Maps.md",
+    "DSA - Java/Mapping - 1.md",
+    "DSA - Java/Java/Recursion.md",
+    "DSA - Java/Java/Scoping.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
+    "DSA - Java/Java/Pattern Printing and problems.md",
+    "DSA - Java/Java/Function (Methods).md",
+    "DSA - Java/Java/Switch concepts.md",
+    "DSA - Java/Java/Conditions and Loops.md",
+    "DSA - Java/Java/Type conversion and casting.md",
+    "DSA - Java/Java/Input Program.md",
     "OOPS - Java/Introduction",
     "OOPS - Java",
-    "DSA - Java/OOPS/Basics.md",
-    "DSA - Java/OOPS/Advance concepts.md",
-    "README.md",
-    "SQL/Syntax/9. Aggregate Function.md",
-    "SQL/Syntax/3.WHERE and AND, OR.md",
-    "SQL/Syntax/8. SELECT TOP.md",
-    "SQL/Syntax/7. DELETE.md",
-    "SQL/Syntax/6. UPDATE.md",
-    "SQL/Syntax/4.ORDER BY.md",
-    "SQL/Syntax/5. INTO.md",
-    "DSA - Java/College Skills/Java Framework S4/Day 1.md",
-    "SQL/Syntax/2.Select.md",
-    "SQL/Introduction.md",
-    "SQL/Syntax/1.Important Commands.md",
-    "DSA - Java/Java/Graphs.md",
     "SQL/Syntax",
     "SQL",
     "Pasted image 20240829011642.png",
     "Pasted image 20240829010329.png",
     "Pasted image 20240829010110.png",
-    "DSA - Java/Java/Heap and PriorityQueue.md",
-    "DSA - Java/Java/Bit Manipulation.md",
-    "DSA - Java/Java/Types of Tree.md",
-    "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Java/Basic Math.md",
-    "DSA - Java/Java/Time and Space Complexity.md",
-    "DSA - Java/Java/Pattern Printing and problems.md",
-    "DSA - Java/Java/Scoping.md",
-    "DSA - Java/Java/Function (Methods).md",
     "DSA - Java/Java/Interview Questions",
     "Pasted image 20240727192406.png",
     "Pasted image 20240727185228.png",
@@ -205,12 +201,10 @@
     "Pasted image 20240727185214.png",
     "Pasted image 20240727185204.png",
     "Pasted image 20240727185115.png",
-    "Pasted image 20240727161754.png",
     "Operating-System/CPU Scheduling/RRR with different At",
     "Placement/Github",
     "Operating-System/CPU Scheduling",
     "Operating-System/System Structure",
-    "Operating-System/Basics of OS",
     "Untitled.canvas"
   ]
 }

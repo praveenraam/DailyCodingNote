@@ -69,3 +69,15 @@ This file is interpreted on JVM
 
 The JVM requirements are provided by the JRE of JDK like lib , env .
 JRE is a box that contains the JVM . 
+
+## Dynamic Memory Allocation
+
+- This is nothing but the memory is allocated at the run time
+
+```Java
+ArrayList ls = new ArrayList();
+```
+
+The left side of the "=" is happening at the compile time and the right side is done in the run time.
+
+The ls is first stored in the stack memory and while in the run time, after memory allocation the reference variable is pointed to the object.
