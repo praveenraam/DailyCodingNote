@@ -1,8 +1,11 @@
 ## Day 279
-#### Date : 9.10.2024
+#### Date : 14.10.2024
+- Made some changes for developing API in laravel Alumni Network
+## Day 279
+#### Date : 11.12.2024
 - Documentation was read for Laravel API
 ## Day 279
-#### Date : 9.10.2024
+#### Date : 9.12.2024
 - Alumni Network React Native Application was planned, we are making laravel API for the mobile Application.
 ## Day 278
 #### Date : 21.10.2024
