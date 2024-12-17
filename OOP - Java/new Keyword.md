@@ -1,5 +1,5 @@
 Topic No :  2
-Previous Topic : [[OOPS - Java/Introduction|Introduction]]
+Previous Topic : [[OOP - Java/Introduction|Introduction]]
 Next Topic : [[Constructors]]
 Video [Link](https://youtu.be/BSVKUk58K6U?si=ootRdgB11jU6AASE)
 Content : new keyword

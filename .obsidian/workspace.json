@@ -11,10 +11,14 @@
             "id": "371718c2871befc9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OOP - Java/Garbage collections.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Garbage collections"
             }
           }
         ]
@@ -159,17 +163,18 @@
   },
   "active": "71b30a88c170084e",
   "lastOpenFiles": [
+    "OOP - Java/Constructors.md",
+    "OOP - Java/Garbage collections.md",
     "OOPS - Java/Wrapper Class.md",
-    "OOPS - Java/new Keyword.md",
-    "OOPS - Java/Constructors.md",
-    "OOPS - Java/Introduction.md",
+    "OOP - Java/new Keyword.md",
+    "OOP - Java/Introduction.md",
     "DSA - Java/Java/Arrays.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Java/First Program.md",
     "DSA - Java/Java/Data Types.md",
-    "OOPS - Java/IMGS",
-    "OOPS - Java/IMGS/Pasted image 20241216134834.png",
+    "OOP - Java/IMGS",
+    "OOP - Java/IMGS/Pasted image 20241216134834.png",
     "DSA - Java/Java/Graphs.md",
     "DSA - Java/Java/Heap and PriorityQueue.md",
     "DSA - Java/Java/Bit Manipulation.md",
@@ -186,9 +191,8 @@
     "DSA - Java/Java/Switch concepts.md",
     "DSA - Java/Java/Conditions and Loops.md",
     "DSA - Java/Java/Type conversion and casting.md",
-    "DSA - Java/Java/Input Program.md",
     "OOPS - Java/Introduction",
-    "OOPS - Java",
+    "OOP - Java",
     "SQL/Syntax",
     "SQL",
     "Pasted image 20240829011642.png",

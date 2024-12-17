@@ -1,6 +1,9 @@
+## Day 292
+#### Date : 17.10.2024
+- OOP in Java
 ## Day 291
 #### Date : 16.10.2024
-- OOPS in Java
+- OOP in Java
 ## Day 290
 #### Date : 14.10.2024
 - Made some changes for developing API in laravel Alumni Network

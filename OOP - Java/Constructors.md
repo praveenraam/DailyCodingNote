@@ -1,7 +1,7 @@
 Topic No : 3
 Previous topic : [[new Keyword]]
-Next topic :
-Content : constructors, this keyword 
+Next topic : [[Garbage collections]]
+Content : constructors, this keyword, final keyword
 
 #### Constructor is a special function, this defines what happens when object is created
 
@@ -120,3 +120,37 @@ Student(){
 
 Passing the parameters correctly will be calling the desired constructor
 
+### Final keyword
+
+The variable declared with final keyword can't be altered
+
+```Java
+// Syntax
+final datatype VARIABLENAME = VALUE;
+```
+
+It is mandatory to use all Capitalize for the variable name for knowing it, it is declared with final keyword.
+
+```Java
+final int VALUE = 2;
+VALUE = 3; // This gives error.
+```
+
+When you declare a variable, it must be initialized. 
+
+### Final for Primitive vs Non Primitive
+
+For Primitive data types you can reassign the value 
+
+For non primitive data types, you can't change the reference point but you can change the value
+
+```Java
+class Output{
+	public static void main(String args[]){
+		final Student stdnt1 = new Student(10,"Praveen",93.1);
+		stdnt1.name = "PraveenRaam"; // this is possible
+		stdnt1 = new Student(11,"selva",91.1); // This is not possible
+	}
+}
+```
+You can't change the reference variable pointing obj, but can change the value of objects
