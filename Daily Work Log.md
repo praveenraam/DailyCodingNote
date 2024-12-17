@@ -1,6 +1,7 @@
 ## Day 292
 #### Date : 17.10.2024
 - OOP in Java
+- Leetcode two pointer
 ## Day 291
 #### Date : 16.10.2024
 - OOP in Java
