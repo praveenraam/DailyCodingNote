@@ -1279,3 +1279,75 @@ class Solution {
     }
 }
 ```
+
+### [Find minimum number of currency notes and values that sum to given amount](https://www.geeksforgeeks.org/find-number-currency-notes-sum-upto-given-amount/)
+
+```Java
+import java.util.*;
+public class MinimumCurrencyNote {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int[] arr = {2000,500,200,100,50,20,10,5,1};
+        int value = in.nextInt();
+
+        for(int i=0;i<arr.length;i++){
+            int count = 0;
+            while(arr[i]<=value){
+                value-=arr[i];
+                count++;
+            }
+            if(count >= 1){
+                System.out.println(arr[i]+" : "+count);
+            }
+        }
+    }
+}
+```
+
+```Java
+import java.util.*;
+public class MinimumCurrencyNote {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int[] arr = {2000,500,200,100,50,20,10,5,1};
+        int value = in.nextInt();
+
+        for(int i=0;i<arr.length;i++){
+            int count = 0;
+            while(arr[i]<=value){
+                value-=arr[i];
+                count++;
+            }
+            if(count >= 1){
+                System.out.println(arr[i]+" : "+count);
+            }
+        }
+    }
+}
+```
+
+### [2164. Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/)
+
+```Java
+class Solution {
+    public int[] sortEvenOdd(int[] nums) {
+        ArrayList<Integer> ev = new ArrayList<>();
+        ArrayList<Integer> od = new ArrayList<>();
+
+        for(int i=0;i<nums.length;i+=2) ev.add(nums[i]);
+        for(int j=1;j<nums.length;j+=2) od.add(nums[j]);
+
+        Collections.sort(ev);
+        Collections.sort(od);
+
+        int ite=0;
+        for(int i=0;i<nums.length;i+=2) nums[i] = ev.get(ite++);
+        ite = od.size()-1;
+        for(int i=1;i<nums.length;i+=2) nums[i] = od.get(ite--);
+
+        return nums;
+    }
+}
+```
