@@ -1327,27 +1327,3 @@ public class MinimumCurrencyNote {
     }
 }
 ```
-
-### [2164. Sort Even and Odd Indices Independently](https://leetcode.com/problems/sort-even-and-odd-indices-independently/)
-
-```Java
-class Solution {
-    public int[] sortEvenOdd(int[] nums) {
-        ArrayList<Integer> ev = new ArrayList<>();
-        ArrayList<Integer> od = new ArrayList<>();
-
-        for(int i=0;i<nums.length;i+=2) ev.add(nums[i]);
-        for(int j=1;j<nums.length;j+=2) od.add(nums[j]);
-
-        Collections.sort(ev);
-        Collections.sort(od);
-
-        int ite=0;
-        for(int i=0;i<nums.length;i+=2) nums[i] = ev.get(ite++);
-        ite = od.size()-1;
-        for(int i=1;i<nums.length;i+=2) nums[i] = od.get(ite--);
-
-        return nums;
-    }
-}
-```

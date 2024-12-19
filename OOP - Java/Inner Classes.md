@@ -1,7 +1,7 @@
 Topic No : 7
 Previous Topic : [[Static Keyword]]
-Next Topic : 
-Content : 
+Next Topic : [[Singleton Class]]
+Content : Inner Classes
 
 The inner classes is nothing but the class that is created inside the another class.
 
@@ -12,7 +12,7 @@ public class InnerClasses {
     class TestClass1{  
     
     }  
-  
+    
     static class TestClass2{  
       
     }  

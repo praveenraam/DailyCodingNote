@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP - Java/Inner Classes.md",
+                "file": "DSA - Java/Java/Heap and PriorityQueue.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inner Classes"
+              "title": "Heap and PriorityQueue"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OOP - Java/Inner Classes.md"
+                "file": "DSA - Java/Java/Heap and PriorityQueue.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Inner Classes"
+              "title": "Outline of Heap and PriorityQueue"
             }
           }
         ],
@@ -164,6 +164,11 @@
   },
   "active": "accc711a01af1e88",
   "lastOpenFiles": [
+    "OOP - Java/Inheritance.md",
+    "OOP - Java/IMGS/Pasted image 20241219122629.png",
+    "OOP - Java/Principles of OOP.md",
+    "OOP - Java/Singleton Class.md",
+    "OOP - Java/Inner Classes.md",
     "DSA - Java/Java/Strings.md",
     "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Binary Search.md",
@@ -185,11 +190,6 @@
     "DSA - Java/Java/First Program.md",
     "DSA - Java/Problems/Math Problems.md",
     "DSA - Java/Java/Basic Math.md",
-    "DSA - Java/Java/Time and Space Complexity.md",
-    "OOP - Java/Inner Classes.md",
-    "OOP - Java/Static Keyword.md",
-    "OOP - Java/Packages.md",
-    "OOP - Java/Garbage collections.md",
     "OOP - Java/IMGS/Pasted image 20241217203806.png",
     "OOP - Java/IMGS/Pasted image 20241217203910.png",
     "OOP - Java/IMGS",
@@ -205,7 +205,6 @@
     "Pasted image 20240727192406.png",
     "Pasted image 20240727185228.png",
     "Pasted image 20240727185222.png",
-    "Pasted image 20240727185214.png",
     "Operating-System/CPU Scheduling/RRR with different At",
     "Placement/Github",
     "Operating-System/CPU Scheduling",
