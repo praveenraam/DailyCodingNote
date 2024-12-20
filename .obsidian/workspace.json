@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0b07e9eda5654d24",
+        "id": "09c21ee312b645f0",
         "type": "tabs",
         "children": [
           {
-            "id": "c68e00fe3d9cb3fc",
+            "id": "8443fb3ae96c7051",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OOP - Java/Polymorphism.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Polymorphism"
             }
           }
         ]
@@ -134,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "OOP - Java/Polymorphism.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Polymorphism"
             }
           }
         ],
@@ -156,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c68e00fe3d9cb3fc",
+  "active": "8443fb3ae96c7051",
   "lastOpenFiles": [
     "OOP - Java/IMGS/Pasted image 20241220112110.png",
     "OOP - Java/IMGS/Pasted image 20241220112100.png",

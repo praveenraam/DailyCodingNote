@@ -4441,3 +4441,94 @@ class Solution {
     }
 }
 ```
+
+### [Find an array element such that all elements are divisible by it](https://www.geeksforgeeks.org/number-among-n-numbers-numbers-divisible/)
+
+```Java
+// Given an array of numbers, find the number among them such that all numbers are divisible by it. If not possible print -1.
+import java.util.*;
+public class DivisorOfArray {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int size = in.nextInt();
+        int[] arr = new int[size];
+
+        for(int i = 0;i<size;i++){
+            arr[i] = in.nextInt();
+        }
+
+        System.out.println(Solution(arr));
+    }
+
+    public static int Solution(int[] arr){
+        int min = Min(arr);
+        for(int i=0;i<arr.length;i++) if(arr[i]%min != 0) return -1;
+        return min;
+    };
+
+    public static int Min(int[] arr){
+        int min = Integer.MAX_VALUE;
+        for(int i=0;i<arr.length;i++) min = Math.min(min,arr[i]);
+        return min;
+    }
+}
+```
+
+### [Boolean Matrix](https://www.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/0)
+
+```Java
+class Solution {
+    void booleanMatrix(int mat[][]) {
+        boolean[] col = new boolean[mat[0].length];
+        boolean[] row = new boolean[mat.length];
+        
+        for(int i=0;i<row.length;i++) row[i] = false;
+        for(int i=0;i<col.length;i++) col[i] = false;
+        
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[i].length;j++){
+                if(mat[i][j] == 1){
+                    col[i] = true;
+                    row[j] = true;
+                }
+            }
+        }
+        
+        for(int i=0;i<col.length;i++){
+            if(col[i]){
+                for(int j=0;j<col.length;j++){
+                    mat[i][j] = 1;
+                }
+            }
+            if(row[i]){
+                for(int j=0;j<row.length;j++){
+                    mat[j][i] = 1;
+                }
+            }
+        }     
+    }
+}
+```
+
+### [Check for subsequence](https://www.geeksforgeeks.org/problems/check-for-subsequence4930/1)
+```Java
+class Solution{
+    boolean isSubSequence(String A, String B){
+        
+        int p1 = 0;
+        int p2 = 0;
+        
+        while(p1<A.length() && p2<B.length()){
+            
+            if(A.charAt(p1) == B.charAt(p2)) p1++;
+            p2++;
+            
+            if(A.length() == p1) return true;
+            if(B.length() == p2) return false;
+            
+        }
+        
+        return false;  
+    }
+}
+```
