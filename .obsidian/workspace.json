@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b7bf70e04dd12caf",
+        "id": "0b07e9eda5654d24",
         "type": "tabs",
         "children": [
           {
-            "id": "accc711a01af1e88",
+            "id": "c68e00fe3d9cb3fc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Java/Heap and PriorityQueue.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Heap and PriorityQueue"
+              "title": "New tab"
             }
           }
         ]
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DSA - Java/Java/Heap and PriorityQueue.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Heap and PriorityQueue"
+              "title": "Outline"
             }
           }
         ],
@@ -162,11 +156,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "accc711a01af1e88",
+  "active": "c68e00fe3d9cb3fc",
   "lastOpenFiles": [
+    "OOP - Java/IMGS/Pasted image 20241220112110.png",
+    "OOP - Java/IMGS/Pasted image 20241220112100.png",
+    "OOP - Java/Polymorphism.md",
     "OOP - Java/Inheritance.md",
-    "OOP - Java/IMGS/Pasted image 20241219122629.png",
     "OOP - Java/Principles of OOP.md",
+    "OOP - Java/Types of Inheritance.md",
+    "Pasted image 20241220112110.png",
+    "Pasted image 20241220112100.png",
+    "OOP - Java/IMGS/Pasted image 20241220110645.png",
+    "OOP - Java/IMGS/Pasted image 20241220105404.png",
+    "OOP - Java/IMGS/Pasted image 20241220105239.png",
+    "OOP - Java/IMGS/Pasted image 20241220101403.png",
+    "DSA - Java/Java/Heap and PriorityQueue.md",
+    "OOP - Java/IMGS/Pasted image 20241219122629.png",
     "OOP - Java/Singleton Class.md",
     "OOP - Java/Inner Classes.md",
     "DSA - Java/Java/Strings.md",
@@ -187,24 +192,14 @@
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/First Program.md",
-    "DSA - Java/Problems/Math Problems.md",
-    "DSA - Java/Java/Basic Math.md",
     "OOP - Java/IMGS/Pasted image 20241217203806.png",
     "OOP - Java/IMGS/Pasted image 20241217203910.png",
     "OOP - Java/IMGS",
-    "OOP - Java/IMGS/Pasted image 20241216134834.png",
     "OOPS - Java/Introduction",
     "OOP - Java",
     "SQL/Syntax",
     "SQL",
-    "Pasted image 20240829011642.png",
-    "Pasted image 20240829010329.png",
-    "Pasted image 20240829010110.png",
     "DSA - Java/Java/Interview Questions",
-    "Pasted image 20240727192406.png",
-    "Pasted image 20240727185228.png",
-    "Pasted image 20240727185222.png",
     "Operating-System/CPU Scheduling/RRR with different At",
     "Placement/Github",
     "Operating-System/CPU Scheduling",

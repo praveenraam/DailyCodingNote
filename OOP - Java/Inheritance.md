@@ -1,11 +1,12 @@
 Topic reference From [[Principles of OOP]]
+Next Topic : [[Types of Inheritance]]
+Content : Extends keyword, creating obj, super keyword
 
 ### Passing the properties of parent to the child is called Inheritance
 
 Inheritance is a mechanism in OOP where a **child class (subclass)** inherits the **properties (attributes) and behaviors (methods)** of a **parent class (superclass)** and the children also have it own attributes and methods.
 
 The child's own prop can't be accessed by the parent class.
-
 ### Private modifier
 The properties and the methods that are declared as private can't be access by the child.
 Any member declared private, that can be only used within that file.
@@ -63,6 +64,12 @@ public class Box {
         this.h = h;  
         this.w = w;  
     }
+	// Using the excisting obj to create an another
+	public Box(Box old){  
+	    this.w = old.w;  
+	    this.h = old.h;  
+	    this.l = old.l;  
+	}
     public void PrivateExampleChange(double newValue){  
 	    PrivateExample = newValue;  
 	}
@@ -84,7 +91,7 @@ public class BoxWeight extends Box{
         this.weight = weight;  
     }  
     public BoxWeight(double size,double weight){  
-        super(size); // This call cube's contructor of the parent class  
+        super(size); // This call cube's contructor of the parent class, this has to be first.
         this.weight = weight;  
     }  
     public void AccessProps(){  
@@ -94,7 +101,7 @@ public class BoxWeight extends Box{
     }  
 }
 ```
-
+If we don't use the super class, it will call the default constructor. else if you are using the super keyword, then you must use it in first line of the function.
 ### Creating Objects
 
 Main.java
@@ -136,3 +143,29 @@ There the weight variable will be also initialized but it can't access.
 
 ##### Box 8
 The vice-verse of the Box7 is Box8, that is not possible to do, as the parent are not aware of the props of the child
+
+### Super Keyword
+
+Whenever the subclass need to refer the superclass constructor that is defined for that we need "super" keyword.
+
+All the classes are extend of the Object class which is inbuild.
+
+We can use the super keyword to refer the variable from the subclass.
+
+```Java
+public BoxWeight(BoxWeight other){
+	super(other);
+	this.weight = other.weight;
+}
+```
+This is possible, because this will call the below superclass constructor
+
+```Java
+// Using the excisting obj to create an another
+	public Box(Box old){  
+	    this.w = old.w;  
+	    this.h = old.h;  
+	    this.l = old.l;  
+	}
+```
+
