@@ -4532,3 +4532,91 @@ class Solution{
     }
 }
 ```
+
+### [Sort elements on the basis of number of factors](https://www.geeksforgeeks.org/sort-elements-basis-number-factors/)
+
+```Java
+package ProblemSolving;
+
+import java.util.*;
+public class SortElemetsOnFactors {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int size = in.nextInt();
+
+        int[] arr = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i] = in.nextInt();
+        }
+        System.out.println(Arrays.toString(sol(arr)));
+    }
+    static int[] sol(int[] arr){
+        TreeMap<Integer,Integer> tm = new TreeMap<>();
+        for(int i=0;i< arr.length;i++){
+            tm.put(arr[i],noOfFactors(arr[i]));
+        }
+
+        PriorityQueue<int[]> hp = new PriorityQueue<>((a,b)->Integer.compare(b[1],a[1]));
+        for(int n : tm.keySet()){
+            hp.offer(new int[] {n,tm.get(n)});
+        }
+
+        int i=0;
+        while(!hp.isEmpty()){
+            int no1 = hp.poll()[0];
+            arr[i++] = no1;
+        }
+        return arr;
+    }
+    static int noOfFactors(int n){
+        int count = 0;
+        for(int i=1;i<=n;i++){
+            if(n%i == 0) count++;
+        }
+        return count;
+    }
+}
+```
+
+### [Index of an Extra Element](https://www.geeksforgeeks.org/problems/index-of-an-extra-element/1)
+
+```Java
+class Solution {
+    public int findExtra(int a[], int b[]) {
+        int i;
+        for(i=0;i<b.length;i++){
+            if(a[i] != b[i]) return i;
+        }
+        if(i<a.length) return i;
+        return -1;
+    }
+}
+```
+
+### [Flood Fill](https://leetcode.com/problems/flood-fill/description/)
+
+```Java
+class Solution {
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        int source = image[sr][sc];
+        
+        if(source == color){
+            return image;
+        }
+        sol(image,sr,sc,color,source);
+        return image;
+    }
+    public void sol(int[][] image,int sr,int sc,int color,int source){
+
+        if(sr<0 || sr>=image.length || sc<0 || sc>=image[sr].length || image[sr][sc] != source) return;
+
+        image[sr][sc] = color; 
+
+        sol(image,sr+1,sc,color,source);
+        sol(image,sr-1,sc,color,source);
+        sol(image,sr,sc+1,color,source);
+        sol(image,sr,sc-1,color,source);
+    }
+}
+```
