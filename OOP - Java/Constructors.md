@@ -122,21 +122,39 @@ Passing the parameters correctly will be calling the desired constructor
 
 ### Final keyword
 
-The variable declared with final keyword can't be altered
-
+##### Variables
+The variable declared with final keyword can't be altered.
 ```Java
 // Syntax
 final datatype VARIABLENAME = VALUE;
 ```
-
 It is mandatory to use all Capitalize for the variable name for knowing it, it is declared with final keyword.
 
 ```Java
 final int VALUE = 2;
 VALUE = 3; // This gives error.
 ```
-
 When you declare a variable, it must be initialized. 
+
+##### Methods/Functions
+The methods declared with final keyword can't be done overriding in the subclasses
+
+```Java
+// Syntax 
+public/private final void methodName(){
+	System.out.println("");
+}
+```
+
+##### Class
+Classes with final keyword can't be extended (Inherited), it mean it can't act as a parent class (super class).
+When a class used as final, automatically all the ==methods of the functions are also can't be altered.==
+
+```Java
+final class Example{  
+	// Body     
+}
+```
 
 ### Final for Primitive vs Non Primitive
 

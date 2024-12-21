@@ -1,76 +1,22 @@
 Topic referred from [[Principles of OOP]]
-Content : 
+Content : Types, Method overloading, Method override.
 
 ### What is polymorphism
 
 Poly - Many
 Morphism - way to represent
 
-Now we create a superclass Shapes and subclass Triangle, Circle and Square.
+Representing of function in different ways is polymorphism.
 
-Shapes.java
-```Java]
-public class Shapes {  
-    public void Area(){  
-        System.out.println("The area for shapes");  
-    }   
-}
-```
 
-Triangle.java
-```Java
-public class Triangle extends Shapes{  
-    public void Area(){  
-        System.out.println("The area is 0.5*h*b");  
-    }  
-}
-```
-
-Circle.java
-```Java
-public class Circle extends Shapes{  
-    public void Area(){  
-        System.out.println("The area is pie*r*r");  
-    }  
-}
-```
-
-Square.java
-```Java 
-public class Square extends Shapes{  
-    public void Area(){  
-        System.out.println("The area is l*l");  
-    }  
-}
-```
-
-Main.java
-```Java
-public class Main {  
-    public static void main(String[] args) {  
-        Shapes shape = new Shapes();  
-        Circle circle = new Circle();  
-        Square sqaure = new Square();  
-        Triangle triangle = new Triangle();  
-        
-        shape.Area();     // The area for shapes  
-        circle.Area();    // The area is pie*r*r
-        sqaure.Area();    // The area is l*l
-        triangle.Area();  // The area is 0.5*h*b
-    }  
-}
-```
-In this example, we call the same functions but it gave us output in different ways. Writing different constructors are also polymorphism.
-In this we used hierarchical Inheritance type to create the subclasses.
 ### Types of polymorphism
 
 ##### Static / Compile time Polymorphism : 
 This is achieved by method overloading.
-
-What is method overloading?
+This is also mentioned as ==early Binding==
+###### What is method overloading?
 
 It is when multiple methods with the same name exist with different parameters.
-
 Ex : multiple constructors in class, we used box class for example.
 
 The compile time polymorphism is named after java decides which method to run at the compile time. 
@@ -110,8 +56,41 @@ public class AdditionCalculator {
 
 Achieved by overriding.
 
-The overriding is nothing but the same function with different body.
-This overriding is mention with the annotation.
+- The overriding is nothing but the same function with different body.
+- This overriding is mention with the annotation.
+- The method to call is decided in the run time. 
+- If we used final in front of the method, it can't be overriding in the subclasses
+- This is also mentioned as ==late binding==
+
+Now we create a superclass Shapes and subclass Triangle, Circle and Square.
+
+Shapes.java
+```Java]
+public class Shapes {  
+    public void Area(){  
+        System.out.println("The area for shapes");  
+    }   
+}
+```
+
+Triangle.java
+```Java
+public class Triangle extends Shapes{  
+    public void Area(){  
+        System.out.println("The area is 0.5*h*b");  
+    }  
+}
+```
+
+Circle.java
+```Java
+public class Circle extends Shapes{  
+    public void Area(){  
+        System.out.println("The area is pie*r*r");  
+    }  
+}
+```
+In this example, we call the same functions but it gave us output in different ways. Writing different constructors are also polymorphism's example.
 
 Shapes.java
 ```Java]
@@ -139,8 +118,33 @@ public class Circle extends Shapes{
     }  
 }
 ```
+Square.java
+```Java 
+public class Square extends Shapes{  
+    public void Area(){  
+        System.out.println("The area is l*l");  
+    }  
+}
+```
 
-Main.java
+Ex 1 : Main.java
+```Java
+public class Main {  
+    public static void main(String[] args) {  
+        Shapes shape = new Shapes();  
+        Circle circle = new Circle();  
+        Square sqaure = new Square();  
+        Triangle triangle = new Triangle();  
+        
+        shape.Area();     // The area for shapes  
+        circle.Area();    // The area is pie*r*r
+        sqaure.Area();    // The area is l*l
+        triangle.Area();  // The area is 0.5*h*b
+    }  
+}
+```
+
+Ex 2 : Main.java
 ```Java
 public class Main{
 	public static void main(String[] args){
@@ -154,7 +158,47 @@ public class Main{
 // Output : The area is pie*r*r
 ```
 
-After overriding is done on a function, which Area to be called is depend on the object type, not the reference type. This is mentioned as ==**Upcasting**== 
+After overriding is done on a function, which Area to be called is depend on the object type, not the reference type. This is mentioned as ==**Upcasting**==. 
+
+##### Override in static method
+Static methods can't be override. 
+
+``Box boxweight = new BoxWeight();``
+Here the reference class is Box and obj class is BoxWeight, if we call a static method that is present in the both, it will call the reference class method and return the output.
+
+**The method defined static can be inherited but can't be override.**
+
+```Java
+public class Box{
+	public static void greet(){
+		System.out.println("From Box");
+	}
+}
+```
+
+```Java
+public class BoxWeight extends Box{
+	public static void greet(){
+		System.out.println("From BoxWeight");	
+	}
+}
+```
+
+Main.java
+```Java
+class Main{
+	public static void main(String[] args){
+		Box box = new Box();
+		BoxWeight boxweight = new BoxWeight();
+		
+		box.greet(); // From Box 
+		boxweight.greet(); // From BoxWeight
+		
+		// If there is no greet() in BoxWeight,
+		boxweight.greet(); // From Box
+	}
+}
+```
 
 ##### How java decide which method to run in dynamic polymorphism
 

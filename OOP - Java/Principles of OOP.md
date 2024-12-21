@@ -7,6 +7,6 @@ There are 4 fundamental properties are there for OOP, these provides the securit
 
 - Inheritance : [[Inheritance]]
 - Polymorphism : [[Polymorphism]]
-- Encapsulation 
-- Abstraction
+- Encapsulation : [[Encapsulation]]
+- Abstraction : [[Abstraction]]
 

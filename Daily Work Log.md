@@ -1,3 +1,11 @@
+## Day 296
+#### Date : 21.12.2024
+- OOP in java
+- GFG and Leetcode 
+## Day 295
+#### Date : 20.12.2024
+- OOP in java
+- GFG and Leetcode 
 ## Day 294
 #### Date : 19.12.2024
 - OOP in java

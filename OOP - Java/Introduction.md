@@ -10,13 +10,12 @@ Next Topic : [[new Keyword]]
 #### In class, functions will be referred as methods
 ## Why OOPS 
 
-If you need to storing data of multiple datatypes
-
+If you need to storing data of multiple datatypes, we can create a class as template and creating object as their instances
 
 ## What is 'class'
 
 A class is a named group of properties and functions
-We can create our own datatype
+We can create our own datatype.
 
 The variables used inside the classes are instance variable
 
