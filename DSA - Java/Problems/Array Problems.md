@@ -4640,3 +4640,67 @@ class Solution {
     }
 }
 ```
+
+### [Next Greater Element](https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1)
+```Java
+class Solution {
+    // Function to find the next greater element for each element of the array.
+    public ArrayList<Integer> nextLargerElement(int[] arr) {
+        int max = -1;
+        ArrayList<Integer> ls = new ArrayList<>();
+        
+        for(int i=0;i<arr.length;i++) ls.add(0);
+        
+        Stack<Integer> st = new Stack<>();
+        
+        for(int i=arr.length-1;i>=0;i--){
+            
+            if(st.isEmpty()){
+                st.push(arr[i]);
+                ls.set(i,-1);
+                continue;
+            }
+            while(!st.isEmpty() && st.peek()<=arr[i]){
+                st.pop();
+            }
+            
+            if(!st.isEmpty()) ls.set(i,st.peek());
+            else ls.set(i,-1);
+            
+            st.push(arr[i]);
+            
+        }
+        return ls;
+    }
+}
+```
+
+### [Modify the Array](https://www.geeksforgeeks.org/problems/ease-the-array0633/1)
+
+```java
+class Solution {
+    static ArrayList<Integer> modifyAndRearrangeArr(int arr[]) {
+        int p1 = 0;
+        
+        for(int i=0;i<arr.length;i++){
+            if(i+1 < arr.length && arr[i] == arr[i+1]){
+                arr[i] = arr[i]*2;
+                arr[i+1] = 0;
+            }
+        }
+        // System.out.println(Arrays.toString(arr));
+        
+        ArrayList<Integer> al = new ArrayList<>();
+        int count = 0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == 0) count++;
+            else al.add(arr[i]);
+        }
+        for(int i=0;i<count;i++){
+            al.add(0);
+        }
+        
+        return al;
+    }
+}
+```

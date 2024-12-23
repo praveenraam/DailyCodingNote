@@ -2494,3 +2494,61 @@ class Solution {
     }
 }
 ```
+
+### [Special array reversal](https://www.geeksforgeeks.org/problems/special-array-reversal2328/1)
+
+```Java
+class Solution
+{
+    public String reverse(String str)
+    {
+        StringBuilder sb = new StringBuilder();
+        
+        for(int i=str.length()-1;i>=0;i--){
+            char ch = str.charAt(i);
+            if(Character.isLetter(ch)) {
+                sb.append(ch);
+                // System.out.println(ch);
+            }
+        }
+        
+        for(int i=0;i<str.length();i++){
+            if(!Character.isLetter(str.charAt(i))) sb.insert(i,str.charAt(i));
+        }
+        
+        
+        return sb.toString();
+    }
+}
+```
+
+### [Missing in Array](https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1)
+
+```Java
+class Solution {
+    int missingNumber(int arr[]) {
+        int i = 0;
+        
+        while(i < arr.length){
+            if(arr[i] != (i+1)){
+                
+                if(arr[i] > arr.length){
+                    i++;
+                    continue;
+                }
+                
+                int temp = arr[i];
+                arr[i] = arr[temp-1];
+                arr[temp-1] = temp;
+            }
+            else i++;
+        }
+            
+        for(i=0;i<arr.length;i++){
+            if(arr[i] != i+1) return i+1;
+        }
+        
+        return arr.length+1;
+    }
+}
+```
