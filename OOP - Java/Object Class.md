@@ -1,6 +1,6 @@
 Topic No : 11
 Previous Topic : [[Access Modifiers]]
-Next Topic : 
+Next Topic : [[Abstract Class]]
 
 ### What is object class
 
@@ -41,6 +41,3 @@ public class Main {
 Use can access multiple methods after keeping (.) on getClass() method to access more information. ``obj1.getClass().methodName()``
 
 This can't be override because it is declared final.
-##### clone 
-
-##### toString
