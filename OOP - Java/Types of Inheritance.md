@@ -121,7 +121,7 @@ class Box {
 
 BoxWeight.java
 ```Java
-class BoxWeight {
+class BoxWeight extends Box{
 	double weight;
 	public BoxWeight(String name,double weight){
 		super(name);
@@ -132,7 +132,7 @@ class BoxWeight {
 
 BoxColor.java
 ```Java
-class BoxColor {
+class BoxColor extends Box{
 	String color;
 	public BoxColor(String name,String color){
 		super(name);
@@ -143,7 +143,7 @@ class BoxColor {
 
 BoxSpace.java
 ```Java
-class BoxSpace {
+class BoxSpace extends Box{
 	double space;
 	public BoxSpace(String name,double space){
 		super(name);

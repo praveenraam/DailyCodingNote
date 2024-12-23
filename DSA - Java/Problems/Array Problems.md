@@ -4620,3 +4620,23 @@ class Solution {
     }
 }
 ```
+
+### [Equilibrium Point](https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1)
+
+```Java
+class Solution {
+    public static int equilibriumPoint(int arr[]) {
+        int sum = 0;
+        for(int i=0;i<arr.length;i++) sum+=arr[i];
+        
+        int adder = arr[0];
+        for(int i=1;i<arr.length;i++){
+            // System.out.println(adder);
+            if(adder == (sum-adder-arr[i])) return (i+1);
+            adder+=arr[i];
+        }
+        
+        return -1;
+    }
+}
+```

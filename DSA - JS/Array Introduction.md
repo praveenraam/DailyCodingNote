@@ -1,4 +1,4 @@
-next topic : [[Object]]
+next topic : [[DSA - JS/Object]]
 
 It is a build in Data Types
 

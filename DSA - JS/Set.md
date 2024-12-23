@@ -1,4 +1,4 @@
-Topic to know before : [[Object]] 
+Topic to know before : [[DSA - JS/Object]] 
 Next Topic : [[Map]]
 
 - A set is a data structure that can hold a collection of values. The values however

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP - Java/Encapsulation.md",
+                "file": "OOP - Java/Object Class.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Encapsulation"
+              "title": "Object Class"
             }
           }
         ]
@@ -164,12 +164,17 @@
   },
   "active": "8443fb3ae96c7051",
   "lastOpenFiles": [
-    "OOP - Java/Abstraction.md",
-    "OOP - Java/Encapsulation.md",
-    "OOP - Java/Principles of OOP.md",
-    "OOP - Java/Polymorphism.md",
-    "OOP - Java/Inheritance.md",
+    "OOP - Java/Packages.md",
+    "OOP - Java/Object Class.md",
     "OOP - Java/Types of Inheritance.md",
+    "OOP - Java/Access Modifiers.md",
+    "OOP - Java/Principles of OOP.md",
+    "OOP - Java/IMGS/Pasted image 20241222091414.png",
+    "Operating-System/CPU Scheduling/MLQ & MLFQ.md",
+    "OOP - Java/Inheritance.md",
+    "OOP - Java/Encapsulation.md",
+    "OOP - Java/Abstraction.md",
+    "OOP - Java/Polymorphism.md",
     "OOP - Java/Constructors.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Problems/Array Problems.md",
@@ -195,11 +200,6 @@
     "DSA - Java/Java/Linear Search.md",
     "DSA - Java/Java/Hashing&Maps.md",
     "DSA - Java/Java/Recursion.md",
-    "DSA - Java/Mapping - 1.md",
-    "DSA - Java/Java/Sorting Techniques.md",
-    "DSA - Java/Java/Arrays.md",
-    "DSA - Java/Java/Scoping.md",
-    "OOP - Java/IMGS/Pasted image 20241217203806.png",
     "OOP - Java/IMGS",
     "OOPS - Java/Introduction",
     "OOP - Java",

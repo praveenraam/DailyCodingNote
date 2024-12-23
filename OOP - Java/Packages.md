@@ -9,7 +9,6 @@ Packages are containers for the classes, it is just a folder that allows you to 
 
 It simply allow us to store multiple files with the same name in different packages ( folders ). Those same name files are created for different use cases.
 
-
 #### Mentioning in first line
 
 ```Java
@@ -68,3 +67,22 @@ import java.util.ArrayList // For importing and using ArrayList
 
 This means nothing but the Array List class is inside the util folder which is inside the java folder.
 
+### In-Build Packages :
+
+
+**Java folder contains all these**, 
+###### "lang" packages : 
+- Very Important language specific stuffs are present in this.
+- This contains the primitive data types, operations everything
+- This no need to be imported separately because it is done automatically or internally.
+###### "io" package :
+- It contains input output stuffs
+- When we try to read or write files, optimize io for competitive programming these were used.
+###### "util" package :
+- It contains the data structures stuffs and collection frameworks inside it.
+###### "applet" package :
+- This is development focused one.
+###### "awt" package :
+- This is for creating GUI for window applications
+###### "net" package : 
+- This is for networking kind of works.
