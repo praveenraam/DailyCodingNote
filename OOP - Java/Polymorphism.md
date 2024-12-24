@@ -200,6 +200,19 @@ class Main{
 }
 ```
 
+### Access modifier changes
+
+While overriding the function, you can make the access modifier to visible more, can't make it less visible.
+
+private -> public , default, protected
+default -> public, protected
+protected -> public
+public can't be altered.
+
+**Example 1** :``private void methodName`` is there, while overriding we can change to ``protected void methodname`` or ``public void methodName`` 
+
+**Example 2** : ``protected void methodName`` can be changed to ``public void methodName``
+
 ##### How java decide which method to run in dynamic polymorphism
 
 This is decided with dynamic programming dispatch.

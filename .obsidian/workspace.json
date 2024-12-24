@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP - Java/Abstract Class.md",
+                "file": "OOP - Java/Interfaces.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abstract Class"
+              "title": "Interfaces"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "override",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOP - Java/Inner Classes.md",
+                "file": "OOP - Java/Interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Inner Classes"
+              "title": "Backlinks for Interfaces"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOP - Java/Encapsulation.md",
+                "file": "OOP - Java/Interfaces.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Encapsulation"
+              "title": "Outgoing links from Interfaces"
             }
           },
           {
@@ -146,11 +146,12 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,25 +165,32 @@
   },
   "active": "8443fb3ae96c7051",
   "lastOpenFiles": [
-    "OOP - Java/Object Class.md",
     "OOP - Java/Abstract Class.md",
+    "OOP - Java/Object Class.md",
     "OOP - Java/Access Modifiers.md",
-    "OOP - Java/Abstraction.md",
-    "OOP - Java/Packages.md",
-    "OOP - Java/Types of Inheritance.md",
     "OOP - Java/Principles of OOP.md",
+    "OOP - Java/Polymorphism.md",
+    "OOP - Java/Abstraction.md",
+    "OOP - Java/Encapsulation.md",
+    "OOP - Java/Types of Inheritance.md",
+    "OOP - Java/Interfaces.md",
+    "DSA - Java/Java/Strings.md",
+    "DSA - Java/Java/Function (Methods).md",
+    "OOP - Java/Constructors.md",
+    "OOP - Java/Garbage collections.md",
+    "DSA - Java/Java/Arrays.md",
+    "OOP - Java/Inheritance.md",
+    "OOP - Java/IMGS/Pasted image 20241224100522.png",
+    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
+    "OOP - Java/Packages.md",
     "OOP - Java/IMGS/Pasted image 20241222091414.png",
     "Operating-System/CPU Scheduling/MLQ & MLFQ.md",
-    "OOP - Java/Inheritance.md",
-    "OOP - Java/Encapsulation.md",
-    "OOP - Java/Polymorphism.md",
-    "OOP - Java/Constructors.md",
     "DSA - Java/Java/Architecture.md",
     "DSA - Java/Problems/Array Problems.md",
     "DSA - Java/OOPS/Advance concepts.md",
     "OOP - Java/new Keyword.md",
     "OOP - Java/Introduction.md",
-    "OOP - Java/Garbage collections.md",
     "OOP - Java/IMGS/Pasted image 20241220112110.png",
     "OOP - Java/IMGS/Pasted image 20241220112100.png",
     "Pasted image 20241220112110.png",
@@ -192,14 +200,7 @@
     "OOP - Java/IMGS/Pasted image 20241220105239.png",
     "OOP - Java/IMGS/Pasted image 20241220101403.png",
     "DSA - Java/Java/Heap and PriorityQueue.md",
-    "OOP - Java/IMGS/Pasted image 20241219122629.png",
     "OOP - Java/Singleton Class.md",
-    "OOP - Java/Inner Classes.md",
-    "DSA - Java/Java/Strings.md",
-    "DSA - Java/Java/2D-Arrays.md",
-    "DSA - Java/Java/Binary Search.md",
-    "DSA - Java/Java/Linear Search.md",
-    "DSA - Java/Java/Hashing&Maps.md",
     "OOP - Java/IMGS",
     "OOPS - Java/Introduction",
     "OOP - Java",

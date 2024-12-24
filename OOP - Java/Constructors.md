@@ -158,7 +158,7 @@ final class Example{
 
 ### Final for Primitive vs Non Primitive
 
-For Primitive data types you can reassign the value 
+For Primitive data types you can't reassign the value 
 
 For non primitive data types, you can't change the reference point but you can change the value
 

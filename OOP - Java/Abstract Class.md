@@ -1,6 +1,6 @@
 Topic No : 12
 Previous Topic : [[Object Class]]
-Next Topic : 
+Next Topic : [[Interfaces]]
 
 ### What is abstract class : 
 

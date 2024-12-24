@@ -1,3 +1,7 @@
+## Day 299
+#### Date : 24.12.2024
+- OOP in java : interfaces
+- GFG and Leetcode : Sliding window
 ## Day 298
 #### Date : 23.12.2024
 - OOP in java
