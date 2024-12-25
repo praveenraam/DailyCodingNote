@@ -1,6 +1,6 @@
 Topic No : 13
 Previous Topic : [[Abstract Class]]
-Next Topic : 
+Next Topic : [[Generics]]
 
 ### What is interface
 An interface is a blueprint for a class. It defines a set of methods that a class must implement if it wants to be considered a type of that interface

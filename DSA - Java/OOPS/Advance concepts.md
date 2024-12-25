@@ -1,5 +1,5 @@
 [Video Link](https://youtu.be/nqB3qAtDLKU?si=8pv6ItayjOumeaJU&t=3947)
-Next Topic [[Exception handling]]
+Next Topic [[DSA - Java/OOPS/Exception handling]]
 ### Encapsulation
 - _Binding (or wrapping) code and data together into a single unit are known as encapsulation_. 
 - For example, a capsule, it is wrapped with different medicines.
