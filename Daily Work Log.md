@@ -1,3 +1,16 @@
+## Day 302
+#### Date : 27.12.2024
+- LLD Problems
+- Leetcode Problems
+- Aptitude Problems
+## Day 301
+#### Date : 26.12.2024
+- LLD Problems
+- Leetcode Problems
+- Aptitude Problems
+## Day 300
+#### Date : 25.12.2024
+- Java OOP -> Generics and Exceptions
 ## Day 299
 #### Date : 24.12.2024
 - OOP in java : interfaces
