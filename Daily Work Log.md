@@ -1,5 +1,6 @@
-## Day 303
-#### Date : 29.12.2024
+
+## Day 305
+#### Date : 31.12.2024
 - Leetcode Problems
 - Aptitude Problems
 - LLD

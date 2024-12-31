@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Keys in RDBMS.md",
+                "file": "OOP - Java/Generics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Keys in RDBMS"
+              "title": "Generics"
             }
           },
           {
@@ -179,12 +179,12 @@
   },
   "active": "6b969177744f5890",
   "lastOpenFiles": [
+    "DBMS/Keys in RDBMS.md",
     "DBMS/IMGs/Pasted image 20241231123959.png",
     "DBMS/IMGs/Pasted image 20241231120814.png",
     "Pasted image 20241231123959.png",
     "Pasted image 20241231120814.png",
     "DBMS/RDBMS.md",
-    "DBMS/Keys in RDBMS.md",
     "DBMS/Symbols in ER.md",
     "DBMS/Data Models.md",
     "DBMS/ER Model.md",
@@ -203,7 +203,6 @@
     "Operating-System/Basics of OS/Functions of OS.md",
     "DBMS/IMGs/Pasted image 20241230153618.png",
     "OOP - Java/Static Keyword.md",
-    "DBMS/IMGs/Pasted image 20241229172920.png",
     "DBMS/Introduction.md",
     "DBMS/IMGs",
     "OOP - Java/Introduction.md",
