@@ -1,6 +1,6 @@
 Topic No : 2
-Previous Topic : 
-Next Topic :
+Previous Topic : [[DBMS/Introduction|Introduction]]
+Next Topic : [[Levels of Data Abstraction]]
 
 ### What is Architecture
 DBMS Architecture helps users to get their requests done while connecting to the database

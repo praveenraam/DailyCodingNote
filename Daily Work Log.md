@@ -2,7 +2,13 @@
 #### Date : 29.12.2024
 - Leetcode Problems
 - Aptitude Problems
-- Alumni Network Project React Native (Frontend0)
+- LLD
+- DBMS
+## Day 303
+#### Date : 29.12.2024
+- Leetcode Problems
+- Aptitude Problems
+- Alumni Network Project React Native (Frontend)
 - DBMS
 ## Day 302
 #### Date : 28.12.2024
