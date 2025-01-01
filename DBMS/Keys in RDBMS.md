@@ -1,5 +1,5 @@
 Topic No : 7
-Next Topic : 
+Next Topic : [[Normalization]]
 
 ### What is key :
  It is widely used to identify the tuples(rows) uniquely in the table
@@ -10,7 +10,7 @@ We use a key **for defining various types of integrity constraints in a databas
 
 ![[Pasted image 20241231120814.png]]
 ##### Super key
-This is collection of one or more column that allow only unique values in tuples and allows null
+This is collection of one or more keys that allow only unique values in tuples.
 Ex : From the above Picture, we can see that the collection of EmpID, EmpLicense and EmpPassport is a super key in the table.
 
 You can make any number of combination to form the collection.

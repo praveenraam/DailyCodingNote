@@ -14,6 +14,7 @@ Column is referred as Attributes
 Rows are mentioned as tuple.
 ##### Domain
 A set of parameter values are called domain
+Ex : Department in College : CSE, IT, ECE, ISE
 ##### 'null' value
 'null' value represent unknown or doesn't exist. 
 

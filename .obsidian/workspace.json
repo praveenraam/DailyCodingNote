@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "80c32326f8804f32",
+        "id": "3c93a4606323311c",
         "type": "tabs",
         "children": [
           {
-            "id": "6b969177744f5890",
+            "id": "d43ec19bafcc47bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP - Java/Generics.md",
+                "file": "DBMS/Normalization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Generics"
-            }
-          },
-          {
-            "id": "7863fd4a2a39559d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DBMS/Symbols in ER.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Symbols in ER"
+              "title": "Normalization"
             }
           }
         ]
@@ -177,45 +163,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b969177744f5890",
+  "active": "d43ec19bafcc47bc",
   "lastOpenFiles": [
+    "DBMS/IMGs/Pasted image 20250101145828.png",
+    "DBMS/IMGs/Pasted image 20250101154415.png",
+    "DBMS/IMGs/Pasted image 20250101155233.png",
+    "DBMS/IMGs/Pasted image 20250101155413.png",
+    "DBMS/IMGs/Pasted image 20250101160635.png",
+    "DBMS/IMGs/Pasted image 20250101161154.png",
     "DBMS/Keys in RDBMS.md",
-    "DBMS/IMGs/Pasted image 20241231123959.png",
-    "DBMS/IMGs/Pasted image 20241231120814.png",
-    "Pasted image 20241231123959.png",
-    "Pasted image 20241231120814.png",
     "DBMS/RDBMS.md",
     "DBMS/Symbols in ER.md",
-    "DBMS/Data Models.md",
     "DBMS/ER Model.md",
-    "DBMS/IMGs/Pasted image 20241231111440.png",
-    "DBMS/IMGs/Pasted image 20241231100510.png",
-    "DBMS/IMGs/Pasted image 20241231100413.png",
-    "Pasted image 20241231100347.png",
-    "DBMS/IMGs/Pasted image 20241231100240.png",
+    "DBMS/Data Models.md",
+    "DBMS/Levels of Data Abstraction.md",
+    "DBMS/DBMS Architecture.md",
+    "DBMS/Introduction.md",
+    "DBMS/Normalization.md",
+    "Pasted image 20250101161154.png",
+    "Pasted image 20250101160635.png",
+    "Pasted image 20250101155413.png",
+    "Pasted image 20250101160604.png",
+    "Pasted image 20250101160046.png",
+    "OOP - Java/Generics.md",
     "Daily Work Log.md",
     "README.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
     "Operating-System/CPU Scheduling/HRRN Scheduling.md",
-    "DBMS/Levels of Data Abstraction.md",
-    "DBMS/DBMS Architecture.md",
     "Operating-System/CPU Scheduling/Starvation and Aging.md",
     "Operating-System/Basics of OS/Functions of OS.md",
-    "DBMS/IMGs/Pasted image 20241230153618.png",
     "OOP - Java/Static Keyword.md",
-    "DBMS/Introduction.md",
     "DBMS/IMGs",
     "OOP - Java/Introduction.md",
     "OOP - Java/Exception Handling.md",
     "Placement/Project/Problem statement and details.md",
     "SQL/Syntax/9. Aggregate Function.md",
     "DBMS",
-    "OOP - Java/Generics.md",
     "OOP - Java/Interfaces.md",
     "OOP - Java/Abstract Class.md",
     "OOP - Java/Object Class.md",
     "OOP - Java/Access Modifiers.md",
-    "OOP - Java/Principles of OOP.md",
     "OOP - Java/IMGS",
     "OOPS - Java/Introduction",
     "OOP - Java",
