@@ -1,4 +1,9 @@
-
+## Day 306
+#### Date : 01.12.2024
+- Leetcode Problems
+- Aptitude Problems
+- LLD
+- DBMS
 ## Day 305
 #### Date : 31.12.2024
 - Leetcode Problems
