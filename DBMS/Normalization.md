@@ -1,6 +1,6 @@
 Topic No : 8
 Previous Topic : [[Keys in RDBMS]]
-Next Topic : 
+Next Topic : [[Transactions]]
 
 Before seeing Normalization, we know about Functional Dependencies
 ### What is Functional Dependency?
