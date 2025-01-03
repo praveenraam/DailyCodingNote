@@ -13,6 +13,6 @@ As a transaction is a set of logically related operations, **either all of them
 #### Consistency
 A consistent transaction will not violate integrity constraints placed on the data by the database rules
 #### Isolation
-The result of a transaction should not be visible to others before the transaction is committed.
+This property ensures that multiple transactions can occur concurrently without leading to the affect on one another of the database state.
 #### Durable 
 Once the changes were made to the Database, that changes should be always permanent and backup taken.

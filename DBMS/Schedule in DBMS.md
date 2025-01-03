@@ -1,6 +1,6 @@
 Topic No : 10
 Previous Topic : [[Transactions]]
-Next Topic : 
+Next Topic : [[SQL]]
 Article Link : **Read for Better Understanding**
 	- https://www.geeksforgeeks.org/serializability-in-dbms/
 ### What is Schedule 
@@ -23,7 +23,7 @@ Types of Serialization :
 	In order to solve this we use Graph method to decide the execution Order, read more in article to understand better.
 - **View Serializability :**
 	This is to overcome some limitation in the Conflict Serialization, there are some possibilities that loop or a cycle may form in the decision making in graph and to avoid inconsistency.
-
+	
 	In countering the limitations we use set of rules, consider S1 and S2 schedule,
 	- The first prerequisite is that the same kind of transaction appears on every schedule. This requirement means that the same kind of group of transactions cannot appear on both schedules S1 and S2
 	- The second prerequisite is that different read or write operations should not be used in either of them, 
