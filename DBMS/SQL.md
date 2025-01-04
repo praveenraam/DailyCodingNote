@@ -1,7 +1,6 @@
 Topic No : 11
 Previous Topic : [[Schedule in DBMS]]
 Next Topic :
-
 ### What is SQL
 SQL : Structured Query Language
 - It is a standardized programming language used for managing the relational databases.
@@ -29,3 +28,12 @@ There are several steps involved in using SQL,
 	- No special characters except `_`
 
 ### SQL commands
+
+Various tasks done by the SQL is categorized into several types
+- DDL : Data Definition Language
+- DQL : Data Query Language
+- DML : Data manipulation Language
+- DCL : Data Control Language
+- TCL : Transaction Control Language
+[[Types of Commands in SQL]]
+![[Pasted image 20250104124303.png]]
