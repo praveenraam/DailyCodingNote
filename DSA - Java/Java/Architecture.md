@@ -65,7 +65,7 @@ This file is interpreted on JVM
 
 ## Process on execution
 
-![[Pasted image 20231202111617.png]]
+![[Pasted image 20250105143430.png]]
 
 The JVM requirements are provided by the JRE of JDK like lib , env .
 JRE is a box that contains the JVM . 

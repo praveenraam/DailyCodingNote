@@ -1,6 +1,6 @@
 Topic No : 11
 Previous Topic : [[Schedule in DBMS]]
-Next Topic :
+Next Topic : [[SELECT]]
 ### What is SQL
 SQL : Structured Query Language
 - It is a standardized programming language used for managing the relational databases.
