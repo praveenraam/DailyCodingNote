@@ -1,4 +1,9 @@
-### Date : 04.12.2024
+### Date : 06.12.2024
+- Leetcode Problems
+- Aptitude Problems
+- DBMS
+- UML Diagram
+### Date : 05.12.2024
 - Leetcode Problems
 - Aptitude Problems
 - DBMS

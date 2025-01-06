@@ -1,6 +1,6 @@
 Topic No : 2
 Previous Topic : [[SELECT]]
-Next Topic : 
+Next Topic : [[GROUP & ORDER BY]]
 
 ### What is where
 This returns the rows that met the specific condition given by us.
