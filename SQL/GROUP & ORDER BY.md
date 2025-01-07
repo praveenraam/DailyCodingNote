@@ -1,6 +1,6 @@
 Topic : 4
 Previous Topic : [[WHERE]]
-Next Topic : 
+Next Topic : [[JOIN]]
 
 ### What is Group By
 A group by Statement in SQL is used for organizing and summarizing data based on the identical values in specific columns.
