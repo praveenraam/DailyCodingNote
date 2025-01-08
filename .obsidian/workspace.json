@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/JOIN.md",
+                "file": "SQL/StringFunctionsInSQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JOIN"
+              "title": "StringFunctionsInSQL"
             }
           }
         ]
@@ -165,19 +165,21 @@
   },
   "active": "f504d0a6f821e808",
   "lastOpenFiles": [
-    "Pasted image 20250107182938.png",
-    "Pasted image 20250107181327.png",
-    "Pasted image 20250107181054.png",
-    "Pasted image 20250107181026.png",
-    "Pasted image 20250107180810.png",
-    "SQL/IMGs/Pasted image 20250107175201.png",
-    "SQL/IMGs/Pasted image 20250107174312.png",
-    "SQL/GROUP & ORDER BY.md",
+    "SQL/IMGs/Pasted image 20250108173435.png",
+    "SQL/IMGs/Pasted image 20250108174227.png",
+    "SQL/IMGs/Pasted image 20250108174741.png",
+    "SQL/IMGs/Pasted image 20250108181612.png",
+    "SQL/IMGs/Pasted image 20250108181957.png",
+    "SQL/IMGs/Pasted image 20250108182213.png",
+    "SQL/IMGs/Pasted image 20250108183744.png",
+    "Pasted image 20250108183744.png",
+    "Pasted image 20250108182213.png",
+    "Pasted image 20250108181957.png",
+    "Pasted image 20250108181612.png",
+    "SQL/UNION.md",
+    "SQL/StringFunctionsInSQL.md",
     "SQL/JOIN.md",
-    "Pasted image 20250106174902.png",
-    "Pasted image 20250106174728.png",
-    "Pasted image 20250106174652.png",
-    "Pasted image 20250106161400.png",
+    "SQL/GROUP & ORDER BY.md",
     "SQL/WHERE.md",
     "DSA - Java/Java/Architecture.md",
     "SQL/SELECT.md",
@@ -201,8 +203,6 @@
     "DBMS/DBMS Architecture.md",
     "DBMS/Introduction.md",
     "OOP - Java/Generics.md",
-    "Daily Work Log.md",
-    "README.md",
     "DBMS/IMGs",
     "DBMS",
     "OOP - Java/IMGS",
