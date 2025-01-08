@@ -1,3 +1,8 @@
+### Date : 08.12.2024
+- Leetcode Problems
+- Aptitude Problems
+- DBMS
+- LLD & Class Diagram
 ### Date : 07.12.2024
 - Leetcode Problems
 - Aptitude Problems
