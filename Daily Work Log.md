@@ -1,43 +1,45 @@
-### Date : 09.12.2024
+### Date : 10.1.2025
+- Leetcode Problems
+### Date : 09.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - Class Diagram for VendingMachine
-### Date : 08.12.2024
+### Date : 08.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - DBMS
 - LLD & Class Diagram
-### Date : 07.12.2024
+### Date : 07.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - DBMS
 - LLD
-### Date : 06.12.2024
+### Date : 06.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - DBMS
 - UML Diagram
-### Date : 05.12.2024
+### Date : 05.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - DBMS
 - Alumni Network - Laravel
-### Date : 04.12.2024
+### Date : 04.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - DBMS
 - Alumni Network - React Native
-### Date : 03.12.2024
+### Date : 03.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - LLD
 - DBMS
-### Date : 02.12.2024
+### Date : 02.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - LLD
 - DBMS
-### Date : 01.12.2024
+### Date : 01.1.2025
 - Leetcode Problems
 - Aptitude Problems
 - LLD
