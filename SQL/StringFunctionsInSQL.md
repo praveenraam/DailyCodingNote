@@ -1,6 +1,6 @@
 Topic No : 6
 Previous Topic : [[UNION]]
-Next Topic :
+Next Topic : [[CASE Statements]]
 
 ### What is a string function
 String Functions are powerful tools that allow you to manipulate, format, and extract specific parts of text data in your database.

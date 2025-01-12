@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "74ba9edfae958122",
+        "id": "1c0cf288d758393f",
         "type": "tabs",
         "children": [
           {
-            "id": "f504d0a6f821e808",
+            "id": "3e71bb930bd16282",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/StringFunctionsInSQL.md",
+                "file": "SQL/SubQueries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "StringFunctionsInSQL"
+              "title": "SubQueries"
             }
           }
         ]
@@ -163,24 +163,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f504d0a6f821e808",
+  "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "SQL/CASE Statements.md",
+    "SQL/GROUP & ORDER BY.md",
+    "SQL/SubQueries.md",
+    "Pasted image 20250112124030.png",
+    "Pasted image 20250112124003.png",
+    "Pasted image 20250112123134.png",
+    "SQL/IMGs/Pasted image 20250112121430.png",
+    "SQL/IMGs/Pasted image 20250112120900.png",
+    "SQL/WHERE.md",
+    "SQL/StringFunctionsInSQL.md",
     "SQL/IMGs/Pasted image 20250108173435.png",
     "SQL/IMGs/Pasted image 20250108174227.png",
     "SQL/IMGs/Pasted image 20250108174741.png",
     "SQL/IMGs/Pasted image 20250108181612.png",
     "SQL/IMGs/Pasted image 20250108181957.png",
-    "SQL/IMGs/Pasted image 20250108182213.png",
-    "SQL/IMGs/Pasted image 20250108183744.png",
-    "Pasted image 20250108183744.png",
-    "Pasted image 20250108182213.png",
-    "Pasted image 20250108181957.png",
-    "Pasted image 20250108181612.png",
     "SQL/UNION.md",
-    "SQL/StringFunctionsInSQL.md",
     "SQL/JOIN.md",
-    "SQL/GROUP & ORDER BY.md",
-    "SQL/WHERE.md",
     "DSA - Java/Java/Architecture.md",
     "SQL/SELECT.md",
     "DBMS/Transactions.md",
@@ -201,8 +202,6 @@
     "DBMS/Data Models.md",
     "DBMS/Levels of Data Abstraction.md",
     "DBMS/DBMS Architecture.md",
-    "DBMS/Introduction.md",
-    "OOP - Java/Generics.md",
     "DBMS/IMGs",
     "DBMS",
     "OOP - Java/IMGS",
