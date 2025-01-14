@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/SubQueries.md",
+                "file": "SQL/Advanced/AdvSubQueries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SubQueries"
+              "title": "AdvSubQueries"
             }
           }
         ]
@@ -165,9 +165,12 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
-    "SQL/CASE Statements.md",
-    "SQL/GROUP & ORDER BY.md",
     "SQL/SubQueries.md",
+    "SQL/Advanced/AdvSubQueries.md",
+    "SQL/CASE Statements.md",
+    "SQL/Advanced",
+    "SQL/JOIN.md",
+    "SQL/GROUP & ORDER BY.md",
     "Pasted image 20250112124030.png",
     "Pasted image 20250112124003.png",
     "Pasted image 20250112123134.png",
@@ -181,7 +184,6 @@
     "SQL/IMGs/Pasted image 20250108181612.png",
     "SQL/IMGs/Pasted image 20250108181957.png",
     "SQL/UNION.md",
-    "SQL/JOIN.md",
     "DSA - Java/Java/Architecture.md",
     "SQL/SELECT.md",
     "DBMS/Transactions.md",
@@ -209,7 +211,6 @@
     "OOP - Java",
     "SQL/Syntax",
     "SQL",
-    "DSA - Java/Java/Interview Questions",
     "Untitled.canvas"
   ]
 }

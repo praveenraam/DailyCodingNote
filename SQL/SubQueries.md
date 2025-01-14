@@ -1,6 +1,6 @@
 Topic No : 8
 Previous Topic : [[CASE Statements]]
-Next Topic :
+Next Topic : [[AdvSubQueries]]
 
 ### What is Sub-Query
 A statement within an another statement is Sub-Query. 
