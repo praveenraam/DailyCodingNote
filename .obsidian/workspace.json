@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/Advanced/AdvSubQueries.md",
+                "file": "SQL/JOIN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AdvSubQueries"
+              "title": "JOIN"
             }
           }
         ]
@@ -165,8 +165,9 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
-    "SQL/SubQueries.md",
+    "SQL/Advanced/WindowFunctions.md",
     "SQL/Advanced/AdvSubQueries.md",
+    "SQL/SubQueries.md",
     "SQL/CASE Statements.md",
     "SQL/Advanced",
     "SQL/JOIN.md",
@@ -203,7 +204,6 @@
     "DBMS/ER Model.md",
     "DBMS/Data Models.md",
     "DBMS/Levels of Data Abstraction.md",
-    "DBMS/DBMS Architecture.md",
     "DBMS/IMGs",
     "DBMS",
     "OOP - Java/IMGS",

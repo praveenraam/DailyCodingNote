@@ -1,6 +1,6 @@
 Topic No : 9
 Previous Topic : [[SubQueries]]
-Next Topic : 
+Next Topic : [[WindowFunctions]]
 
 When compiler encounters the situation of sub query, that is executed first and then using the result of it, the main query is executed.
 ### Here we will solve some problems
@@ -112,3 +112,13 @@ SELECT SAL1.employee_id
 ;
 ```
 
+Listing Departments that are not having any employee
+```SQL
+SELECT * FROM parks_departments AS PD
+WHERE NOT EXISTS (
+	SELECT 1
+	FROM employee_salary AS ES
+	WHERE ES.dept_id = PD.department_id
+);
+
+```
