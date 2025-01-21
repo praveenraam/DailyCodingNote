@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/JOIN.md",
+                "file": "SQL/Advanced/WindowFunctions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JOIN"
+              "title": "WindowFunctions"
             }
           }
         ]
@@ -165,12 +165,12 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "SQL/JOIN.md",
     "SQL/Advanced/WindowFunctions.md",
     "SQL/Advanced/AdvSubQueries.md",
     "SQL/SubQueries.md",
     "SQL/CASE Statements.md",
     "SQL/Advanced",
-    "SQL/JOIN.md",
     "SQL/GROUP & ORDER BY.md",
     "Pasted image 20250112124030.png",
     "Pasted image 20250112124003.png",
