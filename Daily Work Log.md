@@ -1,3 +1,8 @@
+### Date : 22.01.2025
+- Leetcode Problems
+- LLD Problems (Code for ATM)
+- Aptitude
+- DBMS
 ### Date : 21.1.2025
 - Leetcode Problems
 - LLD Problems (UML Diagram for ATM)
