@@ -1,3 +1,8 @@
+### Date : 24.01.2025
+- Leetcode Problems
+- LLD Problems (Code for ATM)
+- Aptitude
+- DBMS
 ### Date : 23.01.2025
 - Leetcode Problems
 - LLD Problems (Code for ATM)
