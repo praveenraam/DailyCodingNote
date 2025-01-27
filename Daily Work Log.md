@@ -1,8 +1,9 @@
-### Date : 25.01.2025
+### Date : 26.01.2025
 - Leetcode Problems
 - LLD Problems (Code for ATM)
 - Computer Networking
-- Multithreading in java
+- DBMS
+- Aptitude
 ### Date : 25.01.2025
 - Leetcode Problems
 - LLD Problems (Code for ATM)

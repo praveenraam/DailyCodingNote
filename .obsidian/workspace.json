@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating-System/System Structure/System Call.md",
+                "file": "DBMS/Transactions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Call"
+              "title": "Transactions"
             }
           }
         ]
@@ -165,6 +165,8 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "Daily Work Log.md",
+    "Operating-System/System Structure/System Call.md",
     "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS/Functions of OS.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
@@ -178,7 +180,6 @@
     "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/CPU Scheduling/Convoy Effect.md",
-    "Operating-System/System Structure/System Call.md",
     "OOP - Java/Multithreading/Introduction.md",
     "OOP - Java/Polymorphism.md",
     "OOP - Java/Multithreading",
@@ -191,7 +192,6 @@
     "DSA - Java/Java/Bit Manipulation.md",
     "DBMS/Transactions.md",
     "SQL/Advanced/WindowFunctions.md",
-    "SQL/JOIN.md",
     "SQL/Advanced",
     "Pasted image 20250112124030.png",
     "Pasted image 20250112124003.png",
