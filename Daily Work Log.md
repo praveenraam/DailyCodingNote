@@ -1,3 +1,7 @@
+### Date : 02.02.2025
+- Leetcode Problems
+- Python
+- Aptitude
 ### Date : 01.02.2025
 - Leetcode Problems
 - Phy,Mat One marks Prep
