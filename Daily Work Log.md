@@ -1,3 +1,7 @@
+### Date : 04.02.2025
+- Leetcode Problems
+- Frontend basics
+- Aptitude
 ### Date : 03.02.2025
 - Leetcode Problems
 - JS

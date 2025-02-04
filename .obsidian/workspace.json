@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Functions.md",
+                "file": "Python/Loops.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Functions"
+              "title": "Loops"
             }
           }
         ]
@@ -166,11 +166,11 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "Python/Operators.md",
+    "Python/Data types.md",
+    "Python/Introduction.md",
     "Python/Loops.md",
     "Python/Functions.md",
-    "Python/Operators.md",
-    "Python/Introduction.md",
-    "Python/Data types.md",
     "DBMS/Transactions.md",
     "Python",
     "Daily Work Log.md",
