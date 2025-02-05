@@ -1,3 +1,8 @@
+### Date : 05.02.2025
+- Leetcode Problems
+- Frontend basics
+- CN
+- LLD : Taxi Booking System
 ### Date : 04.02.2025
 - Leetcode Problems
 - Frontend basics
