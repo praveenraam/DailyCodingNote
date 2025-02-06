@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Operating-System/System Structure/System Call.md",
+                "file": "Python/Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Call"
+              "title": "Introduction"
             }
           }
         ]
@@ -166,6 +166,12 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "Python/Operators.md",
+    "Python/Loops.md",
+    "Python/Functions.md",
+    "Python/Data types.md",
+    "Python/Introduction.md",
+    "Operating-System/System Structure/System Call.md",
     "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/MicroKernel.md",
     "Operating-System/System Structure/Monolithic Kernel.md",
@@ -174,15 +180,9 @@
     "Operating-System/CPU Scheduling/Process State.md",
     "Operating-System/CPU Scheduling/Intro to Process Management.md",
     "Operating-System/Basics of OS/Functions of OS.md",
-    "Python/Loops.md",
-    "Python/Operators.md",
-    "Python/Data types.md",
-    "Python/Introduction.md",
-    "Python/Functions.md",
     "DBMS/Transactions.md",
     "Python",
     "Daily Work Log.md",
-    "Operating-System/System Structure/System Call.md",
     "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
     "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
