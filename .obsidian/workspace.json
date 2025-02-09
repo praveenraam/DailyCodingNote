@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Introduction.md",
+                "file": "DSA - Java/Java/Type conversion and casting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Type conversion and casting"
             }
           }
         ]
@@ -166,11 +166,16 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "DSA - Java/Java/Input Program.md",
+    "DSA - Java/Java/Data Types.md",
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/Architecture.md",
+    "Daily Work Log.md",
+    "Python/Introduction.md",
     "Python/Operators.md",
     "Python/Loops.md",
     "Python/Functions.md",
     "Python/Data types.md",
-    "Python/Introduction.md",
     "Operating-System/System Structure/System Call.md",
     "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
     "Operating-System/System Structure/MicroKernel.md",
@@ -182,17 +187,12 @@
     "Operating-System/Basics of OS/Functions of OS.md",
     "DBMS/Transactions.md",
     "Python",
-    "Daily Work Log.md",
     "Operating-System/Basics of OS/Types of OS.md",
     "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
     "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
     "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
     "Operating-System/CPU Scheduling/Preemptive and Non-preemptive.md",
     "Operating-System/CPU Scheduling/Process Scheduler.md",
-    "Operating-System/CPU Scheduling/Process Table and Process Control Block (PCB).md",
-    "Operating-System/CPU Scheduling/Convoy Effect.md",
-    "OOP - Java/Multithreading/Introduction.md",
-    "OOP - Java/Polymorphism.md",
     "OOP - Java/Multithreading",
     "SQL/Advanced",
     "Pasted image 20250112124030.png",
