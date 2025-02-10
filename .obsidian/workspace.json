@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Type conversion and casting.md",
+                "file": "SQL/UNION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Type conversion and casting"
+              "title": "UNION"
             }
           }
         ]
@@ -166,6 +166,14 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "SQL/JOIN.md",
+    "SQL/WHERE.md",
+    "SQL/GROUP & ORDER BY.md",
+    "SQL/CASE Statements.md",
+    "SQL/SubQueries.md",
+    "SQL/StringFunctionsInSQL.md",
+    "SQL/UNION.md",
+    "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
     "DSA - Java/Java/First Program.md",
@@ -184,15 +192,7 @@
     "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/CPU Scheduling/Process State.md",
     "Operating-System/CPU Scheduling/Intro to Process Management.md",
-    "Operating-System/Basics of OS/Functions of OS.md",
-    "DBMS/Transactions.md",
     "Python",
-    "Operating-System/Basics of OS/Types of OS.md",
-    "Operating-System/Basics of OS/Introduction to OperatingSystem.md",
-    "Operating-System/CPU Scheduling/FCFS CPU Scheduling.md",
-    "Operating-System/CPU Scheduling/Dispatcher and scheduler.md",
-    "Operating-System/CPU Scheduling/Preemptive and Non-preemptive.md",
-    "Operating-System/CPU Scheduling/Process Scheduler.md",
     "OOP - Java/Multithreading",
     "SQL/Advanced",
     "Pasted image 20250112124030.png",
