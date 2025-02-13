@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/UNION.md",
+                "file": "DSA - Java/Java/Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UNION"
+              "title": "Architecture"
             }
           }
         ]
@@ -166,18 +166,19 @@
   },
   "active": "3e71bb930bd16282",
   "lastOpenFiles": [
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/Architecture.md",
+    "DSA - Java/Java/2D-Arrays.md",
+    "SQL/UNION.md",
     "SQL/JOIN.md",
     "SQL/WHERE.md",
     "SQL/GROUP & ORDER BY.md",
     "SQL/CASE Statements.md",
     "SQL/SubQueries.md",
     "SQL/StringFunctionsInSQL.md",
-    "SQL/UNION.md",
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
-    "DSA - Java/Java/First Program.md",
-    "DSA - Java/Java/Architecture.md",
     "Daily Work Log.md",
     "Python/Introduction.md",
     "Python/Operators.md",
@@ -191,7 +192,6 @@
     "Operating-System/System Structure/Kernel InOut Sub-system.md",
     "Operating-System/System Structure/Dual Mode ops.md",
     "Operating-System/CPU Scheduling/Process State.md",
-    "Operating-System/CPU Scheduling/Intro to Process Management.md",
     "Python",
     "OOP - Java/Multithreading",
     "SQL/Advanced",
