@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1c0cf288d758393f",
+        "id": "917afcbfe7d04a9a",
         "type": "tabs",
         "children": [
           {
-            "id": "3e71bb930bd16282",
+            "id": "32cf737ceaef3f6a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA - Java/Java/Architecture.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Architecture"
+              "title": "New tab"
             }
           }
         ]
@@ -164,18 +160,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e71bb930bd16282",
+  "active": "32cf737ceaef3f6a",
   "lastOpenFiles": [
-    "DSA - Java/Java/First Program.md",
-    "DSA - Java/Java/Architecture.md",
-    "DSA - Java/Java/2D-Arrays.md",
+    "DBMS/Types of Commands in SQL.md",
+    "DBMS/SQL.md",
+    "SQL/Advanced/WindowFunctions.md",
+    "SQL/Advanced/AdvSubQueries.md",
+    "SQL/SubQueries.md",
+    "SQL/CASE Statements.md",
+    "SQL/StringFunctionsInSQL.md",
     "SQL/UNION.md",
     "SQL/JOIN.md",
-    "SQL/WHERE.md",
     "SQL/GROUP & ORDER BY.md",
-    "SQL/CASE Statements.md",
-    "SQL/SubQueries.md",
-    "SQL/StringFunctionsInSQL.md",
+    "SQL/WHERE.md",
+    "SQL/SELECT.md",
+    "DSA - Java/Java/Architecture.md",
+    "DSA - Java/Java/First Program.md",
+    "DSA - Java/Java/2D-Arrays.md",
     "DSA - Java/Java/Type conversion and casting.md",
     "DSA - Java/Java/Input Program.md",
     "DSA - Java/Java/Data Types.md",
@@ -187,11 +188,6 @@
     "Python/Data types.md",
     "Operating-System/System Structure/System Call.md",
     "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
-    "Operating-System/System Structure/MicroKernel.md",
-    "Operating-System/System Structure/Monolithic Kernel.md",
-    "Operating-System/System Structure/Kernel InOut Sub-system.md",
-    "Operating-System/System Structure/Dual Mode ops.md",
-    "Operating-System/CPU Scheduling/Process State.md",
     "Python",
     "OOP - Java/Multithreading",
     "SQL/Advanced",

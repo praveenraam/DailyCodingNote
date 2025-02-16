@@ -1,4 +1,9 @@
-### Date : 14.02.2025
+### Date : 16.02.2025
+- Spring Boot : Connected to PostgreSQL
+- Aptitude
+- Leetcode
+- SQL
+### Date : 15.02.2025
 - Spring Boot : Docker Basics
 - Aptitude
 - Leetcode
