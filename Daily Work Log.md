@@ -1,4 +1,9 @@
-### Date : 16.02.2025
+### Date : 18.02.2025
+- Spring Boot : Job App
+- Aptitude
+- Leetcode
+- SQL
+### Date : 17.02.2025
 - Spring Boot : Intro to Microservices
 - Aptitude
 - Leetcode
