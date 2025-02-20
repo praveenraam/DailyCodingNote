@@ -1,6 +1,11 @@
+### Date : 20.02.2025
+- Leetcode
+### Date : 19.02.2025
+- Spring Boot : Job App
+- Leetcode
+- SQL
 ### Date : 18.02.2025
 - Spring Boot : Job App
-- Aptitude
 - Leetcode
 - SQL
 ### Date : 17.02.2025
