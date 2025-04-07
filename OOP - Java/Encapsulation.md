@@ -9,8 +9,6 @@ Encapsulation is a implementation system and the abstraction is a design level s
 
 **Encapsulation** : Wrap up the code as a single entity and protect it from the outside world. Focuses on the Internal one.
 **Abstraction** : Encapsulation did everything and I show you the essential ones for outside. Focuses on the external one.
-
-
 ### Data hiding vs Encapsulation
 
 **Data Hiding** : Hiding of data that are not allowed to access using private is called Data Hiding

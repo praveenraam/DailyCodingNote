@@ -2,6 +2,8 @@ Video [Link](https://youtu.be/TAtrPoaJ7gc?si=y-wfiA1tf6vmBvcr&t=4121)
 Topic No : 5
 Next Topic : [[Conditions and Loops]]
 
+#### [Order of precedence](https://chatgpt.com/c/67e81db3-3d30-8007-a33e-1afbc3de476f)
+
 #### Type Conversion
 ```Java
 import java.util.Scanner

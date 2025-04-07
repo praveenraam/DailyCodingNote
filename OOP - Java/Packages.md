@@ -1,6 +1,6 @@
 Topic No : 5
 Previous Topic : [[Garbage collections]]
-Next Topic : [[]]
+Next Topic : [[Static Keyword]]
 Content : Java Packages, import
 Video [Link](https://youtu.be/_Ya6CN13t8k?si=rxRsG5RzxBapipOt)
 ### What is packages

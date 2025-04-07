@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "917afcbfe7d04a9a",
+        "id": "96e71b12db0531b6",
         "type": "tabs",
         "children": [
           {
-            "id": "32cf737ceaef3f6a",
+            "id": "f315525e006c056b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA - Java/Java/Bit Manipulation.md",
+                "file": "DBMS/Types of Commands in SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bit Manipulation"
+              "title": "Types of Commands in SQL"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "N-ary",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OOP - Java/Interfaces.md",
+                "file": "DBMS/Types of Commands in SQL.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Interfaces"
+              "title": "Outgoing links from Types of Commands in SQL"
             }
           },
           {
@@ -151,8 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,54 +163,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "32cf737ceaef3f6a",
+  "active": "f315525e006c056b",
   "lastOpenFiles": [
+    "OOP - Java/Exception Handling.md",
     "DBMS/Types of Commands in SQL.md",
-    "DBMS/SQL.md",
-    "SQL/Advanced/WindowFunctions.md",
-    "SQL/Advanced/AdvSubQueries.md",
-    "SQL/SubQueries.md",
-    "SQL/CASE Statements.md",
-    "SQL/StringFunctionsInSQL.md",
-    "SQL/UNION.md",
-    "SQL/JOIN.md",
-    "SQL/GROUP & ORDER BY.md",
-    "SQL/WHERE.md",
     "SQL/SELECT.md",
-    "DSA - Java/Java/Architecture.md",
-    "DSA - Java/Java/First Program.md",
-    "DSA - Java/Java/2D-Arrays.md",
+    "SQL/Advanced/AdvSubQueries.md",
+    "OOP - Java/Generics.md",
+    "OOP - Java/Interfaces.md",
+    "OOP - Java/Abstract Class.md",
+    "OOP - Java/Object Class.md",
+    "OOP - Java/Access Modifiers.md",
+    "OOP - Java/Principles of OOP.md",
+    "OOP - Java/Polymorphism.md",
+    "OOP - Java/Encapsulation.md",
+    "OOP - Java/Abstraction.md",
+    "OOP - Java/Inheritance.md",
+    "OOP - Java/Types of Inheritance.md",
+    "OOP - Java/Singleton Class.md",
+    "OOP - Java/Inner Classes.md",
+    "OOP - Java/Static Keyword.md",
+    "OOP - Java/Packages.md",
+    "OOP - Java/Garbage collections.md",
+    "OOP - Java/Constructors.md",
+    "OOP - Java/new Keyword.md",
+    "OOP - Java/Introduction.md",
+    "DSA - Java/Java/Sorting Techniques.md",
+    "DSA - Java/Java/Sorting Techniques 2.md",
     "DSA - Java/Java/Type conversion and casting.md",
-    "DSA - Java/Java/Input Program.md",
-    "DSA - Java/Java/Data Types.md",
-    "Daily Work Log.md",
-    "Python/Introduction.md",
-    "Python/Operators.md",
-    "Python/Loops.md",
-    "Python/Functions.md",
-    "Python/Data types.md",
-    "Operating-System/System Structure/System Call.md",
-    "Operating-System/System Structure/Privileged and Non Privileged Instructions.md",
+    "SQL/IMGs/Pasted image 20250317121049.png",
+    "SQL/IMGs/Pasted image 20250316115915.png",
+    "SQL/IMGs/Pasted image 20250316115853.png",
+    "SQL/IMGs/Pasted image 20250315122355.png",
+    "SQL/IMGs/Pasted image 20250315122218.png",
+    "SQL/IMGs/Pasted image 20250315115608.png",
+    "SQL/IMGs/Pasted image 20250314141145.png",
+    "SQL/Problem Solving",
     "Python",
     "OOP - Java/Multithreading",
     "SQL/Advanced",
     "Pasted image 20250112124030.png",
     "Pasted image 20250112124003.png",
     "Pasted image 20250112123134.png",
-    "SQL/IMGs/Pasted image 20250112121430.png",
-    "SQL/IMGs/Pasted image 20250112120900.png",
-    "SQL/IMGs/Pasted image 20250108173435.png",
-    "SQL/IMGs/Pasted image 20250108174227.png",
-    "SQL/IMGs/Pasted image 20250108174741.png",
-    "SQL/IMGs/Pasted image 20250108181612.png",
-    "SQL/IMGs/Pasted image 20250108181957.png",
     "SQL/IMGs",
     "SQL",
     "DBMS/IMGs",
     "DBMS",
     "OOP - Java/IMGS",
     "OOPS - Java/Introduction",
-    "OOP - Java",
     "Untitled.canvas"
   ]
 }

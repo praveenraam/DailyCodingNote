@@ -6,6 +6,8 @@ Next Topic : [[GROUP & ORDER BY]]
 This returns the rows that met the specific condition given by us.
 
 ### Conditional Operators in SQL
+[Refer this for more detailed explanation on Chatgpt](https://chatgpt.com/c/67d27195-c024-8007-ac14-03c588ab15d7)
+
 | Operator | Description                                                                                                                                 |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | =        | The SQL Equal Operator checks if the values of two operands are equal.                                                                      |

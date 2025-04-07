@@ -31,7 +31,8 @@ The Table is said to be in 1NF if it **doesn't have multi-Values Attributes**, s
 First Normal Form disallows the multi-valued Attributes
 Ex : 
 ![[Pasted image 20250101145448.png]]
-#### 2NF
+#### 2NF 
+DO Refer [Link](https://chatgpt.com/c/67d19995-cbe4-8007-ba0d-0e655b14d4b2)
 2NF : 2nd Normal Form
 
 The Table is said to be in 2 conditions

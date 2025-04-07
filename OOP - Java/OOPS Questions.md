@@ -25,7 +25,6 @@ public class HelloWorld {
     {
         a = 60;
     }
-
 } 
 ```
 ```Output

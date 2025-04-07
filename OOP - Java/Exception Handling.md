@@ -10,6 +10,8 @@ An exception is an event that occurs during the execution of a program that disr
 ### Hierarchy of Exception from object class
 ![[Pasted image 20241225113143.png]]
 
+### Throwable
+- Throwable is nothing but the super class of exceptions and error.
 ### Types of Exceptions
 
 There are two types of Exceptions

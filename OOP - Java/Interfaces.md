@@ -154,7 +154,7 @@ public class EngineD implements Engine{
 }
 ```
 
-EngineI.java
+Engine.java
 ```Java
 package com.Interfaces;  
 public class EngineI implements Engine {  
@@ -304,7 +304,6 @@ Diesel vehicle is running
 Petrol vehicle is started
 EV vechicle is started
 ```
-
 
 ### Extends in Interfaces
 

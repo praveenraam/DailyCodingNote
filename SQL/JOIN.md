@@ -4,7 +4,6 @@ Next Topic : [[Union]]
 
 ### What is `JOIN`
 The `JOIN` is used to join two or more tables and giving a view to us.
-
 ### Syntax
 
 ```SQL
@@ -14,7 +13,6 @@ jointype JOIN table_2
 	ON table_1.column_name_to_compare = talbe_2.column_name_to_compare;
 ```
 ### Types of Table
-
 
 ##### `INNER JOIN`
 Used to return the column values that are common to both the ``table_1.column_name_to_compare = talbe_2.column_name_to_compare;``
