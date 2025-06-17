@@ -29,3 +29,5 @@ Ex : EmpLicence and EmpPassport are unique and not all need to have License and 
 ##### Foreign key
 The column in a table that is reference a column in another table.
 ![[Pasted image 20241231123959.png]]
+##### Composite key
+The table that combines two or more attributes to uniquely identify a column.

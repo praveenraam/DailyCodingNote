@@ -89,6 +89,8 @@ public class Arr {
 	    for(int[] a : Arr2D){
 		    System.out.print(Arrays.toString(a));  
 	    }
+	    // OR
+	    System.out.print(Arrays.deepToString(a));
     }  
 }
 

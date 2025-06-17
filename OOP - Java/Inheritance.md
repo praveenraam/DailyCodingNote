@@ -12,7 +12,7 @@ The properties and the methods that are declared as private can't be access by t
 Any member declared private, that can be only used within that file.
 ### Extends keyword
 
-This keyword is used to make a class to child class by inheriting from some other class
+`extends` keyword is used to make a class to child class by inheriting from some other class
 
 #### Syntax
 ```Java

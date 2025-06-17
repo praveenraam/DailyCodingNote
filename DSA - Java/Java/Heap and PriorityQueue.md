@@ -91,4 +91,15 @@ class Heap<T extends Comparable<T>>{
 }
 ```
 
-### 
+
+### Min heap declaring
+
+```Java
+PriorityQueue<Integer> hp = new PriorityQueue<>();
+```
+
+### Max heap declaring
+
+```Java
+PriorityQueue<Integer> hp = new PriorityQueue<>((a,b)->Integer.compare(b,a));
+```

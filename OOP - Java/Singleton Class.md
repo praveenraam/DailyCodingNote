@@ -9,8 +9,7 @@ You can achieve this using by using private in front of the constructor, and cre
 
 
 ```Java
-package com.Singleton;  
-  
+package com.Singleton;
 import java.security.Signature;  
   
 public class Singleton {  

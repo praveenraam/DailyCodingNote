@@ -301,3 +301,13 @@ ORDER BY employee_id
 ;
 ```
 
+### IFNULL
+
+If a certain statement is expected to be null, we can handle it using `IFNULL(NULL,HANDLING)`
+```SQL
+SELECT IFNULL(
+	NULL, 
+	-- Handling Logic
+	"Handled Null"
+);
+```

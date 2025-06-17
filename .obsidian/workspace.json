@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "96e71b12db0531b6",
+        "id": "be921b62a12cdd15",
         "type": "tabs",
         "children": [
           {
-            "id": "f315525e006c056b",
+            "id": "ce109dc019da1f96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS/Types of Commands in SQL.md",
+                "file": "DBMS/Schedule in DBMS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Types of Commands in SQL"
+              "title": "Schedule in DBMS"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "N-ary",
+                "query": "Spring",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OOP - Java/Interfaces.md",
+                "file": "DBMS/Data Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Interfaces"
+              "title": "Backlinks for Data Models"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DBMS/Types of Commands in SQL.md",
+                "file": "DBMS/Data Models.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Types of Commands in SQL"
+              "title": "Outgoing links from Data Models"
             }
           },
           {
@@ -128,7 +128,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -147,11 +149,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,54 +166,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f315525e006c056b",
+  "active": "ce109dc019da1f96",
   "lastOpenFiles": [
-    "OOP - Java/Exception Handling.md",
-    "DBMS/Types of Commands in SQL.md",
-    "SQL/SELECT.md",
-    "SQL/Advanced/AdvSubQueries.md",
-    "OOP - Java/Generics.md",
-    "OOP - Java/Interfaces.md",
-    "OOP - Java/Abstract Class.md",
-    "OOP - Java/Object Class.md",
-    "OOP - Java/Access Modifiers.md",
-    "OOP - Java/Principles of OOP.md",
-    "OOP - Java/Polymorphism.md",
-    "OOP - Java/Encapsulation.md",
-    "OOP - Java/Abstraction.md",
-    "OOP - Java/Inheritance.md",
-    "OOP - Java/Types of Inheritance.md",
-    "OOP - Java/Singleton Class.md",
-    "OOP - Java/Inner Classes.md",
-    "OOP - Java/Static Keyword.md",
-    "OOP - Java/Packages.md",
-    "OOP - Java/Garbage collections.md",
-    "OOP - Java/Constructors.md",
-    "OOP - Java/new Keyword.md",
-    "OOP - Java/Introduction.md",
+    "DBMS/Transactions.md",
+    "DBMS/Normalization.md",
+    "DBMS/Keys in RDBMS.md",
+    "DBMS/ER Model.md",
+    "DBMS/Symbols in ER.md",
+    "DBMS/Levels of Data Abstraction.md",
+    "DBMS/Introduction.md",
     "DSA - Java/Java/Sorting Techniques.md",
     "DSA - Java/Java/Sorting Techniques 2.md",
-    "DSA - Java/Java/Type conversion and casting.md",
+    "DSA - Java/Java/Scoping.md",
+    "DBMS/Data Models.md",
+    "DBMS/DBMS Architecture.md",
+    "DBMS/Schedule in DBMS.md",
+    "DBMS/RDBMS.md",
+    "Spring Boot/Interview Questions 3.md",
+    "Spring Boot/Interview Questions 2.md",
+    "Spring Boot/Solid Principles.md",
+    "Spring Boot/Interview Question 1.md",
+    "Spring Boot/Spring Boot Concepts.md",
+    "DSA - Java/Java/Collections.md",
+    "DSA - Java/Java/Linked List.md",
+    "DSA - Java/Java/Types of Tree.md",
+    "DSA - Java/Java/Bit Manipulation.md",
+    "DSA - Java/Java/Heap and PriorityQueue.md",
+    "DSA - Java/Java/Graphs.md",
+    "DSA - Java/Java/Hashing&Maps.md",
+    "Spring Boot/Imgs/Pasted image 20250512163649.png",
+    "React",
+    "Spring Boot/Imgs/Pasted image 20250510113218.png",
+    "Spring Boot/Imgs",
+    "Spring Boot/Imgs/Pasted image 20250510103131.png",
+    "DSA - JS/IMGS/Pasted image 20250416211006.png",
+    "Spring Boot",
     "SQL/IMGs/Pasted image 20250317121049.png",
     "SQL/IMGs/Pasted image 20250316115915.png",
     "SQL/IMGs/Pasted image 20250316115853.png",
     "SQL/IMGs/Pasted image 20250315122355.png",
     "SQL/IMGs/Pasted image 20250315122218.png",
     "SQL/IMGs/Pasted image 20250315115608.png",
-    "SQL/IMGs/Pasted image 20250314141145.png",
     "SQL/Problem Solving",
     "Python",
     "OOP - Java/Multithreading",
     "SQL/Advanced",
-    "Pasted image 20250112124030.png",
-    "Pasted image 20250112124003.png",
-    "Pasted image 20250112123134.png",
     "SQL/IMGs",
     "SQL",
     "DBMS/IMGs",
-    "DBMS",
-    "OOP - Java/IMGS",
-    "OOPS - Java/Introduction",
     "Untitled.canvas"
   ]
 }

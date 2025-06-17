@@ -18,6 +18,7 @@ This is also mentioned as ==early Binding==
 
 It is when multiple methods with the same name exist with different parameters.
 Ex : multiple constructors in class, we used box class for example.
+- The return type of the methods should be same, they can't be different
 
 The compile time polymorphism is named after java decides which method to run at the compile time. 
 

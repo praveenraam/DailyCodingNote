@@ -5,7 +5,6 @@ Article Link : **Must read**
 - https://www.geeksforgeeks.org/concurrency-control-in-dbms/
 ### What is Transaction
 Transaction is group of operations that are performs a simple logical functions in database.
-
 ### What is ACID Properties
 This is a concept of ACID properties in DBMS that are necessary for maintaining data consistency, integrity, and reliability while performing transactions in the database.
 #### Atomicity

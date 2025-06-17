@@ -1,6 +1,7 @@
 Topic no : 19
 Next Topic : [[Linked List]]
 
+![[Pasted image 20250416211006.png]]
 
 #### All the collection types have own class declared and it's methods
 ## List 
@@ -97,3 +98,4 @@ apple = 1
 banana = 2
 cherry = 3
 ```
+

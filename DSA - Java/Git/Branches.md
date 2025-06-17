@@ -33,7 +33,7 @@ git branch feature
 ```
 Git checkout feature
 ```
-After executing this , the head * will move to the feature 
+After executing this , the head `*` will move to the feature 
 
 ![[Pasted image 20231201134313.png]]
 

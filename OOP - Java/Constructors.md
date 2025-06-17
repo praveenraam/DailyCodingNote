@@ -3,13 +3,12 @@ Previous topic : [[new Keyword]]
 Next topic : [[Garbage collections]]
 Content : constructors, this keyword, final keyword
 
-#### Constructor is a special function, this defines what happens when object is created
+#### Constructor is a special function, this defines what executed when object is created
 
 ### By Default constructor
 
 - A special function that runs when we create a object and allocates some variables
 - If you need to change the it for your own purposes, you can do it.
-
 
 ![[new Keyword#Changing the value of instance variable]]
 
@@ -52,12 +51,12 @@ this refers to what obj you are referring to.
 
 ```Java
 package Introduction;  
-  
+
 public class Main {  
     public static void main(String[] args) {  
         Student stdnt1 = new Student(10,"Praveen",90.1f);  
         System.out.println(stdnt1.Name + " " + stdnt1.rollNo);  
-  
+        
         Student stdnt2 = new Student();  
         System.out.println(stdnt2.Name + " " + stdnt2.rollNo);  
     }  
@@ -69,7 +68,7 @@ class Student {
     float marks;  
     Student (int rollNo,String Name,float marks) {  
         this.rollNo = rollNo;  
-        this.Name = Name;  
+        this.Name = Name;
         this.marks = marks;  
     }  
     Student(){  

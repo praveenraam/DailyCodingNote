@@ -21,7 +21,7 @@ FROM employee_demographics
 WHERE employee_id IN 
 ( 	SELECT employee_id -- returns ID of employees with salary more than 50000
    FROM employee_salary
-   WHERE salary > 50000a
+   WHERE salary > 50000
 );
 ```
 ![[Pasted image 20250112123134.png]]

@@ -25,7 +25,7 @@ This is nothing but the condition written to avoid the infinite condition
 ```Java
 class Myclass(){
 	public static void print(int from,int till){  
-	    if(from > till) return; // Base cafe 
+	    if(from > till) return; // Base case 
 	    System.out.println(from);
 	    print(from+1,till);
 	}

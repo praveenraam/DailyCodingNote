@@ -1,5 +1,4 @@
 
-
 ### Type of graphs
 
 - Directed 

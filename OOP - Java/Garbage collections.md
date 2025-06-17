@@ -3,7 +3,6 @@ Previous Topic : [[Constructors]]
 Next Topic : [[Packages]]
 Content : Garbage collections, Finalize keyword
 
-
 ### Whenever the obj is not pointed by any reference variable, it is moved to the garbage collections
 
 It is then deleted by the Java itself, it can't be controlled by us.
