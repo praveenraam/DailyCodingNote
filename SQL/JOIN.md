@@ -1,6 +1,6 @@
 Topic No : 5
 Previous Topic : [[GROUP & ORDER BY]]
-Next Topic : [[Union]]
+Next Topic : [[UNION]]
 
 ### What is `JOIN`
 The `JOIN` is used to join two or more tables and giving a view to us.

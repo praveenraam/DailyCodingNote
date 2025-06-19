@@ -47,4 +47,4 @@ This principle refers to decoupling of software components,
 ##### How it helps us : 
 This way, instead of high level modules depending on low level module, both will depend on abstraction
 
-Look for examples in Article
+Look for examples in Article.

@@ -56,9 +56,72 @@ public static void MergeFunc(int[] arr,int low,int mid,int high){
 }
 ```
 
+```Java
+import java.util.Arrays;  
+  
+public class MergeSort {  
+  
+    public static void main(String[] args) {  
+        int[] arr = {1,5,3,66,4,3,6,7,266,34,6,677,8,898,4553};  
+  
+        System.out.println("Before Merge sort : "+ Arrays.toString(arr));  
+        mergeSort(arr,0,arr.length-1);  
+        System.out.println("After Merge sort : "+ Arrays.toString(arr));  
+  
+    }  
+  
+    private static void mergeSort(int[] arr,int l,int r){  
+        if(l<r){  
+            int mid = l+(r-l)/2;  
+  
+            mergeSort(arr,l,mid);  
+            mergeSort(arr,mid+1,r);  
+  
+            mergeSortedArrays(arr,l,mid,r);  
+        }  
+    }  
+  
+    public static void mergeSortedArrays(int[] arr,int l,int mid,int r){  
+  
+        int n1 = mid-l+1;  
+        int n2 = r-mid;  
+  
+        int[] L = new int[n1];  
+        int[] R = new int[n2];  
+  
+        for(int iter=0;iter<n1;iter++){  
+            L[iter] = arr[l+iter];  
+        }  
+  
+        for(int iter=0;iter<n2;iter++){  
+            R[iter] = arr[mid+1+iter];  
+        }  
+  
+        int i = 0, j = 0;  
+        int iter = l;  
+        while(i<L.length && j<R.length){  
+  
+            if(L[i] <= R[j]){  
+                arr[iter] = L[i++];  
+            }  
+            else arr[iter] = R[j++];  
+  
+            iter++;  
+        }  
+  
+        while(i<L.length){  
+            arr[iter++] = L[i++];  
+        }  
+        while(j<R.length){  
+            arr[iter++] = R[j++];  
+        }  
+  
+    }  
+  
+}
+```
 #### Time and Space
 **Time Complexity** : O(N * log(N))
 **Space Complexity** : O(N)
-
 
 ## Quick Sort
