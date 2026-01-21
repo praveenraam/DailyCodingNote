@@ -134,7 +134,8 @@ We can't use the "this" keyword on the static methods
 
 
 ```Java
-class Human {  
+clas 
+s Human {  
     int age;  
     String Name;  
     int salary;  
@@ -144,7 +145,7 @@ class Human {
     static void message(){  
         System.out.println(this.age); // This gives error.
 		System.out.println(Human.population); // This is correct
-    }  
+    }
     public Human(int age,String Name,int salary,boolean married){  
         this.age = age;  
         this.Name = Name;  
@@ -167,7 +168,7 @@ class StaticBlock{
     static int b;  
     
     static {  
-        b = a*2;  
+        b = a*2;
         System.out.println(StaticBlock.b);  
     }  
     

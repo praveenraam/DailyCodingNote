@@ -2,7 +2,6 @@ Topic No : 15
 Previous Topic : [[Generics]]
 Next Topics : 
 
-
 ### What is Exception
 
 An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions. These exceptions can occur for various reasons, such as invalid user input, file not found, or division by zero.

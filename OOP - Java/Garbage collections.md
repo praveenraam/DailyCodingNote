@@ -63,7 +63,7 @@ class Student {
     // Whenever the obj is about to move to the garbage collection finalize is called  
     @Override  
     protected void finalize() throws Throwable {  
-        System.out.println("The object is about to get destroyed");  
+        System.out.println("The object is about to get destroyed"); 
     }  
 } // The output is Praveen 10
 ```

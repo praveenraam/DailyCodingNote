@@ -1,4 +1,4 @@
-Topic No : 9
+x`Topic No : 9
 Previous Topic : [[Normalization]]
 Next Topic : [[Schedule in DBMS]]
 Article Link : **Must read**

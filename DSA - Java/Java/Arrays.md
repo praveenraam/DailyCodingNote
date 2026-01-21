@@ -121,7 +121,6 @@ System.out.println(Arrays.toString(array_name));
 ```
 Here the toString method converts the array to the String format and prints it out 
 
-
 ## Storing of Objects in Heap
 
 - Inside the Stack there will be a reference variable pointing the Array inside the Heap memory

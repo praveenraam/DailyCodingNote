@@ -101,7 +101,7 @@ Main.java
 ```Java
 package com.Interfaces;  
   
-public class Main {  
+public class Main {
     public static void main(String[] args) {  
         Car car1 = new Car();  
         car1.start();  
@@ -109,7 +109,7 @@ public class Main {
         car1.apply();  
         car1.stop();  
         car1.remove();  
-    }  
+    }
 }
 ```
 ```Output
@@ -381,7 +381,7 @@ We shouldn't have same named method on interfaces that class implements.
 Creating a `interface` inside a class is called nested interface.
 
 A.java
-```
+```java
 package com.Interfaces.NestedInterface;  
   
 public class A {  
@@ -413,3 +413,6 @@ public class Main {
 true
 false
 ```
+
+
+https://chatgpt.com/c/696643d9-fa9c-8324-a54f-8c979241ee9a -- explained default and static 

@@ -8,7 +8,6 @@ Morphism - way to represent
 
 Representing of function in different ways is polymorphism.
 
-
 ### Types of polymorphism
 
 ##### Static / Compile time Polymorphism : 

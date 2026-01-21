@@ -7,7 +7,6 @@ These are not the time and space taken by your program while running in seconds 
 ==Use Big O Notation to represent it==
 ## What is Time complexity
 - The rate at which time taken increases with respect to the input is time complexity
-
 #### Steps :
 - Always calculate time complexity for the worst case scenarios 
 - Avoid constants 

@@ -632,6 +632,28 @@ Spring MVC (Model-View-Controller) is a web framework designed around the MVC de
 2. **View**: Handles the presentation layer and UI.
 3. **Controller**: Manages the application's request handling and acts as an intermediary between Model and View.
 
+### Flow of Client request into spring app
+
+```Java
+Client
+  ↓
+Servlet Container (Tomcat)
+  ↓
+Filters (including Spring Security filters)
+  ↓
+DispatcherServlet
+  ↓
+Handler Mapping
+  ↓
+Interceptors (preHandle)
+  ↓
+Controller
+  ↓
+Interceptors (postHandle / afterCompletion)
+  ↓
+Response goes back (reverse order)
+```
+
 #### Core Concepts
 
 1. **Front Controller (DispatcherServlet)**
@@ -801,6 +823,8 @@ Spring MVC (Model-View-Controller) is a web framework designed around the MVC de
 11. **Interceptors**
 
     - Interceptors can be used to pre-handle and post-handle requests.
+    - pre handle is done before the controller comes to the picture ensuring all the check are properly done with logging process
+    - Post handle add some common response attributes and logging
     - Example:
 
       ```java

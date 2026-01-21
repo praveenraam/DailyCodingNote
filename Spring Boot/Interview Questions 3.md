@@ -7,3 +7,5 @@ Read these.
 
 This contains lots of important questions, make sure to read.
 https://github.com/in28minutes/spring-interview-guide
+
+Answer : https://chatgpt.com/share/6948ca86-c0a4-8007-8f2d-a7c6ce288bc3

@@ -5,6 +5,10 @@ Video [Link](https://youtu.be/BSVKUk58K6U?si=ootRdgB11jU6AASE)
 Content : new keyword
 
 
+https://chatgpt.com/c/69679790-e890-8321-96e8-e4e1b293ddf1 
+How java file is run -- **IMPORTANT**
+
+
 Incase we are having a class named student 
 ```Java
 class Student{  
@@ -75,7 +79,6 @@ class Student{
     float marks = 90.1;  
 }
 ```
-
 
 #### How value of the instance variable is accessed
 

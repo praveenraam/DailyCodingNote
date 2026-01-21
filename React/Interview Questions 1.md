@@ -244,7 +244,7 @@ Learn
 - How will you protect your routes
 - Dynamic Routing
 - How will you handle routing
-- How will you handle queries and parameter]
+- How will you handle queries and parameter
 
 ## React testing
 
